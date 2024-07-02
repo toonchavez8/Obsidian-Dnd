@@ -1,0 +1,121 @@
+{
+  "showFudgeIcon": false,
+  "rollLinksForTags": false,
+  "copyContentButton": true,
+  "customFormulas": [],
+  "displayFormulaForMod": true,
+  "displayResultsInline": false,
+  "displayFormulaAfter": true,
+  "escapeDiceMod": true,
+  "signed": false,
+  "displayLookupRoll": true,
+  "formulas": {},
+  "defaultRoll": 1,
+  "defaultFace": 100,
+  "renderer": true,
+  "renderAllDice": true,
+  "addToView": true,
+  "renderTime": 2000,
+  "colorfulDice": true,
+  "scaler": 1,
+  "diceColor": "#000f80",
+  "textColor": "#ffffff",
+  "textFont": "Arial Rounded MT",
+  "showLeafOnStartup": true,
+  "showDice": true,
+  "displayAsEmbed": true,
+  "round": "None",
+  "initialDisplay": "Roll",
+  "icons": [
+    {
+      "id": "dice-roller-d4",
+      "shape": "Triangle",
+      "formula": "d4",
+      "text": "4"
+    },
+    {
+      "id": "dice-roller-d6",
+      "shape": "Square",
+      "formula": "d6",
+      "text": "6"
+    },
+    {
+      "id": "dice-roller-d8",
+      "shape": "Diamond",
+      "formula": "d8",
+      "text": "8"
+    },
+    {
+      "id": "dice-roller-d10",
+      "shape": "Diamond",
+      "formula": "d10",
+      "text": "10"
+    },
+    {
+      "id": "dice-roller-d12",
+      "shape": "Dodecahedron",
+      "formula": "d12",
+      "text": "12"
+    },
+    {
+      "id": "dice-roller-d20",
+      "shape": "Icosahedron",
+      "formula": "d20",
+      "text": "20"
+    },
+    {
+      "id": "dice-roller-d100",
+      "shape": "Circle",
+      "formula": "d%",
+      "text": "%"
+    }
+  ],
+  "showRenderNotice": true,
+  "diceModTemplateFolders": {},
+  "replaceDiceModInLivePreview": true,
+  "viewResults": [
+    {
+      "result": 14,
+      "original": "3d20kh",
+      "resultText": "[7d, 14, 1d]",
+      "timestamp": 1719512740488,
+      "id": "4Qn5NUnOAQCt"
+    },
+    {
+      "result": 13,
+      "original": "3d20kh",
+      "resultText": "[13, 3d, 3d]",
+      "timestamp": 1719512761402,
+      "id": "M8v1we1jWZsS"
+    },
+    {
+      "result": 17,
+      "original": "1d20",
+      "resultText": "[17]",
+      "timestamp": 1719512777668,
+      "id": "WnkOuuewZA8o"
+    },
+    {
+      "result": 28,
+      "original": "2d20",
+      "resultText": "[12, 16]",
+      "timestamp": 1719512788052,
+      "id": "hgrBvCcpGvgy"
+    },
+    {
+      "result": 65,
+      "original": "1d% + 1d20",
+      "resultText": "[48] + [17]",
+      "timestamp": 1719512805984,
+      "id": "0aYcSvIDGv9r"
+    },
+    {
+      "result": 35,
+      "original": "1d%",
+      "resultText": "[35]",
+      "timestamp": 1719512813934,
+      "id": "ue1OvvKIfn7s"
+    }
+  ],
+  "version": "11.0.4"
+}
