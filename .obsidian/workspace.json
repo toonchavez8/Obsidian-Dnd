@@ -30,8 +30,21 @@
               "type": "graph",
               "state": {}
             }
+          },
+          {
+            "id": "8e9e777a917d7a0e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -98,6 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,6 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +150,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "conflict-files-obsidian-git.md"
+              }
             }
           },
           {
@@ -220,8 +237,19 @@
       "smart-connections:Open: Smart Chat Conversation": false
     }
   },
-  "active": "9fafe957ce27a8da",
+  "active": "8e9e777a917d7a0e",
   "lastOpenFiles": [
+    "Readme.md",
+    "conflict-files-obsidian-git.md",
+    "Sessions/Session 0 - Prelude/Session_0-Prelude - Before.md",
+    "World/World.md",
+    "World",
+    "Sessions/Session 0 - Prelude",
+    "Sessions",
+    "Characters/NPCs/Winky.md",
+    "Characters/NPCs/Professor Grimlock.md",
+    "Characters/NPCs",
+    "Characters",
     "Welcome.md",
     "smart-chats/UNTITLED CHAT 2024-06-27 18 12 10.md",
     "smart-chats/UNTITLED CHAT 2024-06-27 18 08 14.md",

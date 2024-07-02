@@ -1,5 +1,19 @@
 {
   "ITS@@select": "pathfinder-remaster",
+<<<<<<< HEAD
   "ITS@@radius-s": 6,
   "ITS@@paper": true
+=======
+  "ITS@@paper": true,
+  "ITS@@writing-document": false,
+  "ITS@@radius-s": 6,
+  "ITS@@ITS-Sizes": "sizing-readable",
+  "ITS@@background-image": false,
+  "ITS@@background-image-url": "https://www.deviantart.com/littlefallingstar/art/The-Back-of-the-Marauders-Map-379312040",
+  "ITS@@background-image-height": 0,
+  "ITS@@background-image-width": 0,
+  "ITS@@background-image-blur": 0,
+  "ITS@@background-image-opacity": 100,
+  "ITS@@writing": false
+>>>>>>> main/main
 }
