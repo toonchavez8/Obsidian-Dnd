@@ -9,6 +9,8 @@
 - Se han ganado una detención por una infracción menor (decidida por los propios jugadores).
 - La detención tiene lugar en el [[Aula de Defensa Contra las Artes Oscuras]], apodada  la "sala de D.A.".
 
+## Setting the scene\
+
 > **[[Profesor Grimlock (Jefe de Ravenclaw)]]:** "¡Bien, ustedes cinco delincuentes! Siéntense y prepárense para una noche de escribir ensayos sobre los peligros de un mal manejo de la varita. A ver si esta vez pueden manejar una pluma sin provocar fuegos artificiales accidentales."
 
 > [!Read]
@@ -53,13 +55,25 @@ Si tenemos a algun hufflepuff podenen tirar un dado de D20 para ver si lo conoce
 
 > **Winky (Temblando):** "¡Algo está mal! ¡Las criaturas del bosque no se agitarían de esta manera normalmente!"
 
-**La Aventura Comienza**
+## **La Aventura Comienza**
 
 - El camino del bosque está envuelto en una niebla antinatural, ligeramente teñida de verde. Esta es la fuente del hedor desagradable que causa la frenética agitación de los animales. (Los jugadores pueden hacer una tirada de Percepción para identificar el olor como posiblemente un ingrediente de poción.)
-- Encuentros:
-    - **Flobberworms Huyendo:** Un pequeño enjambre de Flobberworms (amenaza de bajo nivel) se desliza por el camino, asustado por la aproximación de los jugadores. (Los jugadores pueden optar por evitar o enfrentarse en un simple encuentro de combate.)
-    - **Fwoopers Frenéticos:** Un grupo de Fwoopers (amenaza de nivel medio) ataca, atraídos por la conmoción y cegados por la niebla verde. (Encuentro de combate)
-    - **Lobos Perdidos y Confundidos:** Una manada de lobos (amenaza de nivel medio) sale del bosque, desorientada y agitada por el extraño olor. Pueden atacar o huir según las acciones de los jugadores. (Posible combate o chequeo de intimidación)
+
+### Encuentros:
+
+
+- **Flobberworms Huyendo:** Un pequeño enjambre de Flobberworms (amenaza de bajo nivel) se desliza por el camino, asustado por la aproximación de los jugadores. (Los jugadores pueden optar por evitar o enfrentarse en un simple encuentro de combate.)
+```encounter
+creatures:
+  - enjambre de Flobberworms
+  - enjambre de Flobberworms
+players:
+  - temp1
+  - temp2
+```
+
+- **Fwoopers Frenéticos:** Un grupo de Fwoopers (amenaza de nivel medio) ataca, atraídos por la conmoción y cegados por la niebla verde. (Encuentro de combate)`
+- **Lobos Perdidos y Confundidos:** Una manada de lobos (amenaza de nivel medio) sale del bosque, desorientada y agitada por el extraño olor. Pueden atacar o huir según las acciones de los jugadores. (Posible combate o chequeo de intimidación)
 
 **La Guarida de las Acromántulas**
 

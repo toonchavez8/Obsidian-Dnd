@@ -11,15 +11,24 @@
             "id": "671ffc38f2fd4e7a",
             "type": "leaf",
             "state": {
+              "type": "obsidian-leaflet-map-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "93082dc566e691c1",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "Sessions/Session 0 - Prelude/Session_0-Prelude - Before.md",
+                "file": "Readme.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -78,7 +87,6 @@
       {
         "id": "adb20b540fa36267",
         "type": "tabs",
-        "dimension": 60.27131782945736,
         "children": [
           {
             "id": "e2076b95e4c4ceb8",
@@ -86,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Sessions/Session 0 - Prelude/Session_0-Prelude - Before.md",
+                "file": "Readme.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Sessions/Session 0 - Prelude/Session_0-Prelude - Before.md",
+                "file": "Readme.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Sessions/Session 0 - Prelude/Session_0-Prelude - Before.md"
+                "file": "Readme.md"
               }
             }
           },
@@ -152,42 +160,33 @@
             }
           },
           {
-            "id": "aa286912a46dcac8",
-            "type": "leaf",
-            "state": {
-              "type": "smart-connections-view",
-              "state": {}
-            }
-          },
-          {
-            "id": "3f831dfb04289160",
-            "type": "leaf",
-            "state": {
-              "type": "smart-connections-chat-view",
-              "state": {}
-            }
-          },
-          {
-            "id": "2dcdc1475823889d",
+            "id": "005f701dc4e490ef",
             "type": "leaf",
             "state": {
               "type": "DICE_ROLLER_VIEW",
               "state": {}
             }
-          }
-        ],
-        "currentTab": 7
-      },
-      {
-        "id": "28eae41a71aed920",
-        "type": "tabs",
-        "dimension": 39.72868217054263,
-        "children": [
+          },
           {
-            "id": "caadad79f52799f3",
+            "id": "ca08dbb0025de6b4",
             "type": "leaf",
             "state": {
-              "type": "fantasy-statblocks-creature-pane",
+              "type": "initiative-tracker-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 5
+      },
+      {
+        "id": "c02a705a8f471aa6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "024aff10e2e84c52",
+            "type": "leaf",
+            "state": {
+              "type": "initiative-tracker-creature-view",
               "state": {}
             }
           }
@@ -195,7 +194,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 430.5
+    "width": 506.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -206,33 +205,36 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "calendarium:Open Calendarium": false,
       "obsidian-5e-statblocks:Open Creature pane": false,
       "fantasy-content-generator:Fantasy Generators": false,
-      "smart-connections:Open: View Smart Connections": false,
-      "smart-connections:Open: Smart Chat Conversation": false
+      "initiative-tracker:Initiative Tracker Encounter Builder": false,
+      "templater-obsidian:Templater": false,
+      "calendarium:Open Calendarium": false
     }
   },
-  "active": "671ffc38f2fd4e7a",
+  "active": "93082dc566e691c1",
   "lastOpenFiles": [
-    "smart-chats",
+    "World/Wands & Wizards - Harry Potter 5e.pdf",
+    "World/World.md",
+    "Characters/Temp PlayerChars/Temp Char.md",
+    "Characters/Temp PlayerChars/Oscar Ortiz.md",
     "Sessions/Session 0 - Prelude/Session_0-Prelude - Before.md",
+    "Characters/Temp PlayerChars",
+    "Enemies/creatures/templates/custom_creatures.yaml",
+    "Enemies/creatures/templates",
+    "Enemies/creatures",
+    "Enemies",
+    "smart-chats",
     "Characters/NPCs/professors/Profesor Grimlock (Jefe de Ravenclaw).md",
     "Characters/NPCs/creatures/Binky.md",
     "World/Hogwarts/Aula de Defensa Contra las Artes Oscuras.md",
     "World/Hogwarts/Hogwarts.md",
-    "World/World.md",
     "World/Hogwarts",
     "Characters/NPCs/professors",
     "Characters/NPCs/creatures",
     "conflict-files-obsidian-git.md",
     "Readme.md",
-    "World",
-    "Sessions/Session 0 - Prelude",
-    "Sessions",
     "Characters/NPCs/creatures/Winky.md",
-    "Characters/NPCs",
-    "Characters",
     "Welcome.md",
     "smart-chats/UNTITLED CHAT 2024-06-27 18 12 10.md",
     "smart-chats/UNTITLED CHAT 2024-06-27 18 08 14.md"

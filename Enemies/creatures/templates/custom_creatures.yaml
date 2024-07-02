@@ -1,0 +1,35 @@
+name: Flobberworm Swarm
+source: Wizarding World
+size: Small
+type: swarm of Tiny beasts
+subtype: "poisonous"
+alignment: unaligned
+ac: 14
+hp: 2
+hit_dice: 3d4
+speed: 10 ft.
+stats:
+  - 2
+  - 10
+  - 9
+  - 1
+  - 2
+  - 3
+damage_vulnerabilities: ""
+damage_resistances: bludgeoning, piercing, slashing
+damage_immunities: ""
+condition_immunities:
+senses: tremorsense 10 ft. passive Perception 2
+languages: ""
+cr: "0"
+bestiary: false
+traits:
+  - name: Mucus
+    desc: As a bonus action, the flobberworm can expel a glob of mucus. Choose one creature within 5 ft. of it. The target must succeed on a DC 10 Dexterity saving throw or be blinded until the end of the next turn.
+    recharge: 5-6 (1d6 +1)
+    attack_bonus: 0
+actions:
+  - name: Bites
+    desc: "Melee Weapon Attack: +6 to hit, reach 0 ft., one creature in the swarm's space. Hit: 6 (3d6) poison damage, or 3 (1d6) poison damage if the swarm has half of its hit points or fewer. The target must succeed on a DC 10 Dexterity saving throw or be blinded until the end of the next turn."
+    attack_bonus: 6
+    damage_dice: 2d6
