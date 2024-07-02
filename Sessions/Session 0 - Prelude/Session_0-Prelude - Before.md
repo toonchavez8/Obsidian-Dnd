@@ -7,31 +7,39 @@
 
 - Los jugadores son todos estudiantes de tercer año en la Escuela de Magia y Hechicería de Hogwarts.
 - Se han ganado una detención por una infracción menor (decidida por los propios jugadores).
-- La detención tiene lugar en el aula de Defensa Contra las Artes Oscuras, apodada cariñosamente la "sala de D.A.".
+- La detención tiene lugar en el [[Aula de Defensa Contra las Artes Oscuras]], apodada  la "sala de D.A.".
 
-**Profesor Grimlock (Jefe de Ravenclaw):** "¡Bien, ustedes cinco! Siéntense y prepárense para una noche de escribir ensayos sobre los peligros de un mal manejo de la varita. A ver si esta vez pueden manejar una pluma sin provocar fuegos artificiales accidentales."
+> **[[Profesor Grimlock (Jefe de Ravenclaw)]]:** "¡Bien, ustedes cinco delincuentes! Siéntense y prepárense para una noche de escribir ensayos sobre los peligros de un mal manejo de la varita. A ver si esta vez pueden manejar una pluma sin provocar fuegos artificiales accidentales."
 
-**(Describa la sala de D.A. - retratos polvorientos de antiguos profesores de Defensa Contra las Artes Oscuras cubren las paredes. Una vitrina chirriante exhibe artefactos confiscados a estudiantes.)**
+> [!Read]
+> **(Describa la sala de D.A. - retratos polvorientos de antiguos profesores de Defensa Contra las Artes Oscuras cubren las paredes. Una vitrina chirriante exhibe artefactos confiscados a estudiantes.)**
+> - El aula suele ser amplia y luminosa, con un espacio central para demostraciones prácticas.
+>   - Las paredes están adornadas con tapices que representan duelos mágicos, criaturas fantásticas y hechizos protectores.
+>   - Hay estanterías llenas de libros sobre Defensa Contra las Artes Oscuras, pociones y magia oscura.
+>   - En la parte delantera del aula hay un escritorio para el profesor, y en la parte trasera hay pizarras o vidrio de magnificacion para mostrar material didáctico.
+>   - Las mesas y sillas están dispuestas para que los estudiantes puedan trabajar en grupos o individualmente.
 
-**A mitad del ensayo, un CRACK frenético llena la sala.** Una pequeña criatura elfa con grandes ojos marrones y ropas andrajosas aparece en una nube de humo.
-
-**Elfo doméstico (Aturdido):** "¡Por favor, profesor! ¡Debe ayudar a Winky! ¡Su amiga Binky está en problemas!"
-
-**Profesor (Frunciendo el ceño):** "Tranquilo, Winky. No hace falta entrar en pánico. ¿Cuál es el problema?"
-
-**Winky (Llorando ligeramente):** "¡Profesor, por favor, no pude ayudar! No soy lo suficientemente fuerte. Winky y yo estábamos recolectando veneno de acromántula para su investigación, pero las arañas se asustaron y atacaron. ¡Han envuelto a la pobre Winky en un capullo y no puedo sacarla!"
+> **A mitad del ensayo, un CRACK frenético llena la sala.** Una pequeña criatura elfa con grandes ojos marrones y ropas andrajosas aparece en una nube de humo.
+> 
+> **Elfo doméstico (Aturdido):** "¡Por favor, profesor! ¡Debe ayudar a [[Winky]]! ¡Su amiga Binky está en problemas!"
+> 
+> **[[Profesor Grimlock (Jefe de Ravenclaw)]] (Frunciendo el ceño):** "Tranquilo, Winky. No hace falta entrar en pánico. ¿Cuál es el problema?"
+> 
+> **[[Winky]] (Llorando ligeramente):** "¡Profesor, por favor, no pude ayudar! No soy lo suficientemente fuerte. Winky y yo estábamos recolectando veneno de acromántula para su investigación, pero las arañas se asustaron y atacaron. ¡Han envuelto a la pobre Winky en un capullo y no puedo sacarla!"
 
 **(Winky muestra su brazo, revelando una desagradable picadura de araña.)**
 
+Si tenemos a algun hufflepuff podenen tirar un dado de D20 para ver si lo conocen menor a 10 no la hubican 10-15 la han visto de 16> la conocen super bien
+
 **El Profesor duda, luciendo preocupado.**
 
-Profesor: "Muy bien, es un asunto simple, iré a buscar..."
-
-Un Pintura: "Profesor Grimlock, el director Black está llamando para solicitar su urgente asistencia en la desaparición de un estudiante de primer año que estaba supervisando. El Ministerio ha sido alertado para venir de inmediato."
-
-**Profesor:** "Esto es un verdadero dilema. Normalmente me encargaría de estos asuntos, pero... ha surgido una cuestión urgente. Debo atenderla de inmediato."
-
-**Profesor (A los jugadores):** "La situación de Winky requiere atención inmediata. ¿Alguno de ustedes valientes estudiantes se ofrece a ayudarla? Considérenlo como su castigo, deberían ser más que capaces de manejar un par de arañas."
+> Profesor: "Muy bien, es un asunto simple, iré a buscar..."
+> 
+> Un Pintura: "Profesor Grimlock, el director Black está llamando para solicitar su urgente asistencia en la desaparición de un estudiante de primer año que estaba supervisando. El Ministerio ha sido alertado para venir de inmediato."
+> 
+> **Profesor:** "Esto es un verdadero dilema. Normalmente me encargaría de estos asuntos, pero... ha surgido una cuestión urgente. Debo atenderla de inmediato."
+> 
+> **Profesor (A los jugadores):** "La situación de Winky requiere atención inmediata. ¿Alguno de ustedes valientes estudiantes se ofrece a ayudarla? Considérenlo como su castigo, deberían ser más que capaces de manejar un par de arañas."
 
 **(Esta es la primera opción de los jugadores. Pueden elegir ayudar o quedarse atrás.)**
 
@@ -43,7 +51,7 @@ Un Pintura: "Profesor Grimlock, el director Black está llamando para solicitar 
 
 **A medida que se acercan al bosque, un aullido escalofriante resuena entre los árboles. Extraños relinchos y gemidos siguen, una niebla verde deslizándose suavemente con un aroma a menta en el aire.**
 
-**Winky (Temblando):** "¡Algo está mal! ¡Las criaturas del bosque no se agitarían de esta manera normalmente!"
+> **Winky (Temblando):** "¡Algo está mal! ¡Las criaturas del bosque no se agitarían de esta manera normalmente!"
 
 **La Aventura Comienza**
 

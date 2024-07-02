@@ -33,7 +33,9 @@
   "muted_notices": {
     "no smart connections found": true,
     "Notice muted": true,
-    "api key test fail": true
+    "api key test fail": true,
+    "ENOENT: no such file or directory, open 'F:\\00 Obsidian\\Dnd\\smart-chats\\UNTITLED CHAT 2024-07-02 14 23 41.md'": true,
+    "ENOENT: no such file or directory, open 'F:\\00 Obsidian\\Dnd\\smart-chats\\Descriptions.md'": true
   },
   "openai": {
     "api_key": "sk-proj-pluqDnsI2PXgFXTCDc1iT3BlbkFJxoZUQKMxpcF9UkRKUDnD",
