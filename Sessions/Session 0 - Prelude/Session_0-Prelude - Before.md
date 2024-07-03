@@ -68,8 +68,7 @@ creatures:
   - enjambre de Flobberworms
   - enjambre de Flobberworms
 players:
-  - temp1
-  - temp2
+  - Oscar Ortiz
 ```
 
 - **Fwoopers Frenéticos:** Un grupo de Fwoopers (amenaza de nivel medio) ataca, atraídos por la conmoción y cegados por la niebla verde. (Encuentro de combate)`

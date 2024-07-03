@@ -2,12 +2,12 @@
 Type: Player
 Art: "![[Character Image Placholder]]"
 Level: 5
-AC: 0
-Prof: 
+AC: 11
+Prof: "3"
 HP: 34
-HitDice: d0
-Speed: 0
-STR: 11
+HitDice: d8
+Speed: 30
+STR: 7
 DEX: 11
 CONST: 15
 INT: 16
@@ -15,15 +15,19 @@ WIS: 18
 CHA: 14
 House: Hufflepuff
 SchoolOfMagic: Magizoology
-Gender: GenderName
+Gender: Male
 Age: "14"
 Location: Hogwarts, England
 CastingStyle: Intellect
+Background: Groundskeeper
 Heritage: HalfBlood
-Wand: WandName
+Wand: Poplar, Unicorn Hair - 10.5"
 Likes: NONE
 Dislikes: NONE
 Pronouns: NONE
+Mascota: Jumper, Harlequin Toad
+SorceryPoints: 4
+MetamagicPoints: 1
 PersonalityTrait:
   - NONE
 SocialTrait:
@@ -60,16 +64,18 @@ Ruby: 0
 >> **AC** | `=this.AC`
 >> **HP** | `=this.HP - this.DmgTkn + this.TempHP` |
 >> **Hit Dice** | `=this.Level + this.HitDice`  |
->> **Passive Perception** |
->>  
+>> **Passive Perception** | `=floor((this.WIS - 10)/2+10)` |
+>>  **Sorcery Points** | `=this.SorceryPoints` |
+>>  **Metamagic Points** | `=this.MetamagicPoints` |
 >> ###### Bio
 >>   |
 >> ---|---|
 >> **House** | `=this.House` |
 >> **Sex** | `=this.gender` |
 >> **Age** | `=this.age` |
->> **Sexuality** | `=this.sexuality` |
+>> **Background** | `=this.Background` |
 >> **School of Magic** | `=this.SchoolOfMagic` |
+>> **Mascota** | `=this.Mascota` |
 >> ###### Info
 >>   |
 >> ---|---|
@@ -85,7 +91,7 @@ Ruby: 0
 >> [!infobox] Death Saves
 >> ### Death Saves
 | Success | <input type="checkbox" unchecked>  | <input type="checkbox" unchecked> | <input type="checkbox" unchecked> | 
-| ------- | --- | --------------------------------- | --------------------------------- |
+| ----- | --- | --------------------------------- | --------------------------------- |
 >>
 | Fails | <input type="checkbox" unchecked>  | <input type="checkbox" unchecked> | <input type="checkbox" unchecked> |
 | ----- | --- | --------------------------------- | --------------------------------- |
@@ -130,4 +136,26 @@ Ruby: 0
 - **Viajes a la Cocina**. Tu experiencia con los elfos domésticos de Hogwarts te ha enseñado cómo tratar y relacionarte educadamente con los seres mágicos. Ah, y puedes conseguir montones de postres. 
 
 ## Feats
+  - **Cuidador**. Tu estudio de las criaturas mágicas te ha enseñado sobre sus lesiones y fisiología. Puedes lanzar cualquier hechizo de Curación conocido sobre bestias.
 
+## Equipo
+
+- [ ] Varita magica
+- [ ] a Student Pack
+- [ ] Una Capa de inverno
+- [ ] Herbologist's tools, 
+- [ ] a compass
+
+### Transfondo del personaje 
+Creyente en la redención, esta bruja o mago posee una varita de álamo con un núcleo de pelo de unicornio. Este núcleo simboliza su creencia inquebrantable de que incluso los corazones más oscuros albergan un destello de bondad. Su vínculo con su varita, de apenas 10,5 pulgadas, revela una profunda conexión con el mundo natural. Cualquier daño a la naturaleza virgen es una herida personal, lo que refleja su feroz protección hacia el medio ambiente.
+
+Aquí hay algunos detalles adicionales sobre el personaje:
+
+Ideales: El personaje cree en el poder de la redención y en la bondad inherente de las personas. Son idealistas y optimistas, y creen que incluso los peores villanos pueden cambiar de opinión.
+Lazos: El personaje tiene un fuerte vínculo con la naturaleza. Se sienten personalmente heridos por cualquier daño al medio ambiente y están comprometidos a protegerlo. También tienen un fuerte vínculo con su varita, que ven como una extensión de sí mismos.
+
+## Magia
+
+### Encantamientos
+
+### Hechizos 
