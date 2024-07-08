@@ -15,7 +15,7 @@
 
 > [!Read]
 > **(Describa la sala de D.A. - retratos polvorientos de antiguos profesores de Defensa Contra las Artes Oscuras cubren las paredes. Una vitrina chirriante exhibe artefactos confiscados a estudiantes.)**
-> - El aula suele ser amplia y luminosa, con un espacio central para demostraciones prácticas.
+> - El aula es amplia y luminosa, con un espacio central para demostraciones prácticas.
 >   - Las paredes están adornadas con tapices que representan duelos mágicos, criaturas fantásticas y hechizos protectores.
 >   - Hay estanterías llenas de libros sobre Defensa Contra las Artes Oscuras, pociones y magia oscura.
 >   - En la parte delantera del aula hay un escritorio para el profesor, y en la parte trasera hay pizarras o vidrio de magnificacion para mostrar material didáctico.
@@ -67,16 +67,77 @@ Si tenemos a algun hufflepuff podenen tirar un dado de D20 para ver si lo conoce
 creatures:
   - enjambre de Flobberworms
   - enjambre de Flobberworms
+  - enjambre de Flobberworms
+  - enjambre de Flobberworms
+  - enjambre de Flobberworms
+
 players:
+  - Ignacio ignam
+  - Penolope Pevreal
+  - Rebecca Weasly
+  - Sebastian Snark
+  - Valentina Voraz
   - Oscar Ortiz
+  
+
 ```
 
-- **Fwoopers Frenéticos:** Un grupo de Fwoopers (amenaza de nivel medio) ataca, atraídos por la conmoción y cegados por la niebla verde. (Encuentro de combate)`
+- **Fwoopers Frenéticos:** Un grupo de Fwoopers (amenaza de nivel medio) ataca, atraídos por la conmoción y cegados por la niebla verde. (Encuentro de combate)
+```encounter
+players:
+  - Oscar Ortiz
+  - Ignacio ignam
+  - Penolope Pevreal
+  - Rebecca Weasly
+  - Sebastian Snark
+  - Valentina Voraz
+creatures:
+  - Fwooper
+  - Fwooper
+  - Fwooper
+  - Fwooper
+  - Fwooper
+  - Fwooper
+```
 - **Lobos Perdidos y Confundidos:** Una manada de lobos (amenaza de nivel medio) sale del bosque, desorientada y agitada por el extraño olor. Pueden atacar o huir según las acciones de los jugadores. (Posible combate o chequeo de intimidación)
+```encounter
+players:
+  - Oscar Ortiz
+  - Ignacio ignam
+  - Penolope Pevreal
+  - Rebecca Weasly
+  - Sebastian Snark
+  - Valentina Voraz
+creatures:
+  - Wolf
+  - Wolf
+  - Wolf
+  - Dire Wolf
+  - Winter Wolf
+  - Dire Wolf
+  
+```
 
 **La Guarida de las Acromántulas**
 
 - Después de navegar los peligros del bosque, los jugadores llegan a un claro bañado en una luz verde espeluznante. Aquí, encuentran un recinto improvisado lleno de agresivas Acromántulas (grandes arañas, amenaza de alto nivel).
+```encounter
+players:
+  - Ignacio ignam
+  - Penolope Pevreal
+  - Rebecca Weasly
+  - Sebastian Snark
+  - Valentina Voraz
+  - Oscar Ortiz
+creatures:
+  - Swarm of Spiders
+  - Giant Spider
+  - Giant Spider
+  - Giant Spider
+  - Phase Spider
+
+  
+```
 - Cuatro sacos de huevos brillan en el centro del recinto.
 
 **Winky (Susurrando):** "¡Debe ser aquí! ¡Tengan cuidado, jóvenes magos, estas arañas son feroces!"

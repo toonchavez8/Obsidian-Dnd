@@ -9,9 +9,9 @@
         "type": "swarm of Tiny beasts",
         "subtype": "poisonous",
         "alignment": "unaligned",
-        "ac": 14,
-        "hp": 2,
-        "hit_dice": "3d4",
+        "ac": 10,
+        "hp": 10,
+        "hit_dice": "4d6",
         "speed": "10 ft.",
         "stats": [
           2,
@@ -27,7 +27,7 @@
         "condition_immunities": null,
         "senses": "tremorsense 10 ft. passive Perception 2",
         "languages": "",
-        "cr": "1/2",
+        "cr": 1,
         "bestiary": false,
         "traits": [
           {
@@ -40,9 +40,60 @@
         "actions": [
           {
             "name": "Bites",
-            "desc": "Melee Weapon Attack: +6 to hit, reach 0 ft., one creature in the swarm's space. Hit: 6 (3d6) poison damage, or 3 (1d6) poison damage if the swarm has half of its hit points or fewer. The target must succeed on a DC 10 Dexterity saving throw or be blinded until the end of the next turn.",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one creature in the swarm's space. Hit: 6 (3d6) poison damage, or 3 (1d6) poison damage if the swarm has half of its hit points or fewer. The target must succeed on a DC 10 Dexterity saving throw or be blinded until the end of the next turn.",
             "attack_bonus": 0,
             "damage_dice": "3d6"
+          }
+        ]
+      }
+    ],
+    [
+      "Fwooper",
+      {
+        "name": "Fwooper",
+        "source": "Wizarding World",
+        "size": "Tiny",
+        "type": "Beast",
+        "subtype": "",
+        "alignment": "unaligned",
+        "ac": 12,
+        "hp": 14,
+        "hit_dice": "4d6+6",
+        "speed": "20 ft., fly 50 ft",
+        "stats": [
+          6,
+          15,
+          10,
+          2,
+          12,
+          6
+        ],
+        "damage_vulnerabilities": "",
+        "damage_resistances": "",
+        "damage_immunities": "",
+        "condition_immunities": null,
+        "senses": "passive Perception 13",
+        "languages": " understands (Common & Gabadok) but can't speak",
+        "cr": "1/4",
+        "bestiary": false,
+        "traits": [
+          {
+            "name": "Song of Madness",
+            "desc": "Any creature within 60 ft. of a Fwooper that can hear its song must succeed on a DC 12 Wisdom saving throw at the start of its turn or become mad for 1 minute. A creature mad by a Fwooper can't take actions or reactions and must roll a d8 each turn to determine where it moves. It can move up to its speed. If it moves into a square occupied by another creature, the creature must succeed on a DC 12 Dexterity saving throw or be knocked prone. If the creature is knocked prone, it falls prone in a space within 5 ft. of the creature that knocked it prone. at the end of its turn it can make a DC 12 Wisdom saving throw. On a success, it stops mad and becomes sane and is imunte to the Fwooper's song for 1d4 turns.",
+            "attack_bonus": 0
+          }
+        ],
+        "actions": [
+          {
+            "name": "Beak Attack",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.",
+            "attack_bonus": 0,
+            "damage_dice": "1d4+2"
+          },
+          {
+            "name": "Wing Buffet",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 3 (1d6).",
+            "attack_bonus": 0
           }
         ]
       }

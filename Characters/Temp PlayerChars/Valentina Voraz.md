@@ -2,10 +2,10 @@
 Type: Player
 Art: "![[Character Image Placholder]]"
 Level: 5
-AC: 11
+AC: 13
 Prof: "3"
 HP: 23
-HitDice: 5d8
+HitDice: d8
 Speed: 30
 STR: 8
 DEX: 16
@@ -47,26 +47,25 @@ Sickles: 15
 Galeons: 3
 Ruby: 0
 ---
-
 ## `=this.file.name`
 
 >[!column|flex 2]
->> [ !infobox]
->> #  `=this.file.name`
+>> [!infobox]
+>> # `=this.file.name`
 >> ![[OscarOrtiz_Img_PlaceHolder]]
 >> ###### Stats
 >>  |
->>---|---|
+>> ---|---|
 >> **Level** |`=this.level` |
->> **Speed** |`=this.Speed` |
+>>  **Speed** |`=this.Speed` |
 >> **Proficiency** | +`=this.Prof` |
 >> **Initiative** | +`=floor((this.DEX - 10)/2)` |
 >> **AC** | `=this.AC`
 >> **HP** | `=this.HP - this.DmgTkn + this.TempHP` |
 >> **Hit Dice** | `=this.Level + this.HitDice`  |
 >> **Passive Perception** | `=floor((this.WIS - 10)/2+10)` |
->> **Sorcery Points** | `=this.SorceryPoints` |
->> **Metamagic Points** | `=this.MetamagicPoints` |
+>>  **Sorcery Points** | `=this.SorceryPoints` |
+>>  **Metamagic Points** | `=this.MetamagicPoints` |
 >> ###### Bio
 >>   |
 >> ---|---|
@@ -76,7 +75,6 @@ Ruby: 0
 >> **Background** | `=this.Background` |
 >> **School of Magic** | `=this.SchoolOfMagic` |
 >> **Mascota** | `=this.Mascota` |
->>
 >> ###### Info
 >>   |
 >> ---|---|
@@ -84,14 +82,14 @@ Ruby: 0
 >> **Wand Name** | `=this.Wand` |
 >> **Heritage** | `=this.Heritage` |
 >> **Current Location** | `=this.Location` |
->> ### Currency
+>>  ### Currency
 | Knut         | Sickles         | Galeons         | Ruby         |
 | -------------- | -------------- | ------------  | ------------ |
 | `=this.Knut` | `=this.Sickles` | `=this.Galeons` | `=this.Ruby` |
 >
 >> [!infobox] Death Saves
 >> ### Death Saves
-| Success | <input type="checkbox" unchecked>  | <input type="checkbox" unchecked> | <input type="checkbox" unchecked> |
+| Success | <input type="checkbox" unchecked>  | <input type="checkbox" unchecked> | <input type="checkbox" unchecked> | 
 | ----- | --- | --------------------------------- | --------------------------------- |
 >>
 | Fails | <input type="checkbox" unchecked>  | <input type="checkbox" unchecked> | <input type="checkbox" unchecked> |
@@ -105,7 +103,7 @@ Ruby: 0
 | <font color="#00b050">**CON**</font>   | `=this.CONST` | +`=floor((this.CONST - 10)/2)` | <input type="checkbox" unchecked>   | +`=floor(((this.CONST - 10)/2))` |
 | <font color="#7030a0">**INT**</font>   | `=this.INT`          | +`=floor((this.INT - 10)/2)`   | <input type="checkbox" unchecked>   | +`=floor(((this.INT - 10)/2))`   |
 | <font color="#245bdb">**WIS**</font>   | `=this.WIS`          | +`=floor((this.WIS - 10)/2)`   | <input type="checkbox" unchecked> | +`=floor((this.WIS - 10)/2)`               |
-| <font color="#de7802">**CHA**</font>   | `=this.CHA`          | +`=floor((this.CHA - 10)/2)`   | <input type="checkbox" unchecked> | +`=(this.CHA - 10)/2`               |
+| <font color="#de7802">**CHA**</font>   | `=this.CHA`          | +`=floor((this.CHA - 10)/2)`   | <input type="checkbox" unchecked> | +`=floor((this.CHA - 10)/2)`               |
 >> ### Skill Checks
 | Ability               | Prof                                   | Mod |
 | --------------------- | --------------------------------- | --- |

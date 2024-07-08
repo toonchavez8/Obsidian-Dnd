@@ -2,10 +2,10 @@
 Type: Player
 Art: "![[Character Image Placholder]]"
 Level: 5
-AC: 11
+AC: 13
 Prof: "3"
 HP: 32
-HitDice: 5d6
+HitDice: d6
 Speed: 30
 STR: 11
 DEX: 17
@@ -19,9 +19,9 @@ Gender: Male
 Age: "14"
 Location: Hogwarts, England
 CastingStyle: Technique
-Background: Groundskeeper
-Heritage: HalfBlood
-Wand: Poplar, Unicorn Hair - 10.5"
+Background: Troublemaker
+Heritage: PureBlood
+Wand: Dogwood, Unicorn Hair - 11.5" stiff
 Likes: NONE
 Dislikes: NONE
 Pronouns: NONE
@@ -47,34 +47,27 @@ Sickles: 15
 Galeons: 3
 Ruby: 0
 ---
-
 ## `=this.file.name`
 
 >[!column|flex 2]
 >> [!infobox]
->>
 >> # `=this.file.name`
->>
->> ![[OscarOrtiz_Img_PlaceHolder]]
->>
+>> ![[Rebbeca-Weasly.jpg]]
 >> ###### Stats
->>
->> |
+>>  |
 >> ---|---|
 >> **Level** |`=this.level` |
->> **Speed** |`=this.Speed` |
+>>  **Speed** |`=this.Speed` |
 >> **Proficiency** | +`=this.Prof` |
 >> **Initiative** | +`=floor((this.DEX - 10)/2)` |
 >> **AC** | `=this.AC`
 >> **HP** | `=this.HP - this.DmgTkn + this.TempHP` |
 >> **Hit Dice** | `=this.Level + this.HitDice`  |
 >> **Passive Perception** | `=floor((this.WIS - 10)/2+10)` |
->> **Sorcery Points** | `=this.SorceryPoints` |
->> **Metamagic Points** | `=this.MetamagicPoints` |
->>
+>>  **Sorcery Points** | `=this.SorceryPoints` |
+>>  **Metamagic Points** | `=this.MetamagicPoints` |
 >> ###### Bio
->>
->> |
+>>   |
 >> ---|---|
 >> **House** | `=this.House` |
 >> **Sex** | `=this.gender` |
@@ -82,34 +75,27 @@ Ruby: 0
 >> **Background** | `=this.Background` |
 >> **School of Magic** | `=this.SchoolOfMagic` |
 >> **Mascota** | `=this.Mascota` |
->>
 >> ###### Info
->>
->> |
+>>   |
 >> ---|---|
 >> **Casting Style** | `=this.CastingStyle` |
 >> **Wand Name** | `=this.Wand` |
 >> **Heritage** | `=this.Heritage` |
 >> **Current Location** | `=this.Location` |
->>
->> ### Currency
-
+>>  ### Currency
 | Knut         | Sickles         | Galeons         | Ruby         |
 | -------------- | -------------- | ------------  | ------------ |
 | `=this.Knut` | `=this.Sickles` | `=this.Galeons` | `=this.Ruby` |
 >
 >> [!infobox] Death Saves
->>
 >> ### Death Saves
-
-| Success | <input type="checkbox" unchecked>  | <input type="checkbox" unchecked> | <input type="checkbox" unchecked> |
+| Success | <input type="checkbox" unchecked>  | <input type="checkbox" unchecked> | <input type="checkbox" unchecked> | 
 | ----- | --- | --------------------------------- | --------------------------------- |
 >>
 | Fails | <input type="checkbox" unchecked>  | <input type="checkbox" unchecked> | <input type="checkbox" unchecked> |
 | ----- | --- | --------------------------------- | --------------------------------- |
 >>
 >> ### Skills
-
 | Skill | Score       | Mod                     | Prof                              | ST                                  |
 | ----- | ----------- | ----------------------- | --------------------------------- | ----------------------------------- |
 | <font color="#ff0000">**STR**</font>   | `=this.STR` | +`=floor((this.STR - 10)/2)`   | <input type="checkbox" unchecked> | +`=floor((this.STR - 10)/2)`               |
@@ -117,10 +103,8 @@ Ruby: 0
 | <font color="#00b050">**CON**</font>   | `=this.CONST` | +`=floor((this.CONST - 10)/2)` | <input type="checkbox" unchecked>   | +`=floor(((this.CONST - 10)/2))` |
 | <font color="#7030a0">**INT**</font>   | `=this.INT`          | +`=floor((this.INT - 10)/2)`   | <input type="checkbox" unchecked>   | +`=floor(((this.INT - 10)/2))`   |
 | <font color="#245bdb">**WIS**</font>   | `=this.WIS`          | +`=floor((this.WIS - 10)/2)`   | <input type="checkbox" unchecked> | +`=floor((this.WIS - 10)/2)`               |
-| <font color="#de7802">**CHA**</font>   | `=this.CHA`          | +`=floor((this.CHA - 10)/2)`   | <input type="checkbox" unchecked> | +`=(this.CHA - 10)/2`               |
-
+| <font color="#de7802">**CHA**</font>   | `=this.CHA`          | +`=floor((this.CHA - 10)/2)`   | <input type="checkbox" unchecked> | +`=floor((this.CHA - 10)/2)`               |
 >> ### Skill Checks
-
 | Ability               | Prof                                   | Mod |
 | --------------------- | --------------------------------- | --- |
 | Acrobatics (DEX)      | <input type="checkbox" unchecked> | +`=floor((this.DEX - 10)/2)`   |
@@ -181,13 +165,17 @@ Ruby: 0
 
 ### Transfondo del personaje
 
-Creyente en la redención, esta bruja o mago posee una varita de álamo con un núcleo de pelo de unicornio. Este núcleo simboliza su creencia inquebrantable de que incluso los corazones más oscuros albergan un destello de bondad. Su vínculo con su varita, de apenas 10,5 pulgadas, revela una profunda conexión con el mundo natural. Cualquier daño a la naturaleza es una herida personal, lo que refleja su feroz protección hacia el medio ambiente.
+Rebeca Weasley es un torbellino de problemas ingeniosos. Su curiosidad innata y su inclinación por las bromas la meten en aprietos con regularidad. Pero Rebeca no es una alborotadora sin cerebro; ha aprendido a ser cautelosa, evitando trampas obvias mientras perfecciona el arte de la coartada ingeniosa. Su lema es "trabaja con inteligencia, no con esfuerzo," y su habilidad para encontrar atajos, tanto literales como figurativos, la ha sacado de más de un lío.
+
+Su varita de Fresno, ruidosa y traviesa, refleja su naturaleza juguetona, pero también es sorprendentemente capaz de magia poderosa en manos adecuadas. El núcleo de pelo de unicornio alimenta su ambición de demostrar su valía y superar a su odiada rival.  Sin embargo, la rigidez de su varita también delata un defecto: una vez que alguien cuestiona su coraje, Rebeca se lanza de cabeza al peligro, sin importar las consecuencias. ¿Podrá Rebeca canalizar su ingenio y su valentía para lograr sus objetivos sin sucumbir a la temeridad?
 
 Aquí hay algunos detalles adicionales sobre el personaje:
 
-Ideales: El personaje cree en el poder de la redención y en la bondad inherente de las personas. Son idealistas y optimistas, y creen que incluso los peores villanos pueden cambiar de opinión.
-Lazos: El personaje tiene un fuerte vínculo con la naturaleza. Se sienten personalmente heridos por cualquier daño al medio ambiente y están comprometidos a protegerlo. También tienen un fuerte vínculo con su varita, que ven como una extensión de sí mismos.
+Núcleo (Ideal): Pelo de Unicornio - Aspiración. Voy a demostrar que soy digna de una vida mejor.
 
+Longitud (Vínculo): 11.5 pulgadas - Haré cualquier cosa para demostrar que soy superior a mi odiado rival.
+
+Flexibilidad (Defecto): Rígida - Una vez que alguien cuestiona mi coraje, nunca retrocedo sin importar cuán peligrosa sea la situación.
 ## Magia
 
 Conoce 8 Encantamientos y 16 Hechisos

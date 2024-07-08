@@ -1,1 +1,0 @@
-![[OscarOrtiz_Img.png]]

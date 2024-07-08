@@ -21,7 +21,7 @@ Location: Hogwarts, England
 CastingStyle: Intellect
 Background: Groundskeeper
 Heritage: HalfBlood
-Wand: Poplar, Unicorn Hair - 10.5"
+Wand: Poplar, Unicorn Hair - 10.5 - Slightly Springy
 Likes: NONE
 Dislikes: NONE
 Pronouns: NONE
@@ -47,34 +47,27 @@ Sickles: 15
 Galeons: 3
 Ruby: 0
 ---
-
 ## `=this.file.name`
 
 >[!column|flex 2]
 >> [!infobox]
->>
 >> # `=this.file.name`
->>
->> ![[OscarOrtiz_Img_PlaceHolder]]
->>
+>> ![[OscarOrtiz_Img.png]]
 >> ###### Stats
->>
->> |
+>>  |
 >> ---|---|
 >> **Level** |`=this.level` |
->> **Speed** |`=this.Speed` |
+>>  **Speed** |`=this.Speed` |
 >> **Proficiency** | +`=this.Prof` |
 >> **Initiative** | +`=floor((this.DEX - 10)/2)` |
 >> **AC** | `=this.AC`
 >> **HP** | `=this.HP - this.DmgTkn + this.TempHP` |
 >> **Hit Dice** | `=this.Level + this.HitDice`  |
 >> **Passive Perception** | `=floor((this.WIS - 10)/2+10)` |
->> **Sorcery Points** | `=this.SorceryPoints` |
->> **Metamagic Points** | `=this.MetamagicPoints` |
->>
+>>  **Sorcery Points** | `=this.SorceryPoints` |
+>>  **Metamagic Points** | `=this.MetamagicPoints` |
 >> ###### Bio
->>
->> |
+>>   |
 >> ---|---|
 >> **House** | `=this.House` |
 >> **Sex** | `=this.gender` |
@@ -82,34 +75,27 @@ Ruby: 0
 >> **Background** | `=this.Background` |
 >> **School of Magic** | `=this.SchoolOfMagic` |
 >> **Mascota** | `=this.Mascota` |
->>
 >> ###### Info
->>
->> |
+>>   |
 >> ---|---|
 >> **Casting Style** | `=this.CastingStyle` |
 >> **Wand Name** | `=this.Wand` |
 >> **Heritage** | `=this.Heritage` |
 >> **Current Location** | `=this.Location` |
->>
->> ### Currency
-
+>>  ### Currency
 | Knut         | Sickles         | Galeons         | Ruby         |
 | -------------- | -------------- | ------------  | ------------ |
 | `=this.Knut` | `=this.Sickles` | `=this.Galeons` | `=this.Ruby` |
 >
 >> [!infobox] Death Saves
->>
 >> ### Death Saves
-
-| Success | <input type="checkbox" unchecked>  | <input type="checkbox" unchecked> | <input type="checkbox" unchecked> |
+| Success | <input type="checkbox" unchecked>  | <input type="checkbox" unchecked> | <input type="checkbox" unchecked> | 
 | ----- | --- | --------------------------------- | --------------------------------- |
 >>
 | Fails | <input type="checkbox" unchecked>  | <input type="checkbox" unchecked> | <input type="checkbox" unchecked> |
 | ----- | --- | --------------------------------- | --------------------------------- |
 >>
 >> ### Skills
-
 | Skill | Score       | Mod                     | Prof                              | ST                                  |
 | ----- | ----------- | ----------------------- | --------------------------------- | ----------------------------------- |
 | <font color="#ff0000">**STR**</font>   | `=this.STR` | +`=floor((this.STR - 10)/2)`   | <input type="checkbox" unchecked> | +`=floor((this.STR - 10)/2)`               |
@@ -118,9 +104,7 @@ Ruby: 0
 | <font color="#7030a0">**INT**</font>   | `=this.INT`          | +`=floor((this.INT - 10)/2)`   | <input type="checkbox" unchecked>   | +`=floor(((this.INT - 10)/2))`   |
 | <font color="#245bdb">**WIS**</font>   | `=this.WIS`          | +`=floor((this.WIS - 10)/2)`   | <input type="checkbox" unchecked> | +`=floor((this.WIS - 10)/2)`               |
 | <font color="#de7802">**CHA**</font>   | `=this.CHA`          | +`=floor((this.CHA - 10)/2)`   | <input type="checkbox" unchecked> | +`=(this.CHA - 10)/2`               |
-
 >> ### Skill Checks
-
 | Ability               | Prof                                   | Mod |
 | --------------------- | --------------------------------- | --- |
 | Acrobatics (DEX)      | <input type="checkbox" unchecked> | +`=floor((this.DEX - 10)/2)`   |
@@ -187,6 +171,7 @@ Aquí hay algunos detalles adicionales sobre el personaje:
 
 Ideales: El personaje cree en el poder de la redención y en la bondad inherente de las personas. Son idealistas y optimistas, y creen que incluso los peores villanos pueden cambiar de opinión.
 Lazos: El personaje tiene un fuerte vínculo con la naturaleza. Se sienten personalmente heridos por cualquier daño al medio ambiente y están comprometidos a protegerlo. También tienen un fuerte vínculo con su varita, que ven como una extensión de sí mismos.
+Desventajas: Habla sin tacto, y decir lo primero que se le venga a la mente sin medirse
 
 ## Magia
 

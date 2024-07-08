@@ -2,10 +2,10 @@
 Type: Player
 Art: "![[Character Image Placholder]]"
 Level: 5
-AC: 11
+AC: 12
 Prof: "3"
 HP: 42
-HitDice: 5d10
+HitDice: d10
 Speed: 30
 STR: 13
 DEX: 13
@@ -19,9 +19,9 @@ Gender: Male
 Age: "14"
 Location: Hogwarts, England
 CastingStyle: Willpower
-Background: Groundskeeper
-Heritage: HalfBlood
-Wand: Poplar, Unicorn Hair - 10.5"
+Background: Protector
+Heritage: MuggleBorn
+Wand: Blackthorn, Phoenix Feather - 10.5" Mildly Flexible
 Likes: NONE
 Dislikes: NONE
 Pronouns: NONE
@@ -47,34 +47,27 @@ Sickles: 15
 Galeons: 3
 Ruby: 0
 ---
-
 ## `=this.file.name`
 
 >[!column|flex 2]
 >> [!infobox]
->>
 >> # `=this.file.name`
->>
->> ![[OscarOrtiz_Img_PlaceHolder]]
->>
+>> ![[Sebastian-Snark.jpg]]
 >> ###### Stats
->>
->> |
+>>  |
 >> ---|---|
 >> **Level** |`=this.level` |
->> **Speed** |`=this.Speed` |
+>>  **Speed** |`=this.Speed` |
 >> **Proficiency** | +`=this.Prof` |
 >> **Initiative** | +`=floor((this.DEX - 10)/2)` |
 >> **AC** | `=this.AC`
 >> **HP** | `=this.HP - this.DmgTkn + this.TempHP` |
 >> **Hit Dice** | `=this.Level + this.HitDice`  |
 >> **Passive Perception** | `=floor((this.WIS - 10)/2+10)` |
->> **Sorcery Points** | `=this.SorceryPoints` |
->> **Metamagic Points** | `=this.MetamagicPoints` |
->>
+>>  **Sorcery Points** | `=this.SorceryPoints` |
+>>  **Metamagic Points** | `=this.MetamagicPoints` |
 >> ###### Bio
->>
->> |
+>>   |
 >> ---|---|
 >> **House** | `=this.House` |
 >> **Sex** | `=this.gender` |
@@ -82,34 +75,27 @@ Ruby: 0
 >> **Background** | `=this.Background` |
 >> **School of Magic** | `=this.SchoolOfMagic` |
 >> **Mascota** | `=this.Mascota` |
->>
 >> ###### Info
->>
->> |
+>>   |
 >> ---|---|
 >> **Casting Style** | `=this.CastingStyle` |
 >> **Wand Name** | `=this.Wand` |
 >> **Heritage** | `=this.Heritage` |
 >> **Current Location** | `=this.Location` |
->>
->> ### Currency
-
+>>  ### Currency
 | Knut         | Sickles         | Galeons         | Ruby         |
 | -------------- | -------------- | ------------  | ------------ |
 | `=this.Knut` | `=this.Sickles` | `=this.Galeons` | `=this.Ruby` |
 >
 >> [!infobox] Death Saves
->>
 >> ### Death Saves
-
-| Success | <input type="checkbox" unchecked>  | <input type="checkbox" unchecked> | <input type="checkbox" unchecked> |
+| Success | <input type="checkbox" unchecked>  | <input type="checkbox" unchecked> | <input type="checkbox" unchecked> | 
 | ----- | --- | --------------------------------- | --------------------------------- |
 >>
 | Fails | <input type="checkbox" unchecked>  | <input type="checkbox" unchecked> | <input type="checkbox" unchecked> |
 | ----- | --- | --------------------------------- | --------------------------------- |
 >>
 >> ### Skills
-
 | Skill | Score       | Mod                     | Prof                              | ST                                  |
 | ----- | ----------- | ----------------------- | --------------------------------- | ----------------------------------- |
 | <font color="#ff0000">**STR**</font>   | `=this.STR` | +`=floor((this.STR - 10)/2)`   | <input type="checkbox" unchecked> | +`=floor((this.STR - 10)/2)`               |
@@ -117,10 +103,8 @@ Ruby: 0
 | <font color="#00b050">**CON**</font>   | `=this.CONST` | +`=floor((this.CONST - 10)/2)` | <input type="checkbox" unchecked>   | +`=floor(((this.CONST - 10)/2))` |
 | <font color="#7030a0">**INT**</font>   | `=this.INT`          | +`=floor((this.INT - 10)/2)`   | <input type="checkbox" unchecked>   | +`=floor(((this.INT - 10)/2))`   |
 | <font color="#245bdb">**WIS**</font>   | `=this.WIS`          | +`=floor((this.WIS - 10)/2)`   | <input type="checkbox" unchecked> | +`=floor((this.WIS - 10)/2)`               |
-| <font color="#de7802">**CHA**</font>   | `=this.CHA`          | +`=floor((this.CHA - 10)/2)`   | <input type="checkbox" unchecked> | +`=(this.CHA - 10)/2`               |
-
+| <font color="#de7802">**CHA**</font>   | `=this.CHA`          | +`=floor((this.CHA - 10)/2)`   | <input type="checkbox" unchecked> | +`=floor((this.CHA - 10)/2)`               |
 >> ### Skill Checks
-
 | Ability               | Prof                                   | Mod |
 | --------------------- | --------------------------------- | --- |
 | Acrobatics (DEX)      | <input type="checkbox" unchecked> | +`=floor((this.DEX - 10)/2)`   |
@@ -181,12 +165,13 @@ Ruby: 0
 
 ### Transfondo del personaje
 
-Creyente en la redención, esta bruja o mago posee una varita de álamo con un núcleo de pelo de unicornio. Este núcleo simboliza su creencia inquebrantable de que incluso los corazones más oscuros albergan un destello de bondad. Su vínculo con su varita, de apenas 10,5 pulgadas, revela una profunda conexión con el mundo natural. Cualquier daño a la naturaleza es una herida personal, lo que refleja su feroz protección hacia el medio ambiente.
+Sebastián Snark es un escudo de hierro para los vulnerables. Un profundo sentido de la justicia lo impulsa a enfrentar a los abusones. Ya sea por empatía natural o un pasado como víctima, la injusticia le revuelve el estómago. A través de un arduo entrenamiento, se ha convertido en una fuerza física imponente, lista para proteger a sus seres queridos. Su varita de Endrino y Pluma de Fénix refleja su determinación: poderosa y leal, comprometida con las promesas hechas (10.5 pulgadas). Sin embargo, bajo la superficie hierve una contradicción. Sebastián cree en el poder como herramienta de la justicia, pero alberga un secreto deseo de control. En sus momentos más oscuros, se imagina como un tirano, gobernando a todos. ¿Podrá Sebastián reconciliar su noble protección con esta tentación oculta?
 
 Aquí hay algunos detalles adicionales sobre el personaje:
 
-Ideales: El personaje cree en el poder de la redención y en la bondad inherente de las personas. Son idealistas y optimistas, y creen que incluso los peores villanos pueden cambiar de opinión.
-Lazos: El personaje tiene un fuerte vínculo con la naturaleza. Se sienten personalmente heridos por cualquier daño al medio ambiente y están comprometidos a protegerlo. También tienen un fuerte vínculo con su varita, que ven como una extensión de sí mismos.
+Ideal (Núcleo): Pluma de Fénix - Poder. La historia la escriben los vencedores y el fuerte siempre ganará. Este ideal refleja su creencia en la fuerza y la justicia.
+Lazo (Vínculo): Nada es mas importate que honrar una promesa.
+Defecto (Flexibilidad): Ligeramente Flexible. En el fondo, Sebastián alberga un secreto deseo de poder. Piensa, en ocasiones, que el mundo sería mejor bajo su control tiránico. Esta creencia oculta podría convertirse en una peligrosa tentación en el futuro.
 
 ## Magia
 
