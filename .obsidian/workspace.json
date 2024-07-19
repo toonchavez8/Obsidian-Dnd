@@ -11,6 +11,16 @@
             "id": "5108749c69e52fa1",
             "type": "leaf",
             "state": {
+              "type": "pdf",
+              "state": {
+                "file": "World/Wands & Wizards - Harry Potter 5e.pdf"
+              }
+            }
+          },
+          {
+            "id": "993534fdac351b1c",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
                 "file": "Sessions/Session 0 - Prelude/Session_0-Prelude - Before.md",
@@ -19,7 +29,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -78,6 +89,7 @@
       {
         "id": "adb20b540fa36267",
         "type": "tabs",
+        "dimension": 55.23255813953488,
         "children": [
           {
             "id": "e2076b95e4c4ceb8",
@@ -130,6 +142,14 @@
             }
           },
           {
+            "id": "ca08dbb0025de6b4",
+            "type": "leaf",
+            "state": {
+              "type": "initiative-tracker-view",
+              "state": {}
+            }
+          },
+          {
             "id": "a27abc1529b6f342",
             "type": "leaf",
             "state": {
@@ -151,19 +171,62 @@
             }
           },
           {
-            "id": "ca08dbb0025de6b4",
+            "id": "2b45d4b1d4875559",
             "type": "leaf",
             "state": {
-              "type": "initiative-tracker-view",
+              "type": "DICE_ROLLER_VIEW",
               "state": {}
+            }
+          },
+          {
+            "id": "958a8b408613e0cd",
+            "type": "leaf",
+            "state": {
+              "type": "CALENDARIUM",
+              "state": {
+                "calendar": "ID_7a2baab8b98b",
+                "ephemeral": {
+                  "viewState": 1,
+                  "displaying": {
+                    "day": 27,
+                    "month": 5,
+                    "year": 2024
+                  },
+                  "displayDayNumber": false,
+                  "displayMoons": true
+                },
+                "id": "ID_0b588b48cbb8"
+              }
+            }
+          },
+          {
+            "id": "290ae67e65f32a86",
+            "type": "leaf",
+            "state": {
+              "type": "CALENDARIUM",
+              "state": {
+                "calendar": "ID_7a2baab8b98b",
+                "ephemeral": {
+                  "viewState": 1,
+                  "displaying": {
+                    "day": 27,
+                    "month": 5,
+                    "year": 2024
+                  },
+                  "displayDayNumber": false,
+                  "displayMoons": true
+                },
+                "id": "ID_db9b6949eb8a"
+              }
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 8
       },
       {
         "id": "4b3e5c07a8e67a2f",
         "type": "tabs",
+        "dimension": 44.76744186046512,
         "children": [
           {
             "id": "01a4b0c0bb87c121",
@@ -195,21 +258,22 @@
       "calendarium:Open Calendarium": false
     }
   },
-  "active": "5108749c69e52fa1",
+  "active": "7947b527d252438b",
   "lastOpenFiles": [
+    "Enemies/creatures/templates/loot.json",
+    "World/Wands & Wizards - Harry Potter 5e.pdf",
+    "Characters/Temp PlayerChars/Ignacio ignam.md",
+    "Characters/Temp PlayerChars/Sebastian Snark.md",
     "Characters/Temp PlayerChars/Valentina Voraz.md",
+    "Sessions/Session 0 - Prelude/Session_0-Prelude - Before.md",
     "Assets/Ignacious-ignam.jpg",
     "Assets/OscarOrtiz_Img.png",
     "Assets/Penlope-pevreal.jpg",
     "Assets/Rebbeca-Weasly.jpg",
     "Assets/Sebastian-Snark.jpg",
-    "Sessions/Session 0 - Prelude/Session_0-Prelude - Before.md",
     "Characters/Temp PlayerChars/Oscar Ortiz.md",
-    "Characters/Temp PlayerChars/Sebastian Snark.md",
     "Characters/Temp PlayerChars/Rebecca Weasly.md",
     "Characters/Temp PlayerChars/Penolope Pevreal.md",
-    "Characters/Temp PlayerChars/Ignacio ignam.md",
-    "World/Wands & Wizards - Harry Potter 5e.pdf",
     "Assets/Sebastian-Snark.jpg.crdownload",
     "Assets/Rebbeca-Weasly.jpg.crdownload",
     "Assets/Penlope-pevreal.jpg.crdownload",

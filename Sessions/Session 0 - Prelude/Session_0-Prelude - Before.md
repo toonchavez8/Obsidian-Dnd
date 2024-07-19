@@ -100,6 +100,7 @@ creatures:
   - Fwooper
 ```
 - **Lobos Perdidos y Confundidos:** Una manada de lobos (amenaza de nivel medio) sale del bosque, desorientada y agitada por el extraño olor. Pueden atacar o huir según las acciones de los jugadores. (Posible combate o chequeo de intimidación)
+
 ```encounter
 players:
   - Oscar Ortiz
@@ -117,7 +118,15 @@ creatures:
   - Dire Wolf
   
 ```
+Si despues de que maten el winter wolf y sigue vivo un Dire wolf este aullaria y llamaria 4 dire wolfs mas que tardan 2 turnos en llegar
+```encounter
+creatures:
+  - Dire Wolf
+  - Dire Wolf
+  - Dire Wolf
+  - Dire Wolf
 
+```
 **La Guarida de las Acromántulas**
 
 - Después de navegar los peligros del bosque, los jugadores llegan a un claro bañado en una luz verde espeluznante. Aquí, encuentran un recinto improvisado lleno de agresivas Acromántulas (grandes arañas, amenaza de alto nivel).

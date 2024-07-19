@@ -4,7 +4,6 @@
     "prefixArray": [
       "camp",
       "castle",
-      "east",
       "edge",
       "ever",
       "great",
@@ -14,7 +13,9 @@
       "red",
       "rose",
       "south",
-      "west"
+      "west",
+      "eastway",
+      "Outland "
     ],
     "suffixArray": [
       "avon",
@@ -131,14 +132,22 @@
       "Four",
       "Five",
       "Busta",
-      "The Terrified"
+      "The Terrified",
+      "Leaky ",
+      "Grim ",
+      "Hollow ",
+      "Weyr ",
+      "Broke "
     ],
     "innType": [
       "Inn",
       "Lodge",
       "Tavern",
       "Rest",
-      "Stop"
+      "Stop",
+      "Cauldren",
+      "Burrow ",
+      "Rookery "
     ],
     "nouns": [
       "Phoenix",
@@ -717,194 +726,132 @@
     "adj": [
       "old",
       "tattered",
-      "rotten",
-      "shiny",
+      "crumbling",
+      "dusty",
+      "gleaming",
       "polished",
       "rusty",
-      "broken",
+      "brittle",
       "priceless",
       "ancient",
-      "precious",
-      "shiny",
-      "glowing",
-      "mysterious",
-      "ancient",
+      "cursed",
       "enchanted",
       "ornate",
+      "runic",
+      "dragon-skinned",
+      "hand-me-down",
+      "broken",
+      "ancient",
+      "goblin-made",
+      "elf-crafted",
       "magical",
-      "powerful"
+      "powerful",
+      "bewitched",
+      "sentient"
     ],
     "items": [
       {
-        "item": "feather",
-        "weight": 0.8
-      },
-      {
-        "item": "sword",
-        "weight": 0.2
-      },
-      {
-        "item": "bow",
-        "weight": 0.2
-      },
-      {
-        "item": "wand",
+        "item": "feather (phoenix)",
         "weight": 0.1
       },
       {
-        "item": "armor",
-        "weight": 0.2
-      },
-      {
-        "item": "shield",
+        "item": "wand (willow, holly, etc.)",
         "weight": 0.1
       },
       {
-        "item": "amulet",
-        "weight": 0.1
-      },
-      {
-        "item": "ring",
-        "weight": 0.1
-      },
-      {
-        "item": "book",
+        "item": "broomstick (nimbus, firebolt, etc.)",
         "weight": 0.2
       },
       {
-        "item": "scroll",
+        "item": "cauldron",
         "weight": 0.2
       },
       {
-        "item": "potion",
+        "item": "gobstones",
+        "weight": 0.1
+      },
+      {
+        "item": "marauder's map",
+        "weight": 0.2
+      },
+      {
+        "item": "house crest (Gryffindor, Ravenclaw, etc.)",
+        "weight": 0.1
+      },
+      {
+        "item": "potion (polyjuice, truth serum, etc.)",
         "weight": 0.3
       },
       {
-        "item": "trinket",
-        "weight": 0.3
-      },
-      {
-        "item": "gemstone",
+        "item": "herbology ingredient (mandrake root, flobberworm mucus, etc.)",
         "weight": 0.2
       },
       {
-        "item": "wand core",
-        "weight": 0.1
-      },
-      {
-        "item": "tome",
+        "item": "magical creature feather (hippogriff, griffin, etc.)",
         "weight": 0.2
-      },
-      {
-        "item": "relic",
-        "weight": 0.1
       },
       {
         "item": "spellbook",
         "weight": 0.2
       },
       {
-        "item": "grimoire",
+        "item": "wand holster",
+        "weight": 0.1
+      },
+      {
+        "item": "quill",
+        "weight": 0.1
+      },
+      {
+        "item": "ink (magical)",
         "weight": 0.2
       },
       {
-        "item": "tome",
+        "item": "parchment",
+        "weight": 0.1
+      },
+      {
+        "item": "telescope",
         "weight": 0.2
       },
       {
-        "item": "journal",
+        "item": "compass (magical)",
+        "weight": 0.1
+      },
+      {
+        "item": "monster hunting trophy (basilisk fang, troll club, etc.)",
         "weight": 0.2
       },
       {
-        "item": "ledger",
+        "item": "component pouch",
         "weight": 0.1
       },
       {
-        "item": "diary",
-        "weight": 0.1
-      },
-      {
-        "item": "healing potion",
+        "item": "mirror ",
         "weight": 0.2
       },
       {
-        "item": "mana potion",
+        "item": "portrait (moving)",
         "weight": 0.2
       },
       {
-        "item": "invisibility potion",
+        "item": "chocolate frog card (famous witch/wizard)",
         "weight": 0.1
       },
       {
-        "item": "poison",
+        "item": "beroom treats (chocolate frogs, pumpkin pasties, etc.)",
         "weight": 0.1
       },
       {
-        "item": "love potion",
+        "item": "magical plant seed (mimbulus mimbletonia, moonstone, etc.)",
         "weight": 0.1
       },
       {
-        "item": "strength potion",
+        "item": "alchemical ingredient (unicorn hair, phoenix feather, etc.)",
         "weight": 0.1
       },
       {
-        "item": "speed potion",
-        "weight": 0.1
-      },
-      {
-        "item": "water breathing potion",
-        "weight": 0.1
-      },
-      {
-        "item": "fire resistance potion",
-        "weight": 0.1
-      },
-      {
-        "item": "flying potion",
-        "weight": 0.1
-      },
-      {
-        "item": "locket",
-        "weight": 0.2
-      },
-      {
-        "item": "charm",
-        "weight": 0.3
-      },
-      {
-        "item": "statue",
-        "weight": 0.2
-      },
-      {
-        "item": "figurine",
-        "weight": 0.2
-      },
-      {
-        "item": "music box",
-        "weight": 0.1
-      },
-      {
-        "item": "dagger",
-        "weight": 0.1
-      },
-      {
-        "item": "pen",
-        "weight": 0.1
-      },
-      {
-        "item": "hourglass",
-        "weight": 0.1
-      },
-      {
-        "item": "pipe",
-        "weight": 0.1
-      },
-      {
-        "item": "goblet",
-        "weight": 0.1
-      },
-      {
-        "item": "candle",
+        "item": "magical tool (wand repair kit, potion scales, etc.)",
         "weight": 0.2
       }
     ]
