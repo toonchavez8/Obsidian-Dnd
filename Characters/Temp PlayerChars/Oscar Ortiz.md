@@ -105,7 +105,7 @@ Ruby: 0
 | <font color="#245bdb">**WIS**</font>   | `=this.WIS`          | +`=floor((this.WIS - 10)/2)`   | <input type="checkbox" unchecked> | +`=floor((this.WIS - 10)/2)`               |
 | <font color="#de7802">**CHA**</font>   | `=this.CHA`          | +`=floor((this.CHA - 10)/2)`   | <input type="checkbox" unchecked> | +`=(this.CHA - 10)/2`               |
 >> ### Skill Checks
-| Ability               | Prof                                   | Mod |
+| Abilidad               | Prof                                   | Mod |
 | --------------------- | --------------------------------- | --- |
 | Acrobatics (DEX)      | <input type="checkbox" unchecked> | +`=floor((this.DEX - 10)/2)`   |
 | Magical Creatures (WIS) | <input type="checkbox" unchecked> | +`=floor((this.WIS - 10)/2)`  |
@@ -128,7 +128,7 @@ Ruby: 0
 
 ## Atributos
 
-- **Aumento de Puntuaciones de Característica**. Tu puntuación de Constitución, Sabiduría y una puntuación de característica adicional a tu elección aumentan en 1.
+- **Aumento de Puntuaciones de Característica**. Tu puntuación de Constitución (CON), Sabiduría() y una puntuación de Abilidad adicional a tu elección aumenta 1.
 
 - **Lealtad Inquebrantable**. Tienes ventaja en las tiradas de salvación contra cualquier efecto que te haga atacar o actuar en contra de una criatura que normalmente considerarías un aliado.
 
@@ -180,7 +180,7 @@ Conoce 8 Encantamientos y 16 Hechisos
 ### Encantamientos
 
 - Accio - Atrai objetos no mayor a 20kg de peso
-- Alohomora - Puede puertas/ventanas pero hace ruido
+- Devito - Una Picadura Mágica  causando 2d6 de daño de fuerza y no puede tomar reacciones hasta el inicio de su próximo turno.
 - Lumos/Nox - Genera Luz en la punta de la varita  
 - Wingadiam leviosa - Puedes Levantar hasta 50kg por 1 min hasta 10 m de alto
 - Rennervate - Despierta una creatura inconsciente

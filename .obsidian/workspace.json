@@ -6,6 +6,7 @@
       {
         "id": "829a56b63d061787",
         "type": "tabs",
+        "dimension": 45.063291139240505,
         "children": [
           {
             "id": "83fe5bf219a687fe",
@@ -13,9 +14,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Characters/Temp PlayerChars/Ignacio ignam.md",
+                "file": "Characters/Temp PlayerChars/Oscar Ortiz.md",
                 "mode": "source",
                 "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "36950158f3095bae",
+        "type": "tabs",
+        "dimension": 54.936708860759495,
+        "children": [
+          {
+            "id": "f5dd13bbb7dbdffe",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "World/Wands & Wizards - Harry Potter 5e.pdf"
               }
             }
           }
@@ -85,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "World/PlayerSheets/Player's Cheat Sheets - English.pdf",
+                "file": "Characters/Temp PlayerChars/Oscar Ortiz.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "World/PlayerSheets/Player's Cheat Sheets - English.pdf",
+                "file": "Characters/Temp PlayerChars/Oscar Ortiz.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +143,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "World/PlayerSheets/Player's Cheat Sheets - English.pdf"
+                "file": "Characters/Temp PlayerChars/Oscar Ortiz.md"
               }
             }
           },
@@ -190,8 +208,11 @@
       "calendarium:Open Calendarium": false
     }
   },
-  "active": "ee27264648e12cb5",
+  "active": "83fe5bf219a687fe",
   "lastOpenFiles": [
+    "World/Wands & Wizards - Harry Potter 5e.pdf",
+    "Characters/Temp PlayerChars/Oscar Ortiz.md",
+    "Characters/Temp PlayerChars/Ignacio ignam.md",
     "World/PlayerSheets/Player's Cheat Sheets - Spanish.pdf",
     "World/PlayerSheets/Player's Cheat Sheets - English.pdf",
     "Characters/Temp PlayerChars/Valentina Voraz.md",
@@ -202,12 +223,9 @@
     "Assets/Rebbeca-Weasly.jpg",
     "Assets/Penlope-pevreal.jpg",
     "Assets/Ignacious-ignam.jpg",
-    "Characters/Temp PlayerChars/Ignacio ignam.md",
-    "World/Wands & Wizards - Harry Potter 5e.pdf",
     "Characters/Temp PlayerChars/Sebastian Snark.md",
     "Characters/Temp PlayerChars/Rebecca Weasly.md",
     "Characters/Temp PlayerChars/Penolope Pevreal.md",
-    "Characters/Temp PlayerChars/Oscar Ortiz.md",
     "Assets/OscarOrtiz_Img_PlaceHolder.md",
     "Assets/OscarOrtiz_Img.png",
     "Assets/OscarOrtiz_Img.psd",
