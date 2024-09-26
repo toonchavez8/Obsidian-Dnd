@@ -27,7 +27,7 @@ Dislikes: NONE
 Pronouns: NONE
 Mascota: Jumper, Harlequin Toad
 SorceryPoints: 4
-MetamagicPoints: 1
+MetamagicPoints: 3
 PersonalityTrait:
   - NONE
 SocialTrait:
@@ -179,9 +179,12 @@ Conoce 8 Encantamientos y 16 Hechisos
 
 ### Encantamientos
 
-- Accio - Atrai objetos no mayor a 20kg de peso dentro de un rango de 15m hacia ti por 10m | al usar el poder de un hechizo nivel o o mas puedes incementar el rango hasta 50m, o incrementar el peso 20kgs ,
+- Accio - Atrai un objeto/creatura no mayor a 20kg de peso dentro de un rango de 15m hacia ti por 10m | al usar el poder de un hechizo nivel o o mas puedes incementar el rango hasta 50m, o incrementar el peso 20kgs , o poder selecionar hasta 5 objetos/creaturas. por cada nivel puedes usar una de las anteriores. 
+
 - Devito - Una Picadura Mágica  causando 2d6 de daño de fuerza y no puede tomar reacciones hasta el inicio de su próximo turno.
+
 - Lumos/Nox - Genera Luz en la punta de la varita  
+
 - Wingadiam leviosa - Puedes Levantar hasta 50kg por 1 min hasta 10 m de alto
 - Rennervate - Despierta una creatura inconsciente
 - Genu Recurvatum - Falsea la rodilla de una creatura reduce velocidad x 1 min
@@ -195,8 +198,8 @@ Conoce 8 Encantamientos y 16 Hechisos
 - Arresto momentum - Reduce la velocidad de caida de hasta 5 creaturas a 30M/ps Puede ser reacion
 - Diffindo - Corta una creatura por 4d4
 - Protego - Accion o Reacion genera una barrera protectora +5 a AC
-- Riddikules - Transforma un Boggart a una version chistosa
-- Flipendo - Voltea una creatura generando 1d10 de dano
+- Riddikules - Transforma solo un Boggart a una version chistosa
+- Flipendo - Elige un ser a la vista dentro del rango 30m, que debe hacer una tirada de salvación de Fuerza. Si falla, recibe 1d10 de daño, es empujado una distancia igual a cinco veces tu modificador **Proficiency** y queda derribado. Si tiene éxito, recibe la mitad del daño, es empujado 2.5m y de pie.
 - Rictusempra - Incapacita a una creatura de risa un turno y reduce movilidad
 - Specialis Revelio - Revela los secretos de un objeto, area. *Leer hechizo en manual*
 
@@ -204,7 +207,7 @@ Conoce 8 Encantamientos y 16 Hechisos
 
 - Episkey - Sana 2d4 + modifcador de hechizos una creatura dentro de 10m
 - Reparo - Repara objetos dañados
-- Stupefy - una creatura dentro de 20m se caí inconsciente
+- Stupefy - una creatura dentro de 20m se caí inconsciente por 10 min 
 - Immobulus - Imobaliza en un rango de 7.5m a creaturas de 7d10 de puntos de vida
 - Expelliarmus - Una creatura de 30m avienta un articulo y cai 5m de distancia
 

@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "World/Traveling Event System TES.md",
+                "file": "Characters/Temp PlayerChars/Oscar Ortiz.md",
                 "mode": "source",
                 "source": false
               }
@@ -103,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "World/Traveling Event System TES.md",
+                "file": "Characters/Temp PlayerChars/Oscar Ortiz.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "World/Traveling Event System TES.md",
+                "file": "Characters/Temp PlayerChars/Oscar Ortiz.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +143,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "World/Traveling Event System TES.md"
+                "file": "Characters/Temp PlayerChars/Oscar Ortiz.md"
               }
             }
           },
@@ -208,12 +208,12 @@
       "calendarium:Open Calendarium": false
     }
   },
-  "active": "ee27264648e12cb5",
+  "active": "83fe5bf219a687fe",
   "lastOpenFiles": [
-    "World/One-Shot-Wonders.pdf",
+    "World/Wands & Wizards - Harry Potter 5e.pdf",
     "Characters/Temp PlayerChars/Oscar Ortiz.md",
     "World/Traveling Event System TES.md",
-    "World/Wands & Wizards - Harry Potter 5e.pdf",
+    "World/One-Shot-Wonders.pdf",
     "Characters/Temp PlayerChars/Ignacio ignam.md",
     "World/PlayerSheets/Player's Cheat Sheets - Spanish.pdf",
     "World/PlayerSheets/Player's Cheat Sheets - English.pdf",
@@ -238,7 +238,6 @@
     "World/World.md",
     "Enemies/creatures/templates/custom_creatures.yaml",
     "Enemies/creatures/templates",
-    "Enemies/creatures",
     "Characters/NPCs/Winky.md",
     "Characters/NPCs/Professor Grimlock.md",
     "Readme.md",
