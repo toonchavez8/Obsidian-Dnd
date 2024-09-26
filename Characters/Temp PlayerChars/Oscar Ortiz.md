@@ -179,7 +179,7 @@ Conoce 8 Encantamientos y 16 Hechisos
 
 ### Encantamientos
 
-- Accio - Atrai objetos no mayor a 20kg de peso
+- Accio - Atrai objetos no mayor a 20kg de peso dentro de un rango de 15m hacia ti por 10m | al usar el poder de un hechizo nivel o o mas puedes incementar el rango hasta 50m, o incrementar el peso 20kgs ,
 - Devito - Una Picadura Mágica  causando 2d6 de daño de fuerza y no puede tomar reacciones hasta el inicio de su próximo turno.
 - Lumos/Nox - Genera Luz en la punta de la varita  
 - Wingadiam leviosa - Puedes Levantar hasta 50kg por 1 min hasta 10 m de alto
