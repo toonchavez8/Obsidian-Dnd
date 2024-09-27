@@ -12,11 +12,9 @@
             "id": "83fe5bf219a687fe",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Characters/Temp PlayerChars/Oscar Ortiz.md",
-                "mode": "source",
-                "source": false
+                "file": "World/One-Shot-Wonders.pdf"
               }
             }
           }
@@ -103,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Characters/Temp PlayerChars/Oscar Ortiz.md",
+                "file": "World/One-Shot-Wonders.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Characters/Temp PlayerChars/Oscar Ortiz.md",
+                "file": "World/One-Shot-Wonders.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Characters/Temp PlayerChars/Oscar Ortiz.md"
+                "file": "World/One-Shot-Wonders.pdf"
               }
             }
           },
@@ -211,12 +209,14 @@
   "active": "83fe5bf219a687fe",
   "lastOpenFiles": [
     "World/Wands & Wizards - Harry Potter 5e.pdf",
-    "Characters/Temp PlayerChars/Oscar Ortiz.md",
-    "World/Traveling Event System TES.md",
     "World/One-Shot-Wonders.pdf",
-    "Characters/Temp PlayerChars/Ignacio ignam.md",
-    "World/PlayerSheets/Player's Cheat Sheets - Spanish.pdf",
+    "World/Traveling Event System TES.md",
+    "World/Hogwarts/Aula de Defensa Contra las Artes Oscuras.md",
+    "World/Hogwarts/Hogwarts.md",
     "World/PlayerSheets/Player's Cheat Sheets - English.pdf",
+    "Characters/Temp PlayerChars/Oscar Ortiz.md",
+    "World/PlayerSheets/Player's Cheat Sheets - Spanish.pdf",
+    "Characters/Temp PlayerChars/Ignacio ignam.md",
     "Characters/Temp PlayerChars/Valentina Voraz.md",
     "World/PlayerSheets",
     "Enemies/creatures/templates/loot.json",
@@ -233,8 +233,6 @@
     "Sessions/Session 0 - Prelude/Session_0-Prelude - Before.md",
     "Characters/Temp PlayerChars/Temp Char.md",
     "Assets",
-    "World/Hogwarts/Hogwarts.md",
-    "World/Hogwarts/Aula de Defensa Contra las Artes Oscuras.md",
     "World/World.md",
     "Enemies/creatures/templates/custom_creatures.yaml",
     "Enemies/creatures/templates",
