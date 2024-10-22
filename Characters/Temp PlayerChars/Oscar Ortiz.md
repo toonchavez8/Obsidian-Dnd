@@ -205,7 +205,7 @@ Conoce 8 Encantamientos y 16 Hechisos
 
 #### Segundo circulo 3
 
-- Episkey - Sana 2d4 + modifcador de hechizos una creatura dentro de 10m
+- Episkey - Sana 2d4 + modifcador de hechizos una creatura dentro de 10m 
 - Reparo - Repara objetos dañados
 - Stupefy - una creatura dentro de 20m se caí inconsciente por 10 min 
 - Immobulus - Imobaliza en un rango de 7.5m a creaturas de 7d10 de puntos de vida

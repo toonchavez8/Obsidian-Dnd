@@ -9,17 +9,21 @@
 - Se han ganado una detención por una infracción menor (decidida por los propios jugadores).
 - La detención tiene lugar en el [[Aula de Defensa Contra las Artes Oscuras]], apodada  la "sala de D.A.".
 
-## Setting the scene\
+## Setting the scene
 
 > **[[Profesor Grimlock (Jefe de Ravenclaw)]]:** "¡Bien, ustedes cinco delincuentes! Siéntense y prepárense para una noche de escribir ensayos sobre los peligros de un mal manejo de la varita. A ver si esta vez pueden manejar una pluma sin provocar fuegos artificiales accidentales."
 
-> [!Read]
+> [!important]
 > **(Describa la sala de D.A. - retratos polvorientos de antiguos profesores de Defensa Contra las Artes Oscuras cubren las paredes. Una vitrina chirriante exhibe artefactos confiscados a estudiantes.)**
 > - El aula es amplia y luminosa, con un espacio central para demostraciones prácticas.
 >   - Las paredes están adornadas con tapices que representan duelos mágicos, criaturas fantásticas y hechizos protectores.
 >   - Hay estanterías llenas de libros sobre Defensa Contra las Artes Oscuras, pociones y magia oscura.
 >   - En la parte delantera del aula hay un escritorio para el profesor, y en la parte trasera hay pizarras o vidrio de magnificacion para mostrar material didáctico.
 >   - Las mesas y sillas están dispuestas para que los estudiantes puedan trabajar en grupos o individualmente.
+
+ > [!question]
+ > De que estarían haciendo sus personajes?
+
 
 > **A mitad del ensayo, un CRACK frenético llena la sala.** Una pequeña criatura elfa con grandes ojos marrones y ropas andrajosas aparece en una nube de humo.
 > 
@@ -28,13 +32,14 @@
 > **[[Profesor Grimlock (Jefe de Ravenclaw)]] (Frunciendo el ceño):** "Tranquilo, Winky. No hace falta entrar en pánico. ¿Cuál es el problema?"
 > 
 > **[[Winky]] (Llorando ligeramente):** "¡Profesor, por favor, no pude ayudar! No soy lo suficientemente fuerte. Winky y yo estábamos recolectando veneno de acromántula para su investigación, pero las arañas se asustaron y atacaron. ¡Han envuelto a la pobre Winky en un capullo y no puedo sacarla!"
+> **(Winky muestra su brazo, revelando una desagradable picadura de araña.)**
 
-**(Winky muestra su brazo, revelando una desagradable picadura de araña.)**
 
-Si tenemos a algun hufflepuff podenen tirar un dado de D20 para ver si lo conocen menor a 10 no la hubican 10-15 la han visto de 16> la conocen super bien
+> [!warning]
+> Si tenemos a algun hufflepuff podenen tirar un dado de D20 para ver si lo conocen menor a 10 no la hubican 10-15 la han visto de 16> la conocen super bien
 
-**El Profesor duda, luciendo preocupado.**
 
+> **El Profesor duda, luciendo preocupado.**
 > Profesor: "Muy bien, es un asunto simple, iré a buscar..."
 > 
 > Un Pintura: "Profesor Grimlock, el director Black está llamando para solicitar su urgente asistencia en la desaparición de un estudiante de primer año que estaba supervisando. El Ministerio ha sido alertado para venir de inmediato."
@@ -47,22 +52,28 @@ Si tenemos a algun hufflepuff podenen tirar un dado de D20 para ver si lo conoce
 
 **Si los jugadores aceptan ayudar**
 
-**Winky (Con los ojos muy abiertos de gratitud):** "¡Oh, gracias! ¡Gracias! ¡Síganme, rápido!"
+> **Winky (Con los ojos muy abiertos de gratitud):** "¡Oh, gracias! ¡Gracias! ¡Síganme, rápido!"
+> 
+> **(Winky guía a los jugadores fuera de la sala de D.A. y por un pasillo hacia el Bosque Prohibido.)**
 
-**(Winky guía a los jugadores fuera de la sala de D.A. y por un pasillo hacia el Bosque Prohibido.)**
+Por cada uno de los que deciden decir que no el professor les quitaria a su casa 10 puntos y les gritaria que son viles cobardes y que una buena noche en bosque les ayudaria para meterle mas firmesa a su coraje.
 
-**A medida que se acercan al bosque, un aullido escalofriante resuena entre los árboles. Extraños relinchos y gemidos siguen, una niebla verde deslizándose suavemente con un aroma a menta en el aire.**
-
-> **Winky (Temblando):** "¡Algo está mal! ¡Las criaturas del bosque no se agitarían de esta manera normalmente!"
+>  **[[Profesor Grimlock (Jefe de Ravenclaw)]]:** "¡Diez puntos menos para su casa, cobardes! Si su valor es tan escaso, una buena noche en el Bosque Prohibido debería ser justo lo que necesitan para endurecer ese débil coraje que, a juzgar por su actitud, apenas poseen.
 
 ## **La Aventura Comienza**
 
 - El camino del bosque está envuelto en una niebla antinatural, ligeramente teñida de verde. Esta es la fuente del hedor desagradable que causa la frenética agitación de los animales. (Los jugadores pueden hacer una tirada de Percepción para identificar el olor como posiblemente un ingrediente de poción.)
 
+**A medida que se acercan al bosque, un aullido escalofriante resuena entre los árboles. Extraños relinchos y gemidos siguen, una niebla verde deslizándose suavemente con un aroma a menta en el aire.**
+
+> **Winky (Temblando):** "¡Algo está mal! ¡Las criaturas del bosque estan enojados!! CUIDADO!"
+
+
 ### Encuentros:
 
 
 - **Flobberworms Huyendo:** Un pequeño enjambre de Flobberworms (amenaza de bajo nivel) se desliza por el camino, asustado por la aproximación de los jugadores. (Los jugadores pueden optar por evitar o enfrentarse en un simple encuentro de combate.)
+
 ```encounter
 creatures:
   - enjambre de Flobberworms
@@ -83,6 +94,7 @@ players:
 ```
 
 - **Fwoopers Frenéticos:** Un grupo de Fwoopers (amenaza de nivel medio) ataca, atraídos por la conmoción y cegados por la niebla verde. (Encuentro de combate)
+
 ```encounter
 players:
   - Oscar Ortiz
@@ -99,6 +111,7 @@ creatures:
   - Fwooper
   - Fwooper
 ```
+
 - **Lobos Perdidos y Confundidos:** Una manada de lobos (amenaza de nivel medio) sale del bosque, desorientada y agitada por el extraño olor. Pueden atacar o huir según las acciones de los jugadores. (Posible combate o chequeo de intimidación)
 
 ```encounter
@@ -147,9 +160,10 @@ creatures:
 
   
 ```
+
 - Cuatro sacos de huevos brillan en el centro del recinto.
 
-**Winky (Susurrando):** "¡Debe ser aquí! ¡Tengan cuidado, jóvenes magos, estas arañas son feroces!"
+> **Winky (Susurrando):** "¡Por aqui! ¡Tengan cuidado, las Arañas dan miedo!"
 
 **(Encuentro de combate con las Acromántulas. Los jugadores pueden planear y usar sus hechizos creativamente.)**
 
