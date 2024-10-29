@@ -1,6 +1,4 @@
 
-# Sesión 0 - Preludio: Antes
-
 ## Resumen de la Sesión
 
 **Poniendo la Escena**
@@ -11,7 +9,9 @@
 
 ## Setting the scene
 
-> **[[Profesor Grimlock (Jefe de Ravenclaw)]]:** "¡Bien, ustedes cinco delincuentes! Siéntense y prepárense para una noche de escribir ensayos sobre los peligros de un mal manejo de la varita. A ver si esta vez pueden manejar una pluma sin provocar fuegos artificiales accidentales."
+El Profesor Grimlock, de pie junto a un escritorio de madera oscura, los observa con una mirada penetrante. Su cabello y barba gris, casi plateados, enmarcan un rostro marcado por la experiencia y unas cicatrices que hablan de tiempos difíciles. Lleva puesta una túnica impecable, y su postura es erguida y firme, como si cada movimiento suyo estuviera perfectamente calculado. 
+
+> **[[Profesor Grimlock (Jefe de Ravenclaw)]]:** "¡Bien, ustedes cinco delincuentes! Siéntense y prepárense para una noche de escribir ensayos sobre los peligros de un mal manejo de la varita. A ver si esta vez pueden manejar una pluma sin provocar algún incendio."
 
 > [!important]
 > **(Describa la sala de D.A. - retratos polvorientos de antiguos profesores de Defensa Contra las Artes Oscuras cubren las paredes. Una vitrina chirriante exhibe artefactos confiscados a estudiantes.)**
@@ -22,7 +22,7 @@
 >   - Las mesas y sillas están dispuestas para que los estudiantes puedan trabajar en grupos o individualmente.
 
  > [!question]
- > De que estarían haciendo sus personajes?
+ > De que estarían haciendo sus personajes? Estarian dibujando, escribiendo y si de que?
 
 
 > **A mitad del ensayo, un CRACK frenético llena la sala.** Una pequeña criatura elfa con grandes ojos marrones y ropas andrajosas aparece en una nube de humo.
@@ -31,12 +31,17 @@
 > 
 > **[[Profesor Grimlock (Jefe de Ravenclaw)]] (Frunciendo el ceño):** "Tranquilo, Winky. No hace falta entrar en pánico. ¿Cuál es el problema?"
 > 
-> **[[Winky]] (Llorando ligeramente):** "¡Profesor, por favor, no pude ayudar! No soy lo suficientemente fuerte. Winky y yo estábamos recolectando veneno de acromántula para su investigación, pero las arañas se asustaron y atacaron. ¡Han envuelto a la pobre Winky en un capullo y no puedo sacarla!"
+> **[[Winky]] (Llorando ligeramente):** "¡Profesor, por favor, yo no ayudar! No soy fuerte. Winky y yo estábamos recolectando veneno por usted profesor, pero se enojaron las arañas y atacaron. ¡la pobre Winky esta en un capullo y no puedo sacarla! me atacaron profesor"
 > **(Winky muestra su brazo, revelando una desagradable picadura de araña.)**
 
 
 > [!warning]
 > Si tenemos a algun hufflepuff podenen tirar un dado de D20 para ver si lo conocen menor a 10 no la hubican 10-15 la han visto de 16> la conocen super bien
+> 
+> Para los demas ofrecer la oportinunad de ver que tanto esta herida, y si quieren sanarla winkey y el profresor le agradeciera y 10 puntos para su casa, pero el profe no le interesa sanar a un house elf.
+> 
+> "Un hechizo notable, sin duda… una lástima que haya sido malgastado en un simple elfo domésticado."
+
 
 
 > **El Profesor duda, luciendo preocupado.**
