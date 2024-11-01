@@ -6,7 +6,7 @@
       {
         "id": "829a56b63d061787",
         "type": "tabs",
-        "dimension": 37.278481012658226,
+        "dimension": 41.07594936708861,
         "children": [
           {
             "id": "83fe5bf219a687fe",
@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Characters/NPCs/professors/Profesor Grimlock (Jefe de Ravenclaw).md",
+                "file": "Characters/Temp PlayerChars/Ignacio ignam.md",
                 "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Profesor Grimlock (Jefe de Ravenclaw)"
+              "title": "Ignacio ignam"
             }
           }
         ]
@@ -27,7 +27,7 @@
       {
         "id": "6e574bce6c9288dc",
         "type": "tabs",
-        "dimension": 62.721518987341774,
+        "dimension": 58.924050632911396,
         "children": [
           {
             "id": "b6a6a887ad4c4ed3",
@@ -35,10 +35,10 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "World/Wands & Wizards - Harry Potter 5e.pdf"
+                "file": "World/WorldBooks/Wands & Wizards - Headmaster's Guide v0.2.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "Wands & Wizards - Harry Potter 5e"
+              "title": "Wands & Wizards - Headmaster's Guide v0.2"
             }
           }
         ]
@@ -234,38 +234,43 @@
   },
   "active": "83fe5bf219a687fe",
   "lastOpenFiles": [
+    "World/WorldBooks/Wands & Wizards - Headmaster's Guide v0.2.pdf",
+    "World/WorldBooks/Wizarding Book of Monsters and foes.pdf",
+    "World/WorldBooks",
+    "World/WorldBooks/Wands & Wizards - Harry Potter 5e.pdf",
+    "World/WorldBooks/W&W NPCs 0.3.1 _ GM Binder.pdf",
+    "World/WorldBooks/Traveling Event System TES.md",
+    "World/WorldBooks/One-Shot-Wonders.pdf",
+    "World/PlayerSheets/W&W Classic Character Sheet by Blaze.pdf",
+    "World/Shops/Seer's Catalogue.pdf",
+    "World/PlayerSheets/W&W Ravenclaw - Fillable.pdf",
+    "World/PlayerSheets/W&W Hufflepuff - Fillable.pdf",
+    "World/PlayerSheets/W&W Gryffindor - Fillable.pdf",
+    "World/Maps/Miscellaneous/Cave (Spider Boss) by Block_nessie.jpg",
+    "World/Maps/Miscellaneous/Cave (Tunnel) by Block_nessie.jpg",
+    "World/Maps/Miscellaneous/Niffler Burrow by Veertje.png",
+    "World/Maps/Miscellaneous/Azkaban (Cells) by Block_nessie.jpg",
+    "World/Maps/London/Ministry of Magic (Atrium) by Block_nessie.jpg",
+    "World/Maps/London/Knight Bus by Block_nessie.jpg",
+    "World/Maps/London/Knockturn Alley/Borgin and Burkes by Block_nessie.jpg",
+    "World/Maps/London/Knockturn Alley/Borgin and Burkes (Back Room) by Block_nessie.jpg",
+    "World/Maps/London/Diagon Alley/The Leaky Cauldron by Badwolf.jpg",
+    "World/Maps/London/Diagon Alley/Ollivanders by Block_nessie.jpg",
+    "Characters/Temp PlayerChars/Ignacio ignam.md",
+    "Characters/Temp PlayerChars/Oscar Ortiz.md",
+    "Characters/Temp PlayerChars/Penolope Pevreal.md",
+    "Characters/NPCs/professors/Profesor Grimlock (Jefe de Ravenclaw).md",
     "Sessions/Session 0 - Prelude/Session_0-Prelude - Antes.md",
     "Characters/Creation Notes/Feats.md",
-    "Characters/Temp PlayerChars/Ignacio ignam.md",
-    "Characters/Creation Notes",
-    "World/Wands & Wizards - Harry Potter 5e.pdf",
-    "Characters/Temp PlayerChars/Oscar Ortiz.md",
     "World/Hogwarts/Hogwarts.md",
     "World/Hogwarts/Aula de Defensa Contra las Artes Oscuras.md",
-    "Characters/NPCs/professors/Profesor Grimlock (Jefe de Ravenclaw).md",
     "Characters/NPCs/creatures/Binky.md",
     "Characters/NPCs/creatures/Winky.md",
-    "Characters/NPCs/professors/imgs/Profesor Grimlock.png",
-    "Characters/NPCs/professors/imgs",
-    "World/Wizarding World",
     "Readme.md",
     "Characters/Temp PlayerChars/Rebecca Weasly.md",
-    "Characters/Temp PlayerChars/Penolope Pevreal.md",
-    "World/PlayerSheets/Player's Cheat Sheets - Spanish.pdf",
-    "World/PlayerSheets/Player's Cheat Sheets - English.pdf",
-    "World/One-Shot-Wonders.pdf",
-    "World/Traveling Event System TES.md",
     "Characters/Temp PlayerChars/Valentina Voraz.md",
-    "World/PlayerSheets",
-    "Enemies/creatures/templates/loot.json",
-    "Assets/Sebastian-Snark.jpg",
-    "Assets/Rebbeca-Weasly.jpg",
-    "Assets/Penlope-pevreal.jpg",
-    "Assets/Ignacious-ignam.jpg",
     "Characters/Temp PlayerChars/Sebastian Snark.md",
     "Assets/OscarOrtiz_Img_PlaceHolder.md",
-    "Assets/OscarOrtiz_Img.png",
-    "Assets/OscarOrtiz_Img.psd",
     "Characters/Temp PlayerChars/Temp Char.md",
     "World/World.md",
     "Characters/NPCs/Winky.md",

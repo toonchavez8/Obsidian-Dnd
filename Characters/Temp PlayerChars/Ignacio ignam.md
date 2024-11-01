@@ -42,9 +42,9 @@ Languages:
   - NONE
 DmgTkn: 0
 TempHP: 0
-Knut: 30
-Sickles: 15
-Galeons: 3
+Knut: 10
+Sickles: 12
+Galeons: 1
 Ruby: 0
 ---
 
@@ -61,7 +61,7 @@ Ruby: 0
 >>  **Speed** |`=this.Speed` |
 >> **Proficiency** | +`=this.Prof` |
 >> **Initiative** | +`=floor((this.DEX - 10)/2)` |
->> **AC** | `=this.AC`
+>> **AC** | `=this.AC + floor((this.DEX - 10)/2)`
 >> **HP** | `=this.HP - this.DmgTkn + this.TempHP` |
 >> **Hit Dice** | `=this.Level + this.HitDice`  |
 >> **Passive Perception** | `=floor((this.WIS - 10)/2+10)` |
@@ -133,12 +133,11 @@ Ruby: 0
 
 - **Lealtad Inquebrantable**. Tienes ventaja en las tiradas de salvación contra cualquier efecto que te haga atacar o actuar en contra de una criatura que normalmente considerarías un aliado.
 
-- **Viajes a la Cocina**. Tu experiencia con los elfos domésticos de Hogwarts te ha enseñado cómo tratar y relacionarte educadamente con los seres mágicos. Ah, y puedes conseguir montones de postres.
+- **Viajes a la Cocina**. Agregas la mitad de tu bonificación de competencia a tu Iniciativa y no puedes ser sorprendido mientras estés consciente.
 
 ## Feats
 
-- **Cuidador**. Tu estudio de las criaturas mágicas te ha enseñado sobre sus lesiones y fisiología. Puedes lanzar cualquier hechizo de Curación conocido sobre bestias.
-- **Folio Bruti**. Tienes tu propio cuaderno personal de bestias donde registras tus hallazgos. Cada vez que añadas la competencia de Criaturas Mágicas a una prueba de Habilidad, añade tu modificador de Inteligencia como bonificación también.
+- **Sentir de peligro**.Agregas la mitad de tu bonificación de competencia a tu Iniciativa y no puedes ser sorprendido mientras estés consciente. 
 
 ## Equipo
 
@@ -152,16 +151,15 @@ Ruby: 0
   - [ ] 2 bolletas de tinte negro
   - [ ] 1 botella de tinte esmeralda
   - [ ] 1 botella de tinte rojo
-- [ ] Una Capa de inverno 11 AC base + Modificador Dex (max 2)
-- [ ] Juego de herramientas de jardineras
-  - [ ] Una paleta de jardinería (trowel)
-  - [ ] Un cultivador de mano (hand cultivator)
-  - [ ] Tijeras de podar (pruning shears)
-  - [ ] Guantes de piel de dragón (dragon-hide gloves) +2 AC cuando los trai puesto
-  - [ ] Hilo de Bramante (twine)
-  - [ ] Sacos pequeños de arpillera (small burlap sacks)
-  - [ ] Unas cuantas macetas pequeñas (a few small pots)
-  - [ ] Un par de orejeras (earmuffs)
+- [ ] Una Capa de Seda 11 AC base + Modificador Dex
+- [ ] Bolsa de la divinacion
+  - [ ] Hojas de té
+  - [ ] Taza y platillo de té
+  - [ ] Tetera de viaje
+  - [ ] Huesos de grindylow
+  - [ ] Palitos con inscripciones rúnicas
+  - [ ] Baraja de cartas de tarot
+  - [ ] Bola de cristal pequeña
 - [ ] a compass
 
 ### Transfondo del personaje
@@ -176,7 +174,7 @@ debelidad: El personaje se distrae muy a menudo, y tiene una gran dificultad par
 
 ## Magia
 
-Conoce 8 Encantamientos y 16 Hechisos
+Conoce 5 Encantamientos y 8 Hechisos
 
 ### Encantamientos
 
