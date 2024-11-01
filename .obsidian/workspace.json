@@ -12,12 +12,14 @@
             "id": "83fe5bf219a687fe",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "World/Maps/Hogwarts/8 - Hogwarts Grounds/Hagrid_s Hut by 96anti.png"
+                "file": "World/W&W Misc. Campaign Notes.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Hagrid_s Hut by 96anti"
+              "icon": "lucide-file",
+              "title": "W&W Misc. Campaign Notes"
             }
           }
         ]
@@ -233,8 +235,9 @@
   },
   "active": "83fe5bf219a687fe",
   "lastOpenFiles": [
-    "World/Potions/W&W Potion Spreadsheet.xlsx",
+    "World/Wizarding World/One-Shot-Wonders.pdf",
     "World/Maps/Hogwarts/8 - Hogwarts Grounds/Hagrid_s Hut by 96anti.png",
+    "World/Potions/W&W Potion Spreadsheet.xlsx",
     "World/Shops/Magical Trinkets.xlsx",
     "World/Maps/Hogwarts/8 - Hogwarts Grounds/Hagrid_s Hut Autum.jpg",
     "World/Maps/Hogwarts/8 - Hogwarts Grounds/Hagrid_s Hut by Block_nessie.jpg",
@@ -242,7 +245,7 @@
     "World/Maps/Hogwarts/8 - Hogwarts Grounds/Quidditch Pitch (Storm) by Block_nessie.jpg",
     "World/Maps/Hogwarts/8 - Hogwarts Grounds/Quidditch Pitch by Block_nessie.jpg",
     "World/Maps/Hogwarts/8 - Hogwarts Grounds/Quidditch Pitch by JoshWitcher760.png",
-    "World/WorldBooks/Wands & Wizards - Harry Potter 5e.pdf",
+    "World/Wizarding World/Wands & Wizards - Harry Potter 5e.pdf",
     "Characters/Temp PlayerChars/Ignacio ignam.md",
     "World/Hogwarts/Hogwarts Castle Diagram/Hogwarts Map Diagram-North Wing.drawio.png",
     "World/Potions",
@@ -253,9 +256,8 @@
     "World/W&W Misc. Campaign Notes.md",
     "World/Hogwarts/Hogwarts Castle Diagram",
     "World/Hogwarts Castle Diagram",
-    "World/WorldBooks/One-Shot-Wonders.pdf",
-    "World/WorldBooks/Traveling Event System TES.md",
-    "World/WorldBooks/W&W NPCs 0.3.1 _ GM Binder.pdf",
+    "World/Wizarding World/Traveling Event System TES.md",
+    "World/Wizarding World/W&W NPCs 0.3.1 _ GM Binder.pdf",
     "Sessions/Session 0 - Prelude/Session_0-Prelude - Antes.md",
     "Characters/Temp PlayerChars/Oscar Ortiz.md",
     "Characters/Temp PlayerChars/Penolope Pevreal.md",
