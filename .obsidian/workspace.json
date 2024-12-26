@@ -28,12 +28,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Game Expectations.md",
+                "file": "Readme.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Game Expectations"
+              "title": "Readme"
             }
           }
         ],
@@ -250,8 +250,8 @@
   },
   "active": "ed80e27f25764d20",
   "lastOpenFiles": [
-    "Characters/Temp PlayerChars/Oscar Ortiz - HufflePuff.pdf",
     "Game Expectations.md",
+    "Characters/Temp PlayerChars/Oscar Ortiz - HufflePuff.pdf",
     "World/Factions/Mortifagos.md",
     "World/Factions/Ashwinders.md",
     "World/Factions/Poachers.md",
