@@ -16,8 +16,33 @@
               "icon": "intiative-tracker-encounter-builder",
               "title": "Encounter Builder"
             }
+          },
+          {
+            "id": "7d8f82bf1f658600",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/El Dragon de Pico Helado.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "El Dragon de Pico Helado"
+            }
+          },
+          {
+            "id": "7ff629163c9c90e4",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/El Dragon de Pico Helado.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "El Dragon de Pico Helado"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -74,7 +99,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 533.5
+    "width": 279.5
   },
   "right": {
     "id": "1fb55a346c0ef23e",
@@ -83,7 +108,7 @@
       {
         "id": "ba0d59233e31b44f",
         "type": "tabs",
-        "dimension": 33.33333333333333,
+        "dimension": 31.1046511627907,
         "children": [
           {
             "id": "79215bbccd956432",
@@ -91,7 +116,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Characters/Temp PlayerChars/Oscar Ortiz.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,7 +125,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Oscar Ortiz"
+              "title": "Backlinks"
             }
           },
           {
@@ -110,12 +134,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Characters/Temp PlayerChars/Oscar Ortiz.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Oscar Ortiz"
+              "title": "Outgoing links"
             }
           },
           {
@@ -125,7 +148,9 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-tags",
               "title": "Tags"
@@ -137,10 +162,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Characters/Temp PlayerChars/Oscar Ortiz.md"
+                "file": "Untitled.xlsx",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Oscar Ortiz"
+              "title": "Outline of Untitled"
             }
           },
           {
@@ -201,6 +229,8 @@
                     "year": 2024
                   },
                   "displayDayNumber": false,
+                  "hideEra": false,
+                  "displayAbsoluteYear": true,
                   "displayMoons": true
                 },
                 "id": "ID_6918ba399beb"
@@ -209,13 +239,12 @@
               "title": "Calendarium"
             }
           }
-        ],
-        "currentTab": 7
+        ]
       },
       {
         "id": "9c7543e6c2820b5d",
         "type": "tabs",
-        "dimension": 47.286821705426355,
+        "dimension": 49.51550387596899,
         "children": [
           {
             "id": "b04c31368900315c",
@@ -248,7 +277,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 600.5
+    "width": 504.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -269,6 +298,13 @@
   },
   "active": "ee27264648e12cb5",
   "lastOpenFiles": [
+    "Untitled.udoc",
+    "Untitled.xlsx",
+    "Untitled.usheet",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/El Dragon de Pico Helado.pdf",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/El Dragon de Pico Helado-players.pdf",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada",
+    "Wizards of the Coast/CHG_DND",
     "Wizarding World/World/PlayerSheets/Player's Cheat Sheets - Spanish.pdf",
     "Wizards of the Coast",
     "Wizarding World/World/PlayerSheets/Player's Cheat Sheets - English.pdf",
@@ -285,15 +321,8 @@
     "Wizarding World/World/Maps/Hogwarts/3 - The Quad/Gryffindor Common Room by U.B.O.S..jpg",
     "Wizarding World/World/Maps/Hogwarts/3 - The Quad/Gryffindor Dormitory by Block_nessie.jpg",
     "Wizarding World/World/Maps/Hogwarts/3 - The Quad/History of Magic Classroom by U.B.O.S..jpg",
-    "Wizarding World/World/Wizarding World/MadMan & Murphen One Shot Adventures #1 _ GM Binder.pdf",
-    "Wizarding World/World/Wizarding World/Wands & Wizards - Headmaster's Guide v0.2.pdf",
-    "Wizarding World/World/Wizarding World/Wands & Wizards - Harry Potter 5e.pdf",
     "Wizarding World/World/Factions/Mortifagos.md",
     "Wizarding World/Sessions/Session 0 - Prelude/Session_0-Prelude - Antes.md",
-    "Wizarding World/World/PlayerSheets/W&W Slytherin - Fillable.pdf",
-    "Wizarding World/World/PlayerSheets/W&W Ravenclaw - Fillable.pdf",
-    "Wizarding World/World/PlayerSheets/W&W Hufflepuff - Fillable.pdf",
-    "Wizarding World/World/PlayerSheets/W&W Gryffindor - Fillable.pdf",
     "Wizarding World/World/Wizarding World/Traveling Event System TES.md",
     "Wizarding World/Characters/Temp PlayerChars/Sebastian Snark.md",
     "Wizarding World/World/W&W Misc. Campaign Notes.md",
