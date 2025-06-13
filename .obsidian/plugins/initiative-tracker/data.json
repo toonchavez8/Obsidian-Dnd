@@ -156,7 +156,7 @@
         "currentAC": "13",
         "note": "Ignacio ignam",
         "path": "Characters/Temp PlayerChars/Ignacio ignam.md",
-        "id": "ID_69b90bc9ea8a",
+        "id": "ID_a99ad87918f8",
         "currentHP": 44,
         "tempHP": 0,
         "status": [],
@@ -176,7 +176,7 @@
         "currentAC": "12",
         "note": "Penolope Pevreal",
         "path": "Characters/Temp PlayerChars/Penolope Pevreal.md",
-        "id": "ID_699abab8dbe9",
+        "id": "ID_a8692b585bea",
         "currentHP": 40,
         "tempHP": 0,
         "status": [],
@@ -196,7 +196,7 @@
         "currentAC": "13",
         "note": "Rebecca Weasly",
         "path": "Characters/Temp PlayerChars/Rebecca Weasly.md",
-        "id": "ID_5afa4b4a0a58",
+        "id": "ID_8b89cbbbbbaa",
         "currentHP": 32,
         "tempHP": 0,
         "status": [],
@@ -216,8 +216,8 @@
         "currentAC": "12",
         "note": "Sebastian Snark",
         "path": "Characters/Temp PlayerChars/Sebastian Snark.md",
-        "id": "ID_c8a8faa849ba",
-        "currentHP": 42,
+        "id": "ID_4989ca39ab4a",
+        "currentHP": 32,
         "tempHP": 0,
         "status": [],
         "enabled": true,
@@ -236,7 +236,7 @@
         "currentAC": "13",
         "note": "Valentina Voraz",
         "path": "Characters/Temp PlayerChars/Valentina Voraz.md",
-        "id": "ID_1aaa88cb69c8",
+        "id": "ID_ea4999cbab1b",
         "currentHP": 23,
         "tempHP": 0,
         "status": [],
@@ -256,7 +256,7 @@
         "currentAC": "11",
         "note": "Oscar Ortiz",
         "path": "Characters/Temp PlayerChars/Oscar Ortiz.md",
-        "id": "ID_2b2a98bad8da",
+        "id": "ID_a98878c92828",
         "currentHP": 38,
         "tempHP": 0,
         "status": [],
@@ -265,10 +265,115 @@
         "active": false,
         "hidden": false,
         "friendly": false
+      },
+      {
+        "name": "enjambre de Flobberworms",
+        "initiative": 14,
+        "static": false,
+        "modifier": 0,
+        "hp": 21,
+        "currentMaxHP": 21,
+        "cr": 1,
+        "ac": 10,
+        "currentAC": 10,
+        "id": "ID_da19fa3bc98b",
+        "currentHP": 21,
+        "tempHP": 0,
+        "status": [],
+        "enabled": true,
+        "active": false,
+        "hidden": false,
+        "friendly": false,
+        "hit_dice": "4d6",
+        "rollHP": true
+      },
+      {
+        "name": "enjambre de Flobberworms",
+        "initiative": 9,
+        "static": false,
+        "modifier": 0,
+        "hp": 14,
+        "currentMaxHP": 14,
+        "cr": 1,
+        "ac": 10,
+        "currentAC": 10,
+        "id": "ID_09abdb79c91b",
+        "currentHP": 14,
+        "tempHP": 0,
+        "status": [],
+        "enabled": true,
+        "active": false,
+        "hidden": false,
+        "friendly": false,
+        "hit_dice": "4d6",
+        "rollHP": true
+      },
+      {
+        "name": "enjambre de Flobberworms",
+        "initiative": 1,
+        "static": false,
+        "modifier": 0,
+        "hp": 15,
+        "currentMaxHP": 15,
+        "cr": 1,
+        "ac": 10,
+        "currentAC": 10,
+        "id": "ID_4bba18aadbdb",
+        "currentHP": 15,
+        "tempHP": 0,
+        "status": [],
+        "enabled": true,
+        "active": false,
+        "hidden": false,
+        "friendly": false,
+        "hit_dice": "4d6",
+        "rollHP": true
+      },
+      {
+        "name": "enjambre de Flobberworms",
+        "initiative": 16,
+        "static": false,
+        "modifier": 0,
+        "hp": 18,
+        "currentMaxHP": 18,
+        "cr": 1,
+        "ac": 10,
+        "currentAC": 10,
+        "id": "ID_988a08897ac8",
+        "currentHP": 18,
+        "tempHP": 0,
+        "status": [],
+        "enabled": true,
+        "active": false,
+        "hidden": false,
+        "friendly": false,
+        "hit_dice": "4d6",
+        "rollHP": true
+      },
+      {
+        "name": "enjambre de Flobberworms",
+        "initiative": 20,
+        "static": false,
+        "modifier": 0,
+        "hp": 17,
+        "currentMaxHP": 17,
+        "cr": 1,
+        "ac": 10,
+        "currentAC": 10,
+        "id": "ID_ca08e9ba7aca",
+        "currentHP": 12,
+        "tempHP": 0,
+        "status": [],
+        "enabled": true,
+        "active": true,
+        "hidden": false,
+        "friendly": false,
+        "hit_dice": "4d6",
+        "rollHP": true
       }
     ],
-    "state": false,
-    "name": null,
+    "state": true,
+    "name": "Encounter",
     "round": 1,
     "logFile": "",
     "rollHP": false
@@ -325,19 +430,6 @@
     ],
     "filters": {
       "filters": [
-        {
-          "type": 0,
-          "text": "CR",
-          "fields": [
-            "cr"
-          ],
-          "options": [
-            0,
-            30
-          ],
-          "id": "ID_DEFAULT_CR_FILTER",
-          "derive": true
-        },
         {
           "type": 2,
           "text": "Size",
@@ -406,6 +498,29 @@
             "any evil alignment"
           ],
           "id": "ID_DEFAULT_ALIGNMENT_FILTER",
+          "derive": true
+        },
+        {
+          "type": 1,
+          "text": "Name",
+          "fields": [
+            "name"
+          ],
+          "options": "",
+          "id": "ID_DEFAULT_NAME_FILTER",
+          "derive": false
+        },
+        {
+          "type": 0,
+          "text": "CR",
+          "fields": [
+            "cr"
+          ],
+          "options": [
+            0,
+            30
+          ],
+          "id": "ID_DEFAULT_CR_FILTER",
           "derive": true
         }
       ],

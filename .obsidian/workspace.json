@@ -4,56 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "27dec9df6f1a5a99",
+        "id": "512c174ea950238c",
         "type": "tabs",
-        "dimension": 71.77215189873418,
         "children": [
           {
-            "id": "f70ae1e83fbe1297",
+            "id": "e58d9708f9dd92c7",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "World/Factions/Mortifagos.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Mortifagos"
-            }
-          },
-          {
-            "id": "ed80e27f25764d20",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Readme.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Readme"
-            }
-          }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "7f62dd251c94164c",
-        "type": "tabs",
-        "dimension": 28.22784810126582,
-        "children": [
-          {
-            "id": "9886311d9d7e5c46",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Characters/Temp PlayerChars/Oscar Ortiz - HufflePuff.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "Oscar Ortiz - HufflePuff"
+              "type": "intiative-tracker-encounter-builder",
+              "state": [],
+              "icon": "intiative-tracker-encounter-builder",
+              "title": "Encounter Builder"
             }
           }
         ]
@@ -75,7 +36,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -112,7 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 533.5
   },
   "right": {
     "id": "1fb55a346c0ef23e",
@@ -121,6 +83,7 @@
       {
         "id": "ba0d59233e31b44f",
         "type": "tabs",
+        "dimension": 33.33333333333333,
         "children": [
           {
             "id": "79215bbccd956432",
@@ -222,14 +185,70 @@
               "icon": "dices",
               "title": "Dice Tray"
             }
+          },
+          {
+            "id": "101d004a8093f30a",
+            "type": "leaf",
+            "state": {
+              "type": "CALENDARIUM",
+              "state": {
+                "calendar": "ID_7a2baab8b98b",
+                "ephemeral": {
+                  "viewState": 1,
+                  "displaying": {
+                    "day": 27,
+                    "month": 5,
+                    "year": 2024
+                  },
+                  "displayDayNumber": false,
+                  "displayMoons": true
+                },
+                "id": "ID_6918ba399beb"
+              },
+              "icon": "CALENDARIUM",
+              "title": "Calendarium"
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
+      },
+      {
+        "id": "9c7543e6c2820b5d",
+        "type": "tabs",
+        "dimension": 47.286821705426355,
+        "children": [
+          {
+            "id": "b04c31368900315c",
+            "type": "leaf",
+            "state": {
+              "type": "initiative-tracker-creature-view",
+              "state": {},
+              "icon": "initiative-tracker-creature-view",
+              "title": "Combatant"
+            }
+          }
+        ]
+      },
+      {
+        "id": "d58b80ad9d5760c6",
+        "type": "tabs",
+        "dimension": 19.379844961240313,
+        "children": [
+          {
+            "id": "3f18f65ab2238512",
+            "type": "leaf",
+            "state": {
+              "type": "fantasy-statblocks-creature-pane",
+              "state": {},
+              "icon": "skull",
+              "title": "Combatant"
+            }
+          }
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 602.5,
-    "collapsed": true
+    "width": 600.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -248,52 +267,53 @@
       "calendarium:Open Calendarium": false
     }
   },
-  "active": "ed80e27f25764d20",
+  "active": "ee27264648e12cb5",
   "lastOpenFiles": [
-    "Game Expectations.md",
-    "Characters/Temp PlayerChars/Oscar Ortiz - HufflePuff.pdf",
-    "World/Factions/Mortifagos.md",
-    "World/Factions/Ashwinders.md",
-    "World/Factions/Poachers.md",
-    "World/Factions/Order of the phenix.md",
-    "World/Factions/Hallow  Hunters.md",
-    "World/Factions/Dumbledors Army.md",
-    "Sessions/Session 0 - Prelude/Session_0-Prelude - Antes.md",
-    "World/Factions",
-    "Characters/Temp PlayerChars/Oscar Ortiz.md",
-    "World/PlayerSheets/Player's Cheat Sheets - English.pdf",
-    "World/PlayerSheets/Player's Cheat Sheets - Spanish.pdf",
-    "World/PlayerSheets/W&W Hufflepuff - Fillable.pdf",
-    "World/PlayerSheets/W&W Slytherin - Fillable.pdf",
-    "World/PlayerSheets/W&W Ravenclaw - Fillable.pdf",
-    "World/PlayerSheets/W&W Gryffindor - Fillable.pdf",
-    "World/PlayerSheets/W&W Classic Character Sheet by Blaze.pdf",
-    "World/W&W Misc. Campaign Notes.md",
-    "World/Potions/W&W Potion Spreadsheet.xlsx",
-    "World/Maps/Hogwarts/8 - Hogwarts Grounds/Hagrid_s Hut by 96anti.png",
-    "World/Maps/Hogwarts/8 - Hogwarts Grounds/Hagrid_s Hut Autum.jpg",
-    "World/Maps/Hogwarts/8 - Hogwarts Grounds/Hagrid_s Hut by Block_nessie.jpg",
-    "World/Maps/Hogwarts/8 - Hogwarts Grounds/Quidditch Pitch (Storm) by Block_nessie.jpg",
-    "World/Maps/Hogwarts/8 - Hogwarts Grounds/Quidditch Pitch by Block_nessie.jpg",
-    "World/Maps/Hogwarts/8 - Hogwarts Grounds/Quidditch Pitch by JoshWitcher760.png",
-    "Characters/Temp PlayerChars/Ignacio ignam.md",
-    "World/Hogwarts/Hogwarts Castle Diagram/Hogwarts Map Diagram-North Wing.drawio.png",
-    "World/Hogwarts/Hogwarts Castle Diagram/Hogwarts Map Diagram-Entrance.drawio.png",
-    "World/Hogwarts/Hogwarts Castle Diagram/Hogwarts Map Diagram-East Wing.drawio.png",
-    "World/Hogwarts/Hogwarts Castle Diagram/Hogwarts Map Diagram-West Wing.drawio.png",
-    "World/Wizarding World/Traveling Event System TES.md",
-    "Characters/Temp PlayerChars/Penolope Pevreal.md",
-    "Characters/NPCs/professors/Profesor Grimlock (Jefe de Ravenclaw).md",
-    "Characters/Creation Notes/Feats.md",
-    "World/Hogwarts/Hogwarts.md",
-    "World/Hogwarts/Aula de Defensa Contra las Artes Oscuras.md",
-    "Characters/NPCs/creatures/Binky.md",
-    "Characters/NPCs/creatures/Winky.md",
+    "Wizarding World/World/PlayerSheets/Player's Cheat Sheets - Spanish.pdf",
+    "Wizards of the Coast",
+    "Wizarding World/World/PlayerSheets/Player's Cheat Sheets - English.pdf",
+    "Wizarding World/Game Expectations.md",
+    "Wizarding World.md",
+    "Wizarding World",
+    "Wizarding World/World/Maps/Hogwarts/4 - West Wing/Clocktower Courtyard by 96anti.png",
+    "Wizarding World/World/Maps/Hogwarts/3 - The Quad/Secret Challenge Room by Olive.jpg",
+    "Wizarding World/World/Maps/Hogwarts/3 - The Quad/Hospital Wing by U.B.O.S..jpg",
+    "Wizarding World/World/Maps/Hogwarts/3 - The Quad/Chamber of Secrets by dillbag_.png",
+    "Wizarding World/World/Maps/Hogwarts/3 - The Quad/Classroom Hallway by Veertje.png",
+    "Wizarding World/World/Maps/Hogwarts/3 - The Quad/Gryffindor Common Room (Christmas) by U.B.O.S..jpg",
+    "Wizarding World/World/Maps/Hogwarts/3 - The Quad/Gryffindor Common Room by Block_nessie.jpg",
+    "Wizarding World/World/Maps/Hogwarts/3 - The Quad/Gryffindor Common Room by U.B.O.S..jpg",
+    "Wizarding World/World/Maps/Hogwarts/3 - The Quad/Gryffindor Dormitory by Block_nessie.jpg",
+    "Wizarding World/World/Maps/Hogwarts/3 - The Quad/History of Magic Classroom by U.B.O.S..jpg",
+    "Wizarding World/World/Wizarding World/MadMan & Murphen One Shot Adventures #1 _ GM Binder.pdf",
+    "Wizarding World/World/Wizarding World/Wands & Wizards - Headmaster's Guide v0.2.pdf",
+    "Wizarding World/World/Wizarding World/Wands & Wizards - Harry Potter 5e.pdf",
+    "Wizarding World/World/Factions/Mortifagos.md",
+    "Wizarding World/Sessions/Session 0 - Prelude/Session_0-Prelude - Antes.md",
+    "Wizarding World/World/PlayerSheets/W&W Slytherin - Fillable.pdf",
+    "Wizarding World/World/PlayerSheets/W&W Ravenclaw - Fillable.pdf",
+    "Wizarding World/World/PlayerSheets/W&W Hufflepuff - Fillable.pdf",
+    "Wizarding World/World/PlayerSheets/W&W Gryffindor - Fillable.pdf",
+    "Wizarding World/World/Wizarding World/Traveling Event System TES.md",
+    "Wizarding World/Characters/Temp PlayerChars/Sebastian Snark.md",
+    "Wizarding World/World/W&W Misc. Campaign Notes.md",
+    "Wizarding World/World/Factions/Order of the phenix.md",
+    "Wizarding World/World/Factions/Dumbledors Army.md",
     "Readme.md",
-    "Characters/Temp PlayerChars/Rebecca Weasly.md",
-    "Characters/Temp PlayerChars/Valentina Voraz.md",
-    "Characters/Temp PlayerChars/Sebastian Snark.md",
-    "Assets/OscarOrtiz_Img_PlaceHolder.md",
-    "Characters/Temp PlayerChars/Temp Char.md"
+    "Wizarding World/World/Factions/Ashwinders.md",
+    "Wizarding World/World/Factions/Poachers.md",
+    "Wizarding World/World/Factions/Hallow  Hunters.md",
+    "Wizarding World/Characters/Temp PlayerChars/Oscar Ortiz.md",
+    "Wizarding World/Characters/Temp PlayerChars/Ignacio ignam.md",
+    "Wizarding World/Characters/Temp PlayerChars/Penolope Pevreal.md",
+    "Wizarding World/Characters/NPCs/professors/Profesor Grimlock (Jefe de Ravenclaw).md",
+    "Wizarding World/Characters/Creation Notes/Feats.md",
+    "Wizarding World/World/Hogwarts/Hogwarts.md",
+    "Wizarding World/World/Hogwarts/Aula de Defensa Contra las Artes Oscuras.md",
+    "Wizarding World/Characters/NPCs/creatures/Binky.md",
+    "Wizarding World/Characters/NPCs/creatures/Winky.md",
+    "Wizarding World/Characters/Temp PlayerChars/Rebecca Weasly.md",
+    "Wizarding World/Characters/Temp PlayerChars/Valentina Voraz.md",
+    "Assets/OscarOrtiz_Img_PlaceHolder.md"
   ]
 }

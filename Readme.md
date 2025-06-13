@@ -13,11 +13,12 @@ Esta campaña se centrará en la reconstrucción del mundo mágico después de l
 - **Conflicto inicial:**
     - **Los duendes**, tras ser liberados del control de Voldemort, comienzan a mostrar resentimiento hacia la comunidad mágica, acusándola de siglos de opresión. Rumores sobre robos de materiales mágicos, experimentos con varitas y la creación de armas comienzan a surgir.
     - Criaturas mágicas y artefactos de otros planos empiezan a aparecer, creando caos en Hogwarts y sus alrededores.
-- **Eventos clave:**
+    - Los estudianes estan aprendiendo y ayudando con la reconstruccion.  
+- **Eventos Clave:**
     1. Los héroes enfrentan amenazas locales (trolls, criaturas mágicas, artefactos descontrolados) mientras descubren que estas apariciones están vinculadas a una inestabilidad planar.
     2. Encuentran pistas sobre los planes de los duendes para fabricar varitas mágicas y usarlas para cambiar el equilibrio de poder.
-    3. Un grupo rebelde dentro de Hogwarts, que simpatiza con los duendes, intenta sabotear la escuela.
-    4. Al llegar al nivel 10, los héroes logran impedir un ataque a gran escala en Hogwarts, pero descubren que el conflicto es solo el principio.
+    3. Un grupo rebelde dentro de Hogwarts, que simpatiza con los duendes, generan marchas y protestas y algunos radicales empiezan a sabotar la escuela para hacerce escuchados
+    4. Al llegar al nivel 10, los héroes logran impedir un ataque a gran escala en Hogwarts, pero descubren que el conflicto es solo el principio. 
 
 **Final del arco:**  
 Los héroes son reconocidos como defensores del mundo mágico, pero deben abandonar Hogwarts para enfrentarse al conflicto más amplio en el mundo exterior.
@@ -37,7 +38,7 @@ Los héroes son reconocidos como defensores del mundo mágico, pero deben abando
     1. Los héroes deben negociar entre facciones (Ministerio, duendes, magos disidentes) y decidir a quién apoyan.
     2. Encuentran evidencia de que la magia planar está siendo manipulada por un tercer grupo (quizás un mago oscuro o un grupo extraplanar).
     3. Durante una gran batalla en Gringotts, se abre un portal planar que deja entrar criaturas de otro plano, cambiando el curso del conflicto.
-    4. Los héroes deben viajar a otros planos para encontrar una solución, enfrentando a entidades y criaturas cada vez más poderosas.
+    4. Los héroes deben viajar a otros planos para encontrar una solución, encontrado a un duende que tomo control de una barrita magica y que se corrompio al usar magia negra con su corrupcion causo la 
 
 **Final del arco:**  
 Los héroes descubren que la inestabilidad planar es el resultado de una antigua maldición relacionada con la opresión mágica y deben decidir si cerrarla o permitir que los planos converjan.
