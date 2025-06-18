@@ -2,7 +2,7 @@
   "mapMarkers": [
     {
       "id": "MapCalcExample",
-      "lastAccessed": 1750265847740,
+      "lastAccessed": 1750282665364,
       "markers": [
         {
           "id": "ID_f839ea391888",
@@ -237,7 +237,7 @@
     },
     {
       "id": "PhandalinCityMap",
-      "lastAccessed": 1750265847740,
+      "lastAccessed": 1750282665364,
       "markers": [
         {
           "id": "ID_28ca5b3bbb28",
@@ -271,6 +271,108 @@
           "description": null,
           "minZoom": null,
           "maxZoom": -1,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_8b5b99fb18ca",
+          "type": "Inn",
+          "loc": [
+            1300.5461472973577,
+            1356.2308063157982
+          ],
+          "link": "Posada Rocacolina",
+          "layer": "%5B%5BPhandalin.jpg%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": "Este modesto edificio de dos plantas alquila seis habitaciones en la planta superior. Una cama para pasar la noche cuesta 5 pp, mientras que una comida cuesta 1 pp. ",
+          "minZoom": -1,
+          "maxZoom": null,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_79397a5afaf9",
+          "type": "Point of Interest",
+          "loc": [
+            1297.625,
+            1169
+          ],
+          "link": "Santuario de la Suerte",
+          "layer": "%5B%5BPhandalin.jpg%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": -1,
+          "maxZoom": null,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_ba2b38f9e8db",
+          "type": "Shop",
+          "loc": [
+            1020.625,
+            1041
+          ],
+          "link": "Bazar Escudo de Leon",
+          "layer": "%5B%5BPhandalin.jpg%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": -1,
+          "maxZoom": null,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_1aa8b8f8ebfb",
+          "type": "services",
+          "loc": [
+            732.0322952233734,
+            1001.2632021601514
+          ],
+          "link": "Casa de Cambio de Phandalin",
+          "layer": "%5B%5BPhandalin.jpg%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": -1,
+          "maxZoom": null,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_6b08f9bb88fa",
+          "type": "Shop",
+          "loc": [
+            1549,
+            1601
+          ],
+          "link": "Suministros Barthen",
+          "layer": "%5B%5BPhandalin.jpg%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": -1,
+          "maxZoom": null,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_08d88a4b795a",
+          "type": "Point of Interest",
+          "loc": [
+            1057.8759388288993,
+            1295.419623133755
+          ],
+          "link": "Casa Consistorial",
+          "layer": "%5B%5BPhandalin.jpg%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": -1,
+          "maxZoom": null,
           "tooltip": "hover"
         }
       ],

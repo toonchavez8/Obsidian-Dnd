@@ -17,7 +17,7 @@ House: Ravenclaw
 SchoolOfMagic: Charms
 Gender: Male
 Age: "14"
-Location: Hogwarts, England
+Location: [[[[[[[[Hogwarts]]]]]]]], England
 CastingStyle: Intellect
 Background: Groundskeeper
 Heritage: HalfBlood
@@ -132,7 +132,7 @@ Ruby: 0
 
 - **Lealtad Inquebrantable**. Tienes ventaja en las tiradas de salvación contra cualquier efecto que te haga atacar o actuar en contra de una criatura que normalmente considerarías un aliado.
 
-- **Viajes a la Cocina**. Tu experiencia con los elfos domésticos de Hogwarts te ha enseñado cómo tratar y relacionarte educadamente con los seres mágicos. Ah, y puedes conseguir montones de postres.
+- **Viajes a la Cocina**. Tu experiencia con los elfos domésticos de [[Hogwarts]] te ha enseñado cómo tratar y relacionarte educadamente con los seres mágicos. Ah, y puedes conseguir montones de postres.
 
 ## Feats
 

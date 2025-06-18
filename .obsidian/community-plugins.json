@@ -14,5 +14,6 @@
   "obsidian-meta-bind-plugin",
   "obsidian-admonition",
   "excel",
-  "obsidian-linter"
+  "obsidian-linter",
+  "obisidian-note-linker"
 ]

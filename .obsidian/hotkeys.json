@@ -24,5 +24,14 @@
       "modifiers": [],
       "key": "F12"
     }
+  ],
+  "obisidian-note-linker:open-note-linker-vault": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "L"
+    }
   ]
 }

@@ -1,9 +1,30 @@
 {
 	"nodes":[
+		{"id":"8465bddb3a17092c","type":"group","x":-1360,"y":920,"width":3120,"height":440,"label":"Explorable"},
 		{"id":"a8f46a041136b613","type":"file","file":"Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin.md","x":-240,"y":120,"width":400,"height":400},
-		{"id":"7ba6ecb8b01f531d","x":-960,"y":-480,"width":400,"height":400,"type":"file","file":"Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Costa de la Espada.md"}
+		{"id":"e353a8df2caf9936","type":"file","file":"Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/05_Tablas/01_Historias_de_Phandalin.md","x":-220,"y":2000,"width":400,"height":880},
+		{"id":"7ba6ecb8b01f531d","type":"file","file":"Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Costa de la Espada.md","x":-820,"y":-520,"width":400,"height":400},
+		{"id":"8abbb3aa882272b9","type":"file","file":"Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Casa de Cambio de Phandalin.md","x":-20,"y":940,"width":400,"height":400},
+		{"id":"ed8c1ee4a6ffbe61","type":"file","file":"Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Bazar Escudo de Leon.md","x":420,"y":940,"width":400,"height":400},
+		{"id":"3febaafcd31b917e","type":"file","file":"Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Santuario de la Suerte.md","x":860,"y":940,"width":400,"height":400},
+		{"id":"8c1c91bb01698811","x":1300,"y":940,"width":400,"height":400,"type":"file","file":"Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Casa Consistorial.md"},
+		{"id":"4fb4391bc46f5b53","type":"file","file":"Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Suministros Barthen.md","x":-1340,"y":940,"width":400,"height":400},
+		{"id":"e1c0e7245b759125","type":"file","file":"Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Huerto_Edermath.md","x":-900,"y":940,"width":400,"height":400},
+		{"id":"114d45b905efc3d2","type":"file","file":"Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Posada Rocacolina.md","x":-460,"y":940,"width":400,"height":400}
 	],
 	"edges":[
-		{"id":"811b506da343fa62","fromNode":"7ba6ecb8b01f531d","fromSide":"right","toNode":"a8f46a041136b613","toSide":"top"}
+		{"id":"811b506da343fa62","fromNode":"7ba6ecb8b01f531d","fromSide":"right","toNode":"a8f46a041136b613","toSide":"top"},
+		{"id":"06c42f5439637271","fromNode":"a8f46a041136b613","fromSide":"bottom","toNode":"4fb4391bc46f5b53","toSide":"top"},
+		{"id":"0d31031e1d4a10d1","fromNode":"a8f46a041136b613","fromSide":"bottom","toNode":"e1c0e7245b759125","toSide":"top"},
+		{"id":"022447c449ae3196","fromNode":"a8f46a041136b613","fromSide":"bottom","toNode":"114d45b905efc3d2","toSide":"top"},
+		{"id":"40c031258c26613e","fromNode":"a8f46a041136b613","fromSide":"bottom","toNode":"8abbb3aa882272b9","toSide":"top"},
+		{"id":"b2376fa06ac6b6bb","fromNode":"a8f46a041136b613","fromSide":"bottom","toNode":"ed8c1ee4a6ffbe61","toSide":"top"},
+		{"id":"84fcd459c18ecf76","fromNode":"a8f46a041136b613","fromSide":"bottom","toNode":"3febaafcd31b917e","toSide":"top"},
+		{"id":"344e6230d3c6d700","fromNode":"4fb4391bc46f5b53","fromSide":"bottom","toNode":"e353a8df2caf9936","toSide":"top"},
+		{"id":"5a9f9e62d9e4c6b7","fromNode":"e1c0e7245b759125","fromSide":"bottom","toNode":"e353a8df2caf9936","toSide":"top"},
+		{"id":"0e9a8af40e46ede8","fromNode":"114d45b905efc3d2","fromSide":"bottom","toNode":"e353a8df2caf9936","toSide":"top"},
+		{"id":"6029fd060d2c8ab4","fromNode":"3febaafcd31b917e","fromSide":"bottom","toNode":"e353a8df2caf9936","toSide":"top"},
+		{"id":"c27e1d64e4b95de8","fromNode":"8abbb3aa882272b9","fromSide":"bottom","toNode":"e353a8df2caf9936","toSide":"top"},
+		{"id":"003d442038bfcb9a","fromNode":"ed8c1ee4a6ffbe61","fromSide":"bottom","toNode":"e353a8df2caf9936","toSide":"top"}
 	]
 }

@@ -33,7 +33,7 @@ El huerto ofrece principalmente frutas frescas y algunos productos derivados com
 
 ## Historia y Secretos
 
-Daran Edermath fue un aventurero de renombre en su juventud y miembro de la Orden del Guantelete. Aunque ahora vive en retiro, sigue vigilante ante posibles amenazas en la región. El huerto tiene más de 50 años y algunas de las variedades de manzanos son únicas en toda la Costa de la Espada.
+Daran Edermath fue un aventurero de renombre en su juventud y miembro de la Orden del Guantelete. Aunque ahora vive en retiro, sigue vigilante ante posibles amenazas en la región. El huerto tiene más de 50 años y algunas de las variedades de manzanos son únicas en toda la [[Costa de la Espada]].
 
 Rumores sugieren que Daran escondió parte de su botín de aventurero en algún lugar del huerto, pero nadie ha podido encontrarlo aún. También se dice que a veces realiza reuniones secretas con otros ex-aventureros en su casa durante altas horas de la noche.
 

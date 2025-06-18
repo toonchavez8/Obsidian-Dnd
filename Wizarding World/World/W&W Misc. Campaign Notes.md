@@ -332,7 +332,7 @@ Give a Monster Hunter tracks to follow or a lair to find (as well as monsters to
 
 - Goblin unrest
     
-- Pickpocket in Hogwarts
+- Pickpocket in [[Hogwarts]]
     
 - Need to find someone better than Binns (goblin racist?)
     

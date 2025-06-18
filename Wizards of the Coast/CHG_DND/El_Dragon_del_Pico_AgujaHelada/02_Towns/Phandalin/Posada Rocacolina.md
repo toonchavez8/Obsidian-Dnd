@@ -12,7 +12,6 @@
 | Personal | Camarera (Elsa) |
 | Servicios | Alojamiento, comida y bebida |
 
-
 ## Ubicación
 
 La modesta posada está ubicada cerca del centro del pueblo. Es uno de los edificios más grandes de la localidad.

@@ -3,7 +3,7 @@
 
 **Poniendo la Escena**
 
-- Los jugadores son todos estudiantes de tercer año en la Escuela de Magia y Hechicería de Hogwarts.
+- Los jugadores son todos estudiantes de tercer año en la Escuela de Magia y Hechicería de [[Hogwarts]].
 - Se han ganado una detención por una infracción menor (decidida por los propios jugadores).
 - La detención tiene lugar en el [[Aula de Defensa Contra las Artes Oscuras]], apodada  la "sala de D.A.".
 
@@ -27,12 +27,12 @@ El Profesor Grimlock, de pie junto a un escritorio de madera oscura, los observa
 
 > **A mitad del ensayo, un CRACK frenético llena la sala.** Una pequeña criatura elfa con grandes ojos marrones y ropas andrajosas aparece en una nube de humo.
 > 
-> **Elfo doméstico (Aturdido):** "¡Por favor, profesor! ¡Debe ayudar a [[Winky]]! ¡Su amiga Binky está en problemas!"
+> **Elfo doméstico (Aturdido):** "¡Por favor, profesor! ¡Debe ayudar a [[Winky]]! ¡Su amiga [[Binky]] está en problemas!"
 > 
-> **[[Profesor Grimlock (Jefe de Ravenclaw)]] (Frunciendo el ceño):** "Tranquilo, Winky. No hace falta entrar en pánico. ¿Cuál es el problema?"
+> **[[Profesor Grimlock (Jefe de Ravenclaw)]] (Frunciendo el ceño):** "Tranquilo, [[Winky]]. No hace falta entrar en pánico. ¿Cuál es el problema?"
 > 
-> **[[Winky]] (Llorando ligeramente):** "¡Profesor, por favor, yo no ayudar! No soy fuerte. Winky y yo estábamos recolectando veneno por usted profesor, pero se enojaron las arañas y atacaron. ¡la pobre Winky esta en un capullo y no puedo sacarla! me atacaron profesor"
-> **(Winky muestra su brazo, revelando una desagradable picadura de araña.)**
+> **[[Winky]] (Llorando ligeramente):** "¡Profesor, por favor, yo no ayudar! No soy fuerte. [[Winky]] y yo estábamos recolectando veneno por usted profesor, pero se enojaron las arañas y atacaron. ¡la pobre [[Winky]] esta en un capullo y no puedo sacarla! me atacaron profesor"
+> **([[Winky]] muestra su brazo, revelando una desagradable picadura de araña.)**
 
 
 > [!warning]
@@ -51,15 +51,15 @@ El Profesor Grimlock, de pie junto a un escritorio de madera oscura, los observa
 > 
 > **Profesor:** "Esto es un verdadero dilema. Normalmente me encargaría de estos asuntos, pero... ha surgido una cuestión urgente. Debo atenderla de inmediato."
 > 
-> **Profesor (A los jugadores):** "La situación de Winky requiere atención inmediata. ¿Alguno de ustedes valientes estudiantes se ofrece a ayudarla? Considérenlo como su castigo, deberían ser más que capaces de manejar un par de arañas."
+> **Profesor (A los jugadores):** "La situación de [[Winky]] requiere atención inmediata. ¿Alguno de ustedes valientes estudiantes se ofrece a ayudarla? Considérenlo como su castigo, deberían ser más que capaces de manejar un par de arañas."
 
 **(Esta es la primera opción de los jugadores. Pueden elegir ayudar o quedarse atrás.)**
 
 **Si los jugadores aceptan ayudar**
 
-> **Winky (Con los ojos muy abiertos de gratitud):** "¡Oh, gracias! ¡Gracias! ¡Síganme, rápido!"
+> **[[Winky]] (Con los ojos muy abiertos de gratitud):** "¡Oh, gracias! ¡Gracias! ¡Síganme, rápido!"
 > 
-> **(Winky guía a los jugadores fuera de la sala de D.A. y por un pasillo hacia el Bosque Prohibido.)**
+> **([[Winky]] guía a los jugadores fuera de la sala de D.A. y por un pasillo hacia el Bosque Prohibido.)**
 
 Por cada uno de los que deciden decir que no el professor les quitaria a su casa 10 puntos y les gritaria que son viles cobardes y que una buena noche en bosque les ayudaria para meterle mas firmesa a su coraje.
 
@@ -71,7 +71,7 @@ Por cada uno de los que deciden decir que no el professor les quitaria a su casa
 
 **A medida que se acercan al bosque, un aullido escalofriante resuena entre los árboles. Extraños relinchos y gemidos siguen, una niebla verde deslizándose suavemente con un aroma a menta en el aire.**
 
-> **Winky (Temblando):** "¡Algo está mal! ¡Las criaturas del bosque estan enojados!! CUIDADO!"
+> **[[Winky]] (Temblando):** "¡Algo está mal! ¡Las criaturas del bosque estan enojados!! CUIDADO!"
 
 
 ### Encuentros:
@@ -168,41 +168,41 @@ creatures:
 
 - Cuatro sacos de huevos brillan en el centro del recinto.
 
-> **Winky (Susurrando):** "¡Por aqui! ¡Tengan cuidado, las Arañas dan miedo!"
+> **[[Winky]] (Susurrando):** "¡Por aqui! ¡Tengan cuidado, las Arañas dan miedo!"
 
 **(Encuentro de combate con las Acromántulas. Los jugadores pueden planear y usar sus hechizos creativamente.)**
 
 **La Elección y el Clímax**
 
-- Después de derrotar a las arañas, Winky expresa su temor de aventurarse más en el bosque. Advierte sobre bestias míticas que no deberían ser perturbadas.
-- En uno de los sacos de huevos se encuentra Binky con debil pero viva. 
+- Después de derrotar a las arañas, [[Winky]] expresa su temor de aventurarse más en el bosque. Advierte sobre bestias míticas que no deberían ser perturbadas.
+- En uno de los sacos de huevos se encuentra [[Binky]] con debil pero viva. 
 - En los otros 3 se encuentran tesoros y pociones.
 - Los jugadores tienen una elección:
-    - Regresar al castillo y buscar al Profesor para que ayude a la amiga de Winky.
+    - Regresar al castillo y buscar al Profesor para que ayude a la amiga de [[Winky]].
     - Continuar más adentro en el bosque para encontrar la fuente de la niebla verde y potencialmente salvar a las criaturas del bosque.
 
 **Opción 1: Buscar al Profesor**
 
-- Si los jugadores eligen regresar al castillo, Winky expresa su inmensa gratitud.
+- Si los jugadores eligen regresar al castillo, [[Winky]] expresa su inmensa gratitud.
 - **Descripción:** **(Describa la apresurada caminata de regreso, la inquietante niebla verde aferrándose al camino del bosque.)**
-- **Diálogo:** **Winky:** "¡Gracias de nuevo, jóvenes magos! Me aseguraré de informarle al Profesor sobre su valentía. La pobre Winky estará a salvo hasta entonces."
+- **Diálogo:** **[[Winky]]:** "¡Gracias de nuevo, jóvenes magos! Me aseguraré de informarle al Profesor sobre su valentía. La pobre [[Winky]] estará a salvo hasta entonces."
 
 **De Regreso en el Castillo**
 
 - Los jugadores encuentran la sala de D.A. vacía. El Profesor (nombre) probablemente aún está atendiendo la llamada urgente por la red Flu.
 - Tienen dos opciones:
     - Esperar el regreso del Profesor y explicar la situación. (Esto lleva a una resolución más lenta pero evita más peligros en el bosque.)
-    - Buscar a otro profesor o adulto de confianza (Director, Madam Pomfrey) para obtener ayuda para la amiga de Winky. (Esto podría llevar a una reprimenda por aventurarse en el Bosque Prohibido, pero podría acelerar el rescate.)
+    - Buscar a otro profesor o adulto de confianza (Director, Madam Pomfrey) para obtener ayuda para la amiga de [[Winky]]. (Esto podría llevar a una reprimenda por aventurarse en el Bosque Prohibido, pero podría acelerar el rescate.)
 
 **Opción 2: Enfrentando la Fuente**
 
-- Si los jugadores eligen aventurarse más adentro, Winky les ruega que sean cautelosos y los acompana despues de enviar a Binky al medico.
+- Si los jugadores eligen aventurarse más adentro, [[Winky]] les ruega que sean cautelosos y los acompana despues de enviar a [[Binky]] al medico.
 - **Descripción:** **(Describa las partes más profundas del bosque - antiguos árboles envueltos en niebla, el aire denso con el extraño aroma.)**
-- **Diálogo:** **Winky:** "¡Por favor, tengan cuidado, jóvenes magos! Hay criaturas en estas partes que no deberían ser molestadas."
+- **Diálogo:** **[[Winky]]:** "¡Por favor, tengan cuidado, jóvenes magos! Hay criaturas en estas partes que no deberían ser molestadas."
 
 **El Oscuro Descubrimiento**
 
-- Más adentro del bosque, los jugadores encuentran un claro apegado a un lago. En el centro, está de pie un joven, aparentemente imperturbable por la niebla verde y soltando el quicimo al agua. Lleva ropas de Hogwarts pero parece un año o dos más joven que los jugadores.
+- Más adentro del bosque, los jugadores encuentran un claro apegado a un lago. En el centro, está de pie un joven, aparentemente imperturbable por la niebla verde y soltando el quicimo al agua. Lleva ropas de [[Hogwarts]] pero parece un año o dos más joven que los jugadores.
 
 **Descripción:** **(Describa el claro - tentáculos de niebla verde se arremolinan alrededor del joven, quien sostiene un pequeño vial que emite un débil resplandor verde.)**
 

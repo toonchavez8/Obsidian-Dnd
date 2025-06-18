@@ -58,7 +58,7 @@ Los héroes descubren que la inestabilidad planar es el resultado de una antigua
 - **Eventos clave:**
     1. Los héroes enfrentan a un antagonista final, un ser o grupo que desea controlar la convergencia para sus propios fines.
     2. Deben reunir artefactos o aliados clave de los planos para inclinar la balanza.
-    3. Una gran batalla final en un lugar emblemático (Hogwarts, el Ministerio o un lugar extraplanar).
+    3. Una gran batalla final en un lugar emblemático ([[Hogwarts]], el Ministerio o un lugar extraplanar).
 
 **Final del arco:**  
 Los héroes tienen la decisión final:
