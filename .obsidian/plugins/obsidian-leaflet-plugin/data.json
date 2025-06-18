@@ -1,241 +1,6 @@
 {
   "mapMarkers": [
     {
-      "id": "MapCalcExample",
-      "lastAccessed": 1750282665364,
-      "markers": [
-        {
-          "id": "ID_f839ea391888",
-          "type": "default",
-          "loc": [
-            1623.5613637781373,
-            511.5917561884672
-          ],
-          "layer": "%5B%5BCosta_de_la_Espada.png%5D%5D",
-          "mutable": true,
-          "command": false,
-          "percent": null,
-          "description": null,
-          "minZoom": 0,
-          "maxZoom": -1,
-          "tooltip": "hover"
-        },
-        {
-          "id": "ID_7be9ca0a8b5a",
-          "type": "default",
-          "loc": [
-            1616.490295966272,
-            504.5206883766017
-          ],
-          "layer": "%5B%5BCosta_de_la_Espada.png%5D%5D",
-          "mutable": true,
-          "command": false,
-          "percent": null,
-          "description": null,
-          "minZoom": 0,
-          "maxZoom": -1,
-          "tooltip": "hover"
-        },
-        {
-          "id": "ID_28b978e928ab",
-          "type": "Inn",
-          "loc": [
-            1557.5,
-            834
-          ],
-          "layer": "%5B%5BCosta_de_la_Espada.png%5D%5D",
-          "mutable": true,
-          "command": false,
-          "percent": null,
-          "description": null,
-          "minZoom": -1,
-          "maxZoom": null,
-          "tooltip": "hover"
-        },
-        {
-          "id": "ID_dbd91a58da79",
-          "type": "services",
-          "loc": [
-            1481.4108036727291,
-            921.8904659719612
-          ],
-          "layer": "%5B%5BCosta_de_la_Espada.png%5D%5D",
-          "mutable": true,
-          "command": false,
-          "percent": null,
-          "description": null,
-          "minZoom": null,
-          "maxZoom": null,
-          "tooltip": "hover"
-        },
-        {
-          "id": "ID_4b6aebdb59cb",
-          "type": "Shop",
-          "loc": [
-            1530.2011715746007,
-            945.9320965323038
-          ],
-          "layer": "%5B%5BCosta_de_la_Espada.png%5D%5D",
-          "mutable": true,
-          "command": false,
-          "percent": null,
-          "description": null,
-          "minZoom": null,
-          "maxZoom": null,
-          "tooltip": "hover"
-        },
-        {
-          "id": "ID_09ba7a4aaa4b",
-          "type": "cart",
-          "loc": [
-            1566.9707241963013,
-            978.459008466885
-          ],
-          "layer": "%5B%5BCosta_de_la_Espada.png%5D%5D",
-          "mutable": true,
-          "command": false,
-          "percent": null,
-          "description": null,
-          "minZoom": null,
-          "maxZoom": null,
-          "tooltip": "hover"
-        },
-        {
-          "id": "ID_f888db3b6888",
-          "type": "default",
-          "loc": [
-            1616.4681988793595,
-            952.2960575629828
-          ],
-          "layer": "%5B%5BCosta_de_la_Espada.png%5D%5D",
-          "mutable": true,
-          "command": false,
-          "percent": null,
-          "description": null,
-          "minZoom": 0,
-          "maxZoom": -1,
-          "tooltip": "hover"
-        },
-        {
-          "id": "ID_eaa99a4a6948",
-          "type": "Dungeon",
-          "loc": [
-            1610.1042378486807,
-            932.4970676897594
-          ],
-          "layer": "%5B%5BCosta_de_la_Espada.png%5D%5D",
-          "mutable": true,
-          "command": false,
-          "percent": null,
-          "description": null,
-          "minZoom": null,
-          "maxZoom": null,
-          "tooltip": "hover"
-        },
-        {
-          "id": "ID_daf93818baeb",
-          "type": "Forest",
-          "loc": [
-            1634.85297519021,
-            973.5092609985793
-          ],
-          "layer": "%5B%5BCosta_de_la_Espada.png%5D%5D",
-          "mutable": true,
-          "command": false,
-          "percent": null,
-          "description": null,
-          "minZoom": null,
-          "maxZoom": null,
-          "tooltip": "hover"
-        },
-        {
-          "id": "ID_9b896878a9aa",
-          "type": "Point of Interest",
-          "loc": [
-            1631.317441284277,
-            1009.5717068390932
-          ],
-          "layer": "%5B%5BCosta_de_la_Espada.png%5D%5D",
-          "mutable": true,
-          "command": false,
-          "percent": null,
-          "description": null,
-          "minZoom": null,
-          "maxZoom": null,
-          "tooltip": "hover"
-        },
-        {
-          "id": "ID_49a8ea092bba",
-          "type": "default",
-          "loc": [
-            1667.3798871247911,
-            929.6686405650133
-          ],
-          "layer": "%5B%5BCosta_de_la_Espada.png%5D%5D",
-          "mutable": true,
-          "command": false,
-          "percent": null,
-          "description": null,
-          "minZoom": null,
-          "maxZoom": -1,
-          "tooltip": "hover"
-        },
-        {
-          "id": "ID_5a591ad8783b",
-          "type": "Tavern",
-          "loc": [
-            1665.2585667812314,
-            899.2630489739918
-          ],
-          "layer": "%5B%5BCosta_de_la_Espada.png%5D%5D",
-          "mutable": true,
-          "command": false,
-          "percent": null,
-          "description": null,
-          "minZoom": null,
-          "maxZoom": null,
-          "tooltip": "hover"
-        },
-        {
-          "id": "ID_5ada799a1bcb",
-          "type": "default",
-          "loc": [
-            1605.154490380375,
-            843.4016132602545
-          ],
-          "layer": "%5B%5BCosta_de_la_Espada.png%5D%5D",
-          "mutable": true,
-          "command": false,
-          "percent": null,
-          "description": null,
-          "minZoom": null,
-          "maxZoom": null,
-          "tooltip": "hover"
-        },
-        {
-          "id": "ID_58db6b9819eb",
-          "type": "town",
-          "loc": [
-            1509.03125,
-            826.75
-          ],
-          "layer": "%5B%5BCosta_de_la_Espada.png%5D%5D",
-          "mutable": true,
-          "command": false,
-          "percent": null,
-          "description": null,
-          "minZoom": null,
-          "maxZoom": -1,
-          "tooltip": "hover"
-        }
-      ],
-      "overlays": [],
-      "shapes": [],
-      "files": [
-        "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin.md"
-      ]
-    },
-    {
       "id": "PhandalinCityMap",
       "lastAccessed": 1750282665364,
       "markers": [
@@ -379,6 +144,299 @@
       "overlays": [],
       "shapes": [],
       "files": []
+    },
+    {
+      "id": "MapCalcExample",
+      "lastAccessed": 1750286449247,
+      "markers": [
+        {
+          "id": "ID_f839ea391888",
+          "type": "default",
+          "loc": [
+            1623.5613637781373,
+            511.5917561884672
+          ],
+          "layer": "%5B%5BCosta_de_la_Espada.png%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": 0,
+          "maxZoom": -1,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_7be9ca0a8b5a",
+          "type": "default",
+          "loc": [
+            1616.490295966272,
+            504.5206883766017
+          ],
+          "layer": "%5B%5BCosta_de_la_Espada.png%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": 0,
+          "maxZoom": -1,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_28b978e928ab",
+          "type": "Inn",
+          "loc": [
+            1557.5,
+            834
+          ],
+          "layer": "%5B%5BCosta_de_la_Espada.png%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": -1,
+          "maxZoom": null,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_dbd91a58da79",
+          "type": "services",
+          "loc": [
+            1481.4108036727291,
+            921.8904659719612
+          ],
+          "layer": "%5B%5BCosta_de_la_Espada.png%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": -1,
+          "maxZoom": null,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_4b6aebdb59cb",
+          "type": "Shop",
+          "loc": [
+            1530.2011715746007,
+            945.9320965323038
+          ],
+          "layer": "%5B%5BCosta_de_la_Espada.png%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": -1,
+          "maxZoom": null,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_09ba7a4aaa4b",
+          "type": "cart",
+          "loc": [
+            1566.9707241963013,
+            978.459008466885
+          ],
+          "layer": "%5B%5BCosta_de_la_Espada.png%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": -1,
+          "maxZoom": null,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_f888db3b6888",
+          "type": "default",
+          "loc": [
+            1616.4681988793595,
+            952.2960575629828
+          ],
+          "layer": "%5B%5BCosta_de_la_Espada.png%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": 0,
+          "maxZoom": -1,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_eaa99a4a6948",
+          "type": "Dungeon",
+          "loc": [
+            1610.1042378486807,
+            932.4970676897594
+          ],
+          "layer": "%5B%5BCosta_de_la_Espada.png%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": -1,
+          "maxZoom": null,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_daf93818baeb",
+          "type": "Forest",
+          "loc": [
+            1634.85297519021,
+            973.5092609985793
+          ],
+          "layer": "%5B%5BCosta_de_la_Espada.png%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": -1,
+          "maxZoom": null,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_9b896878a9aa",
+          "type": "Point of Interest",
+          "loc": [
+            602,
+            1360
+          ],
+          "link": "Misión de la Colina del Resentimiento",
+          "layer": "%5B%5BCosta_de_la_Espada.png%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": [
+            0.6041759218125278,
+            -0.19098984771573604
+          ],
+          "description": null,
+          "minZoom": -1,
+          "maxZoom": null,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_49a8ea092bba",
+          "type": "default",
+          "loc": [
+            1667.3798871247911,
+            929.6686405650133
+          ],
+          "layer": "%5B%5BCosta_de_la_Espada.png%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": null,
+          "maxZoom": -1,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_5a591ad8783b",
+          "type": "Tavern",
+          "loc": [
+            1665.2585667812314,
+            899.2630489739918
+          ],
+          "layer": "%5B%5BCosta_de_la_Espada.png%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": 0,
+          "maxZoom": null,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_5ada799a1bcb",
+          "type": "default",
+          "loc": [
+            1605.154490380375,
+            843.4016132602545
+          ],
+          "layer": "%5B%5BCosta_de_la_Espada.png%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": null,
+          "maxZoom": null,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_58db6b9819eb",
+          "type": "town",
+          "loc": [
+            1509.03125,
+            826.75
+          ],
+          "layer": "%5B%5BCosta_de_la_Espada.png%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": null,
+          "maxZoom": -1,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_9a19eada4b08",
+          "type": "Point of Interest",
+          "loc": [
+            400.3329235861463,
+            1178.7470042379748
+          ],
+          "link": "Misión de la excavación de los enanos",
+          "layer": "%5B%5BCosta_de_la_Espada.png%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": -1,
+          "maxZoom": null,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_0a687a4b39cb",
+          "type": "Point of Interest",
+          "loc": [
+            405.98977783563873,
+            1348.4526317227462
+          ],
+          "link": "Misión en Alcazhacha",
+          "layer": "%5B%5BCosta_de_la_Espada.png%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": -1,
+          "maxZoom": null,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_4b190a0a785a",
+          "type": "Point of Interest",
+          "loc": [
+            598.2123368838193,
+            1525.9364338005696
+          ],
+          "link": "Misión de Terragnoma",
+          "layer": "%5B%5BCosta_de_la_Espada.png%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": [
+            0.6778926849402797,
+            -0.18978817794537414
+          ],
+          "description": null,
+          "minZoom": -1,
+          "maxZoom": null,
+          "tooltip": "hover"
+        }
+      ],
+      "overlays": [],
+      "shapes": [],
+      "files": [
+        "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Costa de la Espada.md"
+      ]
     }
   ],
   "defaultMarker": {

@@ -1,4 +1,4 @@
-# Misión de Terragnoma
+# Misión De Terragnoma
 
 > [!hint] Descripción de la misión
 > Un clan de gnomos de las rocas solitarios habita en una pequeña red de galerías subterráneas en las montañas del sureste. Los habitantes de Terragnoma son famosos por sus inventos mágicos y podrían tener objetos útiles para derrotar al dragón. Consigan lo que puedan de ellos. Si traen algo útil y no quieren conservarlo, el alcalde [[Harbin Wester]] les pagará 50 po por ello.
@@ -9,15 +9,15 @@
 | --- | --- |
 | Nivel recomendado | 1-2 |
 | Dificultad | Media (nivel 1), Baja (nivel 2), Muy baja (nivel 3+) |
-| Ubicación | Montañas al sureste de Phandalin |
-| Recompensa | Objetos mágicos de los gnomos + posible pago de 50 po por el sombrero de hechicería |
+| Ubicación | Montañas al sureste de [[Phandalin]] |
+| Recompensa | Objetos mágicos de los gnomos + possible pago de 50 po por el sombrero de hechicería |
 | Peligros | Trampas, mimeto (monstruo cambiaformas) |
 
 Esta misión está diseñada principalmente para personajes de nivel 1, aunque algunas de sus trampas y peligros también representan un desafío para personajes de nivel 2. Los personajes de nivel 3 o superior podrán enfrentar los problemas inesperados y conseguir las recompensas de los gnomos sin gastar muchos recursos, pero la interpretación de esta misión seguirá resultándoles entretenida.
 
-## Descripción del Lugar
+## Descripción Del Lugar
 
-Las cuevas de Terragnoma están excavadas en la base de una montaña al sureste de Phandalin, alrededor de una estrecha cascada. Los gnomos de las rocas con conocimientos mágicos que habitan estas cuevas establecen alianzas estratégicas con sus vecinos humanos y enanos cuando la situación lo requiere. 
+Las cuevas de Terragnoma están excavadas en la base de una montaña al sureste de [[Phandalin]], alrededor de una estrecha cascada. Los gnomos de las rocas con conocimientos mágicos que habitan estas cuevas establecen alianzas estratégicas con sus vecinos humanos y enanos cuando la situación lo require.
 
 Estos gnomos, de naturaleza solitaria y reservada, fabrican objetos mágicos menores e inventos útiles no mágicos para pasar el tiempo, aunque en su afán creador, sus fracasos son más numerosos que sus éxitos. Rara vez se alejan de su hogar y se alimentan casi exclusivamente de los champiñones que crecen en las islas brumosas en el exterior de las cuevas.
 
@@ -25,32 +25,37 @@ En Terragnoma gobierna una pareja real: los reyes Gnerkli y Korboz. Recientement
 
 Además del peligro que representa el rey enloquecido, dos gnomos han desaparecido misteriosamente en la última semana. Con excepción del rey Korboz, nadie sabe que un monstruo cambiaformas (un mimeto) se ha infiltrado en Terragnoma para alimentarse de sus habitantes. Esta criatura, que va cambiando de apariencia mientras recorre el complejo, atacó a Korboz y casi logra matarlo. Este incidente desencadenó su locura y lo llevó a encerrarse en sus aposentos junto a su amado Gnerkli para evitar que el monstruoso cambiaformas los devorara. Korboz mantiene la esperanza de que la criatura eventualmente se canse de cazar gnomos y se marche. El monarca recuperará la cordura si le presentan pruebas de la muerte del mimeto.
 
-## Características de Terragnoma
+## Características De Terragnoma
 
 Las cuevas de Terragnoma están excavadas en piedra sólida y comparten las siguientes características:
 
 ### Cascada
+
 El estruendo de la cascada cercana retumba en las cuevas de Terragnoma. El sonido es tan ensordecedor que tanto gnomos como visitantes deben gritar para comunicarse, a menos que haya una puerta cerrada entre ellos y la cascada.
 
 ### Iluminación
+
 Todas las cuevas están iluminadas con candiles colgantes conectados a un ingenioso mecanismo de cuerdas y poleas que permite a los gnomos bajarlos y rellenarlos de aceite según sea necesario.
 
 ### Puertas
-Las puertas normales son de madera con pomos y bisagras de hierro oxidado. 
+
+Las puertas normals son de madera con pomos y bisagras de hierro oxidado.
+
 - Para abrir una puerta bloqueada se debe superar una prueba de Destreza CD 10 usando herramientas de ladrón.
 - Para forzar una puerta cerrada se debe usar una acción y superar una prueba de Fuerza (Atletismo) CD 15.
 - Las puertas secretas son de piedra y quedan disimuladas por la mampostería circundante. Para descubrir una puerta secreta se debe investigar el muro y superar una prueba de Sabiduría (Percepción) CD 10.
 
 ### Techos
+
 Todos los techos son planos y tienen una altura de 7 pies.
 
-## Objetivos de la Misión
+## Objetivos De la Misión
 
-Para completar la misión de Terragnoma, los gnomos deberán entregar al menos un objeto mágico a los personajes. De todos los posibles objetos que pueden conseguir, solo el sombrero de hechicería le interesa al alcalde Harbin Wester, quien ofrece comprarlo por 50 po aunque no conozca a nadie que pueda sintonizarse con él.
+Para completar la misión de Terragnoma, los gnomos deberán entregar al menos un objeto mágico a los personajes. De todos los posibles objetos que pueden conseguir, solo el sombrero de hechicería le interesa al alcalde [[Harbin Wester]], quien ofrece comprarlo por 50 po aunque no conozca a nadie que pueda sintonizarse con él.
 
 Es importante destacar que los gnomos no entregarán ningún objeto mágico a los personajes hasta que estos hayan hablado con Fibblestib y Dabbledob en la zona T11.
 
-### Objetos Mágicos de los Gnomos
+### Objetos Mágicos De Los Gnomos
 
 Si los personajes rescatan a Gnerkli y liberan a Korboz de su locura, los gnomos, agradecidos por su ayuda, les recompensarán con:
 
@@ -68,27 +73,30 @@ Un arroyo conduce a los personajes a una charca alimentada por una cascada que s
 > [!hint] Descripción para los jugadores
 > Siguen el curso de un arroyo cuesta arriba hasta la base de la montaña, donde la erosión de una cascada ha esculpido una concavidad natural. La atronadora masa de agua crea una nube de rocío al precipitarse sobre una charca poco profunda, en la que se encuentran dos pequeñas islas cubiertas de champiñones rojos, verdes y morados de 2 pies de altura. En varios salientes rocosos, a alturas de entre 20 y 30 pies, se aprecian las entradas a cuevas. La montaña impide que la luz del sol llegue a este lugar.
 
-Terragnoma tiene cinco cuevas de acceso en lo alto de cornisas con pendientes rocosas muy empinadas. Para trepar hasta una cueva, un personaje debe superar una prueba de Fuerza (Atletismo) CD 13. 
+Terragnoma tiene cinco cuevas de acceso en lo alto de cornisas con pendientes rocosas muy empinadas. Para trepar hasta una cueva, un personaje debe superar una prueba de Fuerza (Atletismo) CD 13.
 
-Existe un sendero estrecho que asciende por la pendiente noreste hacia la entrada de una de las cinco cuevas, por lo que usar este camino no requiere superar ninguna prueba.
+Existe un sendero estrecho que asciende por la pendiente noreste hacia la entrada de una de las cinco cuevas, por lo que usar este camino no require superar ninguna prueba.
 
-![[Pasted image 20250618155434.png]]
+![[Mission3.png]]
 
-## Lugares de Terragnoma
+## Lugares De Terragnoma
 
 Los siguientes lugares están destacados en el mapa de Terragnoma.
 
-### T1. Charca e Islas con Champiñones
+### T1. Charca E Islas Con Champiñones
+
 Los gnomos subsisten principalmente gracias a los champiñones de 2 pies de altura que crecen sobre dos pequeñas islas en medio de esta charca de 3 pies de profundidad. Las islas están permanentemente envueltas en un rocío producido por la cascada cercana.
 
-La magia con la que los primeros pobladores de Terragnoma impregnaron las islas hace que los champiñones alcancen un tamaño anormalmente grande, y es también la fuente de la magia salvaje del lugar.
+La magia con la que los primeros pobladores de Terragnoma impregnaron las islas have que los champiñones alcancen un tamaño anormalmente grande, y es también la fuente de la magia salvaje del lugar.
 
 Los hongos se presentan en tres colores distintos:
-- **Rojos**: Se utiliza para extraer un aceite que los gnomos usan como combustible para sus candiles y aparatos mecánicos.
+
+- **Rojos**: Se utilize para extraer un aceite que los gnomos usan como combustible para sus candiles y aparatos mecánicos.
 - **Verdes**: Se muelen para producir harina con la que hornean un sabroso pan verde.
 - **Morados**: Se trituran y fermentan para elaborar vino de champiñón, cuyo sabor es exactamente como uno se imaginaría.
 
-### T2. Cascada y Puente de Cuerda
+### T2. Cascada Y Puente De Cuerda
+
 La cascada tiene una altura de 60 pies y su rocío oculta parcialmente un puente de cuerda de 35 pies de largo, firmemente anclado a las cornisas a 20 pies de altura. El puente se considera terreno difícil y se hunde en su punto medio, donde solo se eleva 15 pies por encima del agua.
 
 Las criaturas que caigan del puente o se arrojen de él no sufrirán daños si aterrizan en el agua, que tiene 5 pies de profundidad. El puente tiene CA 11, 30 puntos de golpe e inmunidad al daño de veneno y psíquico.
@@ -96,26 +104,32 @@ Las criaturas que caigan del puente o se arrojen de él no sufrirán daños si a
 Los vehículos cangrejo de la zona T6 son demasiado aparatosos para cruzar este puente y se enredarían en las cuerdas.
 
 ### T3. Comedor
+
 Esta sala contiene varias mesas y sillas diseñadas para criaturas de tamaño Pequeño. En la pared este hay un robusto armario de madera que guarda vajilla y utensilios de hojalata. ### T4. Cocina
-La cocina está completamente adaptada a los gnomos, por lo que todo se encuentra a poca altura del suelo o es fácilmente accesible gracias a un ingenioso sistema de cuerdas y poleas.
+La cocina está completamente adaptada a los gnomos, por lo que todo se encuentra a poca altura del suelo o es fácilmente accessible gracias a un ingenioso sistema de cuerdas y poleas.
 
 En este sitio suelen trabajar cinco gnomos de las rocas solitarios:
-- **Dimble** (hombre): Utiliza un complicado artilugio similar a una prensa para extraer aceite de un gran hongo rojo y filtrarlo en cuatro frascos.
+
+- **Dimble** (hombre): Utilize un complicado artilugio similar a una prensa para extraer aceite de un gran hongo rojo y filtrarlo en cuatro frascos.
 - **Tervaround** (mujer): Sentada en un taburete que se tambalea por su esfuerzo, introduce un gran champiñón morado en un barril para fermentarlo y hacer vino.
 - **Joybell** (mujer): Usa un atizador para avivar el fuego de una estufa de hierro apoyada contra la pared este.
 - **Panana** (mujer): Trabaja sobre una mesa baja con un rodillo mecánico para amasar pan verde. A su alrededor reposan los sombreros cortados de varios champiñones verdes.
-- **Uppendown** (hombre): Hace hogazas verdes con la masa y saca la lengua por la concentración mientras trabaja cada una de ellas como un maestro escultor.
+- **Uppendown** (hombre): Have hogazas verdes con la masa y saca la lengua por la concentración mientras trabaja cada una de ellas como un maestro escultor.
 
 Si los personajes hablan con los gnomos, estos les indicarán que deben acudir a ver a Fibblestib o a Dabbledob en el taller (zona T11), ya que son quienes más saben acerca de lo que está sucediendo. Los gnomos de la cocina no abandonarán su lugar de trabajo, pero podrán indicar a los personajes la dirección correcta para llegar al taller. Además, evitarán mencionar tanto a los gnomos desaparecidos como al rey Korboz y su estado mental.
 
 ### T5. Despensa
-En esta sala se apilan cajas de madera pequeñas hasta una altura considerable. Cada caja contiene hogazas de pan de champiñón verde y otros alimentos recolectados y almacenados cuidadosamente por los gnomos. ### T6. Vehículos Cangrejo
+
+En esta sala se apilan cajas de madera pequeñas hasta una altura considerable. Cada caja contiene hogazas de pan de champiñón verde y otros alimentos recolectados y almacenados cuidadosamente por los gnomos. 
+
+### T6. Vehículos Cangrejo
 
 En esta sala hay dos curiosos artilugios gnomos estacionados en los rincones. Ambos tienen forma de cangrejo, con un barril como caparazón, seis patas de metal articuladas y un par de pinzas frontales. Una escotilla en la parte superior del barril permite acceder a un compartimento interior equipado con un pequeño asiento acolchado de cuero, rodeado de palancas, pedales y engranajes. Los barriles no son herméticos.
 
 Los gnomos construyeron estos artilugios con forma de crustáceo para agarrar y mover objetos, funcionando como una versión rudimentaria de carretillas elevadoras. Sin embargo, estas máquinas resultan tan aparatosas que no sirven para trabajos delicados y apenas pueden maniobrar por los estrechos pasillos de 5 pies de ancho de Terragnoma.
 
 #### Vehículo Cangrejo
+
 *Objeto Grande*  
 **Clase de Armadura:** 15  
 **Puntos de Golpe:** 30  
@@ -124,6 +138,7 @@ Los gnomos construyeron estos artilugios con forma de crustáceo para agarrar y 
 **Capacidad:** Diseñado para un humanoide Pequeño, aunque uno Mediano podría entrar con incomodidad  
 
 Una criatura dentro del barril con la escotilla cerrada tiene cobertura completa contra ataques externos. La criatura puede usar una acción para hacer que el artilugio:
+
 - Se mueva por el suelo a una velocidad de 15 pies
 - Ataque con sus pinzas
 
@@ -134,6 +149,7 @@ En esta sala hay una plataforma giratoria fijada al suelo y equipada con cuatro 
 Este ingenio mecánico, ruidoso y traqueteante, se considera un objeto Grande con CA 13, 45 puntos de golpe e inmunidad al daño de veneno y al psíquico. Cada vez que pierde 10 puntos de golpe, una de las ballestas se rompe quedando inutilizable.
 
 Una criatura que ocupe el asiento puede usar una acción para:
+
 - Girar el mecanismo hasta 360 grados en sentido antihorario
 - Disparar hasta dos de las ballestas en cualquier dirección
 
@@ -280,19 +296,191 @@ equipment:
 
 ### T10. Cuchillas Giratorias
 
-Esta zona está ligeramente oscurecida debido al rocío de la cascada. La parte oriental de la sala presenta dos artilugios helicoidales que giran rápidamente y están equipados con cuchillas largas y afiladas, separadas 1 pie entre sí. La hélice norte gira en sentido antihorario, mientras que la sur lo hace en sentido contrario.
+Esta zona está ligeramente oscurecida debido al rocío de la cascada. La parte oriental de la sala presenta dos artilugios helicoidales que giran rápidamente y están equipados con cuchillas largas y afiladas, separadas 1 pie entre sí. La hélice norte gira en sentido antihorario, mientras que la sur lo have en sentido contrario.
 
-#### Trampa de Cuchillas
+#### Trampa De Cuchillas
+
 Todas las criaturas que entren a la parte oriental de la sala o que comiencen su turno en ella mientras las cuchillas estén girando deberán realizar una tirada de salvación de Destreza CD 15. En caso de fallar, sufrirán 18 (4d8) de daño cortante, o la mitad de ese daño si tienen éxito.
 
 En la pared sur de la parte occidental de la sala hay una palanca de latón que se encuentra en posición bajada. Al subirla, las hélices dejarán de girar y los personajes podrán atravesar la cámara con seguridad.
 
 Los gnomos de las rocas evitan esta trampa usando el truco *mano de mago* para subir la palanca desde la entrada este, sin necesidad de acercarse a la zona peligrosa.
 
+### T11. Taller De Los Inventores
 
-Tll. TALLER DE LOS INVENTORES Al aproximarse a esta zona, los personajes oyen una discusión en el idioma local entre dos gnomos de las rocas solitarios (consulta su perfil en la página 61): Fibblestib, un hombre, y Dabbledob, una mujer. Como inventores principales de Terragnoma, están tratando de diseñar un artilugio que remedie la locura del rey Korboz. La propuesta de Fibblestib es un "rayo de cordura". Dabbledob considera que la idea es ridícula y aboga por construir algo llamado "camisa de fuerza". Si los personajes les interrumpen, los gnomos repararán en que los recién llegados podrían tener otra solución, por lo que les explicarán la situación y les pedirán consejo sobre cómo sanar a Korboz y rescatar al rey Gnerkli. Fibblestib y Dabbledob consideran que el misterio de los gnomos desaparecidos es secundario, pues su objetivo principal es ayudar a los monarcas; solo les importan Korboz y Gnerkli e ignoran todo los demás. Ambos prometen varias recompensas mágicas a cambio de ayuda (consulta "Objetos mágicos de los gnomos" en la página 40). El taller está abarrotado de inventos gnomos inservibles y a medio terminar y de mesas de trabajo con herramientas de manitas. A 10 pies del suelo, una cornisa sustenta un pedestal de madera sobre el que yace un libro encuadernado en cuero. Tesoro. Sobre el pedestal se halla el libro de conjuros que comparten todos los gnomos del lugar. En la portada se lee el título La magia de Terragnoma (en común y gnomo) y sus páginas contienen los conjuros de mago armadura de mago, detectar magia, dormir, escudo, identificar, manos ardientes y proyectil mágico
+Al aproximarse a esta zona, los personajes escucharán una acalorada discusión en idioma gnomo entre dos gnomos de las rocas solitarios: Fibblestib (hombre) y Dabbledob (mujer). Como inventores principales de Terragnoma, están intentando diseñar un artilugio que pueda remediar la locura del rey Korboz.
 
-Tl2. MORADA DE LOS GNOMOS Por el suelo de esta cueva están desperdigados los restos de fogatas previas. Hay cuatro cuevas laterales a modo de dormitorios, y en cada una de ellas se apiñan cinco catres pequeños de madera. Al llegar, los personajes encontrarán a ocho gnomos de las rocas solitarios (consulta su perfil en la página 61) durmiendo plácidamente, con dos gnomos por cueva lateral: Caramip, Jabby, Nyx y Quippy (mujeres) y Anverth, Delebean, Pallabar y Zook (hombres). Los personajes pueden atravesar la zona sin despertar a los gnomos, que no son peligrosos pero se defenderán ante un ataque. Estos no darán información sobre los problemas recientes, pero aconsejarán hablar con Fibblestib y Dabbledob (consulta la zona Tll), los dos inventores con más renombre de Terragnoma. Tl3 . SALA DEL TESORO La puerta de esta habitación está cerrada y solo Fibblestib y Dabbledob (consulta la zona Tll) tienen las llaves. La sala contiene un sinfín de cachivaches estropeados, así como engranajes sueltos, chatarra retorcida y otros comporten tes que los gnomos reutilizan para improvisar nuevos inventos. Tesoro. Entre todo el desorden, los personajes podrán encontrar un amuleto de relojerfa y una pértiga contralble. Les resultará más sencillo encontrarlos con el conjuro detectar magia. De lo contrario, tardarán 1 hora en encontrar cada objeto. Si los personajes consiguen e identifican estos objetos mágicos, dales a los jugadores sus respectivas cartas. Tl4 . SALÓN DEL TRONO Sobre un estrado de piedra se hallan dos tronos bajos de tamaño gnomo hechos de restos metálicos. En el muro norte, una puerta secreta oculta un túnel corto que conduce a la zona T15. Solo los reyes gnomos conocen este pasaje secreto. Tl5. APOSENTOS DE LOS REYES GNOMOS El rey Korboz se ha recluido en sus aposentos junto a su esposo, Gnerkli, pero ha olvidado que también se puede acceder a la sala mediante la puerta secreta. Solo Korboz y Gnerkli tienen las llaves de la puerta principal, que se encuentra cerrada. Si los personajes llaman a la puerta o anuncian su llegada, Korboz les hablará desde el interior de sus aposentos y les advertirá de la presencia de un cambiaformas. Korboz no recobrará la cordura hasta que los personajes le aseguren que han encontrado y dado muerte al monstruo. Hayan acabado o no con el mimeto, para convencer a Korboz de que ha muerto se debe superar una prueba de Carisma (Persuasión) con CD 12. Korboz y Gnerkli son gnomos de las rocas solitarios (consulta su perfil en la página 61) y ambos lucen una corona de metal dentada y una capa de retazos. Gnerkli está apresado y pegado a una silla. Korboz tiene un frasco de disolvente que eliminaría el pegamento al instante. La estancia tiene todo el boato que podría esperarse de un dormitorio gnomo bien equipado. Tesoro. Un pequeño cofre sin cerradura bajo la cama de los gnomos alberga un sombrero de hechicería y una varita de pirotecnia completamente cargada. Si los personajes consiguen e identifican estos objetos mágicos, dales a los jugadores sus respectivas cartas.
+La propuesta de Fibblestib es un "rayo de cordura", mientras que Dabbledob considera que esa idea es ridícula y aboga por construir algo llamado "camisa de fuerza". Si los personajes los interrumpen, los gnomos se darán cuenta de que los recién llegados podrían tener otra solución, por lo que les explicarán detalladamente la situación y les pedirán consejo sobre cómo sanar a Korboz y rescatar al rey Gnerkli.
+
+Fibblestib y Dabbledob consideran que el misterio de los gnomos desaparecidos es secundario, ya que su objetivo principal es ayudar a los monarcas. Solo les importan Korboz y Gnerkli e ignoran prácticamente todo lo demás. Ambos prometen varias recompensas mágicas a cambio de ayuda (ver sección "Objetos Mágicos de los Gnomos" anterior).
+
+El taller está completamente abarrotado de inventos gnomo inservibles y a medio terminar, así como de mesas de trabajo con herramientas de manitas. A 10 pies del suelo, una cornisa sostiene un pedestal de madera sobre el que descansa un libro encuadernado en cuero.
+
+**Tesoro:** Sobre el pedestal se encuentra el libro de conjuros que comparten todos los gnomos del lugar. En la portada se lee el título "La magia de Terragnoma" (escrito tanto en común como en gnomo). Sus páginas contienen los siguientes conjuros de mago: *armadura de mago, detectar magia, dormir, escudo, identificar, manos ardientes* y *proyectil mágico*.
+
+```statblock
+name: Fibblestib y Dabbledob
+size: Small
+type: humanoid
+subtype: (gnomo)
+alignment: Neutral Good
+ac: 12
+hp: 16
+hit_dice: 3d6+3
+speed: 25ft
+stats: [10, 12, 13, 16, 14, 11]
+fage_stats: [+0, +1, +1, +3, +2, +0]
+skillsaves:
+  - Arcana: +5
+  - Historia: +5
+  - Investigación: +5
+senses: Visión en la oscuridad 60 pies, Passive Perception 14
+languages: Común, Gnomo, Enano
+cr: 1/2
+traits:
+  - name: Astucia Gnoma
+    desc: "Los gnomos tienen ventaja en todas las tiradas de salvación de Inteligencia, Sabiduría y Carisma contra magia."
+  - name: Conocimiento Arcano
+    desc: "Los gnomos tienen ventaja en pruebas de Inteligencia (Arcana) relacionadas con objetos mágicos, inventos y mecanismos."
+  - name: Lanzamiento de Conjuros
+    desc: "Los gnomos son lanzadores de conjuros de nivel 3. Su característica para lanzar conjuros es Inteligencia (salvación de conjuros CD 13, +5 al ataque con conjuros). Tienen preparados los siguientes conjuros de mago: Trucos (a voluntad): *prestidigitación, rayo de escarcha, ilusión menor.* Nivel 1 (4 espacios): *detectar magia, proyectil mágico, escudo.* Nivel 2 (2 espacios): *imagen menor, invisibilidad.*"
+actions:
+  - name: Daga
+    desc: "Ataque con arma cuerpo a cuerpo o a distancia: +3 al golpear, alcance 5 pies o 20/60 pies, un objetivo. *Impacto:* 4 (1d4+2) de daño perforante."
+  - name: Prototipo de Varita Reparadora (1/día)
+    desc: "Los gnomos apuntan a un objeto no mágico roto o dañado y lo reparan parcialmente. El objeto recupera 2d6 puntos de golpe."
+  - name: Dispositivo Defensor (1/día)
+    desc: "Como reacción cuando son atacados, los gnomos pueden activar un pequeño artefacto que crea un campo de fuerza. Obtienen +5 a la CA contra ese ataque."
+equipment:
+  - "Dagas"
+  - "Varios prototipos experimentales"
+  - "Llaves de la sala del tesoro (T13)"
+  - "Componentes arcanos (25 po)"
+  - "3 pociones de curación (2d4+2)"
+  - "Bolsa con 45 po y varias gemas (valor total 75 po)"
+```
+
+### T12. Morada De Los Gnomos
+
+Por el suelo de esta amplia cueva están desperdigados los restos de fogatas previas. Hay cuatro cuevas laterales que funcionan como dormitorios, y en cada una de ellas se apiñan cinco catres pequeños de madera.
+
+Al llegar, los personajes encontrarán a ocho gnomos de las rocas solitarios durmiendo plácidamente, con dos gnomos por cueva lateral:
+
+- Mujeres: Caramip, Jabby, Nyx y Quippy
+- Hombres: Anverth, Delebean, Pallabar y Zook
+
+Los personajes pueden atravesar la zona sin despertar a los gnomos, que no son peligrosos pero se defenderán ante un ataque. Estos gnomos no darán información detallada sobre los problemas recientes, pero aconsejarán hablar con Fibblestib y Dabbledob (en la zona T11), los dos inventores más renombrados de Terragnoma.
+
+### T13. Sala Del Tesoro
+
+La puerta de esta habitación está cerrada con llave y solo Fibblestib y Dabbledob (de la zona T11) tienen las llaves para abrirla.
+
+La sala contiene un sinfín de cachivaches estropeados, así como engranajes sueltos, chatarra retorcida y otros components que los gnomos reutilizan para improvisar nuevos inventos.
+
+**Tesoro:** Entre todo este desorden, los personajes podrán encontrar un amuleto de relojería y una pértiga contraíble. Les resultará mucho más sencillo encontrarlos usando el conjuro *detectar magia*. De lo contrario, tendrán que buscar manualmente y tardarán 1 hora en encontrar cada objeto.
+
+Si los personajes consiguen e identifican estos objetos mágicos, entrégales a los jugadores las cartas correspondientes. ### T14. Salón del Trono
+
+Sobre un estrado de piedra se encuentran dos tronos bajos de tamaño gnomo, fabricados ingeniosamente con restos metálicos.
+
+En el muro norte hay una puerta secreta que oculta un túnel corto que conduce a la zona T15. Solo los reyes gnomos conocen la existencia de este pasaje secreto.
+
+### T15. Aposentos De Los Reyes Gnomos
+
+El rey Korboz se ha recluido en sus aposentos junto a su esposo, Gnerkli, pero ha olvidado que también se puede acceder a la sala mediante la puerta secreta del salón del trono. Solo Korboz y Gnerkli tienen las llaves de la puerta principal, que se encuentra cerrada.
+
+Si los personajes llaman a la puerta o anuncian su llegada, Korboz les hablará desde el interior de sus aposentos y les advertirá nerviosamente sobre la presencia de un cambiaformas. Korboz no recuperará la cordura hasta que los personajes le aseguren que han encontrado y dado muerte al monstruo. Hayan acabado o no con el mimeto, para convencer a Korboz de que ha muerto se debe superar una prueba de Carisma (Persuasión) CD 12.
+
+Korboz y Gnerkli son gnomos de las rocas solitarios. Ambos lucen coronas de metal dentadas y capas hechas de retazos. Gnerkli está apresado y pegado a una silla mientras que Korboz tiene un frasco de disolvente que eliminaría el pegamento al instante. La estancia posee toda la suntuosidad que podría esperarse de un dormitorio gnomo bien equipado.
+
+**Tesoro:** Un pequeño cofre sin cerradura escondido bajo la cama de los gnomos contiene un sombrero de hechicería y una varita de pirotecnia completamente cargada. Si los personajes consiguen e identifican estos objetos mágicos, entrégales a los jugadores las cartas correspondientes.
+
+```statblock
+name: Rey Korboz
+size: Small
+type: humanoid
+subtype: (gnomo)
+alignment: Neutral Good (temporalmente Caótico)
+ac: 14
+hp: 27
+hit_dice: 6d6+6
+speed: 25ft
+stats: [10, 14, 13, 17, 12, 15]
+fage_stats: [+0, +2, +1, +3, +1, +2]
+skillsaves:
+  - Arcana: +6
+  - Historia: +6
+  - Persuasión: +5
+  - Percepción: +4
+senses: Visión en la oscuridad 60 pies, Passive Perception 14
+languages: Común, Gnomo, Enano, Elfo
+cr: 2
+traits:
+  - name: Astucia Gnoma
+    desc: "Korboz tiene ventaja en todas las tiradas de salvación de Inteligencia, Sabiduría y Carisma contra magia."
+  - name: Paranoia Temporal
+    desc: "Mientras esté afectado por su locura, Korboz tiene desventaja en pruebas de Sabiduría (Perspicacia) y hace tiradas de iniciativa con desventaja."
+  - name: Conocimiento Real
+    desc: "Korboz tiene ventaja en pruebas de Inteligencia relacionadas con la historia de Terragnoma y objetos mágicos gnomo."
+  - name: Lanzamiento de Conjuros
+    desc: "Korboz es un lanzador de conjuros de nivel 5. Su característica para lanzar conjuros es Inteligencia (salvación de conjuros CD 14, +6 al ataque con conjuros). Tiene preparados los siguientes conjuros de mago: Trucos (a voluntad): *prestidigitación, rayo de escarcha, ilusión menor, luz.* Nivel 1 (4 espacios): *detectar magia, identificar, escudo, proyectil mágico.* Nivel 2 (3 espacios): *invisibilidad, imagen reflejada, fuerza fantasmal.* Nivel 3 (2 espacios): *contrahechizo, bola de fuego.*"
+actions:
+  - name: Bastón Real
+    desc: "Ataque con arma cuerpo a cuerpo: +3 al golpear, alcance 5 pies, un objetivo. *Impacto:* 3 (1d6) de daño contundente."
+  - name: Explosión Mágica
+    desc: "Korboz canaliza energía mágica pura contra un objetivo que pueda ver a 60 pies. El objetivo debe hacer una tirada de salvación de Destreza CD 14, sufriendo 13 (3d8) de daño de fuerza en caso de fallar, o la mitad si tiene éxito."
+  - name: Corona Defensora (1/día)
+    desc: "Korboz activa el poder de su corona. Él y hasta tres criaturas de su elección dentro de 30 pies obtienen 10 puntos de golpe temporales durante 1 hora."
+reactions:
+  - name: Contrahechizo Instintivo
+    desc: "Cuando Korboz ve a una criatura a 60 pies o menos lanzando un conjuro, puede usar su reacción para intentar interrumpirlo. Si el conjuro es de nivel 3 o inferior, se interrumpe automáticamente. Si es de nivel 4 o superior, Korboz debe hacer una prueba de Inteligencia CD 10 + el nivel del conjuro. Si tiene éxito, el conjuro falla y no tiene efecto."
+equipment:
+  - "Bastón real"
+  - "Corona mágica"
+  - "Frasco de disolvente"
+  - "Capa de retazos"
+  - "Sombrero de hechicería (en el cofre)"
+  - "Anillo con el sello real"
+  - "Bolsa con 65 po y 4 gemas (25 po cada una)"
+```
+
+```statblock
+name: Rey Gnerkli
+size: Small
+type: humanoid
+subtype: (gnomo)
+alignment: Neutral Good
+ac: 12
+hp: 22
+hit_dice: 5d6+5
+speed: 25ft (0ft mientras está atado)
+stats: [12, 14, 12, 16, 13, 16]
+fage_stats: [+1, +2, +1, +3, +1, +3]
+skillsaves:
+  - Arcana: +5
+  - Historia: +5
+  - Engaño: +5
+  - Persuasión: +5
+senses: Visión en la oscuridad 60 pies, Passive Perception 13
+languages: Común, Gnomo, Enano, Elfo
+cr: 1
+traits:
+  - name: Astucia Gnoma
+    desc: "Gnerkli tiene ventaja en todas las tiradas de salvación de Inteligencia, Sabiduría y Carisma contra magia."
+  - name: Encanto Natural
+    desc: "Gnerkli tiene ventaja en todas las pruebas de Carisma dirigidas a criaturas humanoides."
+  - name: Lanzamiento de Conjuros
+    desc: "Gnerkli es un lanzador de conjuros de nivel 4. Su característica para lanzar conjuros es Inteligencia (salvación de conjuros CD 13, +5 al ataque con conjuros). Tiene preparados los siguientes conjuros de mago: Trucos (a voluntad): *prestidigitación, ilusión menor, mano de mago.* Nivel 1 (4 espacios): *encantamiento, imagen silenciosa, detectar magia.* Nivel 2 (3 espacios): *sugestión, invisibilidad.*"
+actions:
+  - name: Daga (cuando no está inmovilizado)
+    desc: "Ataque con arma cuerpo a cuerpo: +4 al golpear, alcance 5 pies, un objetivo. *Impacto:* 4 (1d4+2) de daño perforante."
+equipment:
+  - "Corona real"
+  - "Capa de retazos"
+  - "Varita de pirotecnia (en el cofre)"
+  - "Anillo con el sello real"
+  - "Bolsa con 45 po y una gema (50 po)"
+```
 
 ## Personajes De Terragnoma
 
@@ -310,6 +498,11 @@ Desde have mucho tiempo, Terragnorna es una fuente de la incontrolable magia sal
 
 #### Tabla De Magia Salvaje
 
-d2o Efectos de magia salvaje l-6 N i nguno. 7-10 La piel del lanzador adquiere un tono azul intenso. ll-14 Unos diminutos pu ntos de luz etéreos rodean al lanzador y emiten luz brillante en un radio de lO pies y luz te nue lO pies más allá. 15-17 Brotan alas de mariposa de la espalda del lanzador que le otorgan una velocidad volando de 30 pies. 18-19 El lanzador se teletransporta un máximo de 60 pies hasta un espacio sin ocupar aleatorio a decisión del DM. 20 Ocu rre un efecto mágico inventado por el DM.
-
-
+| D20   | Effectos de magia Salvaje                                                                                                            |
+| ----- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| 1-6   | Ninguno                                                                                                                              |
+| 7-10  | La piel del lanzador adquiere un tono azul intenso.                                                                                  |
+| 11-14 | Unos diminutos pu ntos de luz etéreos rodean al lanzador y emiten luz brillante en un radio de lO pies y luz te nue lO pies más allá |
+| 15-17 | Brotan alas de mariposa de la espalda del lanzador que le otorgan una velocidad volando de 30 pies                                   |
+| 18-19 | El lanzador se teletransporta un máximo de 60 pies hasta un espacio sin ocupar aleatorio a decisión del DM                           |
+| 20    | Ocurre un efecto mágico inventado por el DM                                                                                          |

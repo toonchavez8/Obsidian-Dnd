@@ -9,13 +9,13 @@
 | --- | --- |
 | Nivel recomendado | 1-2 |
 | Dificultad | Media (nivel 1), Baja (nivel 2), Muy baja (nivel 3+) |
-| Ubicación | Montañas al suroeste de Phandalin (15 millas) |
-| Recompensa | 50 po de Harbin Wester + posibles piedras mensajeras |
+| Ubicación | Montañas al suroeste de [[Phandalin]] (15 millas) |
+| Recompensa | 50 po de [[Harbin Wester]] + posibles piedras mensajeras |
 | Peligros | Gelatinas ocre, orcos |
 
 ## Descripción Del Lugar
 
-Dazlyn Esquirlagrís y Norbus Runaférrea son dos enanos escudo que trabajan juntos como socios comerciales en busca de oro. Durante una exploración en las montañas al suroeste de Phandalin, estos enanos decidieron investigar un cañón cercano donde encontraron indicios de un antiguo asentamiento enano sepultado por una avalancha.
+Dazlyn Esquirlagrís y Norbus Runaférrea son dos enanos escudo que trabajan juntos como socios comerciales en busca de oro. Durante una exploración en las montañas al suroeste de [[Phandalin]], estos enanos decidieron investigar un cañón cercano donde encontraron indicios de un antiguo asentamiento enano sepultado por una avalancha.
 
 Durante los últimos meses, Dazlyn y Norbus han dedicado su tiempo a limpiar los escombros y explorar las ruinas en busca de tesoros, aunque hasta ahora no han encontrado nada de valor significativo.
 
@@ -31,7 +31,7 @@ Si los personajes deciden quedarse para ayudar a Dazlyn y Norbus con su problema
 
 ## Llegada a la Excavación
 
-La excavación de los enanos se encuentra al este de Leilon, aproximadamente a 15 millas al suroeste de Phandalin, en el extremo este de un cañón (zona E1).
+La excavación de los enanos se encuentra al este de Leilon, aproximadamente a 15 millas al suroeste de [[Phandalin]], en el extremo este de un cañón (zona E1).
 
 > [!hint] Descripción para los jugadores
 > Las paredes rocosas del cañón se elevan hasta alcanzar unos ochenta pies de altura. Al fondo del cañón se divisa una puerta rota esculpida en una pared de piedra negra de 20 pies de altura. A la puerta le falta una de sus jambas de piedra y la otra, a punto de caerse, cuelga apenas de un gozne. Tras esta puerta abierta, bajo la sombra de una gran montaña al este, se encuentra un asentamiento en ruinas. El silencio domina el lugar.
