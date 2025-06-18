@@ -13,15 +13,61 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 5 - 7/Misión El Túmulo del Dragón.md",
+                "file": "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3/Misión de Terragnoma.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Misión El Túmulo del Dragón"
+              "title": "Misión de Terragnoma"
+            }
+          },
+          {
+            "id": "e7b046f21ee810be",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3/Misión de la Colina del Resentimiento.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Misión de la Colina del Resentimiento"
+            }
+          },
+          {
+            "id": "8ff8c59adc6feca5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3/Misión de Terragnoma.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Misión de Terragnoma"
+            }
+          },
+          {
+            "id": "5a2853ae3eccbb8d",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/Roadmap.canvas",
+                "viewState": {
+                  "x": 807.5538976101026,
+                  "y": 1473.389754564402,
+                  "zoom": -1.9999999999999998
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "Roadmap"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -114,12 +160,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 5 - 7/Misión El Túmulo del Dragón.md",
+                "file": "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/Roadmap.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Misión El Túmulo del Dragón"
+              "title": "Outgoing links from Roadmap"
             }
           },
           {
@@ -263,16 +309,19 @@
       "calendarium:Open Calendarium": false
     }
   },
-  "active": "ee27264648e12cb5",
+  "active": "5a2853ae3eccbb8d",
   "lastOpenFiles": [
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3/Misión de la Colina del Resentimiento.md",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 5 - 7",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/Roadmap.canvas",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3/Misión de la excavación de los enanos.md",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3/Misión de Terragnoma.md",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3/Misión de la Colina del Resentimiento.md",
+    "Untitled.md",
+    "Readme.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 5 - 7/Misión El Túmulo del Dragón.md",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 5 - 7",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3/imgs/Mission1.png",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Misión de la Colina del Resentimiento.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Costa de la Espada.md",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3/Misión de Terragnoma.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3/imgs/Mission3.png",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3/imgs/Mission2.png",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3/imgs/Pasted image 20250618155434.png",
@@ -285,7 +334,6 @@
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Mission1.png",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Mission3.png",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Mission2.png",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/Roadmap.canvas",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Casa de Cambio de Phandalin.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3/imgs",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/04_NPCs/Harbin Wester.md",
@@ -307,8 +355,6 @@
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Santuario de la Suerte.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Bazar Escudo de Leon.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Casa de Cambio Phandalin.md",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Bazar Escudo de Leon.md",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Posada Rocacolina.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/05_Tablas",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/00_lore/El Dragon de Pico Helado.pdf"
   ]
