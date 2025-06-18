@@ -155,4 +155,4 @@ Dependiendo de cómo interactúen con Adabra, los jugadores tienen varias opcion
 - Adabra puede convertirse en un contacto valioso para el grupo, proporcionándoles información sobre hierbas raras o efectos de pociones especiales en futuras aventuras.
   
   
-  ![[Pasted image 20250618135835.png]]
+  ![[Mission1.png]]

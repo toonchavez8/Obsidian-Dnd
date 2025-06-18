@@ -38,7 +38,7 @@ La excavación de los enanos se encuentra al este de Leilon, aproximadamente a 1
 
 Si los personajes anuncian su llegada, Dazlyn y Norbus saldrán a recibirlos. De lo contrario, los personajes se encontrarán con los enanos en la zona E3.
 
-![[Pasted image 20250618154002.png]]
+![[Mission2.png]]
 
 ## Lugares De la Excavación
 
