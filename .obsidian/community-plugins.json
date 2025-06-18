@@ -11,6 +11,8 @@
   "templater-obsidian",
   "dataview",
   "buttons",
+  "obsidian-meta-bind-plugin",
   "obsidian-admonition",
-  "univer"
+  "excel",
+  "obsidian-linter"
 ]

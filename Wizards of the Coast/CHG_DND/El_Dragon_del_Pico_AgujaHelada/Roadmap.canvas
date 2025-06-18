@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"a8f46a041136b613","type":"file","file":"Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin.md","x":-240,"y":120,"width":400,"height":400},
+		{"id":"7ba6ecb8b01f531d","x":-960,"y":-480,"width":400,"height":400,"type":"file","file":"Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Costa de la Espada.md"}
+	],
+	"edges":[
+		{"id":"811b506da343fa62","fromNode":"7ba6ecb8b01f531d","fromSide":"right","toNode":"a8f46a041136b613","toSide":"top"}
+	]
+}

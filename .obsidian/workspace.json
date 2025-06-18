@@ -4,45 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "512c174ea950238c",
+        "id": "ed96cc47f26bb37d",
         "type": "tabs",
         "children": [
           {
-            "id": "e58d9708f9dd92c7",
+            "id": "46a5d549bcd39140",
             "type": "leaf",
             "state": {
-              "type": "intiative-tracker-encounter-builder",
-              "state": [],
-              "icon": "intiative-tracker-encounter-builder",
-              "title": "Encounter Builder"
+              "type": "markdown",
+              "state": {
+                "file": "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Phandalin"
             }
           },
           {
-            "id": "7d8f82bf1f658600",
+            "id": "fdf71f0a42c74ac4",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/El Dragon de Pico Helado.pdf"
+                "file": "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Posada Rocacolina.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "El Dragon de Pico Helado"
-            }
-          },
-          {
-            "id": "7ff629163c9c90e4",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/El Dragon de Pico Helado.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "El Dragon de Pico Helado"
+              "icon": "lucide-file",
+              "title": "Posada Rocacolina"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -108,7 +102,7 @@
       {
         "id": "ba0d59233e31b44f",
         "type": "tabs",
-        "dimension": 31.1046511627907,
+        "dimension": 38.58173076923077,
         "children": [
           {
             "id": "79215bbccd956432",
@@ -116,6 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Posada Rocacolina.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +120,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for Posada Rocacolina"
             }
           },
           {
@@ -205,16 +200,6 @@
             }
           },
           {
-            "id": "c446f0d000d4433d",
-            "type": "leaf",
-            "state": {
-              "type": "DICE_ROLLER_VIEW",
-              "state": {},
-              "icon": "dices",
-              "title": "Dice Tray"
-            }
-          },
-          {
             "id": "101d004a8093f30a",
             "type": "leaf",
             "state": {
@@ -238,13 +223,23 @@
               "icon": "CALENDARIUM",
               "title": "Calendarium"
             }
+          },
+          {
+            "id": "f1afa62a7470825f",
+            "type": "leaf",
+            "state": {
+              "type": "DICE_ROLLER_VIEW",
+              "state": {},
+              "icon": "dices",
+              "title": "Dice Tray"
+            }
           }
         ]
       },
       {
         "id": "9c7543e6c2820b5d",
         "type": "tabs",
-        "dimension": 49.51550387596899,
+        "dimension": 61.418269230769226,
         "children": [
           {
             "id": "b04c31368900315c",
@@ -257,27 +252,10 @@
             }
           }
         ]
-      },
-      {
-        "id": "d58b80ad9d5760c6",
-        "type": "tabs",
-        "dimension": 19.379844961240313,
-        "children": [
-          {
-            "id": "3f18f65ab2238512",
-            "type": "leaf",
-            "state": {
-              "type": "fantasy-statblocks-creature-pane",
-              "state": {},
-              "icon": "skull",
-              "title": "Combatant"
-            }
-          }
-        ]
       }
     ],
     "direction": "horizontal",
-    "width": 504.5
+    "width": 321.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -293,24 +271,37 @@
       "obsidian-5e-statblocks:Open Creature pane": false,
       "initiative-tracker:Initiative Tracker Encounter Builder": false,
       "univer:Univer": false,
-      "calendarium:Open Calendarium": false
+      "calendarium:Open Calendarium": false,
+      "obsidian-git:Open Git source control": false,
+      "excel:Create Excel File": false
     }
   },
-  "active": "ee27264648e12cb5",
+  "active": "fdf71f0a42c74ac4",
   "lastOpenFiles": [
-    "Untitled.udoc",
-    "Untitled.xlsx",
-    "Untitled.usheet",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/El Dragon de Pico Helado.pdf",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/El Dragon de Pico Helado-players.pdf",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada",
-    "Wizards of the Coast/CHG_DND",
-    "Wizarding World/World/PlayerSheets/Player's Cheat Sheets - Spanish.pdf",
-    "Wizards of the Coast",
-    "Wizarding World/World/PlayerSheets/Player's Cheat Sheets - English.pdf",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Huerto_Edermath.md",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin.md",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Posada Rocacolina.md",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/05_Tablas/01_Historias_de_Phandalin.md",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/05_Tablas",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Costa de la Espada.md",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/Roadmap.canvas",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Defense against the Dark Arts Classroom (Practical) by U.B.O.S..md",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/00_lore/El Dragon de Pico Helado.pdf",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Costa_de_la_Espada.png",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/00_lore/El Dragon de Pico Helado-players.pdf",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/00_lore",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/04_NPCs",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Phandalin.jpg",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Phandalin.jpg.crdownload",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns",
+    "00_DND_Templates/Insert_leaflet_map.md",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Phandalin.png",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps",
+    "Untitled.md",
     "Wizarding World/Game Expectations.md",
     "Wizarding World.md",
-    "Wizarding World",
     "Wizarding World/World/Maps/Hogwarts/4 - West Wing/Clocktower Courtyard by 96anti.png",
     "Wizarding World/World/Maps/Hogwarts/3 - The Quad/Secret Challenge Room by Olive.jpg",
     "Wizarding World/World/Maps/Hogwarts/3 - The Quad/Hospital Wing by U.B.O.S..jpg",
@@ -318,9 +309,6 @@
     "Wizarding World/World/Maps/Hogwarts/3 - The Quad/Classroom Hallway by Veertje.png",
     "Wizarding World/World/Maps/Hogwarts/3 - The Quad/Gryffindor Common Room (Christmas) by U.B.O.S..jpg",
     "Wizarding World/World/Maps/Hogwarts/3 - The Quad/Gryffindor Common Room by Block_nessie.jpg",
-    "Wizarding World/World/Maps/Hogwarts/3 - The Quad/Gryffindor Common Room by U.B.O.S..jpg",
-    "Wizarding World/World/Maps/Hogwarts/3 - The Quad/Gryffindor Dormitory by Block_nessie.jpg",
-    "Wizarding World/World/Maps/Hogwarts/3 - The Quad/History of Magic Classroom by U.B.O.S..jpg",
     "Wizarding World/World/Factions/Mortifagos.md",
     "Wizarding World/Sessions/Session 0 - Prelude/Session_0-Prelude - Antes.md",
     "Wizarding World/World/Wizarding World/Traveling Event System TES.md",
@@ -336,13 +324,6 @@
     "Wizarding World/Characters/Temp PlayerChars/Ignacio ignam.md",
     "Wizarding World/Characters/Temp PlayerChars/Penolope Pevreal.md",
     "Wizarding World/Characters/NPCs/professors/Profesor Grimlock (Jefe de Ravenclaw).md",
-    "Wizarding World/Characters/Creation Notes/Feats.md",
-    "Wizarding World/World/Hogwarts/Hogwarts.md",
-    "Wizarding World/World/Hogwarts/Aula de Defensa Contra las Artes Oscuras.md",
-    "Wizarding World/Characters/NPCs/creatures/Binky.md",
-    "Wizarding World/Characters/NPCs/creatures/Winky.md",
-    "Wizarding World/Characters/Temp PlayerChars/Rebecca Weasly.md",
-    "Wizarding World/Characters/Temp PlayerChars/Valentina Voraz.md",
-    "Assets/OscarOrtiz_Img_PlaceHolder.md"
+    "Wizarding World/Characters/Creation Notes/Feats.md"
   ]
 }

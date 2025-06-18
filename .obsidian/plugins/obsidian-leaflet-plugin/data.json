@@ -1,16 +1,456 @@
 {
-  "mapMarkers": [],
+  "mapMarkers": [
+    {
+      "id": "MapCalcExample",
+      "lastAccessed": 1750265847740,
+      "markers": [
+        {
+          "id": "ID_f839ea391888",
+          "type": "default",
+          "loc": [
+            1623.5613637781373,
+            511.5917561884672
+          ],
+          "layer": "%5B%5BCosta_de_la_Espada.png%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": 0,
+          "maxZoom": -1,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_7be9ca0a8b5a",
+          "type": "default",
+          "loc": [
+            1616.490295966272,
+            504.5206883766017
+          ],
+          "layer": "%5B%5BCosta_de_la_Espada.png%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": 0,
+          "maxZoom": -1,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_28b978e928ab",
+          "type": "Inn",
+          "loc": [
+            1557.5,
+            834
+          ],
+          "layer": "%5B%5BCosta_de_la_Espada.png%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": -1,
+          "maxZoom": null,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_dbd91a58da79",
+          "type": "services",
+          "loc": [
+            1481.4108036727291,
+            921.8904659719612
+          ],
+          "layer": "%5B%5BCosta_de_la_Espada.png%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": null,
+          "maxZoom": null,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_4b6aebdb59cb",
+          "type": "Shop",
+          "loc": [
+            1530.2011715746007,
+            945.9320965323038
+          ],
+          "layer": "%5B%5BCosta_de_la_Espada.png%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": null,
+          "maxZoom": null,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_09ba7a4aaa4b",
+          "type": "cart",
+          "loc": [
+            1566.9707241963013,
+            978.459008466885
+          ],
+          "layer": "%5B%5BCosta_de_la_Espada.png%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": null,
+          "maxZoom": null,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_f888db3b6888",
+          "type": "default",
+          "loc": [
+            1616.4681988793595,
+            952.2960575629828
+          ],
+          "layer": "%5B%5BCosta_de_la_Espada.png%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": 0,
+          "maxZoom": -1,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_eaa99a4a6948",
+          "type": "Dungeon",
+          "loc": [
+            1610.1042378486807,
+            932.4970676897594
+          ],
+          "layer": "%5B%5BCosta_de_la_Espada.png%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": null,
+          "maxZoom": null,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_daf93818baeb",
+          "type": "Forest",
+          "loc": [
+            1634.85297519021,
+            973.5092609985793
+          ],
+          "layer": "%5B%5BCosta_de_la_Espada.png%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": null,
+          "maxZoom": null,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_9b896878a9aa",
+          "type": "Point of Interest",
+          "loc": [
+            1631.317441284277,
+            1009.5717068390932
+          ],
+          "layer": "%5B%5BCosta_de_la_Espada.png%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": null,
+          "maxZoom": null,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_49a8ea092bba",
+          "type": "default",
+          "loc": [
+            1667.3798871247911,
+            929.6686405650133
+          ],
+          "layer": "%5B%5BCosta_de_la_Espada.png%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": null,
+          "maxZoom": -1,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_5a591ad8783b",
+          "type": "Tavern",
+          "loc": [
+            1665.2585667812314,
+            899.2630489739918
+          ],
+          "layer": "%5B%5BCosta_de_la_Espada.png%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": null,
+          "maxZoom": null,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_5ada799a1bcb",
+          "type": "default",
+          "loc": [
+            1605.154490380375,
+            843.4016132602545
+          ],
+          "layer": "%5B%5BCosta_de_la_Espada.png%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": null,
+          "maxZoom": null,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_58db6b9819eb",
+          "type": "town",
+          "loc": [
+            1509.03125,
+            826.75
+          ],
+          "layer": "%5B%5BCosta_de_la_Espada.png%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": null,
+          "maxZoom": -1,
+          "tooltip": "hover"
+        }
+      ],
+      "overlays": [],
+      "shapes": [],
+      "files": [
+        "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin.md"
+      ]
+    },
+    {
+      "id": "PhandalinCityMap",
+      "lastAccessed": 1750265847740,
+      "markers": [
+        {
+          "id": "ID_28ca5b3bbb28",
+          "type": "Point of Interest",
+          "loc": [
+            1476,
+            811
+          ],
+          "link": "Huerto_Edermath",
+          "layer": "%5B%5BPhandalin.jpg%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": "El huerto se encuentra en el lado noroeste de Phandalin, y es un punto de referencia dominante para cualquiera que llegue a Phandalin por el camino principal. Los árboles rodean un pequeño grupo de edificios donde se llevan a cabo las actividades comerciales del huerto, y la casa del propietario, Daran Edermath, está cerca.\n",
+          "minZoom": 0,
+          "maxZoom": null,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_5bd91b8b9beb",
+          "type": "town",
+          "loc": [
+            1213.9375,
+            1153
+          ],
+          "link": "Phandalin",
+          "layer": "%5B%5BPhandalin.jpg%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": null,
+          "maxZoom": -1,
+          "tooltip": "hover"
+        }
+      ],
+      "overlays": [],
+      "shapes": [],
+      "files": []
+    }
+  ],
   "defaultMarker": {
     "type": "default",
     "iconName": "map-marker",
-    "color": "#dddddd",
+    "color": "#f90101",
     "transform": {
       "size": 6,
       "x": 0,
       "y": -2
     }
   },
-  "markerIcons": [],
+  "markerIcons": [
+    {
+      "type": "Tavern",
+      "iconName": "home",
+      "color": "#01f99a",
+      "alpha": 1,
+      "layer": true,
+      "transform": {
+        "size": 6,
+        "x": 0,
+        "y": -2
+      },
+      "isImage": false,
+      "tags": [],
+      "minZoom": 0,
+      "maxZoom": null
+    },
+    {
+      "type": "Point of Interest",
+      "iconName": "asterisk",
+      "color": "#ffd500",
+      "alpha": 1,
+      "layer": false,
+      "transform": {
+        "size": 6,
+        "x": 0,
+        "y": -2
+      },
+      "isImage": false,
+      "tags": [],
+      "minZoom": -1,
+      "maxZoom": null
+    },
+    {
+      "type": "Forest",
+      "iconName": "tree",
+      "color": "#59ff00",
+      "alpha": 1,
+      "layer": true,
+      "transform": {
+        "size": 6,
+        "x": 0,
+        "y": -2
+      },
+      "isImage": false,
+      "tags": [],
+      "minZoom": -1,
+      "maxZoom": null
+    },
+    {
+      "type": "Dungeon",
+      "iconName": "archway",
+      "color": "#dc01f9",
+      "alpha": 1,
+      "layer": false,
+      "transform": {
+        "size": 6,
+        "x": 0,
+        "y": -2
+      },
+      "isImage": false,
+      "tags": [],
+      "minZoom": -1,
+      "maxZoom": null
+    },
+    {
+      "type": "cart",
+      "iconName": "horse",
+      "color": "#0154f9",
+      "alpha": 1,
+      "layer": false,
+      "transform": {
+        "size": 6,
+        "x": 0,
+        "y": -2
+      },
+      "isImage": false,
+      "tags": [],
+      "minZoom": -1,
+      "maxZoom": null
+    },
+    {
+      "type": "Shop",
+      "iconName": "shopping-basket",
+      "color": "#ffd60a",
+      "alpha": 1,
+      "layer": false,
+      "transform": {
+        "size": 6,
+        "x": 0,
+        "y": -2
+      },
+      "isImage": false,
+      "tags": [],
+      "minZoom": -1,
+      "maxZoom": null
+    },
+    {
+      "type": "Inn",
+      "iconName": "bed",
+      "color": "#01f99a",
+      "alpha": 1,
+      "layer": false,
+      "transform": {
+        "size": 6,
+        "x": 0,
+        "y": -2
+      },
+      "isImage": false,
+      "tags": [],
+      "minZoom": -1,
+      "maxZoom": null
+    },
+    {
+      "type": "services",
+      "iconName": "shopping-bag",
+      "color": "#01f9c7",
+      "alpha": 1,
+      "layer": false,
+      "transform": {
+        "size": 6,
+        "x": 0,
+        "y": -2
+      },
+      "isImage": false,
+      "tags": [],
+      "minZoom": -1,
+      "maxZoom": null
+    },
+    {
+      "type": "town",
+      "iconName": "city",
+      "color": "#ff7300",
+      "alpha": 1,
+      "layer": true,
+      "transform": {
+        "size": 6,
+        "x": 0,
+        "y": -2
+      },
+      "isImage": false,
+      "tags": [],
+      "minZoom": null,
+      "maxZoom": -1
+    },
+    {
+      "type": "Encounter",
+      "iconName": "bomb",
+      "color": "#f90101",
+      "alpha": 1,
+      "layer": true,
+      "transform": {
+        "size": 6,
+        "x": 0,
+        "y": -2
+      },
+      "isImage": false,
+      "tags": [],
+      "minZoom": -1,
+      "maxZoom": null
+    }
+  ],
   "color": "#dddddd",
   "lat": 39.983334,
   "long": -82.98333,
@@ -28,9 +468,61 @@
   "displayOverlayTooltips": true,
   "configDirectory": null,
   "mapViewEnabled": true,
-  "mapViewParameters": {},
+  "mapViewParameters": {
+    "darkMode": "false",
+    "defaultZoom": -1,
+    "distanceMultiplier": 1,
+    "drawColor": "#3388ff",
+    "geojson": [],
+    "geojsonColor": "#3388ff",
+    "gpx": [],
+    "gpxColor": "#3388ff",
+    "height": "500px",
+    "image": "[[Phandalin.jpg]]",
+    "imageOverlay": [],
+    "isMapView": false,
+    "layers": [
+      "[[Phandalin.jpg]]"
+    ],
+    "linksFrom": [],
+    "linksTo": [],
+    "marker": [],
+    "commandMarker": [],
+    "markerFile": [],
+    "markerFolder": [],
+    "markerTag": [],
+    "maxZoom": 1,
+    "minZoom": -2,
+    "osmLayer": true,
+    "overlay": [],
+    "overlayColor": "blue",
+    "scale": 0.3993610223642173,
+    "showAllMarkers": false,
+    "tileServer": [],
+    "verbose": false,
+    "zoomDelta": 0.5,
+    "zoomFeatures": false,
+    "id": "PhandalinCityMap",
+    "bounds": [
+      [
+        0,
+        0
+      ],
+      [
+        2153,
+        3000
+      ]
+    ],
+    "width": "90%",
+    "lat": 1500,
+    "long": 1076.5,
+    "unit": "metros",
+    "recenter": false,
+    "darkmode": false,
+    "filterTag": []
+  },
   "enableDraw": true,
-  "defaultUnitType": "imperial",
+  "defaultUnitType": "metric",
   "defaultTile": "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png",
   "defaultTileDark": "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png",
   "defaultAttribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors &copy; <a href=\"https://carto.com/attributions\">CARTO</a>",
