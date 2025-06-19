@@ -9,19 +9,19 @@ Esta campaña se centrará en la reconstrucción del mundo mágico después de l
 **Tema:** Redescubrimiento y crecimiento personal.  
 **Trama:**
 
-- Los héroes, jóvenes magos y brujas, llegan a Hogwarts en una época de cambio y esperanza. La escuela busca recuperar su prestigio tras los horrores de la guerra. Sin embargo, la paz está lejos de ser absoluta.
+- Los héroes, jóvenes magos y brujas, llegan a [[Hogwarts]] en una época de cambio y esperanza. La escuela busca recuperar su prestigio tras los horrores de la guerra. Sin embargo, la paz está lejos de ser absoluta.
 - **Conflicto inicial:**
     - **Los duendes**, tras ser liberados del control de Voldemort, comienzan a mostrar resentimiento hacia la comunidad mágica, acusándola de siglos de opresión. Rumores sobre robos de materiales mágicos, experimentos con varitas y la creación de armas comienzan a surgir.
-    - Criaturas mágicas y artefactos de otros planos empiezan a aparecer, creando caos en Hogwarts y sus alrededores.
+    - Criaturas mágicas y artefactos de otros planos empiezan a aparecer, creando caos en [[Hogwarts]] y sus alrededores.
     - Los estudianes estan aprendiendo y ayudando con la reconstruccion.  
 - **Eventos Clave:**
     1. Los héroes enfrentan amenazas locales (trolls, criaturas mágicas, artefactos descontrolados) mientras descubren que estas apariciones están vinculadas a una inestabilidad planar.
     2. Encuentran pistas sobre los planes de los duendes para fabricar varitas mágicas y usarlas para cambiar el equilibrio de poder.
-    3. Un grupo rebelde dentro de Hogwarts, que simpatiza con los duendes, generan marchas y protestas y algunos radicales empiezan a sabotar la escuela para hacerce escuchados
-    4. Al llegar al nivel 10, los héroes logran impedir un ataque a gran escala en Hogwarts, pero descubren que el conflicto es solo el principio. 
+    3. Un grupo rebelde dentro de [[Hogwarts]], que simpatiza con los duendes, generan marchas y protestas y algunos radicales empiezan a sabotar la escuela para hacerce escuchados
+    4. Al llegar al nivel 10, los héroes logran impedir un ataque a gran escala en [[Hogwarts]], pero descubren que el conflicto es solo el principio. 
 
 **Final del arco:**  
-Los héroes son reconocidos como defensores del mundo mágico, pero deben abandonar Hogwarts para enfrentarse al conflicto más amplio en el mundo exterior.
+Los héroes son reconocidos como defensores del mundo mágico, pero deben abandonar [[Hogwarts]] para enfrentarse al conflicto más amplio en el mundo exterior.
 
 ---
 

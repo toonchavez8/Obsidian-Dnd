@@ -8,7 +8,7 @@ El pueblo fronterizo de Phandalin se ha erigido sobre las ruinas de un asentamie
 
 
 > [!summary] 
-> Enclavado en las nevadas laderas rocosas de las Montañas de la Espada, el pueblo minero de Phandalin está formado por unos cuarenta o cincuenta edificios de madera. Unas ruinas de piedra medio desmoronadas rodean las nuevas casas y tiendas, lo que permite i ntuir el gran tamaño que tenía esta local idad h ace siglos. Los habitantes de Phandalin son personas tranqui las y trabajadoras q ue vin ieron de ciudades lejanas para ganarse la vida en medio de la naturaleza salvaje y a rdua. Se trata de granjeros, canteros, herreros, comerciantes, buscadores de oro y niños. El pueblo no tiene murallas ni una guarnición que lo proteja, pero la mayoría de los adultos mantienen las armas a su alcance por si tuvieran que empuñarlas en cualquier memento. Los visitantes son bienvenidos aquí, especialmente si tienen un par de monedas para gastar o noticias que q uieran compartir. La posada Rocacol i na, situada en el centro de la ciudad, ofrece un alojamiento modesto y viandas. Un par de puertas más abajo de la posada, plantado fuera de la casa consistorial, h ay un tablón de o portun idades para aventureros.
+> Enclavado en las nevadas laderas rocosas de las Montañas de la Espada, el pueblo minero de Phandalin está formado por unos cuarenta o cincuenta edificios de madera. Unas ruinas de piedra medio desmoronadas rodean las nuevas casas y tiendas, lo que permite i ntuir el gran tamaño que tenía esta local idad h ace siglos. Los habitantes de Phandalin son personas tranqui las y trabajadoras q ue vin ieron de ciudades lejanas para ganarse la vida en medio de la naturaleza salvaje y a rdua. Se trata de granjeros, canteros, herreros, comerciantes, buscadores de oro y niños. El pueblo no tiene murallas ni una guarnición que lo proteja, pero la mayoría de los adultos mantienen las armas a su alcance por si tuvieran que empuñarlas en cualquier memento. Los visitantes son bienvenidos aquí, especialmente si tienen un par de monedas para gastar o noticias que q uieran compartir. La posada Rocacol i na, situada en el centro de la ciudad, ofrece un alojamiento modesto y viandas. Un par de puertas más abajo de la posada, plantado fuera de la [[Casa Consistorial]], h ay un tablón de o portun idades para aventureros.
 
 ```leaflet  
 id: PhandalinCityMap ### Must be unique with no spaces  
@@ -47,7 +47,7 @@ Puede que los personajes quieran explorar los establecimientos más importantes 
 
 ## MISIONES DE PHANDALIN
 
-El tablón de oportunidades que hay en el exterior de la casa consistorial recoge información sobre las misiones disponibles para los aventureros. Cada misión aparece impresa en una carta, que podrás entregar a los jugadores cuando esté disponible dicha misión (consulta "Misiones de inicio" y "Misiones avanzadas" a continuación). Deja que los jugadores elijan el orden en el que quieren cumplir las misiones. Si a los jugadores no les gusta una misión en particular, no están obligados a llevarla a cabo. Sin embargo, cumplirlas have que los personajes se vuelvan más poderosos (consulta "Subir de nivel", en la página 1 1).
+El tablón de oportunidades que hay en el exterior de la [[Casa Consistorial]] recoge información sobre las misiones disponibles para los aventureros. Cada misión aparece impresa en una carta, que podrás entregar a los jugadores cuando esté disponible dicha misión (consulta "Misiones de inicio" y "Misiones avanzadas" a continuación). Deja que los jugadores elijan el orden en el que quieren cumplir las misiones. Si a los jugadores no les gusta una misión en particular, no están obligados a llevarla a cabo. Sin embargo, cumplirlas have que los personajes se vuelvan más poderosos (consulta "Subir de nivel", en la página 1 1).
 
 ### Missiones De Inicio
 
@@ -88,7 +88,7 @@ La primera vez que los personajes consulten el tablón de oportunidades, habrá 
 ## ¿Dónde Está El Dragón Blanco?
 
 **Cryovain**, el joven dragón blanco ([ver perfil en la página 59](https://chatgpt.com/c/68531102-4598-8002-84d1-991ed76613f9#)), es una amenaza errante que puede aparecer en cualquier punto del mapa.  
-Cada vez que los personajes **lleguen a una nueva ubicación** marcada en el mapa de la Costa de la Espada o se **dispongan a salir de una**, lanza **1d20** y consulta la siguiente tabla para determinar **dónde se encuentra Cryovain** en ese memento.
+Cada vez que los personajes **lleguen a una nueva ubicación** marcada en el mapa de la [[Costa de la Espada]] o se **dispongan a salir de una**, lanza **1d20** y consulta la siguiente tabla para determinar **dónde se encuentra Cryovain** en ese memento.
 
 > 🎲 La **primera tirada** debe hacerse en la mesa cuando los aventureros salgan de **Phandalin** por primera vez.
 

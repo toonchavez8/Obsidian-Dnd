@@ -7,7 +7,7 @@
 | --- | --- |
 | Tipo | Posada |
 | Pisos | 2 |
-| Ubicación | Phandalin, Costa de la Espada Norte |
+| Ubicación | [[Phandalin]], [[Costa de la Espada]] Norte |
 | Propietario | Toblen Stonehill |
 | Personal | Camarera (Elsa) |
 | Servicios | Alojamiento, comida y bebida |
@@ -20,7 +20,7 @@ Construida recientemente en el siglo XV [DR](https://forgottenrealms.fandom.com/
 
 ## Ambiente
 
-Los habitantes de Phandalin, desde mineros hasta granjeros, disfrutan relajándose en la sala común, que se ha convertido en un buen lugar para escuchar chismes y historias locales. La posada se mantiene limpia y ordenada, y generalmente es un lugar agradable para visitar.
+Los habitantes de [[Phandalin]], desde mineros hasta granjeros, disfrutan relajándose en la sala común, que se ha convertido en un buen lugar para escuchar chismes y historias locales. La posada se mantiene limpia y ordenada, y generalmente es un lugar agradable para visitar.
 
 La Posada Rocacolina es propiedad de [Toblen Stonehill](https://forgottenrealms.fandom.com//wiki/Toblen_Stonehill "Toblen Stonehill"), quien la gestiona junto con su esposa [Trilena Stonehill](https://forgottenrealms.fandom.com//wiki/Trilena_Stonehill "Trilena Stonehill") y con la ayuda de su hijo [Pip Stonehill](https://forgottenrealms.fandom.com//wiki/Pip_Stonehill "Pip Stonehill").
 

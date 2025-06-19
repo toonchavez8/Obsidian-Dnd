@@ -17,7 +17,7 @@ House: Slytherin
 SchoolOfMagic: Healing
 Gender: Male
 Age: "14"
-Location: Hogwarts, England
+Location: [[Hogwarts]], England
 CastingStyle: Technique
 Background: Troublemaker
 Heritage: PureBlood
