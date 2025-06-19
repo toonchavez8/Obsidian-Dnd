@@ -8,66 +8,62 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ba12ef8f3c951c2c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3/Misión de Terragnoma.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Misión de Terragnoma"
-            }
-          },
-          {
-            "id": "e7b046f21ee810be",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3/Misión de la Colina del Resentimiento.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Misión de la Colina del Resentimiento"
-            }
-          },
-          {
             "id": "8ff8c59adc6feca5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3/Misión de Terragnoma.md",
+                "file": "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/04_NPCs/Harbin Wester.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Misión de Terragnoma"
+              "title": "Harbin Wester"
+            }
+          },
+          {
+            "id": "b8ea5606d447fba3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 5 - 7/Misión en Alcazhacha.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Misión en Alcazhacha"
+            }
+          },
+          {
+            "id": "eb52504fa0850a42",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 3 - 5/Misión Campamento de los leñadores.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Misión Campamento de los leñadores"
             }
           },
           {
             "id": "5a2853ae3eccbb8d",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/Roadmap.canvas",
-                "viewState": {
-                  "x": 807.5538976101026,
-                  "y": 1473.389754564402,
-                  "zoom": -1.9999999999999998
-                }
+                "file": "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 5 - 7/Misión Rancho de Mantecalavera.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "Roadmap"
+              "icon": "lucide-file",
+              "title": "Misión Rancho de Mantecalavera"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -160,12 +156,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/Roadmap.canvas",
+                "file": "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/04_NPCs/Harbin Wester.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Roadmap"
+              "title": "Outgoing links from Harbin Wester"
             }
           },
           {
@@ -217,8 +213,8 @@
                 },
                 "id": "ID_690b4bd90aba"
               },
-              "icon": "CALENDARIUM",
-              "title": "Calendarium"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           },
           {
@@ -227,8 +223,8 @@
             "state": {
               "type": "initiative-tracker-view",
               "state": {},
-              "icon": "initiative-tracker",
-              "title": "Initiative Tracker"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           },
           {
@@ -252,8 +248,8 @@
                 },
                 "id": "ID_6918ba399beb"
               },
-              "icon": "CALENDARIUM",
-              "title": "Calendarium"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           },
           {
@@ -262,8 +258,28 @@
             "state": {
               "type": "DICE_ROLLER_VIEW",
               "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "331be4c27c0a2c9c",
+            "type": "leaf",
+            "state": {
+              "type": "DICE_ROLLER_VIEW",
+              "state": {},
               "icon": "dices",
               "title": "Dice Tray"
+            }
+          },
+          {
+            "id": "7a354a683b327ccb",
+            "type": "leaf",
+            "state": {
+              "type": "initiative-tracker-view",
+              "state": {},
+              "icon": "initiative-tracker",
+              "title": "Initiative Tracker"
             }
           }
         ],
@@ -292,32 +308,41 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "templater-obsidian:Templater": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-leaflet-plugin:Open Leaflet Map": false,
-      "fantasy-content-generator:Fantasy Generators": false,
-      "obsidian-5e-statblocks:Open Creature pane": false,
-      "initiative-tracker:Initiative Tracker Encounter Builder": false,
       "obsidian-git:Open Git source control": false,
+      "obsidian-leaflet-plugin:Open Leaflet Map": false,
+      "calendarium:Open Calendarium": false,
+      "obsidian-5e-statblocks:Open Creature pane": false,
+      "fantasy-content-generator:Fantasy Generators": false,
+      "initiative-tracker:Initiative Tracker Encounter Builder": false,
+      "templater-obsidian:Templater": false,
       "excel:Create Excel File": false,
-      "obisidian-note-linker:Note Linker": false,
-      "calendarium:Open Calendarium": false
+      "obisidian-note-linker:Note Linker": false
     }
   },
-  "active": "5a2853ae3eccbb8d",
+  "active": "8ff8c59adc6feca5",
   "lastOpenFiles": [
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/Roadmap.canvas",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3/Misión de la excavación de los enanos.md",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/04_NPCs/1.md",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/04_NPCs/Harbin Wester.md",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 3 - 5/Misión De Mina de oro del Dedo de la Montaña.md",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 3 - 5/Misión Campamento de los leñadores.md",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 5 - 7/Misión Rancho de Mantecalavera.md",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 5 - 7/Misión La Casa del bosque.md",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 5 - 7/Misión en Alcazhacha.md",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 5 - 7/Misión El Túmulo del Dragón.md",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/00_lore/El Dragon de Pico Helado.pdf",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3/Misión de Terragnoma.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3/Misión de la Colina del Resentimiento.md",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/00_lore/El Dragon de Pico Helado-players.pdf",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/Roadmap.canvas",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3/Misión de la excavación de los enanos.md",
     "Untitled.md",
     "Readme.md",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 5 - 7/Misión El Túmulo del Dragón.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 5 - 7",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3/imgs/Mission1.png",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Misión de la Colina del Resentimiento.md",
@@ -336,15 +361,9 @@
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Mission2.png",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Casa de Cambio de Phandalin.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3/imgs",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/04_NPCs/Harbin Wester.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/04_NPCs/imgs",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3/Misión de la Colina del Resentimiento 1.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 3 - 5",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 3 - 5/Misión Campamento de los leñadores.md",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 3 - 5/Misión De Mina de oro del Dedo de la Montaña.md",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 5 - 7/Misión Rancho de Mantecalavera.md",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 5 - 7/Misión en Alcazhacha.md",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 5 - 7/Misión La Casa del bosque.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Casa Consistorial.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin.md",
@@ -354,8 +373,6 @@
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Suministros Barthen.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Santuario de la Suerte.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Bazar Escudo de Leon.md",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Casa de Cambio Phandalin.md",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/05_Tablas",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/00_lore/El Dragon de Pico Helado.pdf"
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Casa de Cambio Phandalin.md"
   ]
 }

@@ -6,13 +6,13 @@
 | --- | --- |
 | Tipo | Puesto comercial / Sede gremial |
 | Pisos | 2 |
-| Ubicación | Phandalin, Costa de la Espada Norte |
+| Ubicación | [[Phandalin]], [[Costa de la Espada]] Norte |
 | Propietario | Halia Thornton (1491 DR) |
 | Servicios | Comercio, registro de minas, cambio de moneda |
 
 ## Ubicación
 
-La casa de cambio está situada al suroeste de Phandalin, directamente al este de un sendero utilizado por los mineros locales. Se identifica por un cartel con la imagen de dos [picos](https://forgottenrealms.fandom.com//wiki/Pickaxe "Pico") cruzados sobre un lingote de oro.
+La casa de cambio está situada al suroeste de [[Phandalin]], directamente al este de un sendero utilizado por los mineros locales. Se identifica por un cartel con la imagen de dos [picos](https://forgottenrealms.fandom.com//wiki/Pickaxe "Pico") cruzados sobre un lingote de oro.
 
 Muchos de los aldeanos pasan tiempo aquí, especialmente aquellos que han pasado la mayor parte de la jornada laboral en los alrededores. Todos los negocios se llevan a cabo en la planta baja del edificio.
 
@@ -20,9 +20,9 @@ Muchos de los aldeanos pasan tiempo aquí, especialmente aquellos que han pasado
 
 Los mineros se acercan a este establecimiento para que pesen, midan y les paguen por sus valiosos hallazgos. La casa de cambio también sirve como oficina de registro no official, en la que se inscriben las concesiones de arroyos y minas de la zona. Los riachuelos y valles de los alrededores esconden suficiente riqueza como para sustentar a un buen número de buscadores de oro independientes.
 
-La casa de cambio es un gran lugar para conocer a la gente que pasa mucho tiempo por los alrededores de Phandalin. La maestra del gremio es Halia Thornton, una humana de mente calculadora. También es una agente de los Zhentarim, una organización misteriosa que pretende controlar en secreto el Norte mediante la riqueza y la influencia. Halia intenta hacerse con el control de Phandalin poco a poco y puede set una valiosa mecenas para los aventureros que no le hagan enfadar.
+La casa de cambio es un gran lugar para conocer a la gente que pasa mucho tiempo por los alrededores de [[Phandalin]]. La maestra del gremio es Halia Thornton, una humana de mente calculadora. También es una agente de los Zhentarim, una organización misteriosa que pretende controlar en secreto el Norte mediante la riqueza y la influencia. Halia intenta hacerse con el control de [[Phandalin]] poco a poco y puede set una valiosa mecenas para los aventureros que no le hagan enfadar.
 
-Si los personajes la complacen, Halia les contará una historia. Tira 1d6 y consulta la tabla "Historias de Phandalin", o elige una que los personajes no hayan escuchado todavía.
+Si los personajes la complacen, Halia les contará una historia. Tira 1d6 y consulta la tabla "Historias de [[Phandalin]]", o elige una que los personajes no hayan escuchado todavía.
 
 ## Servicios
 

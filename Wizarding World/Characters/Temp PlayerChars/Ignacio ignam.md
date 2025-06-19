@@ -17,7 +17,7 @@ House: Hufflepuff
 SchoolOfMagic: Divination
 Gender: Male
 Age: "14"
-Location: Hogwarts, England
+Location: [[Hogwarts]], England
 CastingStyle: Willpower
 Background: Dreamer
 Heritage: PureBlood

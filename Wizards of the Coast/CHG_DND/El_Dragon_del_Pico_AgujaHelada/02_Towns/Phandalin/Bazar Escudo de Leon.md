@@ -5,7 +5,7 @@
 | Campo | Descripción |
 | --- | --- |
 | Tipo | Puesto comercial |
-| Ubicación | Phandalin, Costa de la Espada Norte |
+| Ubicación | [[Phandalin]], [[Costa de la Espada]] Norte |
 | Propietario | Linene Vientogrís |
 | Servicios | Productos terminados, armas y armaduras |
 
@@ -15,7 +15,7 @@ Es un edificio modesto. Sobre la puerta principal hay un desgastado cartel de ma
 
 ## Interior
 
-Las [armaduras](https://forgottenrealms.fandom.com//wiki/Armor "Armadura") y [armas](https://forgottenrealms.fandom.com//wiki/Weapon "Arma") se almacenan en una habitación trasera para mantenerlas fuera del alcance de quienes pudieran querer hacer daño al pueblo de Phandalin.
+Las [armaduras](https://forgottenrealms.fandom.com//wiki/Armor "Armadura") y [armas](https://forgottenrealms.fandom.com//wiki/Weapon "Arma") se almacenan en una habitación trasera para mantenerlas fuera del alcance de quienes pudieran querer hacer daño al pueblo de [[Phandalin]].
 
 ## Servicios
 
@@ -27,7 +27,7 @@ La maestra del puesto comercial es [Linene Vientogrís](https://forgottenrealms.
 
 ## Descripción
 
-Este establecimiento está regentado por los Escudo de León, una sociedad mercantil sita en la ciudad de Yartar, a más de cien millas al este. La empresa envía las mercancías fabricadas a Phandalin y a otros pequeños asentamientos de toda la región.
+Este establecimiento está regentado por los Escudo de León, una sociedad mercantil sita en la ciudad de Yartar, a más de cien millas al este. La empresa envía las mercancías fabricadas a [[Phandalin]] y a otros pequeños asentamientos de toda la región.
 
 La dueña de la tienda de [[Phandalin]] es una humana de lengua mordaz de unos treinta y cinco años llamada Linene Vientogrís. Linene dispone de un suministro de armaduras y armas, que están a la venta para los compradores interesados. No obstante, Linene no vende armas a quienes sospeche que puedan suponer una amenaza para el pueblo.
 

@@ -17,7 +17,7 @@ House: Hufflepuff
 SchoolOfMagic: Magizoology
 Gender: Male
 Age: "14"
-Location: Hogwarts, England
+Location: [[Hogwarts]], England
 CastingStyle: Intellect
 Background: Groundskeeper
 Heritage: HalfBlood

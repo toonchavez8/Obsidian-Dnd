@@ -17,7 +17,7 @@ House: Gryffindor
 SchoolOfMagic: Jinxes,Hexes and Curses
 Gender: Female
 Age: "15"
-Location: Hogwarts, England
+Location: [[Hogwarts]], England
 CastingStyle: Willpower
 Background: Socialite
 Heritage: PureBlood

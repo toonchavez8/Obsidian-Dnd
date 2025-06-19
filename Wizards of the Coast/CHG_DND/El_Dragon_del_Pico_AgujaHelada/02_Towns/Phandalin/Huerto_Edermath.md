@@ -5,12 +5,12 @@
 | Campo | Descripción |
 | --- | --- |
 | Tipo | Huerto |
-| Ubicación | Phandalin, Costa de la Espada Norte |
+| Ubicación | [[Phandalin]], [[Costa de la Espada]] Norte |
 | Propietario | Daran Edermath |
 
 ## Descripción
 
-El huerto se encuentra en el lado noroeste de Phandalin, y es un punto de referencia dominante para cualquiera que llegue a Phandalin por el camino principal. Los árboles rodean un pequeño grupo de edificios donde se llevan a cabo las actividades comerciales del huerto, y la casa del propietario, Daran Edermath, está cerca.
+El huerto se encuentra en el lado noroeste de [[Phandalin]], y es un punto de referencia dominante para cualquiera que llegue a [[Phandalin]] por el camino principal. Los árboles rodean un pequeño grupo de edificios donde se llevan a cabo las actividades comerciales del huerto, y la casa del propietario, Daran Edermath, está cerca.
 
 ## Servicios
 

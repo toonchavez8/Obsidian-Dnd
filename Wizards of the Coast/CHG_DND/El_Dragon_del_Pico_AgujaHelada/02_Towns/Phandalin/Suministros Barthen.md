@@ -5,14 +5,14 @@
 | Campo | Descripción |
 | --- | --- |
 | Tipo | Puesto comercial |
-| Ubicación | Phandalin, Costa de la Espada Norte |
+| Ubicación | [[Phandalin]], [[Costa de la Espada]] Norte |
 | Propietario | Elmar Barthen |
 | Personal | Dos empleados (Ander, Cardo) |
 | Servicios | Exportaciones, importaciones, tienda general |
 
 ## Ubicación
 
-La tienda está ubicada en el lado norte de Phandalin, al oeste de la casa de su propietario [Elmar Barthen](https://forgottenrealms.fandom.com//wiki/Elmar_Barthen "Elmar Barthen"). Es la primera tienda que se ve al entrar a Phandalin desde el [Sendero Triboar](https://forgottenrealms.fandom.com//wiki/Triboar_Trail "Sendero Triboar").
+La tienda está ubicada en el lado norte de [[Phandalin]], al oeste de la casa de su propietario [Elmar Barthen](https://forgottenrealms.fandom.com//wiki/Elmar_Barthen "Elmar Barthen"). Es la primera tienda que se ve al entrar a Phandalin desde el [Sendero Triboar](https://forgottenrealms.fandom.com//wiki/Triboar_Trail "Sendero Triboar").
 
 ## Descripción
 
@@ -24,7 +24,7 @@ Suministros Barthen también sirve como centro comercial. Los empleados [Ander](
 
 Las estanterías de esta tienda están repletas de las mercancías y suministros más habituales, incluidos petates, mochilas, cuerdas y raciones. Barthen no vende armas ni armaduras, pero los personajes pueden comprar otros artículos de aventurero en su tienda, salvo aquellos que cuesten más de 25 po. Los personajes que necesiten armas o armaduras deben acudir al bazar Escudo de León. Si lo que buscan son pociones de curación, tendrán que visitar a Adabra Gwynn en la Colina del Resentimiento.
 
-El propietario, Elmar Barthen, es un humano delgado y con entradas de cincuenta años. Tiene un par de empleados jóvenes (Ander y Cardo) que le ayudan a cargar y descargar los carros y atienden a los clientes cuando Barthen no está en la tienda. Los personajes que entablen una conversación amistosa con Barthen, Ander o Cardo podrán escuchar una historia. Tira 1d6 y consulta la tabla "Historias de Phandalin", o elige una que los personajes no hayan escuchado todavía.
+El propietario, Elmar Barthen, es un humano delgado y con entradas de cincuenta años. Tiene un par de empleados jóvenes (Ander y Cardo) que le ayudan a cargar y descargar los carros y atienden a los clientes cuando Barthen no está en la tienda. Los personajes que entablen una conversación amistosa con Barthen, Ander o Cardo podrán escuchar una historia. Tira 1d6 y consulta la tabla "Historias de [[Phandalin]]", o elige una que los personajes no hayan escuchado todavía.
 
 ## Mercancías Disponibles
 

@@ -5,14 +5,14 @@
 | Campo | Descripción |
 | --- | --- |
 | Tipo | Santuario |
-| Ubicación | Phandalin, Costa de la Espada Norte |
+| Ubicación | [[Phandalin]], [[Costa de la Espada]] Norte |
 | Encargado | Hermana Garaele |
 | Servicios | Culto, bendiciones, sanación |
 | Deidad patrona | Tymora |
 
 ## Ubicación
 
-El pequeño santuario se encuentra en el centro de Phandalin, específicamente al norte del núcleo central del pueblo. Está construido con piedras provenientes de las ruinas vecinas.
+El pequeño santuario se encuentra en el centro de [[Phandalin]], específicamente al norte del núcleo central del pueblo. Está construido con piedras provenientes de las ruinas vecinas.
 
 ## Historia
 
@@ -20,19 +20,19 @@ El lugar de culto estaba bajo el cuidado de la Hermana [Garaele](https://forgott
 
 Mientras el pueblo de [Leilon](https://forgottenrealms.fandom.com//wiki/Leilon "Leilon") al sur estaba siendo reconstruido, dependía del Santuario de la Suerte para ciertos suministros, como [agua bendita](https://forgottenrealms.fandom.com//wiki/Holy_water "Agua bendita").
 
-El Santuario permaneció como el único templo en Phandalin hasta que el [Templo de la Doncella de las Monedas](https://forgottenrealms.fandom.com//wiki/Temple_of_the_Coinmaiden "Templo de la Doncella de las Monedas"), un lugar de culto dedicado a [Waukeen](https://forgottenrealms.fandom.com//wiki/Waukeen "Waukeen"), abrió en [1496 DR](https://forgottenrealms.fandom.com//wiki/1496_DR "1496 DR").
+El Santuario permaneció como el único templo en [[Phandalin]] hasta que el [Templo de la Doncella de las Monedas](https://forgottenrealms.fandom.com//wiki/Temple_of_the_Coinmaiden "Templo de la Doncella de las Monedas"), un lugar de culto dedicado a [Waukeen](https://forgottenrealms.fandom.com//wiki/Waukeen "Waukeen"), abrió en [1496 DR](https://forgottenrealms.fandom.com//wiki/1496_DR "1496 DR").
 
 ## Descripción Actual
 
-El único templo de Phandalin es un santuario hecho de piedra extraída de unas ruinas cercanas. Está dedicado a Tymora (diosa de la suerte y la buena fortuna) y normalmente lo cuida una ferviente acólita elfa, la hermana Garaele. Sin embargo, ella no está en el pueblo durante esta aventura.
+El único templo de [[Phandalin]] es un santuario hecho de piedra extraída de unas ruinas cercanas. Está dedicado a Tymora (diosa de la suerte y la buena fortuna) y normalmente lo cuida una ferviente acólita elfa, la hermana Garaele. Sin embargo, ella no está en el pueblo durante esta aventura.
 
 La hermana Garaele es miembro de los Arpistas, una red diseminada de aventureros y espías que defienden la igualdad y se oponen secretamente al abuso del poder. Los Arpistas reúnen información por todo el territorio para boicotear a los tiranos. Ayudan a los débiles, a los pobres y a los oprimidos.
 
-La hermana Garaele informa regularmente a sus superiores acerca de los acontecimientos de Phandalin y sus alrededores, y ahora está en Nuncainvierno dedicándose justo a esa labor. Durante su ausencia, el santuario se ha quedado desatendido.
+La hermana Garaele informa regularmente a sus superiores acerca de los acontecimientos de [[Phandalin]] y sus alrededores, y ahora está en Nuncainvierno dedicándose justo a esa labor. Durante su ausencia, el santuario se ha quedado desatendido.
 
 ## Descripción Visual del Santuario
 
-El Santuario de la Suerte es una estructura modesta pero hermosa que destaca entre las construcciones más utilitarias de Phandalin. El edificio principal es una estructura pentagonal de piedra gris clara, con un techo inclinado de tejas azul cobalto. La entrada principal está adornada con un arco de piedra tallada donde se representa la moneda de Tymora (una pieza con una cara sonriente) girando en el aire.
+El Santuario de la Suerte es una estructura modesta pero hermosa que destaca entre las construcciones más utilitarias de [[Phandalin]]. El edificio principal es una estructura pentagonal de piedra gris clara, con un techo inclinado de tejas azul cobalto. La entrada principal está adornada con un arco de piedra tallada donde se representa la moneda de Tymora (una pieza con una cara sonriente) girando en el aire.
 
 Las paredes exteriores están decoradas con pequeñas incrustaciones de piedras semipreciosas que reflejan la luz del sol, creando destellos que los devotos interpretan como señales de la buena fortuna de Tymora. Alrededor del santuario hay un jardín circular con pequeñas estatuas que representan a personas en momentos de buena suerte o salvándose por poco de un desastre.
 
