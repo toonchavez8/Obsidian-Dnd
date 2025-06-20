@@ -1,0 +1,17 @@
+{
+  "frames": [
+    {
+      "url": "https://www.dndbeyond.com/characters/147789160",
+      "displayName": "DND-Vetoras",
+      "icon": "arrow",
+      "hideOnMobile": true,
+      "addRibbonIcon": false,
+      "openInCenter": false,
+      "zoomLevel": 1,
+      "forceIframe": true,
+      "customCss": "",
+      "customJs": ""
+    }
+  ],
+  "padding": 5
+}
