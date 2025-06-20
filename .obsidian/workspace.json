@@ -130,7 +130,6 @@
       {
         "id": "ba0d59233e31b44f",
         "type": "tabs",
-        "dimension": 38.58173076923077,
         "children": [
           {
             "id": "79215bbccd956432",
@@ -269,7 +268,6 @@
       {
         "id": "9c7543e6c2820b5d",
         "type": "tabs",
-        "dimension": 61.418269230769226,
         "children": [
           {
             "id": "b04c31368900315c",
@@ -282,10 +280,26 @@
             }
           }
         ]
+      },
+      {
+        "id": "346bfa323687ea18",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6bf0cee136012ac5",
+            "type": "leaf",
+            "state": {
+              "type": "fantasy-statblocks-creature-pane",
+              "state": {},
+              "icon": "skull",
+              "title": "Combatant"
+            }
+          }
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 321.5
+    "width": 542.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -305,17 +319,19 @@
       "obisidian-note-linker:Note Linker": false
     }
   },
-  "active": "5a2853ae3eccbb8d",
+  "active": "6bf0cee136012ac5",
   "lastOpenFiles": [
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3/Misión de la excavación de los enanos.md",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Costa de la Espada.md",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/05_Tablas/01_Historias_de_Phandalin.md",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin.md",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Santuario de la Suerte.md",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Suministros Barthen.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/Roadmap.canvas",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Huerto_Edermath.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Posada Rocacolina.md",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Santuario de la Suerte.md",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Suministros Barthen.md",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin.md",
     "conflict-files-obsidian-git.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Casa de Cambio de Phandalin.md",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3/Misión de la excavación de los enanos.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3/Misión de Terragnoma.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3/Misión de la Colina del Resentimiento.md",
     "Untitled.md",
@@ -324,7 +340,6 @@
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 5 - 7",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3/imgs/Mission1.png",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Misión de la Colina del Resentimiento.md",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Costa de la Espada.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3/imgs/Mission3.png",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3/imgs/Mission2.png",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3/imgs/Pasted image 20250618155434.png",
@@ -350,7 +365,6 @@
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Casa Consistorial.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Colina del Resentimiento.md",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/05_Tablas/01_Historias_de_Phandalin.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/05_Tablas",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/00_lore/El Dragon de Pico Helado.pdf"
   ]
