@@ -35,10 +35,67 @@
       "path": "Characters/Temp PlayerChars/Oscar Ortiz.md",
       "name": "Oscar Ortiz",
       "player": true
+    },
+    {
+      "name": "Alkro",
+      "level": 1,
+      "hp": 13,
+      "ac": "11",
+      "modifier": 0,
+      "player": true
+    },
+    {
+      "name": "Celen",
+      "level": 1,
+      "hp": 10,
+      "ac": "15",
+      "modifier": 4,
+      "player": true
+    },
+    {
+      "note": "Wizarding Book of Monsters and foes",
+      "path": "Wizarding World/World/Wizarding World/Wizarding Book of Monsters and foes.pdf",
+      "name": "Kumiho",
+      "level": 1,
+      "hp": 11,
+      "ac": "18",
+      "modifier": 1,
+      "player": true
+    },
+    {
+      "note": "Wizarding Book of Monsters and foes",
+      "path": "Wizarding World/World/Wizarding World/Wizarding Book of Monsters and foes.pdf",
+      "name": "Vetoras",
+      "level": 1,
+      "hp": 13,
+      "ac": "11",
+      "modifier": 0,
+      "player": true
     }
   ],
-  "parties": [],
-  "defaultParty": null,
+  "parties": [
+    {
+      "name": "Base WW party",
+      "players": [
+        "Ignacio ignam",
+        "Penolope Pevreal",
+        "Rebecca Weasly",
+        "Sebastian Snark",
+        "Valentina Voraz",
+        "Oscar Ortiz"
+      ]
+    },
+    {
+      "name": "CHG",
+      "players": [
+        "Alkro",
+        "Celen",
+        "Vetoras",
+        "Kumiho"
+      ]
+    }
+  ],
+  "defaultParty": "CHG",
   "statuses": [
     {
       "name": "Blinded",

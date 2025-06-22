@@ -34,4 +34,15 @@ Estos semiorcos adoran a Talos, un dios bien malandro de las tormentas, y la may
 
 Y no solo los orcos la están pasando mal con la llegada del dragón. Una mantícora que Cryovain corrió de su nido en la montaña ahora anda por las laderas aterrorizando a la gente que vive cerca del pueblo minero de [[Phandalin]]. Y así como ella, varios otros monstruos de la zona andan de un lado a otro sin saber ni qué onda, causando problemas por todos lados.
 
+## Camino a Phandalin
+
+Tras dos días de viaje hacia Phandalin, la tensión entre los viajeros comenzó a crecer. Celene, quien se presentó como "Cross", hurgó entre las pertenencias del misterioso medio elfo Vetoras, despertando sospechas e incomodidad en el grupo. La noche no fue fácil, marcada por la desconfianza y el cansancio acumulado.
+
+Al amanecer, la caravana fue emboscada por una pandilla de orcos bandidos que intentaron robar las mercancías. En medio del caos, las decisiones se tomaron con rapidez: algunos miembros actuaron con precisión, otros no tanto. Alkro, llevado por su instinto dracónico, desató su aliento venenoso con fuerza letal, haciendo huir a los orcos, pero también hiriendo gravemente al guerrero sin nombre que los acompañaba.
+
+Durante el combate Vetoras se hizo amigo de un DireWolf.
+
+En medio de la confusión, Cross utilizó su presencia intimidante para recuperar el oro robado del anciano Gabin. En un acto de integridad, decidió devolverlo sin reclamar recompensa alguna. Vetoras y Alkro ayudaron al guerrero herido a subir a la carreta, memento en el cual Alkro, visiblemente afectado por su error, ofreció una disculpa sincera por sus actos impulsivos.
+
+Así, con las heridas aún frescas y las emociones a flor de piel, el grupo emprendió el último tramo de su viaje hacia Phandalin, donde nuevos desafíos los esperan.
 

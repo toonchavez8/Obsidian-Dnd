@@ -15,5 +15,7 @@
   "obsidian-admonition",
   "excel",
   "obsidian-linter",
-  "obisidian-note-linker"
+  "obisidian-note-linker",
+  "convert-url-to-iframe",
+  "obsidian-custom-frames"
 ]
