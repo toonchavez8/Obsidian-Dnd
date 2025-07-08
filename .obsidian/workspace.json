@@ -50,6 +50,63 @@
             }
           },
           {
+            "id": "bb96de4e3e342cac",
+            "type": "leaf",
+            "state": {
+              "type": "intiative-tracker-encounter-builder",
+              "state": [
+                [
+                  {
+                    "name": "Homunculus",
+                    "source": "5e SRD",
+                    "size": "Tiny",
+                    "type": "construct",
+                    "subtype": "",
+                    "alignment": "neutral",
+                    "ac": 13,
+                    "hp": 5,
+                    "hit_dice": "2d4",
+                    "speed": "20 ft., fly 40 ft.",
+                    "stats": [
+                      4,
+                      15,
+                      11,
+                      10,
+                      10,
+                      7
+                    ],
+                    "damage_vulnerabilities": "",
+                    "damage_resistances": "",
+                    "damage_immunities": "poison",
+                    "condition_immunities": "charmed, poisoned",
+                    "senses": "darkvision 60 ft., passive Perception 10",
+                    "languages": "understands the languages of its creator but can't speak",
+                    "cr": "0",
+                    "bestiary": true,
+                    "traits": [
+                      {
+                        "name": "Telepathic Bond",
+                        "desc": "While the homunculus is on the same plane of existence as its master, it can magically convey what it senses to its master, and the two can communicate telepathically.",
+                        "attack_bonus": 0
+                      }
+                    ],
+                    "actions": [
+                      {
+                        "name": "Bite",
+                        "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 1 piercing damage, and the target must succeed on a DC 10 Constitution saving throw or be poisoned for 1 minute. If the saving throw fails by 5 or more, the target is instead poisoned for 5 (1d10) minutes and unconscious while poisoned in this way.",
+                        "attack_bonus": 4,
+                        "damage_bonus": 1
+                      }
+                    ]
+                  },
+                  5
+                ]
+              ],
+              "icon": "intiative-tracker-encounter-builder",
+              "title": "Encounter Builder"
+            }
+          },
+          {
             "id": "5a2853ae3eccbb8d",
             "type": "leaf",
             "state": {
@@ -128,6 +185,7 @@
       {
         "id": "ba0d59233e31b44f",
         "type": "tabs",
+        "dimension": 37.99603174603175,
         "children": [
           {
             "id": "79215bbccd956432",
@@ -154,12 +212,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/00_lore_and_Players/El Dragon de Pico Helado.pdf",
+                "file": "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Posada Rocacolina.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from El Dragon de Pico Helado"
+              "title": "Outgoing links from Posada Rocacolina"
             }
           },
           {
@@ -261,11 +319,12 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 5
       },
       {
         "id": "9c7543e6c2820b5d",
         "type": "tabs",
+        "dimension": 42.16269841269841,
         "children": [
           {
             "id": "b04c31368900315c",
@@ -282,6 +341,7 @@
       {
         "id": "346bfa323687ea18",
         "type": "tabs",
+        "dimension": 19.841269841269842,
         "children": [
           {
             "id": "6bf0cee136012ac5",
@@ -297,7 +357,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 547.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -318,8 +378,9 @@
       "calendarium:Open Calendarium": false
     }
   },
-  "active": "5a2853ae3eccbb8d",
+  "active": "cf05721098b5fe7c",
   "lastOpenFiles": [
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/00_lore_and_Players/El Dragon de Pico Helado.pdf",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Posada Rocacolina.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Butterskull Ranch 50x50 @ 140pps/Butterskull Ranch v1.04 (upper & cellar).jpg",
     "conflict-files-obsidian-git.md",
