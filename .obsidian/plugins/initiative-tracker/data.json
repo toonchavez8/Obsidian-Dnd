@@ -212,7 +212,11 @@
         "currentMaxHP": 10,
         "ac": "15",
         "currentAC": "15",
+<<<<<<< HEAD
         "id": "ID_b9bb8a2909d9",
+=======
+        "id": "ID_a8f96ab96b8a",
+>>>>>>> origin/main
         "currentHP": 10,
         "tempHP": 0,
         "status": [],

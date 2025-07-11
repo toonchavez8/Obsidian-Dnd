@@ -117,9 +117,23 @@
               "icon": "lucide-file-text",
               "title": "El Dragon de Pico Helado"
             }
+          },
+          {
+            "id": "fbf53aa90d2d1071",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "conflict-files-obsidian-git"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -378,12 +392,12 @@
       "calendarium:Open Calendarium": false
     }
   },
-  "active": "cf05721098b5fe7c",
+  "active": "fbf53aa90d2d1071",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/00_lore_and_Players/El Dragon de Pico Helado.pdf",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Posada Rocacolina.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Butterskull Ranch 50x50 @ 140pps/Butterskull Ranch v1.04 (upper & cellar).jpg",
-    "conflict-files-obsidian-git.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Butterskull Ranch 50x50 @ 140pps/Butterskull Ranch v1.03 (cellar).jpg",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Butterskull Ranch 50x50 @ 140pps/Butterskull Ranch v1.0 (roof).jpg",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Butterskull Ranch 50x50 @ 140pps/Butterskull Ranch v1.0 (ground).jpg",
@@ -404,7 +418,6 @@
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Tower of Storms",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Shrine of Savras 54x42/Shrine of Savras v1.01.dd2vtt",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Shrine of Savras 54x42",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Mountain_s Toe Gold Mine 66x40 @140pps/Mountain_s Toe Gold Mine v1.0.dd2vtt",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Misión de la Colina del Resentimiento.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Huerto_Edermath.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Costa de la Espada.md",
