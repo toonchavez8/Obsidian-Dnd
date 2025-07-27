@@ -6,37 +6,37 @@
       {
         "id": "829a56b63d061787",
         "type": "tabs",
-        "dimension": 49.68354430379747,
         "children": [
           {
             "id": "83fe5bf219a687fe",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "World/Wizarding World/MadMan & Murphen One Shot Adventures #1 _ GM Binder.pdf"
+                "file": "Characters/Temp PlayerChars/Rebecca Weasly.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "MadMan & Murphen One Shot Adventures #1 _ GM Binder"
+              "icon": "lucide-file",
+              "title": "Rebecca Weasly"
             }
           }
         ]
       },
       {
-        "id": "6e574bce6c9288dc",
+        "id": "61a1760a9abe1fe3",
         "type": "tabs",
-        "dimension": 50.31645569620253,
         "children": [
           {
-            "id": "b6a6a887ad4c4ed3",
+            "id": "13a7b3d2b31760d6",
             "type": "leaf",
             "state": {
-              "type": "univer-xlsx",
+              "type": "pdf",
               "state": {
-                "file": "World/Potions/W&W Potion Spreadsheet.xlsx"
+                "file": "World/PlayerSheets/Player's Cheat Sheets - Spanish.pdf"
               },
-              "icon": "lucide-file",
-              "title": "W&W Potion Spreadsheet"
+              "icon": "lucide-file-text",
+              "title": "Player's Cheat Sheets - Spanish"
             }
           }
         ]
@@ -58,7 +58,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -231,8 +232,21 @@
       "calendarium:Open Calendarium": false
     }
   },
-  "active": "83fe5bf219a687fe",
+  "active": "13a7b3d2b31760d6",
   "lastOpenFiles": [
+    "World/Wizarding World/Wands & Wizards - Harry Potter 5e.pdf",
+    "Characters/Temp PlayerChars/Rebecca Weasly.md",
+    "Characters/Temp PlayerChars/Penolope Pevreal.md",
+    "Characters/Temp PlayerChars/Sebastian Snark.md",
+    "Characters/Temp PlayerChars/Valentina Voraz.md",
+    "Characters/Temp PlayerChars/Oscar Ortiz.md",
+    "Characters/Temp PlayerChars/Ignacio ignam.md",
+    "World/Wizarding World/Wands & Wizards - Headmaster's Guide v0.2.pdf",
+    "World/Wizarding World/Wizarding Book of Monsters and foes.pdf",
+    "Assets/Ignacious-ignam.jpg",
+    "Assets/Sebastian-Snark.jpg",
+    "World/PlayerSheets/Player's Cheat Sheets - Spanish.pdf",
+    "World/Wizarding World/MadMan & Murphen One Shot Adventures #1 _ GM Binder.pdf",
     "World/W&W Misc. Campaign Notes.md",
     "World/Wizarding World/One-Shot-Wonders.pdf",
     "World/Maps/Hogwarts/8 - Hogwarts Grounds/Hagrid_s Hut by 96anti.png",
@@ -244,21 +258,11 @@
     "World/Maps/Hogwarts/8 - Hogwarts Grounds/Quidditch Pitch (Storm) by Block_nessie.jpg",
     "World/Maps/Hogwarts/8 - Hogwarts Grounds/Quidditch Pitch by Block_nessie.jpg",
     "World/Maps/Hogwarts/8 - Hogwarts Grounds/Quidditch Pitch by JoshWitcher760.png",
-    "World/Wizarding World/Wands & Wizards - Harry Potter 5e.pdf",
-    "Characters/Temp PlayerChars/Ignacio ignam.md",
     "World/Hogwarts/Hogwarts Castle Diagram/Hogwarts Map Diagram-North Wing.drawio.png",
     "World/Potions",
-    "World/New folder",
     "World/Hogwarts/Hogwarts Castle Diagram/Hogwarts Map Diagram-Entrance.drawio.png",
-    "World/Hogwarts/Hogwarts Castle Diagram/Hogwarts Map Diagram-East Wing.drawio.png",
-    "World/Hogwarts/Hogwarts Castle Diagram/Hogwarts Map Diagram-West Wing.drawio.png",
-    "World/Hogwarts/Hogwarts Castle Diagram",
-    "World/Hogwarts Castle Diagram",
     "World/Wizarding World/Traveling Event System TES.md",
-    "World/Wizarding World/W&W NPCs 0.3.1 _ GM Binder.pdf",
     "Sessions/Session 0 - Prelude/Session_0-Prelude - Antes.md",
-    "Characters/Temp PlayerChars/Oscar Ortiz.md",
-    "Characters/Temp PlayerChars/Penolope Pevreal.md",
     "Characters/NPCs/professors/Profesor Grimlock (Jefe de Ravenclaw).md",
     "Characters/Creation Notes/Feats.md",
     "World/Hogwarts/Hogwarts.md",
@@ -266,9 +270,6 @@
     "Characters/NPCs/creatures/Binky.md",
     "Characters/NPCs/creatures/Winky.md",
     "Readme.md",
-    "Characters/Temp PlayerChars/Rebecca Weasly.md",
-    "Characters/Temp PlayerChars/Valentina Voraz.md",
-    "Characters/Temp PlayerChars/Sebastian Snark.md",
     "Assets/OscarOrtiz_Img_PlaceHolder.md",
     "Characters/Temp PlayerChars/Temp Char.md",
     "World/World.md",

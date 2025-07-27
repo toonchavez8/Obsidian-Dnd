@@ -127,7 +127,7 @@ Ruby: 0
 | Survival (WIS)        | <input type="checkbox" unchecked> | +`=floor((this.WIS - 10)/2)`  |
 | Potion Making (INT)          | <input type="checkbox" unchecked> | +`=floor((this.INT - 10)/2)`  |
 
-## Atributos
+## Atributos - House
 
 - **Aumento de Puntuaciones de Característica**. Tu puntuación de Constitución, Sabiduría y una puntuación de característica adicional a tu elección aumentan en 1.
 
@@ -135,7 +135,7 @@ Ruby: 0
 
 - **Viajes a la Cocina**. Agregas la mitad de tu bonificación de competencia a tu Iniciativa y no puedes ser sorprendido mientras estés consciente.
 
-## Feats
+## Feats - Clase
 
 - **Sentir de peligro**.Agregas la mitad de tu bonificación de competencia a tu Iniciativa y no puedes ser sorprendido mientras estés consciente. 
 

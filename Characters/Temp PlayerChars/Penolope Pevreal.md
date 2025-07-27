@@ -12,7 +12,7 @@ DEX: 12
 CONST: 13
 INT: 12
 WIS: 16
-CHA: 13
+CHA: 17
 House: Gryffindor
 SchoolOfMagic: Jinxes,Hexes and Curses
 Gender: Female
@@ -125,19 +125,16 @@ Ruby: 0
 | Stealth (DEX)         | <input type="checkbox" unchecked> | +`=floor((this.DEX - 10)/2)`   |
 | Survival (WIS)        | <input type="checkbox" unchecked> | +`=floor((this.WIS - 10)/2)`  |
 | Potion Making (INT)          | <input type="checkbox" unchecked> | +`=floor((this.INT - 10)/2)`  |
-## Atributos
+## Atributos - House
 
-- **Aumento de Puntuaciones de Característica**. Tu puntuación de Constitución, Sabiduría y una puntuación de característica adicional a tu elección aumentan en 1.
+**Corazón Valiente**: Tienes ventaja en las tiradas de salvación contra el miedo proveniente de cualquier fuente, excepto de un Dementor.
 
-- **Lealtad Inquebrantable**. Tienes ventaja en las tiradas de salvación contra cualquier efecto que te haga atacar o actuar en contra de una criatura que normalmente considerarías un aliado.
+**Verdadera Gryffindor**: En momentos de extrema necesidad, la Espada de Gryffindor puede presentarse ante ti.
 
-- **Viajes a la Cocina**. Tu experiencia con los elfos domésticos de Hogwarts te ha enseñado cómo tratar y relacionarte educadamente con los seres mágicos. Ah, y puedes conseguir montones de postres.
+- **Encanto de Veela**: Como descendiente de veela, tienes ventaja en una habilidad de Carisma a elección. Puedes intentar encantar a una criatura humana dentro de 9 metros, obligándola a hacer una tirada de salvación de Sabiduría. Si falla, estará encantada por una hora o hasta que tú o tus compañeros le hagan daño.
+## Feats - Class
 
-## Feats
-
-- **Cuidador**. Tu estudio de las criaturas mágicas te ha enseñado sobre sus lesiones y fisiología. Puedes lanzar cualquier hechizo de Curación conocido sobre bestias.
-- **Folio Bruti**. Tienes tu propio cuaderno personal de bestias donde registras tus hallazgos. Cada vez que añadas la competencia de Criaturas Mágicas a una prueba de Habilidad, añade tu modificador de Inteligencia como bonificación también.
-
+**Rompehechizos**: Tu curiosidad por desmantelar hechizos y encantamientos ha encontrado una salida. Obtienes un set de herramientas de rompehechizos y eres competente en su uso.
 ## Equipo
 
 - [ ] Varita magica
@@ -176,41 +173,36 @@ Flexibilidad (Defecto): Ondeada - Soy una romántica (equivocada) y me enamoro f
 
 ## Magia
 
-Conoce 8 Encantamientos y 16 Hechisos
+Conoce 5 Encantamientos y 8 Hechisos
+
 
 ### Encantamientos
 
-- Accio - Atrai objetos no mayor a 20kg de peso
-- Alohomora - Puede puertas/ventanas pero hace ruido
-- Lumos/Nox - Genera Luz en la punta de la varita  
-- Wingadiam leviosa - Puedes Levantar hasta 50k por 1 min hasta 10 m de alto
-- Rennervate - Despierta una creatura inconsciente
-- Genu Recurvatum - Falsea la rodilla de una creatura reduce velocidad x 1 min
-- Aguamenti - Convoca agua hasta 1 min en un cono de 10 m
-- Scurgify - limpia un objeto o creatura no mayor a 2.5 m cuadros
+- Bombarda -Dark- 2D10 de explosion pequena, rango 30m -accion
+- Devicto - 2d6 de daño de fuerza, un ardor sobre la creatura - accion
+- Furnunculus - Casusa 2D6 daño psicico y cara de granos - accion 
+- Locomoter Wibbly - cause que se caiga un enmigo al piso - accion
+- Incendio Glacia - Convoca flamas azules en tu mano o varita una hora - accion
 
-### Hechizos
+
+### Hechizos 8
 
 #### Primer circulo 4
 
-- Arresto momentum - Reduce la velocidad de caida de hasta 5 creaturas a 30M/ps Puede ser reacion
-- Diffindo - Corta una creatura por 4d4
+- Episkey - Sana 2d4 + competencia dentro de un rango de 5m - Bonus
+- Petrificus Totalus - paraliza una creatura 1 minuto dentro de rango de 30m
 - Protego - Accion o Reacion genera una barrera protectora +5 a AC
-- Riddikules - Transforma un Boggart a una version chistosa
-- Flipendo - Voltea una creatura generando 1d10 de dano
-- Rictusempra - Incapacita a una creatura de risa un turno y reduce movilidad
-- Specialis Revelio - Revela los secretos de un objeto, area. *Leer hechizo en manual*
+- Colloshoo - Ata a al piso a un enemigo, Spell save Dc si falla por 5 o mas se cai al piso y tiene que usar STR cada turno para safarse
+
 
 #### Segundo circulo 3
 
-- Episkey - Sana 2d4 + modifcador de hechizos una creatura dentro de 10m
-- Reparo - Repara objetos dañados
-- Stupefy - una creatura dentro de 20m se caí inconsciente
-- Immobulus - Imobaliza en un rango de 7.5m a creaturas de 7d10 de puntos de vida
-- Expelliarmus - Una creatura de 30m avienta un articulo y cai 5m de distancia
+- muffliato - Puedes silenciaar una zona de 15m, concentracion - 1 hora
+- Ariania Exummai - en un cono de 15m cualquier arrana hace on Con save y falla recibe 4d6 daño radiante y es empujado hacia atras 5m, si pasa medio dano
+- Ventus - genera un torbellino de viento moviendo creaturas 5 m
 
 #### Tercer circulo 2
 
-- Herbiviscus - Puedes Crecer plantas de 60 pies cuadrados causando terreno dificil
-- Expluso - avientas a una creatura 10 pies con un trueno 4d8 dmg, se esucha el trueno a 100 pies
-- Expecto Patronum - Te protege de criaturas obsuras como dementos, banshees, inferi y obscuri dependiendo de lo agil
+- Confringo - Dark - Explosion de 5m de radio hasta 45m de rango genere 8d6 en un dex save daño de fuero y lumbre 
+
+

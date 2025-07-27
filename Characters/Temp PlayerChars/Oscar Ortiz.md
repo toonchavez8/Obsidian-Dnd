@@ -126,7 +126,7 @@ Ruby: 0
 | Survival (WIS)        | <input type="checkbox" unchecked> | +`=floor((this.WIS - 10)/2)`  |
 | Potion Making (INT)          | <input type="checkbox" unchecked> | +`=floor((this.INT - 10)/2)`  |
 
-## Atributos
+## Atributos - House
 
 - **Aumento de Puntuaciones de Característica**. Tu puntuación de Constitución (CON), Sabiduría() y una puntuación de Abilidad adicional a tu elección aumenta 1.
 
@@ -134,7 +134,7 @@ Ruby: 0
 
 - **Viajes a la Cocina**. Tu experiencia con los elfos domésticos de Hogwarts te ha enseñado cómo tratar y relacionarte educadamente con los seres mágicos. Ah, y puedes conseguir montones de postres.
 
-## Feats
+## Feats - Class
 
 - **Cuidador**. Tu estudio de las criaturas mágicas te ha enseñado sobre sus lesiones y fisiología. Puedes lanzar cualquier hechizo de Curación conocido sobre bestias.
 - **Folio Bruti**. Tienes tu propio cuaderno personal de bestias donde registras tus hallazgos. Cada vez que añadas la competencia de Criaturas Mágicas a una prueba de Habilidad, añade tu modificador de Inteligencia como bonificación también.
