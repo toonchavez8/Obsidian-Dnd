@@ -1,42 +1,24 @@
 {
   "main": {
-    "id": "7c34563bed57f7b4",
+    "id": "2cfad5de4a0857a0",
     "type": "split",
     "children": [
       {
-        "id": "829a56b63d061787",
+        "id": "817aa2b676d5a2d7",
         "type": "tabs",
         "children": [
           {
-            "id": "83fe5bf219a687fe",
+            "id": "fd260760528c5b9e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Characters/Temp PlayerChars/Rebecca Weasly.md",
+                "file": "Wizarding World/Characters/Temp PlayerChars/Penolope Pevreal.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Rebecca Weasly"
-            }
-          }
-        ]
-      },
-      {
-        "id": "61a1760a9abe1fe3",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "13a7b3d2b31760d6",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "World/PlayerSheets/Player's Cheat Sheets - Spanish.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "Player's Cheat Sheets - Spanish"
+              "title": "Penolope Pevreal"
             }
           }
         ]
@@ -45,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "e0043ee12ee17b2a",
+    "id": "15321922a817a159",
     "type": "split",
     "children": [
       {
-        "id": "1e907f9bcf292ca1",
+        "id": "ef662b1eea67a931",
         "type": "tabs",
         "children": [
           {
-            "id": "ee27264648e12cb5",
+            "id": "8e99c2b43b6a1f52",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -66,7 +48,7 @@
             }
           },
           {
-            "id": "2e123adee7914878",
+            "id": "ea4a0ae863bc25a0",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -83,7 +65,7 @@
             }
           },
           {
-            "id": "3e1123035a6a36d3",
+            "id": "d4984e8aeefa96a4",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -99,20 +81,20 @@
     "width": 300
   },
   "right": {
-    "id": "1fb55a346c0ef23e",
+    "id": "ae8e3befab16b555",
     "type": "split",
     "children": [
       {
-        "id": "ba0d59233e31b44f",
+        "id": "d5c68cb8d938e627",
         "type": "tabs",
         "children": [
           {
-            "id": "79215bbccd956432",
+            "id": "cf06dc0c3ca77dea",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Characters/Temp PlayerChars/Oscar Ortiz.md",
+                "file": "Wizarding World/Characters/Temp PlayerChars/Penolope Pevreal.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,83 +104,55 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Oscar Ortiz"
+              "title": "Backlinks for Penolope Pevreal"
             }
           },
           {
-            "id": "12f7ce9e9e45a11e",
+            "id": "ac52c95e7731fb6c",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Characters/Temp PlayerChars/Oscar Ortiz.md",
+                "file": "Wizarding World/Characters/Temp PlayerChars/Penolope Pevreal.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Oscar Ortiz"
+              "title": "Outgoing links from Penolope Pevreal"
             }
           },
           {
-            "id": "6116176bb6f5f9a5",
+            "id": "98817bb7173c5dc7",
             "type": "leaf",
             "state": {
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-tags",
               "title": "Tags"
             }
           },
           {
-            "id": "98d5ced499106cc6",
+            "id": "ef2900125174baf5",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Characters/Temp PlayerChars/Oscar Ortiz.md"
+                "file": "Wizarding World/Characters/Temp PlayerChars/Penolope Pevreal.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Oscar Ortiz"
+              "title": "Outline of Penolope Pevreal"
             }
           },
           {
-            "id": "2b5c438508a2c48c",
-            "type": "leaf",
-            "state": {
-              "type": "CALENDARIUM",
-              "state": {
-                "calendar": "ID_7a2baab8b98b",
-                "ephemeral": {
-                  "viewState": 1,
-                  "displaying": {
-                    "day": 27,
-                    "month": 5,
-                    "year": 2024
-                  },
-                  "displayDayNumber": false,
-                  "displayMoons": true
-                },
-                "id": "ID_690b4bd90aba"
-              },
-              "icon": "CALENDARIUM",
-              "title": "Calendarium"
-            }
-          },
-          {
-            "id": "cf05721098b5fe7c",
-            "type": "leaf",
-            "state": {
-              "type": "initiative-tracker-view",
-              "state": {},
-              "icon": "initiative-tracker",
-              "title": "Initiative Tracker"
-            }
-          },
-          {
-            "id": "c446f0d000d4433d",
+            "id": "e1a3be79e2137e43",
             "type": "leaf",
             "state": {
               "type": "DICE_ROLLER_VIEW",
@@ -206,75 +160,46 @@
               "icon": "dices",
               "title": "Dice Tray"
             }
+          },
+          {
+            "id": "3fa492f16296abf5",
+            "type": "leaf",
+            "state": {
+              "type": "initiative-tracker-view",
+              "state": {},
+              "icon": "initiative-tracker",
+              "title": "Initiative Tracker"
+            }
           }
-        ],
-        "currentTab": 6
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 602.5,
+    "width": 300,
     "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:Create new base": false,
-      "templater-obsidian:Templater": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "obsidian-git:Open Git source control": false,
       "obsidian-leaflet-plugin:Open Leaflet Map": false,
-      "fantasy-content-generator:Fantasy Generators": false,
       "obsidian-5e-statblocks:Open Creature pane": false,
+      "fantasy-content-generator:Fantasy Generators": false,
       "initiative-tracker:Initiative Tracker Encounter Builder": false,
-      "univer:Univer": false
+      "templater-obsidian:Templater": false,
+      "excel:Create Excel File": false,
+      "obisidian-note-linker:Note Linker": false,
+      "calendarium:Open Calendarium": false
     }
   },
-  "active": "13a7b3d2b31760d6",
+  "active": "fd260760528c5b9e",
   "lastOpenFiles": [
-    "World/Wizarding World/Wands & Wizards - Harry Potter 5e.pdf",
-    "Characters/Temp PlayerChars/Rebecca Weasly.md",
-    "Characters/Temp PlayerChars/Penolope Pevreal.md",
-    "Characters/Temp PlayerChars/Sebastian Snark.md",
-    "Characters/Temp PlayerChars/Valentina Voraz.md",
-    "Characters/Temp PlayerChars/Oscar Ortiz.md",
-    "Characters/Temp PlayerChars/Ignacio ignam.md",
-    "World/Wizarding World/Wands & Wizards - Headmaster's Guide v0.2.pdf",
-    "World/Wizarding World/Wizarding Book of Monsters and foes.pdf",
-    "Assets/Ignacious-ignam.jpg",
-    "Assets/Sebastian-Snark.jpg",
-    "World/PlayerSheets/Player's Cheat Sheets - Spanish.pdf",
-    "World/Wizarding World/MadMan & Murphen One Shot Adventures #1 _ GM Binder.pdf",
-    "World/W&W Misc. Campaign Notes.md",
-    "World/Wizarding World/One-Shot-Wonders.pdf",
-    "World/Maps/Hogwarts/8 - Hogwarts Grounds/Hagrid_s Hut by 96anti.png",
-    "World/Potions/W&W Potion Spreadsheet.xlsx",
-    "World/Shops/Magical Trinkets.xlsx",
-    "World/Maps/Hogwarts/8 - Hogwarts Grounds/Hagrid_s Hut Autum.jpg",
-    "World/Maps/Hogwarts/8 - Hogwarts Grounds/Hagrid_s Hut by Block_nessie.jpg",
-    "World/Maps/Hogwarts/8 - Hogwarts Grounds/Hagrid_s Hut Autum.jpg.crdownload",
-    "World/Maps/Hogwarts/8 - Hogwarts Grounds/Quidditch Pitch (Storm) by Block_nessie.jpg",
-    "World/Maps/Hogwarts/8 - Hogwarts Grounds/Quidditch Pitch by Block_nessie.jpg",
-    "World/Maps/Hogwarts/8 - Hogwarts Grounds/Quidditch Pitch by JoshWitcher760.png",
-    "World/Hogwarts/Hogwarts Castle Diagram/Hogwarts Map Diagram-North Wing.drawio.png",
-    "World/Potions",
-    "World/Hogwarts/Hogwarts Castle Diagram/Hogwarts Map Diagram-Entrance.drawio.png",
-    "World/Wizarding World/Traveling Event System TES.md",
-    "Sessions/Session 0 - Prelude/Session_0-Prelude - Antes.md",
-    "Characters/NPCs/professors/Profesor Grimlock (Jefe de Ravenclaw).md",
-    "Characters/Creation Notes/Feats.md",
-    "World/Hogwarts/Hogwarts.md",
-    "World/Hogwarts/Aula de Defensa Contra las Artes Oscuras.md",
-    "Characters/NPCs/creatures/Binky.md",
-    "Characters/NPCs/creatures/Winky.md",
-    "Readme.md",
-    "Assets/OscarOrtiz_Img_PlaceHolder.md",
-    "Characters/Temp PlayerChars/Temp Char.md",
-    "World/World.md",
-    "Characters/NPCs/Winky.md",
-    "Characters/NPCs/Professor Grimlock.md",
-    "create a link.md"
+    "conflict-files-obsidian-git.md"
   ]
 }

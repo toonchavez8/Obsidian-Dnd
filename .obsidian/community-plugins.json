@@ -11,6 +11,11 @@
   "templater-obsidian",
   "dataview",
   "buttons",
+  "obsidian-meta-bind-plugin",
   "obsidian-admonition",
-  "univer"
+  "excel",
+  "obsidian-linter",
+  "obisidian-note-linker",
+  "convert-url-to-iframe",
+  "obsidian-custom-frames"
 ]

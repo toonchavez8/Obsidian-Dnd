@@ -509,7 +509,24 @@
           "id": "miscellaneous-events",
           "color": "#0288D1"
         }
-      ]
+      ],
+      "seasonal": {
+        "seasons": [],
+        "offset": 0,
+        "type": "Periodic",
+        "displayColors": true,
+        "interpolateColors": true,
+        "weather": {
+          "enabled": false,
+          "seed": 287555062,
+          "tempUnits": "Imperial",
+          "windUnits": "Imperial",
+          "primaryWindDirection": "E"
+        }
+      },
+      "locations": {
+        "locations": []
+      }
     }
   ],
   "configDirectory": null,
@@ -526,9 +543,9 @@
   "eventFrontmatter": false,
   "parseDates": false,
   "version": {
-    "major": 1,
-    "minor": 3,
-    "patch": 3,
+    "major": 2,
+    "minor": 0,
+    "patch": 0,
     "beta": null
   },
   "debug": false,
@@ -536,5 +553,6 @@
   "askedAboutSync": true,
   "syncBehavior": "Ask",
   "inlineEventsTag": null,
-  "paths": []
+  "paths": [],
+  "autoParse": true
 }
