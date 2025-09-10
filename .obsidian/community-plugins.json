@@ -9,7 +9,6 @@
   "obsidian-dice-roller",
   "initiative-tracker",
   "templater-obsidian",
-  "dataview",
   "buttons",
   "obsidian-meta-bind-plugin",
   "obsidian-admonition",
@@ -17,5 +16,6 @@
   "obsidian-linter",
   "obisidian-note-linker",
   "convert-url-to-iframe",
-  "obsidian-custom-frames"
+  "obsidian-custom-frames",
+  "dataview"
 ]

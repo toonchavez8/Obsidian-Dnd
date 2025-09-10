@@ -1,7 +1,7 @@
 ---
 Type: Player
 Art: "![[Character Image Placholder]]"
-Level: 5
+Level: 1
 AC: 11
 Prof: "3"
 HP: 38
@@ -9,7 +9,7 @@ HitDice: d8
 Speed: 30
 STR: 7
 DEX: 11
-CONST: 15
+CON: 15
 INT: 16
 WIS: 15
 CHA: 14
@@ -17,7 +17,8 @@ House: Hufflepuff
 SchoolOfMagic: Magizoology
 Gender: Male
 Age: "14"
-Location: [[Hogwarts]], England
+Location:
+  - - Hogwarts
 CastingStyle: Intellect
 Background: Groundskeeper
 Heritage: HalfBlood
@@ -56,7 +57,7 @@ Ruby: 0
 >> ###### Stats
 >>  |
 >> ---|---|
->> **Level** |`=this.level` |
+>> **Level** |`=this.Level` |
 >>  **Speed** |`=this.Speed` |
 >> **Proficiency** | +`=this.Prof` |
 >> **Initiative** | +`=floor((this.DEX - 10)/2)` |
@@ -100,7 +101,7 @@ Ruby: 0
 | ----- | ----------- | ----------------------- | --------------------------------- | ----------------------------------- |
 | <font color="#ff0000">**STR**</font>   | `=this.STR` | +`=floor((this.STR - 10)/2)`   | <input type="checkbox" unchecked> | +`=floor((this.STR - 10)/2)`               |
 | <font color="#ffff00">**DEX**</font>   | `=this.DEX`  | +`=floor((this.DEX - 10)/2)`   | <input type="checkbox" unchecked> | +`=floor((this.DEX - 10)/2)`               |
-| <font color="#00b050">**CON**</font>   | `=this.CONST` | +`=floor((this.CONST - 10)/2)` | <input type="checkbox" unchecked>   | +`=floor(((this.CONST - 10)/2))` |
+| <font color="#00b050">**CON**</font>   | `=this.CON` | +`=floor((this.CON - 10)/2)` | <input type="checkbox" unchecked>   | +`=floor(((this.CON - 10)/2))` |
 | <font color="#7030a0">**INT**</font>   | `=this.INT`          | +`=floor((this.INT - 10)/2)`   | <input type="checkbox" unchecked>   | +`=floor(((this.INT - 10)/2))`   |
 | <font color="#245bdb">**WIS**</font>   | `=this.WIS`          | +`=floor((this.WIS - 10)/2)`   | <input type="checkbox" unchecked> | +`=floor((this.WIS - 10)/2)`               |
 | <font color="#de7802">**CHA**</font>   | `=this.CHA`          | +`=floor((this.CHA - 10)/2)`   | <input type="checkbox" unchecked> | +`=(this.CHA - 10)/2`               |

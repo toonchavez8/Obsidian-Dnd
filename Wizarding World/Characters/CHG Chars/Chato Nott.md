@@ -1,27 +1,28 @@
 ---
 Type: Player
-Art: "![[Character Image Placholder]]"
-Level: 5
-AC: 13
-Prof: "3"
-HP: 44
-HitDice: d10
-Speed: 30
-STR: 12
-DEX: 17
-CON: 14
-INT: 9
-WIS: 11
+Art:
+Level: 1
+AC: 12
+Prof: "2"
+HP: 6
+HitDice: d8
+Speed: 15
+STR: 13
+DEX: 12
+CON: 13
+INT: 14
+WIS: 18
 CHA: 15
-House: Hufflepuff
+House: Ravenclaw
 SchoolOfMagic: Divination
 Gender: Male
 Age: "14"
-Location: [[Hogwarts]]
-CastingStyle: Willpower
-Background: Dreamer
+Location:
+  - - Hogwarts
+CastingStyle: Intellect
+Background: Master of potions
 Heritage: PureBlood
-Wand: Silver Lime, Dragon Heartstring - 14"
+Wand: Laurel,30cm,Duro, Dragon HeartString
 Likes: NONE
 Dislikes: NONE
 Pronouns: NONE
@@ -42,10 +43,10 @@ Languages:
   - NONE
 DmgTkn: 0
 TempHP: 0
-Knut: 10
-Sickles: 12
-Galeons: 1
-Ruby: 0
+Knut: 0
+Sickles: 0
+Galeons: 2
+Ruby: 1
 ---
 
 ## `=this.file.name`
@@ -53,7 +54,7 @@ Ruby: 0
 >[!column|flex 2]
 >> [!infobox]
 >> # `=this.file.name`
->> ![[Ignacious-ignam.jpg]]
+>>
 >> ###### Stats
 >>  |
 >> ---|---|

@@ -276,7 +276,9 @@
   "lintOnFileChange": false,
   "displayLintOnFileChangeNotice": false,
   "settingsConvertedToConfigKeyValues": true,
-  "foldersToIgnore": [],
+  "foldersToIgnore": [
+    "Wizarding World/Characters/Temp PlayerChars"
+  ],
   "filesToIgnore": [],
   "linterLocale": "system-default",
   "logLevel": "ERROR",

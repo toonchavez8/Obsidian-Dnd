@@ -4,170 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "b29b63e052f392c3",
+        "id": "2a3c6afa8ef78e51",
         "type": "tabs",
         "children": [
           {
-            "id": "bb96de4e3e342cac",
+            "id": "6557b8446c70c9cd",
             "type": "leaf",
             "state": {
-              "type": "intiative-tracker-encounter-builder",
-              "state": [
-                [
-                  {
-                    "name": "Chuul",
-                    "source": "5e SRD",
-                    "size": "Large",
-                    "type": "aberration",
-                    "subtype": "",
-                    "alignment": "chaotic evil",
-                    "ac": 16,
-                    "hp": 93,
-                    "hit_dice": "11d10 + 32",
-                    "speed": "30 ft., swim 30 ft.",
-                    "stats": [
-                      19,
-                      10,
-                      16,
-                      5,
-                      11,
-                      5
-                    ],
-                    "skillsaves": [
-                      {
-                        "perception": 4
-                      }
-                    ],
-                    "damage_vulnerabilities": "",
-                    "damage_resistances": "",
-                    "damage_immunities": "poison",
-                    "condition_immunities": "poisoned",
-                    "senses": "darkvision 60 ft., passive Perception 14",
-                    "languages": "understands Deep Speech but can't speak",
-                    "cr": "4",
-                    "bestiary": true,
-                    "traits": [
-                      {
-                        "name": "Amphibious",
-                        "desc": "The chuul can breathe air and water.",
-                        "attack_bonus": 0
-                      },
-                      {
-                        "name": "Sense Magic",
-                        "desc": "The chuul senses magic within 120 feet of it at will. This trait otherwise works like the detect magic spell but isn't itself magical.",
-                        "attack_bonus": 0
-                      }
-                    ],
-                    "actions": [
-                      {
-                        "name": "Multiattack",
-                        "desc": "The chuul makes two pincer attacks. If the chuul is grappling a creature, the chuul can also use its tentacles once.",
-                        "attack_bonus": 0
-                      },
-                      {
-                        "name": "Pincer",
-                        "desc": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage. The target is grappled (escape DC 14) if it is a Large or smaller creature and the chuul doesn't have two other creatures grappled.",
-                        "attack_bonus": 6,
-                        "damage_dice": "2d6",
-                        "damage_bonus": 4
-                      },
-                      {
-                        "name": "Tentacles",
-                        "desc": "One creature grappled by the chuul must succeed on a DC 13 Constitution saving throw or be poisoned for 1 minute. Until this poison ends, the target is paralyzed. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
-                        "attack_bonus": 0
-                      }
-                    ]
-                  },
-                  2
-                ],
-                [
-                  {
-                    "name": "Bulette",
-                    "source": "5e SRD",
-                    "size": "Large",
-                    "type": "monstrosity",
-                    "subtype": "",
-                    "alignment": "unaligned",
-                    "ac": 17,
-                    "hp": 94,
-                    "hit_dice": "9d10 + 44",
-                    "speed": "40 ft., burrow 40 ft.",
-                    "stats": [
-                      19,
-                      11,
-                      21,
-                      2,
-                      10,
-                      5
-                    ],
-                    "skillsaves": [
-                      {
-                        "perception": 6
-                      }
-                    ],
-                    "damage_vulnerabilities": "",
-                    "damage_resistances": "",
-                    "damage_immunities": "",
-                    "condition_immunities": "",
-                    "senses": "darkvision 60 ft., tremorsense 60 ft., passive Perception 16",
-                    "languages": "",
-                    "cr": "5",
-                    "bestiary": true,
-                    "traits": [
-                      {
-                        "name": "Standing Leap",
-                        "desc": "The bulette's long jump is up to 30 ft. and its high jump is up to 15 ft., with or without a running start.",
-                        "attack_bonus": 0
-                      }
-                    ],
-                    "actions": [
-                      {
-                        "name": "Bite",
-                        "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 30 (4d12 + 4) piercing damage.",
-                        "attack_bonus": 7,
-                        "damage_dice": "4d12",
-                        "damage_bonus": 4
-                      },
-                      {
-                        "name": "Deadly Leap",
-                        "desc": "If the bulette jumps at least 15 ft. as part of its movement, it can then use this action to land on its ft. in a space that contains one or more other creatures. Each of those creatures must succeed on a DC 16 Strength or Dexterity saving throw (target's choice) or be knocked prone and take 14 (3d6 + 4) bludgeoning damage plus 14 (3d6 + 4) slashing damage. On a successful save, the creature takes only half the damage, isn't knocked prone, and is pushed 5 ft. out of the bulette's space into an unoccupied space of the creature's choice. If no unoccupied space is within range, the creature instead falls prone in the bulette's space.",
-                        "attack_bonus": 0
-                      }
-                    ]
-                  },
-                  1
-                ]
-              ],
-              "icon": "intiative-tracker-encounter-builder",
-              "title": "Encounter Builder"
-            }
-          },
-          {
-            "id": "5a2853ae3eccbb8d",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/00_lore_and_Players/El Dragon de Pico Helado.pdf"
+                "file": "Wizarding World/Characters/CHG Chars/Chato Nott.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "El Dragon de Pico Helado"
-            }
-          },
-          {
-            "id": "01a71173a4c16e39",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Wizarding World/World/Wizarding World/Wands & Wizards - Harry Potter 5e.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "Wands & Wizards - Harry Potter 5e"
+              "icon": "lucide-file",
+              "title": "Chato Nott"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -428,12 +282,34 @@
       "calendarium:Open Calendarium": false
     }
   },
-  "active": "01a71173a4c16e39",
+  "active": "6557b8446c70c9cd",
   "lastOpenFiles": [
+    "Wizarding World/Characters/CHG Chars/Cross Snape.md",
+    "Wizarding World/Characters/CHG Chars/Chato Nott.md",
+    "Wizarding World/Assets/Sebastian-Snark.jpg",
+    "Wizarding World/Assets/Rebbeca-Weasly.jpg",
+    "Wizarding World/World/Wizarding World/Wizarding Book of Monsters and foes.pdf",
+    "Wizarding World/World/Wizarding World/Wands & Wizards - Headmaster's Guide v0.2.pdf",
+    "Wizarding World/World/Wizarding World/Wands & Wizards - Harry Potter 5e.pdf",
+    "Wizarding World/Characters/Creation Notes/Feats.md",
+    "Wizarding World/Characters/Temp PlayerChars/Ignacio ignam.md",
+    "Wizarding World/Characters/CHG Chars",
+    "Wizarding World/Characters/Temp PlayerChars/Penolope Pevreal.md",
+    "Wizarding World/Characters/Temp PlayerChars/Sebastian Snark.md",
+    "Wizarding World/Characters/Temp PlayerChars/Oscar Ortiz.md",
+    "Wizarding World/Characters/Temp PlayerChars/Rebecca Weasly.md",
+    "Wizarding World/Characters/Temp PlayerChars/Oscar Ortiz - HufflePuff.pdf",
+    "Wizarding World/Assets/OscarOrtiz_Img.png",
+    "Wizarding World/World/PlayerSheets/Player's Cheat Sheets - English.pdf",
+    "Wizarding World/World/PlayerSheets/W&W Gryffindor - Fillable.pdf",
+    "Wizarding World/World/PlayerSheets/W&W Hufflepuff - Fillable.pdf",
+    "Wizarding World/World/PlayerSheets/W&W Ravenclaw - Fillable.pdf",
+    "Wizarding World/World/PlayerSheets/W&W Slytherin - Fillable.pdf",
+    "Readme.md",
+    "Untitled.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/05_Tablas/01_Historias_de_Phandalin.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Santuario de la Suerte.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Posada Rocacolina.md",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/00_lore_and_Players/El Dragon de Pico Helado.pdf",
     "conflict-files-obsidian-git.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Butterskull Ranch 50x50 @ 140pps/Butterskull Ranch v1.04 (upper & cellar).jpg",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Butterskull Ranch 50x50 @ 140pps/Butterskull Ranch v1.03 (cellar).jpg",
@@ -442,20 +318,8 @@
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Butterskull Ranch 50x50 @ 140pps/Butterskull Ranch v1.10 (upper only-night) 15x10 @140pps.webp",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Butterskull Ranch 50x50 @ 140pps/Butterskull Ranch v1.10 (roof only-night) 15x14 @140pps.webp",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Butterskull Ranch 50x50 @ 140pps/Butterskull Ranch v1.10 (ground-night) 50x50 @140pps.webp",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Butterskull Ranch 50x50 @ 140pps/Butterskull Ranch v1.10 (cellar only-night) 7x10 @140pps.webp",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Butterskull Ranch 50x50 @ 140pps/Butterskull Ranch v1.04 (upper).jpg",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Tower of Storms/The Tower Of Storms v1.0 (no beacon) 66x42 @140pps.jpg",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Manor Embrujado de Tresendar.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin.md",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Woodland Manse 41x42 140pps/Woodland Manse v1.0.dd2vtt",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Woodland Manse 41x42 140pps/Woodland Manse v1.0 (upper).dd2vtt",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Woodland Manse 41x42 140pps",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Umbrage Hill 66x42 @ 140pps/Umbrage Hill v1.0 (ground).dd2vtt",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Umbrage Hill 66x42 @ 140pps",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Tower of Storms/The Tower Of Storms v1.0.dd2vtt",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Tower of Storms",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Shrine of Savras 54x42/Shrine of Savras v1.01.dd2vtt",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Shrine of Savras 54x42",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Misión de la Colina del Resentimiento.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Huerto_Edermath.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Costa de la Espada.md",
@@ -466,15 +330,6 @@
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3/Misión de Terragnoma.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Bazar Escudo de Leon.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/00_lore_and_Players/Vetoras.md",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/05_Tablas/Untitled.md",
-    "Wizarding World/Sessions/Session 0 - Prelude/Session_0-Prelude - Antes.md",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/Roadmap.canvas",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Huerto_Edermath.md",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Casa de Cambio de Phandalin.md",
-    "Untitled.md",
-    "Readme.md",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 5 - 7/Misión El Túmulo del Dragón.md",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/04_NPCs/Harbin Wester.md",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3/Misión de la Colina del Resentimiento 1.md"
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/Roadmap.canvas"
   ]
 }

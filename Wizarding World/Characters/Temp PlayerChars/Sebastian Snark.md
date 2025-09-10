@@ -17,7 +17,7 @@ House: Slytherin
 SchoolOfMagic: Divination
 Gender: Male
 Age: "14"
-Location: [[Hogwarts]], England
+Location: [[Hogwarts]]
 CastingStyle: Willpower
 Background: Protector
 Heritage: MuggleBorn
