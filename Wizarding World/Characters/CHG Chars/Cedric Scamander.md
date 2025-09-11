@@ -4,17 +4,17 @@ Art:
 Level: 1
 AC: 12
 Prof: "2"
-HP: 6
+HP: 10
 HitDice: d8
 Speed: 15
-STR: 13
-DEX: 12
-CON: 13
-INT: 14
-WIS: 18
-CHA: 15
-House: Ravenclaw
-SchoolOfMagic: Divination
+STR: 8
+DEX: 11
+CON: 14
+INT: 12
+WIS: 14
+CHA: 14
+House: Hufflepuff
+SchoolOfMagic: Magizoology
 Gender: Male
 Age: "14"
 Location:
@@ -22,7 +22,7 @@ Location:
 CastingStyle: Intellect
 Background: Master of potions
 Heritage: PureBlood
-Wand: Roble Ingles,27 cm,Muy Flexible, Pelo de Unicornio
+Wand: Castano,34cm,Ligeramente Elastica, Pluma de Fenix
 Likes: NONE
 Dislikes: NONE
 Pronouns: NONE
@@ -110,7 +110,7 @@ Ruby: 1
 | Ability               | Prof                                   | Mod |
 | --------------------- | --------------------------------- | --- |
 | Acrobatics (DEX)      | <input type="checkbox" unchecked> | +`=floor((this.DEX - 10)/2)` |
-| Magical Creatures (WIS) | <input type="checkbox" unchecked> | +`=floor((this.WIS - 10)/2)+1` |
+| Magical Creatures (WIS) | <input type="checkbox" unchecked> | +`=floor((this.WIS - 10)/2)` |
 | Magical Theory (INT)  | <input type="checkbox" unchecked> | +`=floor((this.INT - 10)/2)` |
 | Athletics (STR)       | <input type="checkbox" unchecked> | +`=floor((this.STR - 10)/2)` |
 | Deception (CHA)       | <input type="checkbox" unchecked> | +`=floor((this.CHA - 10)/2)` |

@@ -4,17 +4,17 @@ Art:
 Level: 1
 AC: 12
 Prof: "2"
-HP: 6
+HP: 10
 HitDice: d8
 Speed: 15
-STR: 13
-DEX: 12
-CON: 13
-INT: 14
-WIS: 18
-CHA: 15
+STR: 11
+DEX: 7
+CON: 16
+INT: 11
+WIS: 11
+CHA: 13
 House: Ravenclaw
-SchoolOfMagic: Divination
+SchoolOfMagic: Adivnacion
 Gender: Male
 Age: "14"
 Location:
@@ -22,7 +22,7 @@ Location:
 CastingStyle: Intellect
 Background: Master of potions
 Heritage: PureBlood
-Wand: Roble Ingles,27 cm,Muy Flexible, Pelo de Unicornio
+Wand: Castano,34cm,Ligeramente Elastica, Pluma de Fenix
 Likes: NONE
 Dislikes: NONE
 Pronouns: NONE
@@ -110,7 +110,7 @@ Ruby: 1
 | Ability               | Prof                                   | Mod |
 | --------------------- | --------------------------------- | --- |
 | Acrobatics (DEX)      | <input type="checkbox" unchecked> | +`=floor((this.DEX - 10)/2)` |
-| Magical Creatures (WIS) | <input type="checkbox" unchecked> | +`=floor((this.WIS - 10)/2)+1` |
+| Magical Creatures (WIS) | <input type="checkbox" unchecked> | +`=floor((this.WIS - 10)/2)` |
 | Magical Theory (INT)  | <input type="checkbox" unchecked> | +`=floor((this.INT - 10)/2)` |
 | Athletics (STR)       | <input type="checkbox" unchecked> | +`=floor((this.STR - 10)/2)` |
 | Deception (CHA)       | <input type="checkbox" unchecked> | +`=floor((this.CHA - 10)/2)` |
@@ -130,11 +130,8 @@ Ruby: 1
 
 ## Atributos
 
-- **Aumento de Puntuaciones de Característica**. Tu puntuación de Constitución, Sabiduría y una puntuación de característica adicional a tu elección aumentan en 1.
-
-- **Lealtad Inquebrantable**. Tienes ventaja en las tiradas de salvación contra cualquier efecto que te haga atacar o actuar en contra de una criatura que normalmente considerarías un aliado.
-
-- **Viajes a la Cocina**. Agregas la mitad de tu bonificación de competencia a tu Iniciativa y no puedes ser sorprendido mientras estés consciente.
+- **Conocimiento Profundo:** Cuando realizas una prueba de Inteligencia o Sabiduría con competencia, puedes tratar una tirada de 5 o menos como si fuera un 6.
+- **Biblioteca de Rowena:** Puedes investigar fácilmente cualquier tema con la ayuda de tus compañeros de casa y libros exclusivos de la sala común
 
 ## Feats
 

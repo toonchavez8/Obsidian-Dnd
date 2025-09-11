@@ -126,7 +126,7 @@ Ruby: 1
 | Sleight of Hand (DEX) | <input type="checkbox" unchecked> | +`=floor((this.DEX - 10)/2)` |
 | Stealth (DEX)         | <input type="checkbox" unchecked> | +`=floor((this.DEX - 10)/2)` |
 | Survival (WIS)        | <input type="checkbox" unchecked> | +`=floor((this.WIS - 10)/2)` |
-| Potion Making (INT)   | <input type="checkbox" unchecked> | +`=floor((this.INT - 10)/2)` |
+| Potion Making (INT)   | <input type="checkbox" unchecked> | +`=floor((this.INT - 10)/2 + 1)` |
 
 ## Atributos
 

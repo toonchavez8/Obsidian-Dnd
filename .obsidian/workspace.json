@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Wizarding World/Characters/CHG Chars/Chato Nott.md",
+                "file": "Wizarding World/Characters/CHG Chars/Federic Ollivanders.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Chato Nott"
+              "title": "Federic Ollivanders"
             }
           }
         ]
@@ -285,7 +285,14 @@
   "active": "6557b8446c70c9cd",
   "lastOpenFiles": [
     "Wizarding World/Characters/CHG Chars/Cross Snape.md",
+    "Wizarding World/Characters/CHG Chars/Federic Ollivanders.md",
+    "Wizarding World/Characters/CHG Chars/Cedric Scamander.md",
+    "Wizarding World/World/PlayerSheets/Player's Cheat Sheets - English.pdf",
+    "Wizarding World/World/PlayerSheets/W&W Ravenclaw - Fillable.pdf",
+    "Wizarding World/World/PlayerSheets/W&W Hufflepuff - Fillable.pdf",
     "Wizarding World/Characters/CHG Chars/Chato Nott.md",
+    "Wizarding World/World/PlayerSheets/W&W Classic Character Sheet by Blaze.pdf",
+    "Wizarding World/World/PlayerSheets/W&W Gryffindor - Fillable.pdf",
     "Wizarding World/Assets/Sebastian-Snark.jpg",
     "Wizarding World/Assets/Rebbeca-Weasly.jpg",
     "Wizarding World/World/Wizarding World/Wizarding Book of Monsters and foes.pdf",
@@ -300,11 +307,6 @@
     "Wizarding World/Characters/Temp PlayerChars/Rebecca Weasly.md",
     "Wizarding World/Characters/Temp PlayerChars/Oscar Ortiz - HufflePuff.pdf",
     "Wizarding World/Assets/OscarOrtiz_Img.png",
-    "Wizarding World/World/PlayerSheets/Player's Cheat Sheets - English.pdf",
-    "Wizarding World/World/PlayerSheets/W&W Gryffindor - Fillable.pdf",
-    "Wizarding World/World/PlayerSheets/W&W Hufflepuff - Fillable.pdf",
-    "Wizarding World/World/PlayerSheets/W&W Ravenclaw - Fillable.pdf",
-    "Wizarding World/World/PlayerSheets/W&W Slytherin - Fillable.pdf",
     "Readme.md",
     "Untitled.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/05_Tablas/01_Historias_de_Phandalin.md",
@@ -328,8 +330,6 @@
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3/Misión de la excavación de los enanos.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3/Misión de la Colina del Resentimiento.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3/Misión de Terragnoma.md",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Bazar Escudo de Leon.md",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/00_lore_and_Players/Vetoras.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/Roadmap.canvas"
   ]
 }
