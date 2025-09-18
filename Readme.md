@@ -91,4 +91,37 @@ Tu tarea será:
 4. Mantener la **estructura clara y legible**, como si fuera un suplemento casero de D&D.
 5. Si el texto incluye reglas, tablas o descripciones de conjuros/animagos/patronus, formatearlos en tablas Markdown o bloques separados.
 Al final, entrégame la traducción **lista para copiar en GMbinder**. sin agregar nada mas
+
+template for MonsterBlocks
+> ## Monster Name
+>*Size, Alignment*
+> ___
+> - **Armor Class** AC
+> - **Hit Points** Hitpoints
+> - **Speed** Speed
+>___
+>|STR|DEX|CON|INT|WIS|CHA|
+>|:---:|:---:|:---:|:---:|:---:|:---:|
+>|Str (Mod)|Dex (Mod)|Con (Mod)|Int (Mod)|Wis (Mod)|Cha (Mod)|
+>___
+> - **Saving Throws** saving_throws
+> - **Skills** skills
+> - **Damage Vulnerabilities** damage_vulnerabilities
+> - **Damage Resistances** Resistances
+> - **Damage Immunities** Damage_Immunities
+> - **Condition Immunities** condition_Immunities
+> - **Senses** Senses
+> - **Languages** Languages
+> - **Challenge** Challenge and Xp
+> ___
+>
+> ### Actions
+> ***Multiattack.*** The Creature Name makes Number and type of attacks
+>
+> ***Ability Description.*** *Attack Style:* Attack Bonus to hit, Reach/Range, one target. *Hit:* Damage Damage Type damage
+>
+> ***General Ability Description.*** General Attack Description
+
+
+
 ```
