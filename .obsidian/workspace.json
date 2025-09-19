@@ -6,7 +6,6 @@
       {
         "id": "c2b7ef0776ff3138",
         "type": "tabs",
-        "dimension": 29.349269588313415,
         "children": [
           {
             "id": "35484035f9f0f978",
@@ -14,33 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Readme.md",
+                "file": "Wizarding World/Characters/CHG Chars/Federic Ollivanders.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Readme"
-            }
-          }
-        ]
-      },
-      {
-        "id": "2a3c6afa8ef78e51",
-        "type": "tabs",
-        "dimension": 70.6507304116866,
-        "children": [
-          {
-            "id": "6557b8446c70c9cd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Wizarding World/World/Hogwarts/Letter.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Letter"
+              "title": "Federic Ollivanders"
             }
           }
         ]
@@ -304,27 +282,34 @@
       "calendarium:Open Calendarium": false
     }
   },
-  "active": "6557b8446c70c9cd",
+  "active": "35484035f9f0f978",
   "lastOpenFiles": [
+    "Wizarding World/Characters/CHG Chars/Esmeralda Rossier.md",
+    "Wizarding World/Characters/CHG Chars/Cross Snape.md",
+    "Wizarding World/Characters/CHG Chars/Chato Nott.md",
+    "Wizarding World/Characters/CHG Chars/Cedric Scamander.md",
     "Wizarding World/Characters/CHG Chars/Aldebaran Black.md",
+    "Wizarding World/Characters/CHG Chars/Federic Ollivanders.md",
+    "Wizarding World/World/PlayerSheets/W&W Gryffindor - Fillable.pdf",
+    "Wizarding World/World/PlayerSheets/W&W Ravenclaw - Fillable.pdf",
+    "Wizarding World/World/Wizarding World/Wizarding Book of Monsters and foes.pdf",
+    "Wizarding World/World/Maps/London/Diagon Alley/Magical Menagerie by Block_nessie.jpg",
+    "Wizarding World/World/Maps/London/Diagon Alley/Ollivanders by Block_nessie.jpg",
+    "Wizarding World/World/Maps/London/Diagon Alley/Ollivanders by Badwolf.jpg",
+    "Wizarding World/World/Maps/London/Diagon Alley/The Leaky Cauldron by Badwolf.jpg",
+    "Wizarding World/World/Maps/London/Diagon Alley/Ollivanders (Roof) by Block_nessie.jpg",
+    "Wizarding World/World/Maps/London/Diagon Alley/Leaky Cauldron by Block_nessie.jpg",
+    "Readme.md",
     "Wizarding World/World/Hogwarts/Letter.md",
     "Wizarding World/World/Wizarding World/Wands & Wizards - Harry Potter 5e.pdf",
-    "Readme.md",
     "Wizarding World/World/Wizarding World/W&W NPCs 0.3.1 _ GM Binder.pdf",
-    "Wizarding World/Characters/CHG Chars/Cross Snape.md",
     "Wizarding World/World/Wizarding World/Wands & Wizards - Headmaster's Guide v0.2.pdf",
-    "Wizarding World/Characters/CHG Chars/Federic Ollivanders.md",
-    "Wizarding World/Characters/CHG Chars/Cedric Scamander.md",
     "Wizarding World/World/PlayerSheets/W&W Slytherin - Fillable.pdf",
     "Wizarding World/World/PlayerSheets/Player's Cheat Sheets - English.pdf",
-    "Wizarding World/World/PlayerSheets/W&W Ravenclaw - Fillable.pdf",
     "Wizarding World/World/PlayerSheets/W&W Hufflepuff - Fillable.pdf",
-    "Wizarding World/Characters/CHG Chars/Chato Nott.md",
     "Wizarding World/World/PlayerSheets/W&W Classic Character Sheet by Blaze.pdf",
-    "Wizarding World/World/PlayerSheets/W&W Gryffindor - Fillable.pdf",
     "Wizarding World/Assets/Sebastian-Snark.jpg",
     "Wizarding World/Assets/Rebbeca-Weasly.jpg",
-    "Wizarding World/World/Wizarding World/Wizarding Book of Monsters and foes.pdf",
     "Wizarding World/Characters/Creation Notes/Feats.md",
     "Wizarding World/Characters/Temp PlayerChars/Ignacio ignam.md",
     "Wizarding World/Characters/Temp PlayerChars/Penolope Pevreal.md",
@@ -338,20 +323,12 @@
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Posada Rocacolina.md",
     "conflict-files-obsidian-git.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Butterskull Ranch 50x50 @ 140pps/Butterskull Ranch v1.04 (upper & cellar).jpg",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Butterskull Ranch 50x50 @ 140pps/Butterskull Ranch v1.03 (cellar).jpg",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Butterskull Ranch 50x50 @ 140pps/Butterskull Ranch v1.0 (roof).jpg",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Butterskull Ranch 50x50 @ 140pps/Butterskull Ranch v1.0 (ground).jpg",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Butterskull Ranch 50x50 @ 140pps/Butterskull Ranch v1.10 (upper only-night) 15x10 @140pps.webp",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Butterskull Ranch 50x50 @ 140pps/Butterskull Ranch v1.10 (roof only-night) 15x14 @140pps.webp",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Butterskull Ranch 50x50 @ 140pps/Butterskull Ranch v1.10 (ground-night) 50x50 @140pps.webp",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Manor Embrujado de Tresendar.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Misión de la Colina del Resentimiento.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Huerto_Edermath.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Costa de la Espada.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Casa Consistorial.md",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Suministros Barthen.md",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3/Misión de la excavación de los enanos.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/Roadmap.canvas"
   ]
 }

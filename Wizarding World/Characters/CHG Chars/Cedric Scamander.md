@@ -20,8 +20,8 @@ Age: "14"
 Location:
   - - Hogwarts
 CastingStyle: Intellect
-Background: Master of potions
-Heritage: PureBlood
+Background: GuardaBosques
+Heritage: Mestizo
 Wand: Castano,34cm,Ligeramente Elastica, Pluma de Fenix
 Likes: NONE
 Dislikes: NONE
@@ -101,16 +101,16 @@ Ruby: 1
 | Skill | Score       | Mod                     | Prof                              | ST                                  |
 | ----- | ----------- | ----------------------- | --------------------------------- | ----------------------------------- |
 | <font color="#ff0000">**STR**</font> | `=this.STR` | +`=floor((this.STR - 10)/2)` | <input type="checkbox" unchecked> | +`=floor((this.STR - 10)/2)` |
-| <font color="#ffff00">**DEX**</font> | `=this.DEX` | +`=floor((this.DEX - 10)/2)` | <input type="checkbox" unchecked> | +`=floor((this.DEX - 10)/2)` |
+| <font color="#ffff00">**DEX**</font> | `=this.DEX` | +`=floor((this.DEX - 10)/2)` | <input type="checkbox" checked> | +`=floor((this.DEX - 10)/2)` |
 | <font color="#00b050">**CON**</font> | `=this.CON` | +`=floor((this.CON - 10)/2)` | <input type="checkbox" unchecked> | +`=floor((this.CON - 10)/2)` |
-| <font color="#7030a0">**INT**</font> | `=this.INT` | +`=floor((this.INT - 10)/2)` | <input type="checkbox" unchecked> | +`=floor((this.INT - 10)/2)` |
+| <font color="#7030a0">**INT**</font> | `=this.INT` | +`=floor((this.INT - 10)/2)` | <input type="checkbox" checked> | +`=floor((this.INT - 10)/2)` |
 | <font color="#245bdb">**WIS**</font> | `=this.WIS` | +`=floor((this.WIS - 10)/2)` | <input type="checkbox" unchecked> | +`=floor((this.WIS - 10)/2)` |
 | <font color="#de7802">**CHA**</font> | `=this.CHA` | +`=floor((this.CHA - 10)/2)` | <input type="checkbox" unchecked> | +`=floor((this.CHA - 10)/2)` |
 >> ### Skill Checks
 | Ability               | Prof                                   | Mod |
 | --------------------- | --------------------------------- | --- |
 | Acrobatics (DEX)      | <input type="checkbox" unchecked> | +`=floor((this.DEX - 10)/2)` |
-| Magical Creatures (WIS) | <input type="checkbox" unchecked> | +`=floor((this.WIS - 10)/2)` |
+| Magical Creatures (WIS) | <input type="checkbox" checked> | +`=floor((this.WIS - 10)/2)+1` |
 | Magical Theory (INT)  | <input type="checkbox" unchecked> | +`=floor((this.INT - 10)/2)` |
 | Athletics (STR)       | <input type="checkbox" unchecked> | +`=floor((this.STR - 10)/2)` |
 | Deception (CHA)       | <input type="checkbox" unchecked> | +`=floor((this.CHA - 10)/2)` |
@@ -119,7 +119,7 @@ Ruby: 1
 | Intimidation (CHA)    | <input type="checkbox" unchecked> | +`=floor((this.CHA - 10)/2)` |
 | Investigation (INT)   | <input type="checkbox" unchecked> | +`=floor((this.INT - 10)/2)` |
 | Medicine (WIS)        | <input type="checkbox" unchecked> | +`=floor((this.WIS - 10)/2)` |
-| Herbology (INT)       | <input type="checkbox" unchecked> | +`=floor((this.INT - 10)/2)` |
+| Herbology (INT)       | <input type="checkbox" checked> | +`=floor((this.INT - 10)/2)` |
 | Perception (WIS)      | <input type="checkbox" unchecked> | +`=floor((this.WIS - 10)/2)` |
 | Performance (CHA)     | <input type="checkbox" unchecked> | +`=floor((this.CHA - 10)/2)` |
 | Persuasion (CHA)      | <input type="checkbox" unchecked> | +`=floor((this.CHA - 10)/2)` |
@@ -130,15 +130,43 @@ Ruby: 1
 
 ## Atributos
 
-- **Aumento de Puntuaciones de Característica**. Tu puntuación de Constitución, Sabiduría y una puntuación de característica adicional a tu elección aumentan en 1.
+- **Aumento de Puntuaciones de Característica**. 
+	Tu puntuación de Constitución, Sabiduría y una puntuación de característica adicional a tu elección aumentan en 1.
 
-- **Lealtad Inquebrantable**. Tienes ventaja en las tiradas de salvación contra cualquier efecto que te haga atacar o actuar en contra de una criatura que normalmente considerarías un aliado.
+- **Lealtad Inquebrantable**. 
+	Tienes ventaja en las tiradas de salvación contra cualquier efecto que te haga atacar o actuar en contra de una criatura que normalmente considerarías un aliado.
 
-- **Viajes a la Cocina**. Agregas la mitad de tu bonificación de competencia a tu Iniciativa y no puedes ser sorprendido mientras estés consciente.
+- **Viajes a la Cocina**. 
+	Agregas la mitad de tu bonificación de competencia a tu Iniciativa y no puedes ser sorprendido mientras estés consciente.
+  
+  - **Cuidador.**  
+    Tu estudio de las criaturas mágicas te ha enseñado sobre sus lesiones y fisiologías.  
+    Puedes lanzar cualquier **hechizo de sanación** conocido sobre bestias.
+  
+  ## Magia Metamórfica
+
+En muy contadas ocasiones, nace en una familia mágica un **metamorfomago**, con el talento particular de **cambiar cada aspecto de su apariencia humana**.
+
+Antes de alcanzar la adultez, un metamorfomago no posee control total sobre esta habilidad, dejando que sus **emociones o el estrés** lo dominen y perdiendo el control.
+
+- A **voluntad**, puedes transformar tu apariencia.
+- Como **acción**, decides tu aspecto: altura, peso, facciones, voz, longitud y color del cabello, así como características distintivas.
+- Ninguna de tus **estadísticas** cambia, no puedes parecer de un **tamaño distinto** al tuyo, y tu forma básica se mantiene (si eres bípedo, no puedes adoptar forma cuadrúpeda).
+- En cualquier momento puedes usar una acción para **cambiar tu apariencia nuevamente**.
+- Además, puedes adaptar tu cuerpo al **entorno acuático**, generando membranas entre tus dedos. Como acción, obtienes una **velocidad de nado igual a tu velocidad de movimiento**
+- Si solo has visto a alaguien tienes un +3 sobre tu deceoption o persuation
+- Si no has visto a alguien tienes un menos 1d6 menos 
+- si lo conoces bien tienes un +5
+- si has pasado mas de 48 hrs +10
+- 
 
 ## Feats
 
-- **Sentir de peligro**.Agregas la mitad de tu bonificación de competencia a tu Iniciativa y no puedes ser sorprendido mientras estés consciente. 
+### Lanzamiento Ritual
+
+Tu capacidad para recordar información te permite lanzar conjuros libremente, siempre que tengas tiempo para concentrarte.
+
+A nivel 1, puedes lanzar un conjuro como ritual si tiene la etiqueta de ritual y lo conoces. Una versión ritual de un conjuro solo tarda 1 minuto más en lanzarse que lo normal. Además, no gasta un espacio de conjuro, lo que significa que la versión ritual
 
 ## Equipo
 
@@ -165,13 +193,14 @@ Ruby: 1
 
 ### Transfondo del personaje
 
- Un joven mago atormentado por la verdad, Ignacio porta una varita de Lima Plateada con Cuerda de Corazón de Dragón, un instrumento que refleja su don de profecía y su alma agitada. Sus visiones del futuro, aunque fragmentadas y llenas de simbolismo, lo han convertido en un solitario, marcado por la carga de presenciar el desenlace de eventos aún por ocurrir.
 
-Aquí hay algunos detalles adicionales sobre el personaje:
 
-Ideales: El personaje cree que todo lo bueno y malo llega a su fin, y que la vida es una serie de cambios.
-Lazos: El personaje sufre de suenos y presentimientnos de un evento terrible, y está comprometido a proteger a los demás.
-debelidad: El personaje se distrae muy a menudo, y tiene una gran dificultad para mantenerse en el camino, si hay un plan se le olvida, y si no se le olvida lo ignora.
+Ideas: Naturaleza: El mundo natural es más precioso que toda la llamada civilización.
+
+Vinculos:  	Es mi deber preservar y proteger las criaturas en peligro de extinción.
+
+Defecto: 	Hablo sin pensar, con poca diplomacia
+
 
 ## Magia
 
