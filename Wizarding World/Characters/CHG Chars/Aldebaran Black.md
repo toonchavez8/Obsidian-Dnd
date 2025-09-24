@@ -2,7 +2,7 @@
 Type: Player
 Art:
 Level: 1
-AC: 15
+AC: 13
 Prof: "2"
 HP: 12
 HitDice: d10
@@ -137,10 +137,18 @@ Ruby: 1
 
 ## Feats
 
--  **Entrenamiento de Auror.**  
-    Ya has comenzado a practicar las habilidades necesarias para convertirte en un Auror.  
-    Aprendes una receta de poción común y obtienes competencia en dos de las siguientes habilidades: Investigación, Elaboración de Pociones, Sigilo o Supervivencia.
 
+## Occlumency Training
+
+Has desarrollado la **presencia mental** para resistir invasiones psíquicas.
+
+**Beneficios:**
+
+- Cuando eres objetivo de _Legilimens_, haces una **salvación de Sabiduría** para resistir sus efectos iniciales.
+- Tienes **ventaja en tiradas enfrentadas de Inteligencia** contra legilimens.
+- Si fallas, eres consciente inmediatamente de que están intentando leer tu mente.
+- Si superas una salvación o tirada enfrentada, puedes **dejar que el hechizo continúe** revelando **información, emociones o recuerdos falsos**.
+- El _Veritaserum_ no funciona en ti, a menos que lo permitas.
 ## Equipo
 
 - [ ] Varita magica

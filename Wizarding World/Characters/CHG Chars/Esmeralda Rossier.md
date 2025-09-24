@@ -15,7 +15,7 @@ WIS: 12
 CHA: 17
 House: Gryffindor
 SchoolOfMagic: Adivinación
-Gender: Male
+Gender: Female
 Age: "13"
 Location:
   - - Hogwarts

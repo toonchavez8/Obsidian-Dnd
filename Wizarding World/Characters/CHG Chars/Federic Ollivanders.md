@@ -4,25 +4,25 @@ Art:
 Level: 1
 AC: 12
 Prof: "2"
-HP: 10
+HP: 11
 HitDice: d8
 Speed: 15
 STR: 11
 DEX: 7
 CON: 16
-INT: 11
-WIS: 11
-CHA: 13
+INT: 12
+WIS: 12
+CHA: 11
 House: Ravenclaw
 SchoolOfMagic: Adivnacion
 Gender: Male
-Age: "14"
+Age: "11"
 Location:
   - - Hogwarts
 CastingStyle: Intellect
 Background: Master of potions
 Heritage: PureBlood
-Wand: Castano,34cm,Ligeramente Elastica, Pluma de Fenix
+Wand: Pino,33cm,Ligeramente Elastica, fibra de corazion de dragon
 Likes: NONE
 Dislikes: NONE
 Pronouns: NONE
@@ -117,16 +117,16 @@ Ruby: 1
 | Muggle Studies (INT)  | <input type="checkbox" unchecked> | +`=floor((this.INT - 10)/2)` |
 | Insight (WIS)         | <input type="checkbox" unchecked> | +`=floor((this.WIS - 10)/2)` |
 | Intimidation (CHA)    | <input type="checkbox" unchecked> | +`=floor((this.CHA - 10)/2)` |
-| Investigation (INT)   | <input type="checkbox" unchecked> | +`=floor((this.INT - 10)/2)` |
+| Investigation (INT)   | <input type="checkbox" checked> | +`=floor((this.INT - 10)/2)` |
 | Medicine (WIS)        | <input type="checkbox" unchecked> | +`=floor((this.WIS - 10)/2)` |
 | Herbology (INT)       | <input type="checkbox" unchecked> | +`=floor((this.INT - 10)/2)` |
 | Perception (WIS)      | <input type="checkbox" unchecked> | +`=floor((this.WIS - 10)/2)` |
 | Performance (CHA)     | <input type="checkbox" unchecked> | +`=floor((this.CHA - 10)/2)` |
 | Persuasion (CHA)      | <input type="checkbox" unchecked> | +`=floor((this.CHA - 10)/2)` |
-| Sleight of Hand (DEX) | <input type="checkbox" unchecked> | +`=floor((this.DEX - 10)/2)` |
+| Sleight of Hand (DEX) | <input type="checkbox" unchecked> | +`=floor((this.DEX - 10)/2+1)` |
 | Stealth (DEX)         | <input type="checkbox" unchecked> | +`=floor((this.DEX - 10)/2)` |
 | Survival (WIS)        | <input type="checkbox" unchecked> | +`=floor((this.WIS - 10)/2)` |
-| Potion Making (INT)   | <input type="checkbox" unchecked> | +`=floor((this.INT - 10)/2)` |
+| Potion Making (INT)   | <input type="checkbox" checked> | +`=floor((this.INT - 10)/2)` |
 
 ## Atributos
 
@@ -137,6 +137,26 @@ Ruby: 1
 
 - **Sentir de peligro**.Agregas la mitad de tu bonificación de competencia a tu Iniciativa y no puedes ser sorprendido mientras estés consciente. 
 
+## Fortuna Encantada
+
+Algunos magos parecen contar con una suerte fuera de lo común, como si la magia misma les sonriera en los momentos más críticos.
+
+**Beneficios:**
+
+- Obtienes **3 puntos de suerte**.
+- Cuando hagas una tirada de ataque, salvación o habilidad, puedes gastar 1 punto de suerte para **tirar un d20 adicional** y elegir cuál de los resultados usar.
+- Puedes usar esta característica después de ver el resultado, pero antes de que el HM confirme si es un éxito o un fallo.
+- Recuperas todos los puntos de suerte al terminar un **descanso largo**.
+### Lanzamiento Ritual
+
+Tu capacidad para recordar información te permite lanzar conjuros libremente, siempre que tengas tiempo para concentrarte.
+
+A nivel 1, puedes lanzar un conjuro como ritual si tiene la etiqueta de ritual y lo conoces. Una versión ritual de un conjuro solo tarda 1 minuto más en lanzarse que lo normal. Además, no gasta un espacio de conjuro, lo que significa que la versión ritual de un conjuro no puede lanzarse a un nivel superior.
+
+### Característica de Trasfondo: Aprendiz
+
+Aunque aún no puedes crear obras originales, tienes los conocimientos y habilidades rudimentarias suficientes para **iniciar un aprendizaje bajo un mentor**, si encuentras a alguien dispuesto a enseñarte.  
+Además, has practicado la **coordinación mano-ojo** y el trabajo **preciso**.
 ## Equipo
 
 - [ ] Varita magica
@@ -166,9 +186,9 @@ Ruby: 1
 
 Aquí hay algunos detalles adicionales sobre el personaje:
 
-Ideales: El personaje cree que todo lo bueno y malo llega a su fin, y que la vida es una serie de cambios.
-Lazos: El personaje sufre de suenos y presentimientnos de un evento terrible, y está comprometido a proteger a los demás.
-debelidad: El personaje se distrae muy a menudo, y tiene una gran dificultad para mantenerse en el camino, si hay un plan se le olvida, y si no se le olvida lo ignora.
+Ideal:	Personas. Quiero impactar a todos los que experimenten mi arte.
+Lazos: Mi cámara/caballete/instrumento es mi posesión más preciada y me recuerda a alguien que amo.
+debelidad: No hay lugar para la cautela en una vida vivida al máximo
 
 ## Magia
 
