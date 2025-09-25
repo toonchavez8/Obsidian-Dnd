@@ -9,13 +9,18 @@
   "obsidian-dice-roller",
   "initiative-tracker",
   "templater-obsidian",
-  "dataview",
   "buttons",
   "obsidian-meta-bind-plugin",
   "obsidian-admonition",
   "excel",
   "obsidian-linter",
   "obisidian-note-linker",
+<<<<<<< HEAD
   "obsidian-icon-folder",
   "obsidian-custom-frames"
+=======
+  "convert-url-to-iframe",
+  "obsidian-custom-frames",
+  "dataview"
+>>>>>>> origin/main
 ]

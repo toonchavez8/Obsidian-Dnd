@@ -45,6 +45,7 @@ Puede que los personajes quieran explorar los establecimientos más importantes 
 
 [[Casa Consistorial]]- El edificio es de una sola planta, construido con piedra de buena calidad y bien edificado. El techo es de madera con una torre de campana que se eleva desde la parte trasera. Un tablón de anuncios cerca de la puerta principal muestra boletines e información para residentes y recién llegados al pueblo, algunos ofreciendo recompensas por ciertas tareas.
 
+[[Manor Embrujado de Tresendar]]
 ## MISIONES DE PHANDALIN
 
 El tablón de oportunidades que hay en el exterior de la [[Casa Consistorial]] recoge información sobre las misiones disponibles para los aventureros. Cada misión aparece impresa en una carta, que podrás entregar a los jugadores cuando esté disponible dicha misión (consulta "Misiones de inicio" y "Misiones avanzadas" a continuación). Deja que los jugadores elijan el orden en el que quieren cumplir las misiones. Si a los jugadores no les gusta una misión en particular, no están obligados a llevarla a cabo. Sin embargo, cumplirlas have que los personajes se vuelvan más poderosos (consulta "Subir de nivel", en la página 1 1).
@@ -133,6 +134,27 @@ Cada vez que los personajes **lleguen a una nueva ubicación** marcada en el map
 |18|Terragnoma|40|
 |19|Torre de las Tormentas|44|
 |20|Túmulo del Dragón|47|
+
+---
+
+## Session 2: Llegada a Phandalin
+
+Al llegar al pueblo de **Phandalin**, **Gabin** les presenta a su hermano **Toblin**, el amable dueño de la posada **Rocacolina**. Impresionado por la Valentia del grupo, Toblin en agradecimiento, les ofrece dos noches de hospedaje gratuito con la condición de que permanezcan unos días en el pueblo y colaboren con el alcalde en algunas tareas pendientes. Gabin le otorga a Cross por su honestidad al regresarle su dinero un mapa del pueblo.
+
+El grupo se divide temporalmente para explorar el lugar. Algunos deciden ir de compras, mientras otros se dedican a conocer los alrededores.
+
+**Vetoras** y **Cross**, tras unos tragos, acompañan a Vetoras a alimentar a su **direwolf**. Allí descubren que muchos aldeanos temen al animal por considerarlo una bestia salvaje.
+
+**Alkro** visita el **Bazar Escudo de León**, donde conversa con **Leane**. Luego de convencerla y pagarle, logra que acceda a entrenarlo.
+
+**Kimico**, aunque no se presenta adecuadamente, habla con la hermana del **Santuario de la Suerte**. Ella le menciona rumores sobre un bosque embrujado, información que ha escuchado de varios fieles que han acudido a su templo y si lo resuelve le dara una bendicion de tymora.
+
+Más tarde, el grupo se reúne nuevamente en la taberna de la posada. En un momento tenso, **Cross** / **Celene**— amenaza e intimida a **Toblin**, logrando arrancarle la información de que la hermana del santuario es en realidad una **agente de los Harpers**… justo la persona que Cross ha estado buscando en el pueblo.
+
+Tras esta revelación, el grupo vuelve a separarse. **Cross** se dirige a la **casa consistorial**, donde encuentra un tablón con tres misiones escritas por el alcalde **Harbin Wester**.
+
+Mientras tanto, **Kimico** permanece en el bar, intentando extorsionar a Toblin para obtener más información. **Alkro** y **Vetoras** deciden ir juntos al templo para hablar directamente con la hermana.
+
 
 ---
 

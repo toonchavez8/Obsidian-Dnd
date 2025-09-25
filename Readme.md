@@ -65,3 +65,63 @@ Los héroes tienen la decisión final:
 
 1. Permitir que los planos se fusionen, lo que cambiará el mundo mágico para siempre, con nuevas razas, criaturas y desafíos.
 2. Restaurar el equilibrio y cerrar los planos, asegurando la estabilidad pero manteniendo la opresión para ciertas criaturas mágicas.
+
+
+
+
+
+
+## Prompts
+
+```text
+Quiero que actúes como un traductor y maquetador especializado en GMbinder.  
+Tu tarea será:
+1. Traducir al español el texto que te pase, respetando el tono narrativo o técnico original (magia, mecánicas, lore, etc.). 
+2. Adaptar términos clave a su equivalente en español.
+    - Por ejemplo: _cantrips → encantamientos_
+    - Feats → Characteristicas 
+    - subclass features > Characteristicas de Subclase 
+    - Adapta cualquier Feet o pies a metros lo equivalente en intrementos de 5 y rerondea para arriba por ejemplo 3.5m termina siendo 5 m 
+3. Darle formato en **Markdown estilo GMbinder**, incluyendo:
+    - Títulos y subtítulos con `#`, `##`, `###`. 
+    - Negritas para resaltar términos importantes. 
+    - Bloques de texto en párrafos justificados.
+    - Listas con guiones `-` o numeradas.
+    - Notas o aclaraciones en itálica.
+4. Mantener la **estructura clara y legible**, como si fuera un suplemento casero de D&D.
+5. Si el texto incluye reglas, tablas o descripciones de conjuros/animagos/patronus, formatearlos en tablas Markdown o bloques separados.
+Al final, entrégame la traducción **lista para copiar en GMbinder**. sin agregar nada mas
+
+template for MonsterBlocks
+> ## Monster Name
+>*Size, Alignment*
+> ___
+> - **Armor Class** AC
+> - **Hit Points** Hitpoints
+> - **Speed** Speed
+>___
+>|STR|DEX|CON|INT|WIS|CHA|
+>|:---:|:---:|:---:|:---:|:---:|:---:|
+>|Str (Mod)|Dex (Mod)|Con (Mod)|Int (Mod)|Wis (Mod)|Cha (Mod)|
+>___
+> - **Saving Throws** saving_throws
+> - **Skills** skills
+> - **Damage Vulnerabilities** damage_vulnerabilities
+> - **Damage Resistances** Resistances
+> - **Damage Immunities** Damage_Immunities
+> - **Condition Immunities** condition_Immunities
+> - **Senses** Senses
+> - **Languages** Languages
+> - **Challenge** Challenge and Xp
+> ___
+>
+> ### Actions
+> ***Multiattack.*** The Creature Name makes Number and type of attacks
+>
+> ***Ability Description.*** *Attack Style:* Attack Bonus to hit, Reach/Range, one target. *Hit:* Damage Damage Type damage
+>
+> ***General Ability Description.*** General Attack Description
+
+
+
+```

@@ -62,8 +62,23 @@
               "icon": "lucide-file",
               "title": "Misión Rancho de Mantecalavera"
             }
+          },
+          {
+            "id": "ca215b94fb4e1b6c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "conflict-files-obsidian-git"
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -322,11 +337,44 @@
       "initiative-tracker:Initiative Tracker Encounter Builder": false,
       "templater-obsidian:Templater": false,
       "excel:Create Excel File": false,
-      "obisidian-note-linker:Note Linker": false
+      "obisidian-note-linker:Note Linker": false,
+      "calendarium:Open Calendarium": false
     }
   },
-  "active": "7a354a683b327ccb",
+  "active": "ca215b94fb4e1b6c",
   "lastOpenFiles": [
+    "Wizarding World/Sessions/Session 0 - Prelude/Session_0-Prelude - Antes.md",
+    "conflict-files-obsidian-git.md",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Misión de la Colina del Resentimiento.md",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Manor Embrujado de Tresendar.md",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Huerto_Edermath.md",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Woodland Manse 41x42 140pps/Woodland Manse v1.0 41x42 @140pps.jpg",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Woodland Manse 41x42 140pps/Woodland Manse v1.0 (upper) 41x42 @140pps.jpg",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Woodland Manse 41x42 140pps",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/WaterMill.jpg",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Umbrage Hill 66x42 @ 140pps/Umbrage Hill v1.0 (second) 66x42 @140pps.jpg",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Umbrage Hill 66x42 @ 140pps/Umbrage Hill v1.0 (ground) 66x42 @140pps.jpg",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Umbrage Hill 66x42 @ 140pps/Umbrage Hill v1.0 (first) 66x42 @140pps.jpg",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Umbrage Hill 66x42 @ 140pps",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Tower of Storms/The Tower Of Storms v1.0 66x42 @140pps.jpg",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Tower of Storms/The Tower Of Storms v1.0 (no beacon) 66x42 @140pps.jpg",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Tower of Storms",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Shrine of Savras 54x42/Shrine of Savras v1.0 54x42 @140pps.jpg",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Shrine of Savras 54x42/Shrine of Savras v1.0 100pps.jpg",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Shrine of Savras 54x42",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Mountain_s Toe Gold Mine 66x40 @140pps",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Loggers_ Camp 66x42 @ 140pps",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Icespire Hold",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Gridded Versions",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Gnomengarde",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Circle of Thunder",
+    "Wizarding World/World/Hogwarts/Letter.md",
+    "Wizarding World/Characters/CHG Chars/Esmeralda Rossier.md",
+    "Wizarding World/Characters/CHG Chars/Federic Ollivanders.md",
+    "Wizarding World/Characters/CHG Chars/Cross Snape.md",
+    "Wizarding World/Characters/CHG Chars/Cedric Scamander.md",
+    "Wizarding World/Characters/CHG Chars/Chato Nott.md",
+    "Wizarding World/Characters/CHG Chars/Aldebaran Black.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3/Misión de la Colina del Resentimiento.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 5 - 7/Misión El Túmulo del Dragón.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 5 - 7/Misión La Casa del bosque.md",
@@ -334,45 +382,13 @@
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 5 - 7/Misión Rancho de Mantecalavera.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/00_lore_and_Players/Vetoras.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/04_NPCs/Harbin Wester.md",
-    "conflict-files-obsidian-git.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/05_Tablas/Untitled.md",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/00_lore_and_Players/El Dragon de Pico Helado.pdf",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/00_lore_and_Players/El Dragon de Pico Helado-players.pdf",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/00_lore_and_Players",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/04_NPCs/1.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 3 - 5/Misión De Mina de oro del Dedo de la Montaña.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 3 - 5/Misión Campamento de los leñadores.md",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/00_lore/El Dragon de Pico Helado.pdf",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3/Misión de Terragnoma.md",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/00_lore/El Dragon de Pico Helado-players.pdf",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/Roadmap.canvas",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3/Misión de la excavación de los enanos.md",
-    "Untitled.md",
-    "Readme.md",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 5 - 7",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3/imgs/Mission1.png",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Misión de la Colina del Resentimiento.md",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Costa de la Espada.md",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3/imgs/Mission3.png",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3/imgs/Mission2.png",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3/imgs/Pasted image 20250618155434.png",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3/imgs/Mission3 (3).png",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3/imgs/Mission3 (2).png",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3/imgs/Mission3 (1).png",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Mission1.png - Shortcut.lnk",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Mission3.png - Shortcut.lnk",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Mission2.png - Shortcut.lnk",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Mission1.png",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Mission3.png",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Mission2.png",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Casa de Cambio de Phandalin.md",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3/imgs",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3/Misión de la Colina del Resentimiento 1.md",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Casa Consistorial.md",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin.md",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Huerto_Edermath.md",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Colina del Resentimiento.md",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/05_Tablas/01_Historias_de_Phandalin.md",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Suministros Barthen.md"
+    "Untitled.md"
   ]
 }

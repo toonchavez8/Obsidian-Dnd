@@ -9,7 +9,7 @@ HitDice: d10
 Speed: 30
 STR: 12
 DEX: 17
-CONST: 14
+CON: 14
 INT: 9
 WIS: 11
 CHA: 15
@@ -17,7 +17,7 @@ House: Hufflepuff
 SchoolOfMagic: Divination
 Gender: Male
 Age: "14"
-Location: [[Hogwarts]], England
+Location: [[Hogwarts]]
 CastingStyle: Willpower
 Background: Dreamer
 Heritage: PureBlood
@@ -57,22 +57,22 @@ Ruby: 0
 >> ###### Stats
 >>  |
 >> ---|---|
->> **Level** |`=this.level` |
->>  **Speed** |`=this.Speed` |
+>> **Level** | `=this.Level` |
+>> **Speed** | `=this.Speed` |
 >> **Proficiency** | +`=this.Prof` |
 >> **Initiative** | +`=floor((this.DEX - 10)/2)` |
->> **AC** | `=this.AC + floor((this.DEX - 10)/2)`
+>> **AC** | `=this.AC + floor((this.DEX - 10)/2)` |
 >> **HP** | `=this.HP - this.DmgTkn + this.TempHP` |
->> **Hit Dice** | `=this.Level + this.HitDice`  |
+>> **Hit Dice** | `=this.Level + this.HitDice` |
 >> **Passive Perception** | `=floor((this.WIS - 10)/2+10)` |
->>  **Sorcery Points** | `=this.SorceryPoints` |
->>  **Metamagic Points** | `=this.MetamagicPoints` |
+>> **Sorcery Points** | `=this.SorceryPoints` |
+>> **Metamagic Points** | `=this.MetamagicPoints` |
 >> ###### Bio
 >>   |
 >> ---|---|
 >> **House** | `=this.House` |
->> **Sex** | `=this.gender` |
->> **Age** | `=this.age` |
+>> **Sex** | `=this.Gender` |
+>> **Age** | `=this.Age` |
 >> **Background** | `=this.Background` |
 >> **School of Magic** | `=this.SchoolOfMagic` |
 >> **Mascota** | `=this.Mascota` |
@@ -90,42 +90,42 @@ Ruby: 0
 >
 >> [!infobox] Death Saves
 >> ### Death Saves
-| Success | <input type="checkbox" unchecked>  | <input type="checkbox" unchecked> | <input type="checkbox" unchecked> | 
+| Success | <input type="checkbox" unchecked> | <input type="checkbox" unchecked> | <input type="checkbox" unchecked> | 
 | ----- | --- | --------------------------------- | --------------------------------- |
 >>
-| Fails | <input type="checkbox" unchecked>  | <input type="checkbox" unchecked> | <input type="checkbox" unchecked> |
+| Fails | <input type="checkbox" unchecked> | <input type="checkbox" unchecked> | <input type="checkbox" unchecked> |
 | ----- | --- | --------------------------------- | --------------------------------- |
 >>
 >> ### Skills
 | Skill | Score       | Mod                     | Prof                              | ST                                  |
 | ----- | ----------- | ----------------------- | --------------------------------- | ----------------------------------- |
-| <font color="#ff0000">**STR**</font>   | `=this.STR` | +`=floor((this.STR - 10)/2)`   | <input type="checkbox" unchecked> | +`=floor((this.STR - 10)/2)`               |
-| <font color="#ffff00">**DEX**</font>   | `=this.DEX`  | +`=floor((this.DEX - 10)/2)`   | <input type="checkbox" unchecked> | +`=floor((this.DEX - 10)/2)`               |
-| <font color="#00b050">**CON**</font>   | `=this.CONST` | +`=floor((this.CONST - 10)/2)` | <input type="checkbox" unchecked>   | +`=floor(((this.CONST - 10)/2))` |
-| <font color="#7030a0">**INT**</font>   | `=this.INT`          | +`=floor((this.INT - 10)/2)`   | <input type="checkbox" unchecked>   | +`=floor(((this.INT - 10)/2))`   |
-| <font color="#245bdb">**WIS**</font>   | `=this.WIS`          | +`=floor((this.WIS - 10)/2)`   | <input type="checkbox" unchecked> | +`=floor((this.WIS - 10)/2)`               |
-| <font color="#de7802">**CHA**</font>   | `=this.CHA`          | +`=floor((this.CHA - 10)/2)`   | <input type="checkbox" unchecked> | +`=floor((this.CHA - 10)/2)`               |
+| <font color="#ff0000">**STR**</font> | `=this.STR` | +`=floor((this.STR - 10)/2)` | <input type="checkbox" unchecked> | +`=floor((this.STR - 10)/2)` |
+| <font color="#ffff00">**DEX**</font> | `=this.DEX` | +`=floor((this.DEX - 10)/2)` | <input type="checkbox" unchecked> | +`=floor((this.DEX - 10)/2)` |
+| <font color="#00b050">**CON**</font> | `=this.CON` | +`=floor((this.CON - 10)/2)` | <input type="checkbox" unchecked> | +`=floor((this.CON - 10)/2)` |
+| <font color="#7030a0">**INT**</font> | `=this.INT` | +`=floor((this.INT - 10)/2)` | <input type="checkbox" unchecked> | +`=floor((this.INT - 10)/2)` |
+| <font color="#245bdb">**WIS**</font> | `=this.WIS` | +`=floor((this.WIS - 10)/2)` | <input type="checkbox" unchecked> | +`=floor((this.WIS - 10)/2)` |
+| <font color="#de7802">**CHA**</font> | `=this.CHA` | +`=floor((this.CHA - 10)/2)` | <input type="checkbox" unchecked> | +`=floor((this.CHA - 10)/2)` |
 >> ### Skill Checks
 | Ability               | Prof                                   | Mod |
 | --------------------- | --------------------------------- | --- |
-| Acrobatics (DEX)      | <input type="checkbox" unchecked> | +`=floor((this.DEX - 10)/2)`   |
-| Magical Creatures (WIS) | <input type="checkbox" unchecked> | +`=floor((this.WIS - 10)/2)`  |
-| Magical Theory (INT)          | <input type="checkbox" unchecked> | +`=floor((this.INT - 10)/2)`  |
-| Athletics (STR)       | <input type="checkbox" unchecked> | +`=floor((this.STR - 10)/2)`   |
-| Deception (CHA)       | <input type="checkbox" unchecked> | +`=floor((this.CHA - 10)/2)`  |
-| Muggle Studies (INT)         | <input type="checkbox" unchecked> | +`=floor((this.INT - 10)/2)`  |
-| Insight (WIS)         | <input type="checkbox" unchecked>   | +`=floor((this.WIS - 10)/2)`  |
-| Intimidation (CHA)    | <input type="checkbox" unchecked> | +`=floor((this.CHA - 10)/2)`  |
-| Investigation (INT)   | <input type="checkbox" unchecked>   | +`=floor((this.INT - 10)/2)`  |
-| Medicine (WIS)        | <input type="checkbox" unchecked> | +`=floor((this.WIS - 10)/2)`  |
-| Herbology (INT)          | <input type="checkbox" unchecked> | +`=floor((this.INT - 10)/2)`  |
-| Perception (WIS)      | <input type="checkbox" unchecked>   | +`=floor((this.WIS - 10)/2)`  |
-| Performance (CHA)     | <input type="checkbox" unchecked> | +`=floor((this.CHA - 10)/2)`  |
-| Persuasion (CHA)      | <input type="checkbox" unchecked> | +`=floor((this.CHA - 10)/2)`  |
-| Sleight of Hand (DEX) | <input type="checkbox" unchecked> | +`=floor((this.DEX - 10)/2)`   |
-| Stealth (DEX)         | <input type="checkbox" unchecked> | +`=floor((this.DEX - 10)/2)`   |
-| Survival (WIS)        | <input type="checkbox" unchecked> | +`=floor((this.WIS - 10)/2)`  |
-| Potion Making (INT)          | <input type="checkbox" unchecked> | +`=floor((this.INT - 10)/2)`  |
+| Acrobatics (DEX)      | <input type="checkbox" unchecked> | +`=floor((this.DEX - 10)/2)` |
+| Magical Creatures (WIS) | <input type="checkbox" unchecked> | +`=floor((this.WIS - 10)/2)` |
+| Magical Theory (INT)  | <input type="checkbox" unchecked> | +`=floor((this.INT - 10)/2)` |
+| Athletics (STR)       | <input type="checkbox" unchecked> | +`=floor((this.STR - 10)/2)` |
+| Deception (CHA)       | <input type="checkbox" unchecked> | +`=floor((this.CHA - 10)/2)` |
+| Muggle Studies (INT)  | <input type="checkbox" unchecked> | +`=floor((this.INT - 10)/2)` |
+| Insight (WIS)         | <input type="checkbox" unchecked> | +`=floor((this.WIS - 10)/2)` |
+| Intimidation (CHA)    | <input type="checkbox" unchecked> | +`=floor((this.CHA - 10)/2)` |
+| Investigation (INT)   | <input type="checkbox" unchecked> | +`=floor((this.INT - 10)/2)` |
+| Medicine (WIS)        | <input type="checkbox" unchecked> | +`=floor((this.WIS - 10)/2)` |
+| Herbology (INT)       | <input type="checkbox" unchecked> | +`=floor((this.INT - 10)/2)` |
+| Perception (WIS)      | <input type="checkbox" unchecked> | +`=floor((this.WIS - 10)/2)` |
+| Performance (CHA)     | <input type="checkbox" unchecked> | +`=floor((this.CHA - 10)/2)` |
+| Persuasion (CHA)      | <input type="checkbox" unchecked> | +`=floor((this.CHA - 10)/2)` |
+| Sleight of Hand (DEX) | <input type="checkbox" unchecked> | +`=floor((this.DEX - 10)/2)` |
+| Stealth (DEX)         | <input type="checkbox" unchecked> | +`=floor((this.DEX - 10)/2)` |
+| Survival (WIS)        | <input type="checkbox" unchecked> | +`=floor((this.WIS - 10)/2)` |
+| Potion Making (INT)   | <input type="checkbox" unchecked> | +`=floor((this.INT - 10)/2)` |
 
 ## Atributos
 

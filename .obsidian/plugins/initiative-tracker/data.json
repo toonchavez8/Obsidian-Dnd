@@ -1,6 +1,7 @@
 {
   "players": [
     {
+<<<<<<< HEAD
       "note": "Ignacio ignam",
       "path": "Characters/Temp PlayerChars/Ignacio ignam.md",
       "name": "Ignacio ignam",
@@ -90,6 +91,15 @@
       "hp": 13,
       "ac": "11",
       "modifier": 0,
+=======
+      "note": "Session_0-Prelude - Antes",
+      "path": "Wizarding World/Sessions/Session 0 - Prelude/Session_0-Prelude - Antes.md",
+      "name": "celen",
+      "level": 20,
+      "hp": 143,
+      "ac": "21",
+      "modifier": 6,
+>>>>>>> origin/main
       "player": true
     },
     {
@@ -127,8 +137,9 @@
   ],
   "parties": [
     {
-      "name": "Base WW party",
+      "name": "CHG DND",
       "players": [
+<<<<<<< HEAD
         "Ignacio ignam",
         "Penolope Pevreal",
         "Rebecca Weasly",
@@ -147,10 +158,13 @@
         "Celen",
         "Vetoras",
         "Kumiho"
+=======
+        "celen"
+>>>>>>> origin/main
       ]
     }
   ],
-  "defaultParty": "CHG",
+  "defaultParty": "CHG DND",
   "statuses": [
     {
       "name": "Blinded",
@@ -231,16 +245,6 @@
       "name": "Unconscious",
       "id": "Unconscious",
       "description": "An unconscious creature is incapacitated, can’t move or speak, and is unaware of its surroundings.\nThe creature drops whatever it’s holding and falls prone.\nThe creature automatically fails Strength and Dexterity Saving Throws.\nAttack rolls against the creature have advantage.\nAny Attack that hits the creature is a critical hit if the attacker is within 5 feet of the creature."
-    },
-    {
-      "name": "Dead",
-      "description": "Killed by a Dark Curse, cannot be revived\n\n",
-      "id": "ID_6bf80a193af9"
-    },
-    {
-      "name": "Passed",
-      "description": "Succemed to their injury ",
-      "id": "ID_5b594afa881a"
     }
   ],
   "unconsciousId": "Unconscious",
@@ -253,12 +257,13 @@
   "preferStatblockLink": false,
   "initiative": "1d20 + %mod%",
   "modifier": null,
-  "sync": true,
+  "sync": false,
   "playerMarker": "default",
   "monsterMarker": "default",
   "state": {
     "creatures": [
       {
+<<<<<<< HEAD
         "name": "Ignacio ignam",
         "initiative": 19,
         "static": false,
@@ -275,12 +280,31 @@
         "status": [],
         "enabled": true,
         "level": 5,
+=======
+        "name": "celen",
+        "initiative": 26,
+        "static": false,
+        "modifier": 6,
+        "hp": 143,
+        "currentMaxHP": 143,
+        "ac": "21",
+        "currentAC": "21",
+        "note": "Session_0-Prelude - Antes",
+        "path": "Wizarding World/Sessions/Session 0 - Prelude/Session_0-Prelude - Antes.md",
+        "id": "ID_b8b818290b79",
+        "currentHP": 143,
+        "tempHP": 0,
+        "status": [],
+        "enabled": true,
+        "level": 20,
+>>>>>>> origin/main
         "player": true,
         "active": false,
         "hidden": false,
         "friendly": false
       },
       {
+<<<<<<< HEAD
         "name": "Penolope Pevreal",
         "initiative": 20,
         "static": false,
@@ -420,12 +444,26 @@
         "currentAC": 13,
         "id": "ID_7aab393b6b3b",
         "currentHP": 11,
+=======
+        "name": "Chuul",
+        "initiative": 7,
+        "static": false,
+        "modifier": 0,
+        "hp": 93,
+        "currentMaxHP": 93,
+        "cr": "4",
+        "ac": 16,
+        "currentAC": 16,
+        "id": "ID_09a8fa39bb08",
+        "currentHP": 86,
+>>>>>>> origin/main
         "tempHP": 0,
         "status": [],
         "enabled": true,
         "active": false,
         "hidden": false,
         "friendly": false,
+<<<<<<< HEAD
         "hit_dice": "2d8 + 2",
         "rollHP": true
       },
@@ -441,12 +479,29 @@
         "currentAC": 14,
         "id": "ID_eb79a8ab99e8",
         "currentHP": 37,
+=======
+        "hit_dice": "11d10 + 32"
+      },
+      {
+        "name": "Chuul",
+        "initiative": 16,
+        "static": false,
+        "modifier": 0,
+        "hp": 93,
+        "currentMaxHP": 93,
+        "cr": "4",
+        "ac": 16,
+        "currentAC": 16,
+        "id": "ID_cadb29d9f9a8",
+        "currentHP": 51,
+>>>>>>> origin/main
         "tempHP": 0,
         "status": [],
         "enabled": true,
         "active": false,
         "hidden": false,
         "friendly": false,
+<<<<<<< HEAD
         "hit_dice": "5d10 + 9",
         "rollHP": true
       },
@@ -472,6 +527,29 @@
         "friendly": false,
         "hit_dice": "10d10 + 20",
         "rollHP": true
+=======
+        "hit_dice": "11d10 + 32"
+      },
+      {
+        "name": "Pit Fiend",
+        "initiative": 16,
+        "static": false,
+        "modifier": 0,
+        "hp": 315,
+        "currentMaxHP": 315,
+        "cr": "20",
+        "ac": 19,
+        "currentAC": 19,
+        "id": "ID_7b894948b868",
+        "currentHP": 315,
+        "tempHP": 0,
+        "status": [],
+        "enabled": true,
+        "active": false,
+        "hidden": true,
+        "friendly": false,
+        "hit_dice": "24d10 + 168"
+>>>>>>> origin/main
       }
     ],
     "state": false,
@@ -502,8 +580,8 @@
   "logFolder": "/",
   "resolveTies": "playerFirst",
   "useLegacy": false,
-  "diplayPlayerHPValues": false,
-  "rollHP": true,
+  "diplayPlayerHPValues": true,
+  "rollHP": false,
   "descending": true,
   "builder": {
     "showParty": false,
@@ -533,6 +611,19 @@
     ],
     "filters": {
       "filters": [
+        {
+          "type": 0,
+          "text": "CR",
+          "fields": [
+            "cr"
+          ],
+          "options": [
+            0,
+            30
+          ],
+          "id": "ID_DEFAULT_CR_FILTER",
+          "derive": true
+        },
         {
           "type": 2,
           "text": "Size",
@@ -601,29 +692,6 @@
             "any evil alignment"
           ],
           "id": "ID_DEFAULT_ALIGNMENT_FILTER",
-          "derive": true
-        },
-        {
-          "type": 1,
-          "text": "Name",
-          "fields": [
-            "name"
-          ],
-          "options": [],
-          "id": "ID_DEFAULT_NAME_FILTER",
-          "derive": false
-        },
-        {
-          "type": 0,
-          "text": "CR",
-          "fields": [
-            "cr"
-          ],
-          "options": [
-            0,
-            30
-          ],
-          "id": "ID_DEFAULT_CR_FILTER",
           "derive": true
         }
       ],
