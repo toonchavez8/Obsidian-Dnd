@@ -15,7 +15,12 @@
   "excel",
   "obsidian-linter",
   "obisidian-note-linker",
+<<<<<<< HEAD
+  "obsidian-icon-folder",
+  "obsidian-custom-frames"
+=======
   "convert-url-to-iframe",
   "obsidian-custom-frames",
   "dataview"
+>>>>>>> origin/main
 ]
