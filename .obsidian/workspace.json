@@ -278,8 +278,7 @@
       "initiative-tracker:Initiative Tracker Encounter Builder": false,
       "obsidian-git:Open Git source control": false,
       "excel:Create Excel File": false,
-      "obisidian-note-linker:Note Linker": false,
-      "calendarium:Open Calendarium": false
+      "obisidian-note-linker:Note Linker": false
     }
   },
   "active": "35484035f9f0f978",
