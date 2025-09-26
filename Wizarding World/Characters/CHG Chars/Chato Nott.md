@@ -4,7 +4,7 @@ Art:
 Level: 1
 AC: 12
 Prof: "2"
-HP: 6
+HP: 9
 HitDice: d8
 Speed: 15
 STR: 13
