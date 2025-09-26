@@ -9,8 +9,13 @@
   "excel",
   "fantasy-content-generator",
   "fantasy-name",
+<<<<<<< HEAD
   "obsidian-5e-statblocks",
   "obsidian-git",
+=======
+  "obsidian-git",
+  "obsidian-5e-statblocks",
+>>>>>>> origin/main
   "obsidian-icon-folder",
   "initiative-tracker",
   "obsidian-leaflet-plugin",
