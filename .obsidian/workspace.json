@@ -39,20 +39,6 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 3 - 5/Misión Campamento de los leñadores.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Misión Campamento de los leñadores"
-            }
-          },
-          {
-            "id": "5a2853ae3eccbb8d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "Wizarding World/Characters/CHG Chars/Sofia Lestrange.md",
                 "mode": "source",
                 "source": false
@@ -62,7 +48,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -212,8 +198,8 @@
                 },
                 "id": "ID_690b4bd90aba"
               },
-              "icon": "CALENDARIUM",
-              "title": "Calendarium"
+              "icon": "lucide-ghost",
+              "title": "CALENDARIUM"
             }
           },
           {
@@ -222,8 +208,8 @@
             "state": {
               "type": "initiative-tracker-view",
               "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
+              "icon": "lucide-ghost",
+              "title": "initiative-tracker-view"
             }
           },
           {
@@ -257,12 +243,32 @@
             "state": {
               "type": "DICE_ROLLER_VIEW",
               "state": {},
-              "icon": "dices",
-              "title": "Dice Tray"
+              "icon": "lucide-ghost",
+              "title": "DICE_ROLLER_VIEW"
             }
           },
           {
             "id": "331be4c27c0a2c9c",
+            "type": "leaf",
+            "state": {
+              "type": "DICE_ROLLER_VIEW",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "DICE_ROLLER_VIEW"
+            }
+          },
+          {
+            "id": "7a354a683b327ccb",
+            "type": "leaf",
+            "state": {
+              "type": "initiative-tracker-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "initiative-tracker-view"
+            }
+          },
+          {
+            "id": "db6aac41c4f4b6d3",
             "type": "leaf",
             "state": {
               "type": "DICE_ROLLER_VIEW",
@@ -272,7 +278,7 @@
             }
           },
           {
-            "id": "7a354a683b327ccb",
+            "id": "0e92bb88b70f79a7",
             "type": "leaf",
             "state": {
               "type": "initiative-tracker-view",
@@ -282,7 +288,7 @@
             }
           }
         ],
-        "currentTab": 9
+        "currentTab": 2
       },
       {
         "id": "9c7543e6c2820b5d",
@@ -303,7 +309,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 470.5
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -314,26 +321,32 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-git:Open Git source control": false,
-      "obsidian-leaflet-plugin:Open Leaflet Map": false,
-      "obsidian-5e-statblocks:Open Creature pane": false,
-      "fantasy-content-generator:Fantasy Generators": false,
-      "initiative-tracker:Initiative Tracker Encounter Builder": false,
-      "templater-obsidian:Templater": false,
       "excel:Create Excel File": false,
+      "fantasy-content-generator:Fantasy Generators": false,
+      "obsidian-git:Open Git source control": false,
+      "obsidian-5e-statblocks:Open Creature pane": false,
+      "initiative-tracker:Initiative Tracker Encounter Builder": false,
+      "obsidian-leaflet-plugin:Open Leaflet Map": false,
       "obisidian-note-linker:Note Linker": false,
+      "templater-obsidian:Templater": false,
+      "univer:Univer": false,
       "calendarium:Open Calendarium": false
     }
   },
-  "active": "5a2853ae3eccbb8d",
+  "active": "eb52504fa0850a42",
   "lastOpenFiles": [
     "Wizarding World/World/Maps/London/Diagon Alley/Magical Menagerie by Block_nessie.jpg",
+    "Wizarding World/Sessions/Session 0 - Prelude/Session_0-Prelude - Antes.md",
     "Wizarding World/Characters/CHG Chars/Sofia Lestrange.md",
     "Wizarding World/Characters/CHG Chars/Federic Ollivanders.md",
+    "Wizarding World/World/PlayerSheets/Sofia Lestrange.pdf",
+    "Wizarding World/World/PlayerSheets/W&W Classic Character Sheet by Blaze.pdf",
+    "Wizarding World/Characters/CHG Chars/Esmeralda Rossier.md",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 3 - 5/Misión Campamento de los leñadores.md",
+    "Wizarding World/World/PlayerSheets/W&W Slytherin - Fillable.pdf",
     "Wizarding World/Characters/CHG Chars/Chato Nott.md",
     "Wizarding World/Characters/CHG Chars/Cedric Scamander.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 5 - 7/Misión en Alcazhacha.md",
-    "Wizarding World/Sessions/Session 0 - Prelude/Session_0-Prelude - Antes.md",
     "Wizarding World/Characters/CHG Chars/Aldebaran Black.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 5 - 7/Misión Rancho de Mantecalavera.md",
     "conflict-files-obsidian-git.md",
@@ -352,16 +365,11 @@
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Tower of Storms/The Tower Of Storms v1.0 (no beacon) 66x42 @140pps.jpg",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Tower of Storms",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Shrine of Savras 54x42/Shrine of Savras v1.0 54x42 @140pps.jpg",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Shrine of Savras 54x42/Shrine of Savras v1.0 100pps.jpg",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Shrine of Savras 54x42",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Mountain_s Toe Gold Mine 66x40 @140pps",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Loggers_ Camp 66x42 @ 140pps",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Icespire Hold",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Gridded Versions",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Gnomengarde",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Circle of Thunder",
     "Wizarding World/World/Hogwarts/Letter.md",
-    "Wizarding World/Characters/CHG Chars/Esmeralda Rossier.md",
     "Wizarding World/Characters/CHG Chars/Cross Snape.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3/Misión de la Colina del Resentimiento.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 5 - 7/Misión El Túmulo del Dragón.md",
@@ -371,7 +379,6 @@
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/05_Tablas/Untitled.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/04_NPCs/1.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 3 - 5/Misión De Mina de oro del Dedo de la Montaña.md",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 3 - 5/Misión Campamento de los leñadores.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3/Misión de Terragnoma.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/Roadmap.canvas"
   ]
