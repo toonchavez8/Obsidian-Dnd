@@ -1,26 +1,23 @@
 [
-  "obsidian-git",
-  "obsidian-style-settings",
-  "obsidian-leaflet-plugin",
-  "calendarium",
-  "obsidian-5e-statblocks",
-  "fantasy-name",
-  "fantasy-content-generator",
-  "obsidian-dice-roller",
-  "initiative-tracker",
-  "templater-obsidian",
-  "buttons",
-  "obsidian-meta-bind-plugin",
   "obsidian-admonition",
-  "excel",
-  "obsidian-linter",
-  "obisidian-note-linker",
-<<<<<<< HEAD
-  "obsidian-icon-folder",
-  "obsidian-custom-frames"
-=======
+  "buttons",
+  "calendarium",
   "convert-url-to-iframe",
   "obsidian-custom-frames",
-  "dataview"
->>>>>>> origin/main
+  "dataview",
+  "obsidian-dice-roller",
+  "excel",
+  "fantasy-content-generator",
+  "fantasy-name",
+  "obsidian-5e-statblocks",
+  "obsidian-git",
+  "obsidian-icon-folder",
+  "initiative-tracker",
+  "obsidian-leaflet-plugin",
+  "obsidian-linter",
+  "obsidian-meta-bind-plugin",
+  "obisidian-note-linker",
+  "obsidian-style-settings",
+  "templater-obsidian",
+  "univer"
 ]
