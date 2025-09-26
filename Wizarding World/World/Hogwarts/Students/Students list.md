@@ -1,35 +1,35 @@
 ## Gryffindor
 
-|Nº|Nombre|Año|Meta / Rasgo|
-|:-:|---|:-:|---|
-|1|Ginny Weasley|7|Aspira a ser cazadora de Quidditch; inteligente, divertida|
-|9|Felix North|2|Busca aventuras; ruidoso, leal|
-|14|Jasper Flint|4|Novato en Quidditch; determinado, impulsivo|
-|18|Ivy Marlow|5|Quiere ser sanadora; empática|
-|22|Nico Vale|1|Valiente pero nostálgico; entusiasta|
-|24|Maris Ember|6|Estrella del club de teatro; apasionada|
-|29|Lorne Ashby|3|Líder de scouts; protector, valiente|
-|33|Milo Thorne|4|Propenso a travesuras; amigo leal|
-|38|Rhea Oak|5|Quiere ser capitana del equipo; feroz|
-|41|Dex Gable|2|Aventurero; impulsivo, bondadoso|
-|45|Rowan Gale|6|Aspira a ser auror; constante|
-|49|Ezra Kline|3|Entusiasta de fuegos artificiales; bullicioso|
-|53|Mina Shore|1|Quiere demostrar su coraje|
-|58|Tadhg Byrne|5|Busca historias antiguas; narrador|
-|61|Isla Merri|4|Practica acrobacias; intrépida|
-|66|Rocco Vale|2|Quiere unirse al Quidditch|
-|71|Rowan Pike|7|Audaz, bromista con buen corazón|
-|75|Elara Quinn|3|Defensora valiente; decidida|
-|80|Kade Barlow|4|Quiere ser buscador|
-|84|Flynn Bram|5|Líder juvenil; alentador|
-|88|Hugo Pride|3|Ruidoso, amigo fiable|
-|92|Taro Hux|1|Primer año; explorador entusiasta|
-|100|Theo Marris|6|Entrenando para exámenes de auror|
-|104|Etta Blunt|2|Valiente, protectora (hermana pequeña)|
-|108|Jory Flint|7|Líder de bromas senior; valiente|
-|112|Tristan Moor|1|Primer año; ¿ve fantasmas?|
-|116|Bram Glynn|2|Explorador; ama el Bosque Prohibido|
-|120|Jessa Bright|3|Porrista; animada y feroz|
+| Nº  | Nombre        | Año | Meta / Rasgo                                               |
+| :-: | ------------- | :-: | ---------------------------------------------------------- |
+|  1  | Ginny Weasley |  7  | Aspira a ser cazadora de Quidditch; inteligente, divertida |
+|  9  | Felix North   |  2  | Busca aventuras; ruidoso, leal                             |
+| 14  | Jasper Flint  |  4  | Novato en Quidditch; determinado, impulsivo                |
+| 18  | Ivy Marlow    |  5  | Quiere ser sanadora; empática                              |
+| 22  | Nico Vale     |  1  | Valiente pero nostálgico; entusiasta                       |
+| 24  | Maris Ember   |  6  | Estrella del club de teatro; apasionada                    |
+| 29  | Lorne Ashby   |  3  | Líder de scouts; protector, valiente                       |
+| 33  | Milo Thorne   |  4  | Propenso a travesuras; amigo leal                          |
+| 38  | Rhea Oak      |  5  | Quiere ser capitana del equipo; feroz                      |
+| 41  | Dex Gable     |  2  | Aventurero; impulsivo, bondadoso                           |
+| 45  | Rowan Gale    |  6  | Aspira a ser auror; constante                              |
+| 49  | Ezra Kline    |  3  | Entusiasta de fuegos artificiales; bullicioso              |
+| 53  | Mina Shore    |  1  | Quiere demostrar su coraje                                 |
+| 58  | Tadhg Byrne   |  5  | Busca historias antiguas; narrador                         |
+| 61  | Isla Merri    |  4  | Practica acrobacias; intrépida                             |
+| 66  | Rocco Vale    |  2  | Quiere unirse al Quidditch                                 |
+| 71  | Rowan Pike    |  7  | Audaz, bromista con buen corazón                           |
+| 75  | Elara Quinn   |  3  | Defensora valiente; decidida                               |
+| 80  | Kade Barlow   |  4  | Quiere ser buscador                                        |
+| 84  | Flynn Bram    |  5  | Líder juvenil; alentador                                   |
+| 88  | Hugo Pride    |  3  | Ruidoso, amigo fiable                                      |
+| 92  | Taro Hux      |  1  | Primer año; explorador entusiasta                          |
+| 100 | Theo Marris   |  6  | Entrenando para exámenes de auror                          |
+| 104 | Etta Blunt    |  2  | Valiente, protectora (hermana pequeña)                     |
+| 108 | Jory Flint    |  7  | Líder de bromas senior; valiente                           |
+| 112 | Tristan Moor  |  1  | Primer año; ¿ve fantasmas?                                 |
+| 116 | Bram Glynn    |  2  | Explorador; ama el Bosque Prohibido                        |
+| 120 | Jessa Bright  |  3  | Porrista; animada y feroz                                  |
 
 ---
 
