@@ -244,7 +244,7 @@
       {
         "id": "9c7543e6c2820b5d",
         "type": "tabs",
-        "dimension": 53.83663366336635,
+        "dimension": 53.836633663366335,
         "children": [
           {
             "id": "b04c31368900315c",
@@ -271,7 +271,6 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "calendarium:Open Calendarium": false,
       "excel:Create Excel File": false,
       "fantasy-content-generator:Fantasy Generators": false,
       "obsidian-5e-statblocks:Open Creature pane": false,
@@ -279,8 +278,6 @@
       "initiative-tracker:Initiative Tracker Encounter Builder": false,
       "obsidian-leaflet-plugin:Open Leaflet Map": false,
       "obisidian-note-linker:Note Linker": false,
-      "smart-connections:Open: Smart Chat": false,
-      "smart-connections:Open: View Smart Connections": false,
       "univer:Univer": false,
       "templater-obsidian:Templater": false
     }
