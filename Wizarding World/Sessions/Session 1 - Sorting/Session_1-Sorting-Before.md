@@ -12,13 +12,26 @@ _Resumen rápido:_ empezáis **in media res**: a los PJ les acaban de **robar la
 
 ```encounter
 creatures:
-  - c
 name: thief
 
 party: CHG DND
   
 
 ```
+
+chato 20+1
+Sofia 21
+cross - 20
+aldebaran 20
+esmeralda 19
+cedric 17
+snowball 13 
+Thief
+Dragonita-biserio 7
+buho - 5
+federic 3
+
+Layer Acction
 
 ## 2) Secuencia De Persecución — Tirada D3 (elige O Lanza d3)
 
@@ -225,36 +238,16 @@ _Nota:_ ajusta precios y efectos según el tono de tu mesa. Las recompensas est�
 
 ---
 
-## 10) Consejos De Puesta En Práctica Para El DJ
 
-- **Ritmo:** corta la persecución en 3–4 escenas; evita que se alargue demasiado. Mantén la tensión con tiradas rápidas y consecuencias claras.
-	
-- **Mostrar, no decir:** usa descripciones sensoriales para la visión apocalíptica; deja que cada PJ reaccione emocionalmente.
-	
-- **Consecuencias a futuro:** la visión no tiene que set literal; puede set un _gancho_ para una saga mayor (goblins, portales, señales del nuevo mal).
-	
-- **Permite redención:** la niña y su hermano son recursos narrativos: aliados potenciales si los PJ actúan con empatía.
-	
-- **Introducciones naturales:** usa el trol/golem de entrenamiento y la escena con Hagrid para que cada jugador tenga 1 minuto para presentar su PJ en interiores seguros.
 
----
-
-## 11) Resumen De Mecánicas Rápidas (para Tener a mano)
-
-- **Persecución:** d3 evento, CD 12–13 Destreza/Atletismo.
-	
-- **Visión:** d10 tabla de visiones; TS Sabiduría DC 15 post-visión.
-	
-- **Entrenamiento:** gólem/entrenamiento (no letal): CA 12 PV 10, objetivo = exponer habilidades y dar inspiración.
-	
-- **Lago/tentáculos:** Atletismo/Acrobacia DC 12 para evitar agarre; Fuerza DC 13 para liberarse.
-	
-- **Selección de casa:** roleplay + narración del DJ; otorgar pequeño bono por dramatismo.
-
----
-
-### Final (gancho Para la Próxima sesión)
-
----
-
-Si quieres, ahora puedo convertir partes de este plan en hojas de referencia rápida (tablas imprimibles) o generar las **descripciones de los NPC** (Ada, Corin, Hagrid, McGonagall) con estadísticas sencillas para usar en combate social.
+- El grupo de alumnos persigueiton a la ladrona
+	- unos Preferieron sacar sus mascotas para intentar de ayudar
+	- Chato ayudo a que una torre de maletinas le pegara a la ladrona
+	- Pero Aldebaran despues de prometerla a Esmeralada una hippy que en ese momento tenia un poco de hedor aldebaran no se rajo aun con evento una mochila a la esplada pegandole a la ladrona
+- El grupo hablo con ella  pero la primera en tocarla fue sofia quien recibio una serie de visiones que teneian que ver con futuros posibles, esto revelo el motivo de porque se fue robando las baritas magicas
+- despues de llegar su hermano quien intento calmaral aparecio un Auror con ganas de investgiar pero con un buen rol de Cross snape logro apsivasr el asunto 
+- ya despues se fueron al tren donde nuestro grupo en un vagon aprovecho el tiempo para presentarse, dulces fueron comprados y probados y en algunos casos disgustados.
+- Los Alumons llegaron a hogwarts despues de haber sido acompañados por el gran hagrid quien los llevo en barco a la intriga de chato por el kraken del lago
+- Una ves en el castillo fueron selecionado a sus respectivas casas, donde al final se revelo el apeido secreto de alguno de los alumons y aun mas que talves son de sagre lejana dos de ellos.
+  
+  

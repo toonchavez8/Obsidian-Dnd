@@ -1,90 +1,6 @@
 {
-  "players": [
-    {
-      "note": "Aldebaran Black",
-      "path": "Wizarding World/Characters/CHG Chars/Aldebaran Black.md",
-      "name": "Aldebaran Black",
-      "ac": "13",
-      "hp": 12,
-      "level": 1,
-      "modifier": 1,
-      "player": true
-    },
-    {
-      "note": "Cedric Scamander",
-      "path": "Wizarding World/Characters/CHG Chars/Cedric Scamander.md",
-      "name": "Cedric Scamander",
-      "ac": "12",
-      "hp": 10,
-      "level": 1,
-      "modifier": 0,
-      "player": true
-    },
-    {
-      "note": "Chato Nott",
-      "path": "Wizarding World/Characters/CHG Chars/Chato Nott.md",
-      "name": "Chato Nott",
-      "ac": "12",
-      "hp": 9,
-      "level": 1,
-      "modifier": 1,
-      "player": true
-    },
-    {
-      "note": "Cross Snape",
-      "path": "Wizarding World/Characters/CHG Chars/Cross Snape.md",
-      "name": "Cross Snape",
-      "ac": "12",
-      "hp": 6,
-      "level": 1,
-      "modifier": 2,
-      "player": true
-    },
-    {
-      "note": "Federic Ollivanders",
-      "path": "Wizarding World/Characters/CHG Chars/Federic Ollivanders.md",
-      "name": "Federic Ollivanders",
-      "ac": "12",
-      "hp": 11,
-      "level": 1,
-      "modifier": -2,
-      "player": true
-    },
-    {
-      "note": "Sofia Lestrange",
-      "path": "Wizarding World/Characters/CHG Chars/Sofia Lestrange.md",
-      "name": "Sofia Lestrange",
-      "ac": "13",
-      "hp": 12,
-      "level": 1,
-      "modifier": 1,
-      "player": true
-    },
-    {
-      "note": "Esmeralda Rossier",
-      "path": "Wizarding World/Characters/CHG Chars/Esmeralda Rossier.md",
-      "name": "Esmeralda Rossier",
-      "ac": "15",
-      "hp": 14,
-      "level": 1,
-      "modifier": 1,
-      "player": true
-    }
-  ],
-  "parties": [
-    {
-      "name": "CHG DND",
-      "players": [
-        "Aldebaran Black",
-        "Cedric Scamander",
-        "Chato Nott",
-        "Cross Snape",
-        "Federic Ollivanders",
-        "Sofia Lestrange",
-        "Esmeralda Rossier"
-      ]
-    }
-  ],
+  "players": [],
+  "parties": [],
   "defaultParty": null,
   "statuses": [
     {
@@ -172,7 +88,7 @@
   "version": [
     13,
     0,
-    18
+    17
   ],
   "canUseDiceRoll": false,
   "preferStatblockLink": false,
@@ -184,7 +100,7 @@
   "state": {
     "creatures": [],
     "state": false,
-    "name": null,
+    "name": "thief",
     "round": 1,
     "logFile": "",
     "rollHP": false

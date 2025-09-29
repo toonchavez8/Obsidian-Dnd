@@ -18,8 +18,23 @@
               "icon": "lucide-file-text",
               "title": "MadMan & Murphen One Shot Adventures #1 _ GM Binder"
             }
+          },
+          {
+            "id": "09afe29b44ffccc8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "conflict-files-obsidian-git"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -279,11 +294,14 @@
       "obsidian-leaflet-plugin:Open Leaflet Map": false,
       "obisidian-note-linker:Note Linker": false,
       "univer:Univer": false,
-      "templater-obsidian:Templater": false
+      "templater-obsidian:Templater": false,
+      "calendarium:Open Calendarium": false
     }
   },
-  "active": "35484035f9f0f978",
+  "active": "09afe29b44ffccc8",
   "lastOpenFiles": [
+    "Wizarding World/World/Wizarding World/MadMan & Murphen One Shot Adventures #1 _ GM Binder.pdf",
+    "conflict-files-obsidian-git.md",
     "Wizarding World/World/Wizarding World/Wizarding Book of Monsters and foes.pdf",
     "Wizarding World/Sessions/Session 1 - Sorting/Session_1-Sorting-Before.md",
     "Wizarding World/Sessions/Session 0 - Prelude/Session_0-Prelude - Antes.md",
@@ -304,7 +322,6 @@
     "Wizarding World/World/Hogwarts/Events/Tabla de Eventos — Corredores de Hogwarts.md",
     "Wizarding World/World/Hogwarts/Events",
     "Wizarding World/World/Hogwarts/Students",
-    "conflict-files-obsidian-git.md",
     "Wizarding World/World/PlayerSheets/Sofia Lestrange.pdf",
     "Wizarding World/World/Maps/London/Diagon Alley/Ollivanders by Block_nessie.jpg",
     "Wizarding World/World/Maps/London/Diagon Alley/Ollivanders by Badwolf.jpg",
@@ -315,13 +332,11 @@
     "Wizarding World/World/Hogwarts/TimeTables/Primer_Año.md",
     "Wizarding World/World/Hogwarts/TimeTables",
     "Wizarding World/World/Hogwarts/Classes",
-    "Wizarding World/World/Wizarding World/MadMan & Murphen One Shot Adventures #1 _ GM Binder.pdf",
     "Wizarding World/Sessions/Session 1 - Sorting",
     "Wizarding World/World/Maps/London/Diagon Alley/Ollivanders (Roof) by Block_nessie.jpg",
     "Wizarding World/World/Maps/London/Ministry of Magic (Atrium) by Block_nessie.jpg",
     "Wizarding World/World/Maps/London/Knockturn Alley/Borgin and Burkes (Back Room) by Block_nessie.jpg",
     "Wizarding World/World/Maps/London/Diagon Alley/The Leaky Cauldron by Badwolf.jpg",
-    "Wizarding World/World/Wizarding World/Wands & Wizards - Harry Potter 5e.pdf",
     "Readme.md",
     "Wizarding World/Assets/Sebastian-Snark.jpg",
     "Wizarding World/Assets/Rebbeca-Weasly.jpg",

@@ -48,7 +48,7 @@ Sickles: 0
 Galeons: 2
 Ruby: 1
 ---
-
+00
 ## `=this.file.name`
 
 >[!column|flex 2]
