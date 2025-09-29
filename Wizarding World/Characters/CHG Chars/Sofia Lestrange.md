@@ -133,6 +133,7 @@ Ruby: 1
 - **Aumento de Puntuación de Habilidad:** Tu puntuación de Destreza, Carisma y una habilidad de tu elección aumentan en 1.
 - **Información Comprometedora:** Cuando usas secretos de alguien en una prueba de Carisma, obtienes competencia doble.
 - **Calidad Noble:** Puedes adoptar una personalidad de importancia para mezclarte entre oficiales y magos prestigiosos. 
+- 
 - Obtienes un conjunto de Herramientas de Rompemaldiciones y competencia con ellas.
 **Rasgo de Trasfondo:** Campeón del Pueblo  
 _Tu manera de conducirte hace que los demás confíen en que puedes ayudarlos cuando están acosados o en peligro. Mantener tu reputación puede llevarte a ser prefecto, capitán de equipo u ocupar otros puestos de autoridad menores._

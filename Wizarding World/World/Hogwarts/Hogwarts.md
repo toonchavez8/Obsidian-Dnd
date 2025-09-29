@@ -1,4 +1,4 @@
-
+|
 ```mermaid
 graph TD
     A[Headmistress<br>Professor McGonagall] --> B[Deputy Headmistress<br>Professor Sprout]
@@ -30,3 +30,15 @@ graph TD
     A --> Z2[School Head Boy<br>Ernie Macmillan]
 ```
 
+
+
+Sofia 7
+
+esmeralda 2 
+cedric 0
+
+federic 9
+
+Aldebaran 15
+
+cross 9

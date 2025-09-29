@@ -4,11 +4,37 @@
     "type": "split",
     "children": [
       {
-        "id": "c2b7ef0776ff3138",
+        "id": "b29b63e052f392c3",
         "type": "tabs",
         "children": [
           {
-            "id": "35484035f9f0f978",
+            "id": "8ff8c59adc6feca5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Wizarding World/Sessions/Session 1 - Sorting/Session_1-Sorting-Before.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Session_1-Sorting-Before"
+            }
+          },
+          {
+            "id": "b8ea5606d447fba3",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Wizarding World/World/Maps/London/Diagon Alley/Magical Menagerie by Block_nessie.jpg"
+              },
+              "icon": "lucide-image",
+              "title": "Magical Menagerie by Block_nessie"
+            }
+          },
+          {
+            "id": "eb52504fa0850a42",
             "type": "leaf",
             "state": {
               "type": "pdf",
@@ -76,7 +102,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 373.5
+    "width": 382.5
   },
   "right": {
     "id": "1fb55a346c0ef23e",
@@ -85,7 +111,7 @@
       {
         "id": "ba0d59233e31b44f",
         "type": "tabs",
-        "dimension": 46.163366336633665,
+        "dimension": 56.777996070726914,
         "children": [
           {
             "id": "79215bbccd956432",
@@ -112,12 +138,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Posada Rocacolina.md",
+                "file": "Wizarding World/Sessions/Session 0 - Prelude/Session_0-Prelude - Antes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Posada Rocacolina"
+              "title": "Outgoing links from Session_0-Prelude - Antes"
             }
           },
           {
@@ -141,13 +167,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/00_lore_and_Players/El Dragon de Pico Helado.pdf",
+                "file": "Untitled.xlsx",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of El Dragon de Pico Helado"
+              "title": "Outline of Untitled"
             }
           },
           {
@@ -179,8 +205,8 @@
             "state": {
               "type": "initiative-tracker-view",
               "state": {},
-              "icon": "initiative-tracker",
-              "title": "Initiative Tracker"
+              "icon": "lucide-ghost",
+              "title": "initiative-tracker-view"
             }
           },
           {
@@ -204,8 +230,8 @@
                 },
                 "id": "ID_6918ba399beb"
               },
-              "icon": "lucide-ghost",
-              "title": "CALENDARIUM"
+              "icon": "CALENDARIUM",
+              "title": "Calendarium"
             }
           },
           {
@@ -214,12 +240,12 @@
             "state": {
               "type": "DICE_ROLLER_VIEW",
               "state": {},
-              "icon": "dices",
-              "title": "Dice Tray"
+              "icon": "lucide-ghost",
+              "title": "DICE_ROLLER_VIEW"
             }
           },
           {
-            "id": "4934ac73988514c5",
+            "id": "331be4c27c0a2c9c",
             "type": "leaf",
             "state": {
               "type": "DICE_ROLLER_VIEW",
@@ -229,7 +255,27 @@
             }
           },
           {
-            "id": "378ecc382d06d64f",
+            "id": "7a354a683b327ccb",
+            "type": "leaf",
+            "state": {
+              "type": "initiative-tracker-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "initiative-tracker-view"
+            }
+          },
+          {
+            "id": "db6aac41c4f4b6d3",
+            "type": "leaf",
+            "state": {
+              "type": "DICE_ROLLER_VIEW",
+              "state": {},
+              "icon": "dices",
+              "title": "Dice Tray"
+            }
+          },
+          {
+            "id": "0e92bb88b70f79a7",
             "type": "leaf",
             "state": {
               "type": "initiative-tracker-view",
@@ -239,12 +285,12 @@
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 11
       },
       {
         "id": "9c7543e6c2820b5d",
         "type": "tabs",
-        "dimension": 53.83663366336635,
+        "dimension": 43.222003929273086,
         "children": [
           {
             "id": "b04c31368900315c",
@@ -260,7 +306,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 518.5
+    "width": 417.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -271,68 +317,66 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "calendarium:Open Calendarium": false,
       "excel:Create Excel File": false,
       "fantasy-content-generator:Fantasy Generators": false,
-      "obsidian-5e-statblocks:Open Creature pane": false,
       "obsidian-git:Open Git source control": false,
+      "obsidian-5e-statblocks:Open Creature pane": false,
       "initiative-tracker:Initiative Tracker Encounter Builder": false,
       "obsidian-leaflet-plugin:Open Leaflet Map": false,
       "obisidian-note-linker:Note Linker": false,
-      "smart-connections:Open: Smart Chat": false,
-      "smart-connections:Open: View Smart Connections": false,
+      "templater-obsidian:Templater": false,
       "univer:Univer": false,
-      "templater-obsidian:Templater": false
+      "calendarium:Open Calendarium": false
     }
   },
-  "active": "35484035f9f0f978",
+  "active": "8ff8c59adc6feca5",
   "lastOpenFiles": [
-    "Wizarding World/World/Wizarding World/Wizarding Book of Monsters and foes.pdf",
+    "Wizarding World/Characters/CHG Chars/Aldebaran Black.md",
+    "Wizarding World/Characters/CHG Chars/Esmeralda Rossier.md",
+    "Wizarding World/World/Hogwarts/Hogwarts.md",
+    "Wizarding World/Characters/CHG Chars/Sofia Lestrange.md",
+    "Wizarding World/Game Expectations.md",
+    "Readme.md",
+    "Wizarding World/Characters/CHG Chars/Federic Ollivanders.md",
+    "Wizarding World/World/Wizarding World/MadMan & Murphen One Shot Adventures #1 _ GM Binder.pdf",
+    "Wizarding World/World/Maps/London/Diagon Alley/Magical Menagerie by Block_nessie.jpg",
+    "Wizarding World/Characters/CHG Chars/Cedric Scamander.md",
+    "Wizarding World/Characters/CHG Chars/Cross Snape.md",
+    "Wizarding World/Characters/NPCs/professors/Profesor Grimlock (Jefe de Ravenclaw).md",
+    "Wizarding World/Characters/CHG Chars/Chato Nott.md",
+    "Wizarding World/World/PlayerSheets/W&W Gryffindor - Fillable.pdf",
     "Wizarding World/Sessions/Session 1 - Sorting/Session_1-Sorting-Before.md",
     "Wizarding World/Sessions/Session 0 - Prelude/Session_0-Prelude - Antes.md",
-    "Wizarding World/Characters/NPCs/professors/Profesor Grimlock (Jefe de Ravenclaw).md",
-    "Wizarding World/World/Hogwarts/Hogwarts.md",
-    "Wizarding World/World/Hogwarts/Students/Students list.md",
-    "Wizarding World/World/Hogwarts/Aula de Defensa Contra las Artes Oscuras.md",
     "Wizarding World/World/Hogwarts/Letter.md",
+    "Wizarding World/World/Maps/London/Diagon Alley/The Leaky Cauldron by Badwolf.jpg",
     "Wizarding World/World/Hogwarts/Untitled.md",
-    "Wizarding World/World/Hogwarts/Classes/Aula de Defensa Contra las Artes Oscuras.md",
-    "Wizarding World/Characters/CHG Chars/Sofia Lestrange.md",
-    "Wizarding World/Characters/CHG Chars/Federic Ollivanders.md",
-    "Wizarding World/Characters/CHG Chars/Esmeralda Rossier.md",
-    "Wizarding World/Characters/CHG Chars/Cross Snape.md",
-    "Wizarding World/Characters/CHG Chars/Chato Nott.md",
-    "Wizarding World/Characters/CHG Chars/Cedric Scamander.md",
-    "Wizarding World/Characters/CHG Chars/Aldebaran Black.md",
-    "Wizarding World/World/Hogwarts/Events/Tabla de Eventos — Corredores de Hogwarts.md",
-    "Wizarding World/World/Hogwarts/Events",
-    "Wizarding World/World/Hogwarts/Students",
-    "conflict-files-obsidian-git.md",
-    "Wizarding World/World/PlayerSheets/Sofia Lestrange.pdf",
-    "Wizarding World/World/Maps/London/Diagon Alley/Ollivanders by Block_nessie.jpg",
-    "Wizarding World/World/Maps/London/Diagon Alley/Ollivanders by Badwolf.jpg",
-    "Wizarding World/World/Maps/London/Diagon Alley/Magical Menagerie by Block_nessie.jpg",
-    "Wizarding World/World/Maps/London/Diagon Alley/Leaky Cauldron by Block_nessie.jpg",
-    "Wizarding World/World/PlayerSheets/W&W Gryffindor - Fillable.pdf",
-    "Wizarding World/World/Shops/Seer's Catalogue.pdf",
     "Wizarding World/World/Hogwarts/TimeTables/Primer_Año.md",
     "Wizarding World/World/Hogwarts/TimeTables",
+    "Wizarding World/World/Hogwarts/Students/Students list.md",
+    "Wizarding World/World/Hogwarts/Students",
+    "Wizarding World/World/Hogwarts/Events/Tabla de Eventos — Corredores de Hogwarts.md",
+    "Wizarding World/World/Hogwarts/Events",
+    "Wizarding World/World/Hogwarts/Classes/Aula de Defensa Contra las Artes Oscuras.md",
     "Wizarding World/World/Hogwarts/Classes",
-    "Wizarding World/World/Wizarding World/MadMan & Murphen One Shot Adventures #1 _ GM Binder.pdf",
     "Wizarding World/Sessions/Session 1 - Sorting",
-    "Wizarding World/World/Maps/London/Diagon Alley/Ollivanders (Roof) by Block_nessie.jpg",
-    "Wizarding World/World/Maps/London/Ministry of Magic (Atrium) by Block_nessie.jpg",
-    "Wizarding World/World/Maps/London/Knockturn Alley/Borgin and Burkes (Back Room) by Block_nessie.jpg",
-    "Wizarding World/World/Maps/London/Diagon Alley/The Leaky Cauldron by Badwolf.jpg",
-    "Wizarding World/World/Wizarding World/Wands & Wizards - Harry Potter 5e.pdf",
-    "Readme.md",
-    "Wizarding World/Assets/Sebastian-Snark.jpg",
-    "Wizarding World/Assets/Rebbeca-Weasly.jpg",
-    "Wizarding World/Characters/Creation Notes/Feats.md",
-    "Wizarding World/Characters/Temp PlayerChars/Ignacio ignam.md",
-    "Wizarding World/Characters/Temp PlayerChars/Penolope Pevreal.md",
-    "Wizarding World/Characters/Temp PlayerChars/Sebastian Snark.md",
-    "Wizarding World/Characters/Temp PlayerChars/Oscar Ortiz.md",
+    "Wizarding World/World/PlayerSheets/Sofia Lestrange.pdf",
+    "Wizarding World/World/PlayerSheets/W&W Classic Character Sheet by Blaze.pdf",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 3 - 5/Misión Campamento de los leñadores.md",
+    "Wizarding World/World/PlayerSheets/W&W Slytherin - Fillable.pdf",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 5 - 7/Misión en Alcazhacha.md",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 5 - 7/Misión Rancho de Mantecalavera.md",
+    "conflict-files-obsidian-git.md",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Misión de la Colina del Resentimiento.md",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Manor Embrujado de Tresendar.md",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Huerto_Edermath.md",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Woodland Manse 41x42 140pps/Woodland Manse v1.0 41x42 @140pps.jpg",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Woodland Manse 41x42 140pps/Woodland Manse v1.0 (upper) 41x42 @140pps.jpg",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/WaterMill.jpg",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Umbrage Hill 66x42 @ 140pps/Umbrage Hill v1.0 (second) 66x42 @140pps.jpg",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Umbrage Hill 66x42 @ 140pps/Umbrage Hill v1.0 (ground) 66x42 @140pps.jpg",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Umbrage Hill 66x42 @ 140pps/Umbrage Hill v1.0 (first) 66x42 @140pps.jpg",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Tower of Storms/The Tower Of Storms v1.0 66x42 @140pps.jpg",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Tower of Storms/The Tower Of Storms v1.0 (no beacon) 66x42 @140pps.jpg",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/Roadmap.canvas"
   ]
 }
