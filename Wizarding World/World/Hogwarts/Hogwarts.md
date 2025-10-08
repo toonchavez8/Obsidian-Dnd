@@ -31,14 +31,3 @@ graph TD
 ```
 
 
-
-Sofia 7
-
-esmeralda 2 
-cedric 0
-
-federic 9
-
-Aldebaran 15
-
-cross 9

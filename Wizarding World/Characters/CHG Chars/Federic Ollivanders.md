@@ -8,7 +8,7 @@ HP: 11
 HitDice: d8
 Speed: 15
 STR: 11
-DEX: 7
+DEX: 16
 CON: 16
 INT: 12
 WIS: 12
