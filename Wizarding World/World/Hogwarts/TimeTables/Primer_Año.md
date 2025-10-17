@@ -35,7 +35,7 @@
 - **10:45 – 12:15**: Charms (Professor Flitwick)  
 - **Lunch**  
 - **1:30 – 3:00**: Flying Lessons (Madam Hooch)  
-- **3:15 – 4:45**: Defense Against the Dark Arts (TBD)
+- **3:15 – 4:45**: Defense Against the Dark Arts (Profesor GrimLock)
 
 ---
 

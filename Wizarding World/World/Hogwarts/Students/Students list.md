@@ -3,7 +3,7 @@
 | Nº  | Nombre        | Año | Meta / Rasgo                                               |
 | :-: | ------------- | :-: | ---------------------------------------------------------- |
 |  1  | Ginny Weasley |  7  | Aspira a ser cazadora de Quidditch; inteligente, divertida |
-|  9  | Felix North   |  2  | Busca aventuras; ruidoso, leal                             |
+|  2  | Felix North   |  2  | Busca aventuras; ruidoso, leal                             |
 | 14  | Jasper Flint  |  4  | Novato en Quidditch; determinado, impulsivo                |
 | 18  | Ivy Marlow    |  5  | Quiere ser sanadora; empática                              |
 | 22  | Nico Vale     |  1  | Valiente pero nostálgico; entusiasta                       |
@@ -109,36 +109,36 @@
 
 ## Slytherin
 
-|  Nº  | Nombre           | Año | Meta / Rasgo                                 |
-| :--: | ---------------- | :-: | -------------------------------------------- |
-|  4   | Theo Blackwood   |  5  | Ambicioso; habitual en el club de duelos     |
-|  12  | Kian Fairbairn   |  7  | Quiere carrera en el Ministerio; elegante    |
-|  15  | Soren Bishop     |  3  | Entusiasta de la Oficina de Secretos; astuto |
-|  19  | Alden Royce      |  4  | Estratega tipo ajedrez; calculador           |
-|  23  | Selah Quint      |  2  | Prefiere pruebas prácticas; ambiciosa        |
-|  27  | Caspian Wren     |  1  | Experimentos con varitas; curioso            |
-|  31  | Anton Greve      |  5  | Duelista; competitivo                        |
-|  35  | Viktor Slade     |  7  | Heredero; sereno                             |
-|  39  | Lucien Morrow    |  6  | Candidato a prefecto; elegante               |
-|  43  | Bramwell Pike    |  3  | Mentalidad financiera; ambicioso             |
-|  47  | Cai Mercer       |  1  | Nuevo; ansioso por impresionar               |
-|  52  | Orion Blackthorn |  6  | Estudiante con legado; ambicioso             |
-|  56  | Sylas Crow       |  4  | Secretista; colecciona saberes prohibidos    |
-|  60  | Bram Rivers      |  2  | Aspirante a abogado; pulcro                  |
-|  64  | Kellan Voss      |  7  | Prefecto; protector secreto                  |
-|  68  | Lennox Grey      |  3  | Negociador; parlanchín                       |
-|  73  | Brynn Hale       |  1  | Nuevo; observadora, cautelosa                |
-|  78  | Lysander Croft   |  6  | Ambición para altos cargos                   |
-|  82  | Otto Grimm       |  3  | Financiador de pociones; astuto              |
-|  86  | Kiran Das        |  2  | Duelista competitivo                         |
-|  90  | Cass Roarke      |  7  | Representante de clase; serena               |
-|  94  | Ewan Black       |  5  | Fuertes expectativas familiares              |
-|  98  | Magnus Vale      |  1  | Joven maquinador; observador                 |
-| 102  | Cade Rowan       |  4  | Aspira a diplomacia; sereno                  |
-| 106  | Sable Kent       |  6  | Aristócrata; activista secreto               |
-| 110  | Beck Rourke      |  2  | Hábitos de estudio ambiciosos                |
-| 114  | Cyrus Vale       |  5  | Candidato a prefecto; compuesto              |
-| 118  | Vance Mallory    |  7  | Aspira a ser asistente ministerial           |
+| Nº  | Nombre           | Año | Meta / Rasgo                                 |
+| :-: | ---------------- | :-: | -------------------------------------------- |
+|  4  | Theo Blackwood   |  5  | Ambicioso; habitual en el club de duelos     |
+| 12  | Kian Fairbairn   |  7  | Quiere carrera en el Ministerio; elegante    |
+| 15  | Soren Bishop     |  3  | Entusiasta de la Oficina de Secretos; astuto |
+| 19  | Alden Royce      |  4  | Estratega tipo ajedrez; calculador           |
+| 23  | Selah Quint      |  2  | Prefiere pruebas prácticas; ambiciosa        |
+| 27  | Caspian Wren     |  1  | Experimentos con varitas; curioso            |
+| 31  | Anton Greve      |  5  | Duelista; competitivo                        |
+| 35  | Viktor Slade     |  7  | Heredero; sereno                             |
+| 39  | Lucien Morrow    |  6  | Candidato a prefecto; elegante               |
+| 43  | Bramwell Pike    |  3  | Mentalidad financiera; ambicioso             |
+| 47  | Cai Mercer       |  1  | Nuevo; ansioso por impresionar               |
+| 52  | Orion Blackthorn |  6  | Estudiante con legado; ambicioso             |
+| 56  | Sylas Crow       |  4  | Secretista; colecciona saberes prohibidos    |
+| 60  | Bram Rivers      |  2  | Aspirante a abogado; pulcro                  |
+| 64  | Kellan Voss      |  7  | Prefecto; protector secreto                  |
+| 68  | Lennox Grey      |  3  | Negociador; parlanchín                       |
+| 73  | Brynn Hale       |  1  | Nuevo; observadora, cautelosa                |
+| 78  | Lysander Croft   |  6  | Ambición para altos cargos                   |
+| 82  | Otto Grimm       |  3  | Financiador de pociones; astuto              |
+| 86  | Kiran Das        |  2  | Duelista competitivo                         |
+| 90  | Cass Roarke      |  7  | Representante de clase; serena               |
+| 94  | Ewan Dale        |  5  | Fuertes expectativas familiares              |
+| 98  | Magnus Vale      |  1  | Joven maquinador; observador                 |
+| 102 | Cade Rowan       |  4  | Aspira a diplomacia; sereno                  |
+| 106 | Sable Kent       |  6  | Aristócrata; activista secreto               |
+| 110 | Beck Rourke      |  2  | Hábitos de estudio ambiciosos                |
+| 114 | Cyrus Vale       |  5  | Candidato a prefecto; compuesto              |
+| 118 | Vance Mallory    |  7  | Aspira a ser asistente ministerial           |
 
 
 ---

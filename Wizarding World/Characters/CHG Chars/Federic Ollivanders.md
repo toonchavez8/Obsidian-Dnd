@@ -49,55 +49,60 @@ Galeons: 2
 Ruby: 1
 ---
 
-## `=this.file.name`
+# `=this.file.name`
 
->[!column|flex 2]
->> [!infobox]
->> # `=this.file.name`
->>
->> ###### Stats
->>  |
->> ---|---|
->> **Level** | `=this.Level` |
->> **Speed** | `=this.Speed` |
->> **Proficiency** | +`=this.Prof` |
->> **Initiative** | +`=floor((this.DEX - 10)/2)` |
->> **AC** | `=this.AC + floor((this.DEX - 10)/2)` |
->> **HP** | `=this.HP - this.DmgTkn + this.TempHP` |
->> **Hit Dice** | `=this.Level + this.HitDice` |
->> **Passive Perception** | `=floor((this.WIS - 10)/2+10)` |
->> **Sorcery Points** | `=this.SorceryPoints` |
->> **Metamagic Points** | `=this.MetamagicPoints` |
->> ###### Bio
->>   |
->> ---|---|
->> **House** | `=this.House` |
->> **Sex** | `=this.Gender` |
->> **Age** | `=this.Age` |
->> **Background** | `=this.Background` |
->> **School of Magic** | `=this.SchoolOfMagic` |
->> **Mascota** | `=this.Mascota` |
->> ###### Info
->>   |
->> ---|---|
->> **Casting Style** | `=this.CastingStyle` |
->> **Wand Name** | `=this.Wand` |
->> **Heritage** | `=this.Heritage` |
->> **Current Location** | `=this.Location` |
->>  ### Currency
+> [!column|flex 2]
+> > [!infobox]
+> > # `=this.file.name`
+> > 
+> > ###### Stats
+> > |
+> > ---|---|
+> > **Level** | `=this.Level` |
+> > **Speed** | `=this.Speed` |
+> > **Proficiency** | +`=this.Prof` |
+> > **Initiative** | +`=floor((this.DEX - 10)/2)` |
+> > **AC** | `=this.AC + floor((this.DEX - 10)/2)` |
+> > **HP** | `=this.HP - this.DmgTkn + this.TempHP` |
+> > **Hit Dice** | `=this.Level + this.HitDice` |
+> > **Passive Perception** | `=floor((this.WIS - 10)/2+10)` |
+> > **Sorcery Points** | `=this.SorceryPoints` |
+> > **Metamagic Points** | `=this.MetamagicPoints` |
+> > ###### Bio
+> > |
+> > ---|---|
+> > **House** | `=this.House` |
+> > **Sex** | `=this.Gender` |
+> > **Age** | `=this.Age` |
+> > **Background** | `=this.Background` |
+> > **School of Magic** | `=this.SchoolOfMagic` |
+> > **Mascota** | `=this.Mascota` |
+> > ###### Info
+> > |
+> > ---|---|
+> > **Casting Style** | `=this.CastingStyle` |
+> > **Wand Name** | `=this.Wand` |
+> > **Heritage** | `=this.Heritage` |
+> > **Current Location** | `=this.Location` |
+> > ### Currency
+
 | Knut         | Sickles         | Galeons         | Ruby         |
 | -------------- | -------------- | ------------  | ------------ |
 | `=this.Knut` | `=this.Sickles` | `=this.Galeons` | `=this.Ruby` |
+
 >
->> [!infobox] Death Saves
->> ### Death Saves
+> > [!infobox] Death Saves
+> > ### Death Saves
 | Success | <input type="checkbox" unchecked> | <input type="checkbox" unchecked> | <input type="checkbox" unchecked> | 
 | ----- | --- | --------------------------------- | --------------------------------- |
 >>
+
 | Fails | <input type="checkbox" unchecked> | <input type="checkbox" unchecked> | <input type="checkbox" unchecked> |
 | ----- | --- | --------------------------------- | --------------------------------- |
->>
->> ### Skills
+
+> >
+> > ### Skills
+
 | Skill | Score       | Mod                     | Prof                              | ST                                  |
 | ----- | ----------- | ----------------------- | --------------------------------- | ----------------------------------- |
 | <font color="#ff0000">**STR**</font> | `=this.STR` | +`=floor((this.STR - 10)/2)` | <input type="checkbox" unchecked> | +`=floor((this.STR - 10)/2)` |
@@ -106,7 +111,9 @@ Ruby: 1
 | <font color="#7030a0">**INT**</font> | `=this.INT` | +`=floor((this.INT - 10)/2)` | <input type="checkbox" unchecked> | +`=floor((this.INT - 10)/2)` |
 | <font color="#245bdb">**WIS**</font> | `=this.WIS` | +`=floor((this.WIS - 10)/2)` | <input type="checkbox" unchecked> | +`=floor((this.WIS - 10)/2)` |
 | <font color="#de7802">**CHA**</font> | `=this.CHA` | +`=floor((this.CHA - 10)/2)` | <input type="checkbox" unchecked> | +`=floor((this.CHA - 10)/2)` |
->> ### Skill Checks
+
+> > ### Skill Checks
+
 | Ability               | Prof                                   | Mod |
 | --------------------- | --------------------------------- | --- |
 | Acrobatics (DEX)      | <input type="checkbox" unchecked> | +`=floor((this.DEX - 10)/2)` |
@@ -128,16 +135,16 @@ Ruby: 1
 | Survival (WIS)        | <input type="checkbox" unchecked> | +`=floor((this.WIS - 10)/2)` |
 | Potion Making (INT)   | <input type="checkbox" checked> | +`=floor((this.INT - 10)/2)` |
 
-## Atributos
+# Atributos
 
 - **Conocimiento Profundo:** Cuando realizas una prueba de Inteligencia o Sabiduría con competencia, puedes tratar una tirada de 5 o menos como si fuera un 6.
 - **Biblioteca de Rowena:** Puedes investigar fácilmente cualquier tema con la ayuda de tus compañeros de casa y libros exclusivos de la sala común
 
-## Feats
+# Feats
 
-- **Sentir de peligro**.Agregas la mitad de tu bonificación de competencia a tu Iniciativa y no puedes ser sorprendido mientras estés consciente. 
+- **Sentir de peligro**.Agregas la mitad de tu bonificación de competencia a tu Iniciativa y no puedes set sorprendido mientras estés consciente. 
 
-## Fortuna Encantada
+# Fortuna Encantada
 
 Algunos magos parecen contar con una suerte fuera de lo común, como si la magia misma les sonriera en los momentos más críticos.
 
@@ -147,17 +154,19 @@ Algunos magos parecen contar con una suerte fuera de lo común, como si la magia
 - Cuando hagas una tirada de ataque, salvación o habilidad, puedes gastar 1 punto de suerte para **tirar un d20 adicional** y elegir cuál de los resultados usar.
 - Puedes usar esta característica después de ver el resultado, pero antes de que el HM confirme si es un éxito o un fallo.
 - Recuperas todos los puntos de suerte al terminar un **descanso largo**.
-### Lanzamiento Ritual
+
+## Lanzamiento Ritual
 
 Tu capacidad para recordar información te permite lanzar conjuros libremente, siempre que tengas tiempo para concentrarte.
 
 A nivel 1, puedes lanzar un conjuro como ritual si tiene la etiqueta de ritual y lo conoces. Una versión ritual de un conjuro solo tarda 1 minuto más en lanzarse que lo normal. Además, no gasta un espacio de conjuro, lo que significa que la versión ritual de un conjuro no puede lanzarse a un nivel superior.
 
-### Característica de Trasfondo: Aprendiz
+## Característica De Trasfondo: Aprendiz
 
 Aunque aún no puedes crear obras originales, tienes los conocimientos y habilidades rudimentarias suficientes para **iniciar un aprendizaje bajo un mentor**, si encuentras a alguien dispuesto a enseñarte.  
 Además, has practicado la **coordinación mano-ojo** y el trabajo **preciso**.
-## Equipo
+
+# Equipo
 
 - [ ] Varita magica
 - [ ] Una Bolsa de estudiante rico
@@ -180,24 +189,50 @@ Además, has practicado la **coordinación mano-ojo** y el trabajo **preciso*
   - [ ] Bola de cristal pequeña
 - [ ] a compass
 
-### Transfondo del personaje
+## Transfondo Del Personaje
 
- Un joven mago atormentado por la verdad, Ignacio porta una varita de Lima Plateada con Cuerda de Corazón de Dragón, un instrumento que refleja su don de profecía y su alma agitada. Sus visiones del futuro, aunque fragmentadas y llenas de simbolismo, lo han convertido en un solitario, marcado por la carga de presenciar el desenlace de eventos aún por ocurrir.
+ Frederick, miembro de la familia Ollivanders tuvo una infancia turbulenta por la
+guerra librada entre los magos. Sus padres, sabiendo que la familia estaba
+siendo perseguida por información de su abuelo, decidieron refugiarlo 
+en el mundo muggle, estos acontecimientos ocasionaron que Frederick sea
+una persona desconfiada, fría y precavida.
 
-Aquí hay algunos detalles adicionales sobre el personaje:
+Frederick al no estar mucho tiempo en contacto con la magia, obstaculizo el 
+desarrollo de ella, teniendo dificultades para poder controlarla o inclusive 
+manifestarla, aunque con mucha frustración, esto le enseño a set tenaz y 
+perseverante con las metas que quiere lograr.
 
-Ideal:	Personas. Quiero impactar a todos los que experimenten mi arte.
-Lazos: Mi cámara/caballete/instrumento es mi posesión más preciada y me recuerda a alguien que amo.
-debelidad: No hay lugar para la cautela en una vida vivida al máximo
+Para Frederick, el contacto con el mundo mágico fue por medio de historias 
+y leyendas que sus padres y abuelo le enviaban por correspondencia, 
+nombres de personas legendarias, historias increíbles y objetos de gran 
+poder mágico moldearon la concepción que tiene Fred sobre este mundo.
 
-## Magia
+Maravillado con grandes historias y al vivir en el mundo muggle; 
+el vivir sus dificultades, enfrentar sus desafíos, y sobre todo, 
+presenciar lo que los muggles eran capaces de hacer sin la ayuda 
+de la magia. Fue lo que hizo que despertará en él la curiosidad 
+de crear artefactos para poder proteger y ayudar a las personas, 
+moldeando sus opinión sobre como se debería de usar la magia.
+
+Emocionado y con esperanza, ahora inicia su primer año en Hogwarts, 
+un año que no solo inicia una nueva etapa de su vida, sino también, 
+significa un regresó al mundo mágico, un mundo del cual historias 
+solo pudo escuchar.
+
+
+Sueños: 
+1. Crear una reliquia.
+2. Ayudar a ambos mundos con sus invenciones.
+3. Hacer mas libre la magia tanto para el mundo mágico, como para el mundo real
+
+# Magia
 
 Conoce 5 Encantamientos y 8 Hechisos
 
-### Encantamientos
+## Encantamientos
 
 - Accio - Atrai objetos no mayor a 20kg de peso
-- Alohomora - Puede puertas/ventanas pero hace ruido
+- Alohomora - Puede puertas/ventanas pero have ruido
 - Lumos/Nox - Genera Luz en la punta de la varita  
 - Wingadiam leviosa - Puedes Levantar hasta 50k por 1 min hasta 10 m de alto
 - Rennervate - Despierta una creatura inconsciente
@@ -205,11 +240,11 @@ Conoce 5 Encantamientos y 8 Hechisos
 - Aguamenti - Convoca agua hasta 1 min en un cono de 10 m
 - Scurgify - limpia un objeto o creatura no mayor a 2.5 m cuadros
 
-### Hechizos
+## Hechizos
 
-#### Primer circulo 4
+### Primer Circulo 4
 
-- Arresto momentum - Reduce la velocidad de caida de hasta 5 creaturas a 30M/ps Puede ser reacion
+- Arresto momentum - Reduce la velocidad de caida de hasta 5 creaturas a 30M/ps Puede set reacion
 - Diffindo - Corta una creatura por 4d4
 - Protego - Accion o Reacion genera una barrera protectora +5 a AC
 - Riddikules - Transforma un Boggart a una version chistosa
@@ -217,7 +252,7 @@ Conoce 5 Encantamientos y 8 Hechisos
 - Rictusempra - Incapacita a una creatura de risa un turno y reduce movilidad
 - Specialis Revelio - Revela los secretos de un objeto, area. *Leer hechizo en manual*
 
-#### Segundo circulo 3
+### Segundo Circulo 3
 
 - Episkey - Sana 2d4 + modifcador de hechizos una creatura dentro de 10m
 - Reparo - Repara objetos dañados
@@ -225,7 +260,7 @@ Conoce 5 Encantamientos y 8 Hechisos
 - Immobulus - Imobaliza en un rango de 7.5m a creaturas de 7d10 de puntos de vida
 - Expelliarmus - Una creatura de 30m avienta un articulo y cai 5m de distancia
 
-#### Tercer circulo 2
+### Tercer Circulo 2
 
 - Herbiviscus - Puedes Crecer plantas de 60 pies cuadrados causando terreno dificil
 - Expluso - avientas a una creatura 10 pies con un trueno 4d8 dmg, se esucha el trueno a 100 pies

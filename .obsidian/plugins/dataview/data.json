@@ -1,10 +1,10 @@
 {
   "renderNullAs": "\\-",
-  "taskCompletionTracking": false,
+  "taskCompletionTracking": true,
   "taskCompletionUseEmojiShorthand": false,
   "taskCompletionText": "completion",
   "taskCompletionDateFormat": "yyyy-MM-dd",
-  "recursiveSubTaskCompletion": false,
+  "recursiveSubTaskCompletion": true,
   "warnOnEmptyResult": true,
   "refreshEnabled": true,
   "refreshInterval": 2500,
@@ -20,7 +20,7 @@
   "inlineQueriesInCodeblocks": true,
   "enableInlineDataview": true,
   "enableDataviewJs": true,
-  "enableInlineDataviewJs": false,
+  "enableInlineDataviewJs": true,
   "prettyRenderInlineFields": true,
   "prettyRenderInlineFieldsInLivePreview": true,
   "dataviewJsKeyword": "dataviewjs"
