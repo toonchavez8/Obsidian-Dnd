@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Wizarding World/Sessions/Arc 1/Session_2-Common-room-classes.md",
+                "file": "Wizarding World/World/Hogwarts/Hogwarts.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Session_2-Common-room-classes"
+              "title": "Hogwarts"
             }
           }
         ]
@@ -282,12 +282,29 @@
       "obisidian-note-linker:Note Linker": false,
       "univer:Univer": false,
       "templater-obsidian:Templater": false,
-      "calendarium:Open Calendarium": false,
-      "audio-recorder:Start/stop recording": false
+      "audio-recorder:Start/stop recording": false,
+      "calendarium:Open Calendarium": false
     }
   },
   "active": "e997ac7f366f9969",
   "lastOpenFiles": [
+    "Wizarding World/World/Wizarding World/Wizarding Book of Monsters and foes.pdf",
+    "Wizarding World/World/W&W Misc. Campaign Notes.md",
+    "Wizarding World/Game Expectations.md",
+    "Readme.md",
+    "Wizarding World/World/Hogwarts/Hogwarts.md",
+    "Wizarding World/World/Hogwarts/Letter.md",
+    "Wizarding World/World/Hogwarts/Untitled.md",
+    "Wizarding World/World/Maps/Hogwarts/1 - Entrance/Caretaker_s Office by U.B.O.S..jpg",
+    "Wizarding World/World/Maps/Hogwarts/1 - Entrance/Great Hall (Dueling Club) by U.B.O.S..jpg",
+    "Wizarding World/World/Maps/Hogwarts/1 - Entrance/Hufflepuff Common Room by Block_nessie.jpg",
+    "Wizarding World/World/Maps/Hogwarts/1 - Entrance/Hufflepuff Dormitory by Block_nessie.jpg",
+    "Wizarding World/World/Maps/Hogwarts/3 - The Quad/Prefect_s Bathroom by U.B.O.S..jpg",
+    "Wizarding World/World/Maps/Hogwarts/3 - The Quad/Secret Challenge Room by Olive.jpg",
+    "Wizarding World/World/Maps/Hogwarts/3 - The Quad/Gryffindor Common Room (Christmas) by U.B.O.S..jpg",
+    "Wizarding World/World/Potions/W&W Potion Spreadsheet.xlsx",
+    "Wizarding World/World/Factions/Dumbledores Army.md",
+    "Wizarding World/Sessions/Arc 1/Session_2-Common-room-classes.md",
     "Wizarding World/Characters/NPCs/professors/Profesor Grimlock (Jefe de Ravenclaw).md",
     "Wizarding World/Characters/CHG Chars/Sofia Lestrange.md",
     "Wizarding World/Characters/CHG Chars/Cross Snape.md",
@@ -304,36 +321,19 @@
     "Wizarding World/World/Hogwarts/House Cup/template",
     "Wizarding World/World/Hogwarts/House Cup/Session Logs",
     "Wizarding World/World/Hogwarts/House Cup/Hufflepuff.md",
-    "Wizarding World/Sessions/Arc 1/Session_2-Common-room-classes.md",
     "Wizarding World/World/Hogwarts/House Cup",
     "Wizarding World/World/Factions/Order of the phenix.md",
     "Wizarding World/World/Factions/Ashwinders.md",
     "Wizarding World/World/Hogwarts/TimeTables/Primer_Año.md",
-    "Wizarding World/World/Hogwarts/Classes/Aula de Defensa Contra las Artes Oscuras.md",
-    "Wizarding World/World/Factions/Poachers.md",
-    "Wizarding World/World/Hogwarts/Hogwarts.md",
-    "Wizarding World/World/Factions/Mortifagos.md",
-    "Wizarding World/World/Factions/Hallow  Hunters.md",
-    "Wizarding World/World/Factions/Dumbledors Army.md",
     "Wizarding World/World/Hogwarts/CommonRooms/slythering.jpeg",
     "Wizarding World/World/Hogwarts/CommonRooms/imgs/Recording 20251017121503.webm",
-    "Wizarding World/Sessions/Arc 1/Session_1-Sorting-Before.md",
     "Wizarding World/World/Hogwarts/CommonRooms/imgs",
     "Wizarding World/World/Hogwarts/CommonRooms/Huffflepuff.jpeg",
     "Wizarding World/World/Hogwarts/CommonRooms/ravenclaw.jpg",
     "Wizarding World/World/Hogwarts/CommonRooms/Unconfirmed 677944.crdownload",
-    "Wizarding World/World/Hogwarts/CommonRooms/Gryfindor.jpeg",
     "Wizarding World/World/Hogwarts/CommonRooms/Unconfirmed 661510.crdownload",
     "Wizarding World/World/Hogwarts/CommonRooms/Unconfirmed 797192.crdownload",
     "Wizarding World/World/Hogwarts/CommonRooms/Unconfirmed 305401.crdownload",
-    "Wizarding World/World/Hogwarts/CommonRooms",
-    "Wizarding World/World/Hogwarts/Aula de Defensa Contra las Artes Oscuras.md",
-    "Wizarding World/World/Maps/London/Diagon Alley/Ollivanders by Block_nessie.jpg",
-    "Wizarding World/World/Maps/London/Diagon Alley/Ollivanders by Badwolf.jpg",
-    "Wizarding World/World/Maps/London/Diagon Alley/Magical Menagerie by Block_nessie.jpg",
-    "Wizarding World/World/Maps/London/Diagon Alley/Leaky Cauldron by Block_nessie.jpg",
-    "Wizarding World/World/Maps/London/Diagon Alley/Ollivanders (Roof) by Block_nessie.jpg",
-    "Wizarding World/World/Maps/London/Ministry of Magic (Atrium) by Block_nessie.jpg",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/Roadmap.canvas"
   ]
 }
