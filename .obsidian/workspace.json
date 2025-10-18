@@ -4,24 +4,61 @@
     "type": "split",
     "children": [
       {
-        "id": "6fee7011eafb680e",
+        "id": "b29b63e052f392c3",
         "type": "tabs",
         "children": [
           {
-            "id": "e997ac7f366f9969",
+            "id": "8ff8c59adc6feca5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Wizarding World/Sessions/Arc 1/Session_2-Common-room-classes.md",
+                "file": "Wizarding World/Characters/CHG Chars/Aldebaran Black.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Session_2-Common-room-classes"
+              "title": "Aldebaran Black"
+            }
+          },
+          {
+            "id": "3c022c1582cb2104",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.9.14"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.9.14"
+            }
+          },
+          {
+            "id": "b8ea5606d447fba3",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Wizarding World/World/Maps/London/Diagon Alley/Magical Menagerie by Block_nessie.jpg"
+              },
+              "icon": "lucide-image",
+              "title": "Magical Menagerie by Block_nessie"
+            }
+          },
+          {
+            "id": "eb52504fa0850a42",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Wizarding World/World/Wizarding World/MadMan & Murphen One Shot Adventures #1 _ GM Binder.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "MadMan & Murphen One Shot Adventures #1 _ GM Binder"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -78,7 +115,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 373.5
+    "width": 382.5
   },
   "right": {
     "id": "1fb55a346c0ef23e",
@@ -87,7 +124,7 @@
       {
         "id": "ba0d59233e31b44f",
         "type": "tabs",
-        "dimension": 46.163366336633665,
+        "dimension": 56.777996070726914,
         "children": [
           {
             "id": "79215bbccd956432",
@@ -114,12 +151,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Posada Rocacolina.md",
+                "file": "Wizarding World/Sessions/Session 0 - Prelude/Session_0-Prelude - Antes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Posada Rocacolina"
+              "title": "Outgoing links from Session_0-Prelude - Antes"
             }
           },
           {
@@ -143,13 +180,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/00_lore_and_Players/El Dragon de Pico Helado.pdf",
+                "file": "Untitled.xlsx",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of El Dragon de Pico Helado"
+              "title": "Outline of Untitled"
             }
           },
           {
@@ -181,8 +218,8 @@
             "state": {
               "type": "initiative-tracker-view",
               "state": {},
-              "icon": "initiative-tracker",
-              "title": "Initiative Tracker"
+              "icon": "lucide-ghost",
+              "title": "initiative-tracker-view"
             }
           },
           {
@@ -206,8 +243,8 @@
                 },
                 "id": "ID_6918ba399beb"
               },
-              "icon": "lucide-ghost",
-              "title": "CALENDARIUM"
+              "icon": "CALENDARIUM",
+              "title": "Calendarium"
             }
           },
           {
@@ -216,12 +253,12 @@
             "state": {
               "type": "DICE_ROLLER_VIEW",
               "state": {},
-              "icon": "dices",
-              "title": "Dice Tray"
+              "icon": "lucide-ghost",
+              "title": "DICE_ROLLER_VIEW"
             }
           },
           {
-            "id": "4934ac73988514c5",
+            "id": "331be4c27c0a2c9c",
             "type": "leaf",
             "state": {
               "type": "DICE_ROLLER_VIEW",
@@ -231,7 +268,27 @@
             }
           },
           {
-            "id": "378ecc382d06d64f",
+            "id": "7a354a683b327ccb",
+            "type": "leaf",
+            "state": {
+              "type": "initiative-tracker-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "initiative-tracker-view"
+            }
+          },
+          {
+            "id": "db6aac41c4f4b6d3",
+            "type": "leaf",
+            "state": {
+              "type": "DICE_ROLLER_VIEW",
+              "state": {},
+              "icon": "dices",
+              "title": "Dice Tray"
+            }
+          },
+          {
+            "id": "0e92bb88b70f79a7",
             "type": "leaf",
             "state": {
               "type": "initiative-tracker-view",
@@ -241,12 +298,12 @@
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 11
       },
       {
         "id": "9c7543e6c2820b5d",
         "type": "tabs",
-        "dimension": 53.836633663366335,
+        "dimension": 43.222003929273086,
         "children": [
           {
             "id": "b04c31368900315c",
@@ -262,10 +319,11 @@
       }
     ],
     "direction": "horizontal",
-    "width": 518.5
+    "width": 417.5
   },
   "left-ribbon": {
     "hiddenItems": {
+      "audio-recorder:Start/stop recording": false,
       "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
@@ -275,65 +333,64 @@
       "command-palette:Open command palette": false,
       "excel:Create Excel File": false,
       "fantasy-content-generator:Fantasy Generators": false,
-      "obsidian-5e-statblocks:Open Creature pane": false,
       "obsidian-git:Open Git source control": false,
+      "obsidian-5e-statblocks:Open Creature pane": false,
       "initiative-tracker:Initiative Tracker Encounter Builder": false,
       "obsidian-leaflet-plugin:Open Leaflet Map": false,
       "obisidian-note-linker:Note Linker": false,
-      "univer:Univer": false,
       "templater-obsidian:Templater": false,
-      "calendarium:Open Calendarium": false,
-      "audio-recorder:Start/stop recording": false
+      "univer:Univer": false,
+      "calendarium:Open Calendarium": false
     }
   },
-  "active": "e997ac7f366f9969",
+  "active": "ee27264648e12cb5",
   "lastOpenFiles": [
-    "Wizarding World/Characters/NPCs/professors/Profesor Grimlock (Jefe de Ravenclaw).md",
-    "Wizarding World/Characters/CHG Chars/Sofia Lestrange.md",
-    "Wizarding World/Characters/CHG Chars/Cross Snape.md",
-    "Wizarding World/Characters/CHG Chars/Federic Ollivanders.md",
-    "Wizarding World/Characters/CHG Chars/Cedric Scamander.md",
-    "Wizarding World/World/Hogwarts/House Cup/Gryffindor.md",
-    "Wizarding World/World/Hogwarts/House Cup/00_HouseCupDashboard.md.md",
+    "imgs/Recording 20251017162253.m4a",
+    "imgs",
+    "Wizarding World/Sessions/Session 1 - Sorting/Session_1-Sorting-Before.md",
+    "Wizarding World/World/Shops/Candy.md",
     "Wizarding World/World/Hogwarts/House Cup/Session Logs/01_FirstDayClasses.md.md",
     "Wizarding World/World/Hogwarts/House Cup/Slytherin.md",
-    "Wizarding World/World/Hogwarts/House Cup/Ravenclaw.md",
-    "00_DND_Templates/Add Points.md",
-    "Wizarding World/World/Hogwarts/House Cup/Session Logs/Test.md",
-    "Wizarding World/World/Hogwarts/House Cup/template/Adadd.md",
-    "Wizarding World/World/Hogwarts/House Cup/template",
     "Wizarding World/World/Hogwarts/House Cup/Session Logs",
+    "Wizarding World/World/Hogwarts/House Cup/Ravenclaw.md",
     "Wizarding World/World/Hogwarts/House Cup/Hufflepuff.md",
-    "Wizarding World/Sessions/Arc 1/Session_2-Common-room-classes.md",
+    "Wizarding World/World/Hogwarts/House Cup/Gryffindor.md",
+    "Wizarding World/World/Hogwarts/House Cup/00_HouseCupDashboard.md.md",
     "Wizarding World/World/Hogwarts/House Cup",
-    "Wizarding World/World/Factions/Order of the phenix.md",
-    "Wizarding World/World/Factions/Ashwinders.md",
-    "Wizarding World/World/Hogwarts/TimeTables/Primer_Año.md",
-    "Wizarding World/World/Hogwarts/Classes/Aula de Defensa Contra las Artes Oscuras.md",
-    "Wizarding World/World/Factions/Poachers.md",
-    "Wizarding World/World/Hogwarts/Hogwarts.md",
-    "Wizarding World/World/Factions/Mortifagos.md",
-    "Wizarding World/World/Factions/Hallow  Hunters.md",
-    "Wizarding World/World/Factions/Dumbledors Army.md",
     "Wizarding World/World/Hogwarts/CommonRooms/slythering.jpeg",
-    "Wizarding World/World/Hogwarts/CommonRooms/imgs/Recording 20251017121503.webm",
-    "Wizarding World/Sessions/Arc 1/Session_1-Sorting-Before.md",
-    "Wizarding World/World/Hogwarts/CommonRooms/imgs",
-    "Wizarding World/World/Hogwarts/CommonRooms/Huffflepuff.jpeg",
     "Wizarding World/World/Hogwarts/CommonRooms/ravenclaw.jpg",
-    "Wizarding World/World/Hogwarts/CommonRooms/Unconfirmed 677944.crdownload",
+    "Wizarding World/World/Hogwarts/CommonRooms/Huffflepuff.jpeg",
     "Wizarding World/World/Hogwarts/CommonRooms/Gryfindor.jpeg",
-    "Wizarding World/World/Hogwarts/CommonRooms/Unconfirmed 661510.crdownload",
-    "Wizarding World/World/Hogwarts/CommonRooms/Unconfirmed 797192.crdownload",
-    "Wizarding World/World/Hogwarts/CommonRooms/Unconfirmed 305401.crdownload",
     "Wizarding World/World/Hogwarts/CommonRooms",
-    "Wizarding World/World/Hogwarts/Aula de Defensa Contra las Artes Oscuras.md",
-    "Wizarding World/World/Maps/London/Diagon Alley/Ollivanders by Block_nessie.jpg",
-    "Wizarding World/World/Maps/London/Diagon Alley/Ollivanders by Badwolf.jpg",
+    "Wizarding World/Sessions/PreArc/Session_0-Prelude - Antes.md",
+    "Wizarding World/Sessions/PreArc",
+    "Wizarding World/Sessions/Arc 1/Session_2-Common-room-classes.md",
+    "Wizarding World/Sessions/Arc 1/Session_1-Sorting-Before.md",
+    "Wizarding World/Sessions/Arc 1",
+    "00_DND_Templates/Add Points.md",
+    "Wizarding World/Characters/CHG Chars/Aldebaran Black.md",
+    "Wizarding World/Characters/CHG Chars/Esmeralda Rossier.md",
+    "Wizarding World/World/Hogwarts/Hogwarts.md",
+    "Wizarding World/Characters/CHG Chars/Sofia Lestrange.md",
+    "Wizarding World/Game Expectations.md",
+    "Readme.md",
+    "Wizarding World/Characters/CHG Chars/Federic Ollivanders.md",
+    "Wizarding World/World/Wizarding World/MadMan & Murphen One Shot Adventures #1 _ GM Binder.pdf",
     "Wizarding World/World/Maps/London/Diagon Alley/Magical Menagerie by Block_nessie.jpg",
-    "Wizarding World/World/Maps/London/Diagon Alley/Leaky Cauldron by Block_nessie.jpg",
-    "Wizarding World/World/Maps/London/Diagon Alley/Ollivanders (Roof) by Block_nessie.jpg",
-    "Wizarding World/World/Maps/London/Ministry of Magic (Atrium) by Block_nessie.jpg",
+    "Wizarding World/Characters/CHG Chars/Cedric Scamander.md",
+    "Wizarding World/Characters/CHG Chars/Cross Snape.md",
+    "Wizarding World/Characters/NPCs/professors/Profesor Grimlock (Jefe de Ravenclaw).md",
+    "Wizarding World/Characters/CHG Chars/Chato Nott.md",
+    "Wizarding World/World/PlayerSheets/W&W Gryffindor - Fillable.pdf",
+    "Wizarding World/Sessions/Session 0 - Prelude/Session_0-Prelude - Antes.md",
+    "Wizarding World/World/Hogwarts/Letter.md",
+    "Wizarding World/World/Maps/London/Diagon Alley/The Leaky Cauldron by Badwolf.jpg",
+    "Wizarding World/World/Hogwarts/TimeTables",
+    "Wizarding World/World/Hogwarts/Students",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Woodland Manse 41x42 140pps/Woodland Manse v1.0 41x42 @140pps.jpg",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Woodland Manse 41x42 140pps/Woodland Manse v1.0 (upper) 41x42 @140pps.jpg",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/WaterMill.jpg",
+    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Umbrage Hill 66x42 @ 140pps/Umbrage Hill v1.0 (second) 66x42 @140pps.jpg",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/Roadmap.canvas"
   ]
 }
