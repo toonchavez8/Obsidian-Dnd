@@ -85,7 +85,6 @@ Ruby: 1
 > > **Heritage** | `=this.Heritage` |
 > > **Current Location** | `=this.Location` |
 > > ### Currency
-
 | Knut         | Sickles         | Galeons         | Ruby         |
 | -------------- | -------------- | ------------  | ------------ |
 | `=this.Knut` | `=this.Sickles` | `=this.Galeons` | `=this.Ruby` |
@@ -96,7 +95,6 @@ Ruby: 1
 | Success | <input type="checkbox" unchecked> | <input type="checkbox" unchecked> | <input type="checkbox" unchecked> | 
 | ----- | --- | --------------------------------- | --------------------------------- |
 >>
-
 | Fails | <input type="checkbox" unchecked> | <input type="checkbox" unchecked> | <input type="checkbox" unchecked> |
 | ----- | --- | --------------------------------- | --------------------------------- |
 
