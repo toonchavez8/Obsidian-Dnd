@@ -11,12 +11,14 @@
             "id": "3b81ce250c1fdeff",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/RocaColina.jpg"
+                "file": "Wizarding World/World/W&W Misc. Campaign Notes.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "RocaColina"
+              "icon": "lucide-file",
+              "title": "W&W Misc. Campaign Notes"
             }
           }
         ]
@@ -85,7 +87,7 @@
       {
         "id": "ba0d59233e31b44f",
         "type": "tabs",
-        "dimension": 46.163366336633665,
+        "dimension": 19.841269841269842,
         "children": [
           {
             "id": "79215bbccd956432",
@@ -112,12 +114,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Posada Rocacolina.md",
+                "file": "Wizarding World/World/PlayerSheets/Player's Cheat Sheets - Spanish.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Posada Rocacolina"
+              "title": "Outgoing links from Player's Cheat Sheets - Spanish"
             }
           },
           {
@@ -141,13 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/00_lore_and_Players/El Dragon de Pico Helado.pdf",
+                "file": "Wizarding World/World/PlayerSheets/Player's Cheat Sheets - Spanish.pdf",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of El Dragon de Pico Helado"
+              "title": "Outline of Player's Cheat Sheets - Spanish"
             }
           },
           {
@@ -204,8 +206,8 @@
                 },
                 "id": "ID_6918ba399beb"
               },
-              "icon": "lucide-ghost",
-              "title": "CALENDARIUM"
+              "icon": "CALENDARIUM",
+              "title": "Calendarium"
             }
           },
           {
@@ -237,14 +239,66 @@
               "icon": "initiative-tracker",
               "title": "Initiative Tracker"
             }
+          },
+          {
+            "id": "eee9f376ad0a268e",
+            "type": "leaf",
+            "state": {
+              "type": "CALENDARIUM",
+              "state": {
+                "calendar": "ID_7a2baab8b98b",
+                "ephemeral": {
+                  "viewState": 1,
+                  "displaying": {
+                    "day": 27,
+                    "month": 5,
+                    "year": 2024
+                  },
+                  "displayDayNumber": false,
+                  "displaySeasonColors": true,
+                  "interpolateColors": true,
+                  "displayMoons": true,
+                  "displayWeather": true
+                },
+                "id": "ID_4bcb0aa8c93a"
+              },
+              "icon": "CALENDARIUM",
+              "title": "Calendarium"
+            }
+          },
+          {
+            "id": "3c042458c5d69d35",
+            "type": "leaf",
+            "state": {
+              "type": "CALENDARIUM",
+              "state": {
+                "calendar": "ID_7a2baab8b98b",
+                "ephemeral": {
+                  "viewState": 1,
+                  "displaying": {
+                    "day": 27,
+                    "month": 5,
+                    "year": 2024
+                  },
+                  "displayDayNumber": false,
+                  "displaySeasonColors": true,
+                  "interpolateColors": true,
+                  "displayMoons": true,
+                  "displayWeather": true
+                },
+                "id": "ID_ba2808f9a9d8"
+              },
+              "icon": "CALENDARIUM",
+              "title": "Calendarium"
+            }
           }
         ],
-        "currentTab": 8
+        "currentTab": 11
       },
       {
         "id": "9c7543e6c2820b5d",
         "type": "tabs",
-        "dimension": 53.836633663366335,
+        "dimension": 19.841269841269842,
         "children": [
           {
             "id": "b04c31368900315c",
@@ -257,10 +311,27 @@
             }
           }
         ]
+      },
+      {
+        "id": "2674de3c1cc3a989",
+        "type": "tabs",
+        "dimension": 60.317460317460316,
+        "children": [
+          {
+            "id": "d50566ceaeb020c7",
+            "type": "leaf",
+            "state": {
+              "type": "fantasy-statblocks-creature-pane",
+              "state": {},
+              "icon": "skull",
+              "title": "Combatant"
+            }
+          }
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 518.5
+    "width": 650.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -286,33 +357,42 @@
   },
   "active": "3b81ce250c1fdeff",
   "lastOpenFiles": [
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Phandalin.png",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Phandalin.jpg",
+    "Wizarding World/World/Wizarding World/Wizarding Book of Monsters and foes.pdf",
+    "Wizarding World/World/Wizarding World/Wands & Wizards - Headmaster's Guide v0.2.pdf",
+    "Wizarding World/World/Wizarding World/Wands & Wizards - Harry Potter 5e.pdf",
+    "Wizarding World/World/Wizarding World/W&W NPCs 0.3.1 _ GM Binder.pdf",
+    "Wizarding World/World/Wizarding World/Traveling Event System TES.md",
+    "Wizarding World/World/Wizarding World/One-Shot-Wonders.pdf",
+    "Wizarding World/World/Wizarding World/MadMan & Murphen One Shot Adventures #1 _ GM Binder.pdf",
+    "Wizarding World/World/Maps/Miscellaneous/Niffler Burrow by Veertje.png",
+    "Wizarding World/World/Maps/Miscellaneous/Cave (Spider Boss) by Block_nessie.jpg",
+    "Wizarding World/World/Maps/Miscellaneous/Cave (Graveyard) by Block_nessie.jpg",
+    "Wizarding World/World/Maps/Miscellaneous/Azkaban (Cells) by Block_nessie.jpg",
+    "Wizarding World/World/Maps/London/Knight Bus by Block_nessie.jpg",
+    "Wizarding World/World/Maps/London/Diagon Alley/Magical Menagerie by Block_nessie.jpg",
+    "Wizarding World/World/Maps/London/Diagon Alley/Ollivanders (Roof) by Block_nessie.jpg",
+    "Wizarding World/World/Maps/Hogwarts/10 - Hogwarts Express/Hogwarts Express (Tracks) by Block_nessie.jpg",
+    "Wizarding World/World/Maps/Hogwarts/10 - Hogwarts Express/Hogwarts Express (Roof) by Veertje.png",
+    "Wizarding World/World/Maps/Hogwarts/10 - Hogwarts Express/Hogwarts Express (Cars) by Block_nessie.jpg",
+    "Wizarding World/World/PlayerSheets/Player's Cheat Sheets - Spanish.pdf",
+    "Wizarding World/World/PlayerSheets/Player's Cheat Sheets - English.pdf",
+    "Wizarding World/World/Hogwarts/Hogwarts.md",
+    "Wizarding World/World/PlayerSheets/W&W Gryffindor - Fillable.pdf",
+    "Wizarding World/Characters/CHG Chars/Aldebaran Black.md",
+    "Readme.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Costa de la Espada.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Bazar Escudo de Leon.md",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Gnomengarde/Gnomengarde v1.01 66x42 @140pps.jpg",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Dwarven Excavation/Dwarven Excavation v1.11 57x35 @140pps.jpg",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Manor Embrujado de Tresendar.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Casa de Cambio de Phandalin.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Casa Consistorial.md",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/WaterMill.jpg",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3/Misión de la excavación de los enanos.md",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Axeholm/Axeholm v1.01 (upper) 47x42 @140pps.jpg",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Axeholm/Axeholm v1.01 (lower) 47x42 @140pps.jpg",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/00_lore_and_Players/El Dragon de Pico Helado.pdf",
     "Wizarding World/Characters/CHG Chars/Federic Ollivanders.md",
     "Wizarding World/Characters/CHG Chars/Sofia Lestrange.md",
-    "Wizarding World/World/Hogwarts/Hogwarts.md",
-    "Wizarding World/World/Wizarding World/Wizarding Book of Monsters and foes.pdf",
     "Wizarding World/World/W&W Misc. Campaign Notes.md",
     "Wizarding World/Game Expectations.md",
-    "Readme.md",
     "Wizarding World/World/Hogwarts/Letter.md",
     "Wizarding World/World/Hogwarts/Untitled.md",
-    "Wizarding World/World/Maps/Hogwarts/1 - Entrance/Caretaker_s Office by U.B.O.S..jpg",
-    "Wizarding World/World/Maps/Hogwarts/1 - Entrance/Great Hall (Dueling Club) by U.B.O.S..jpg",
-    "Wizarding World/World/Maps/Hogwarts/1 - Entrance/Hufflepuff Common Room by Block_nessie.jpg",
-    "Wizarding World/World/Maps/Hogwarts/1 - Entrance/Hufflepuff Dormitory by Block_nessie.jpg",
     "Wizarding World/World/Potions/W&W Potion Spreadsheet.xlsx",
     "Wizarding World/World/Factions/Dumbledores Army.md",
     "Wizarding World/Sessions/Arc 1/Session_2-Common-room-classes.md",
@@ -323,15 +403,6 @@
     "Wizarding World/World/Hogwarts/House Cup/00_HouseCupDashboard.md.md",
     "Wizarding World/World/Hogwarts/House Cup/Session Logs/01_FirstDayClasses.md.md",
     "Wizarding World/World/Hogwarts/House Cup/Slytherin.md",
-    "Wizarding World/World/Hogwarts/House Cup/Ravenclaw.md",
-    "00_DND_Templates/Add Points.md",
-    "Wizarding World/World/Hogwarts/House Cup/template",
-    "Wizarding World/World/Hogwarts/House Cup/Session Logs",
-    "Wizarding World/World/Hogwarts/House Cup",
-    "Wizarding World/World/Hogwarts/CommonRooms/imgs/Recording 20251017121503.webm",
-    "Wizarding World/World/Hogwarts/CommonRooms/imgs",
-    "Wizarding World/World/Hogwarts/CommonRooms/Unconfirmed 677944.crdownload",
-    "Wizarding World/World/Hogwarts/CommonRooms/Unconfirmed 661510.crdownload",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/Roadmap.canvas"
   ]
 }
