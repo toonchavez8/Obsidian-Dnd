@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Wizarding World/World/W&W Misc. Campaign Notes.md",
+                "file": "Wizarding World/Storyforge-TUI-Docs/Guide/00-how-to-use-this-guide.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "W&W Misc. Campaign Notes"
+              "title": "00-how-to-use-this-guide"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 373.5
+    "width": 318.5
   },
   "right": {
     "id": "1fb55a346c0ef23e",
@@ -171,8 +171,8 @@
                 },
                 "id": "ID_690b4bd90aba"
               },
-              "icon": "CALENDARIUM",
-              "title": "Calendarium"
+              "icon": "lucide-ghost",
+              "title": "CALENDARIUM"
             }
           },
           {
@@ -181,8 +181,8 @@
             "state": {
               "type": "initiative-tracker-view",
               "state": {},
-              "icon": "initiative-tracker",
-              "title": "Initiative Tracker"
+              "icon": "lucide-ghost",
+              "title": "initiative-tracker-view"
             }
           },
           {
@@ -206,8 +206,8 @@
                 },
                 "id": "ID_6918ba399beb"
               },
-              "icon": "CALENDARIUM",
-              "title": "Calendarium"
+              "icon": "lucide-ghost",
+              "title": "CALENDARIUM"
             }
           },
           {
@@ -216,8 +216,8 @@
             "state": {
               "type": "DICE_ROLLER_VIEW",
               "state": {},
-              "icon": "dices",
-              "title": "Dice Tray"
+              "icon": "lucide-ghost",
+              "title": "DICE_ROLLER_VIEW"
             }
           },
           {
@@ -226,8 +226,8 @@
             "state": {
               "type": "DICE_ROLLER_VIEW",
               "state": {},
-              "icon": "dices",
-              "title": "Dice Tray"
+              "icon": "lucide-ghost",
+              "title": "DICE_ROLLER_VIEW"
             }
           },
           {
@@ -236,8 +236,8 @@
             "state": {
               "type": "initiative-tracker-view",
               "state": {},
-              "icon": "initiative-tracker",
-              "title": "Initiative Tracker"
+              "icon": "lucide-ghost",
+              "title": "initiative-tracker-view"
             }
           },
           {
@@ -262,8 +262,8 @@
                 },
                 "id": "ID_4bcb0aa8c93a"
               },
-              "icon": "CALENDARIUM",
-              "title": "Calendarium"
+              "icon": "lucide-ghost",
+              "title": "CALENDARIUM"
             }
           },
           {
@@ -290,6 +290,26 @@
               },
               "icon": "CALENDARIUM",
               "title": "Calendarium"
+            }
+          },
+          {
+            "id": "090c920d06fbc20e",
+            "type": "leaf",
+            "state": {
+              "type": "DICE_ROLLER_VIEW",
+              "state": {},
+              "icon": "dices",
+              "title": "Dice Tray"
+            }
+          },
+          {
+            "id": "9ffc46dd5981cbde",
+            "type": "leaf",
+            "state": {
+              "type": "initiative-tracker-view",
+              "state": {},
+              "icon": "initiative-tracker",
+              "title": "Initiative Tracker"
             }
           }
         ],
@@ -331,7 +351,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 650.5
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -342,6 +363,8 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
+      "audio-recorder:Start/stop recording": false,
+      "calendarium:Open Calendarium": false,
       "excel:Create Excel File": false,
       "fantasy-content-generator:Fantasy Generators": false,
       "obsidian-5e-statblocks:Open Creature pane": false,
@@ -350,18 +373,43 @@
       "obsidian-leaflet-plugin:Open Leaflet Map": false,
       "obisidian-note-linker:Note Linker": false,
       "univer:Univer": false,
-      "templater-obsidian:Templater": false,
-      "audio-recorder:Start/stop recording": false,
-      "calendarium:Open Calendarium": false
+      "templater-obsidian:Templater": false
     }
   },
   "active": "3b81ce250c1fdeff",
   "lastOpenFiles": [
-    "Wizarding World/World/Wizarding World/Wizarding Book of Monsters and foes.pdf",
-    "Wizarding World/World/Wizarding World/Wands & Wizards - Headmaster's Guide v0.2.pdf",
+    "Wizarding World/Storyforge-TUI-Docs/Guide/11-first-playable-mvp.md",
+    "Wizarding World/Storyforge-TUI-Docs/Guide/10-tactical-combat-mvp.md",
+    "Wizarding World/Storyforge-TUI-Docs/Guide/09-scenes-dialogue-and-skill-checks.md",
+    "Wizarding World/Storyforge-TUI-Docs/Guide/08-save-load-and-migrations.md",
+    "Wizarding World/Storyforge-TUI-Docs/Guide/07-character-creation.md",
+    "Wizarding World/Storyforge-TUI-Docs/Guide/06-content-pack-format.md",
+    "Wizarding World/Storyforge-TUI-Docs/Guide/05-engine-command-event-model.md",
+    "Wizarding World/Storyforge-TUI-Docs/Guide/04-responsive-dashboard.md",
+    "Wizarding World/Storyforge-TUI-Docs/Guide/03-first-terminal-application.md",
+    "Wizarding World/Storyforge-TUI-Docs/Guide/02-create-the-workspace.md",
+    "Wizarding World/Storyforge-TUI-Docs/Guide/01-development-environment.md",
+    "Wizarding World/Storyforge-TUI-Docs/Guide/00-how-to-use-this-guide.md",
+    "Wizarding World/Storyforge-TUI-Docs/DND-rpg-ww-tui-game-sheet.md",
+    "Wizarding World/Storyforge-TUI-Docs/README.md",
     "Wizarding World/World/Wizarding World/Wands & Wizards - Harry Potter 5e.pdf",
+    "Wizarding World/World/Wizarding World/Wands & Wizards - Headmaster's Guide v0.2.pdf",
+    "Wizarding World/Storyforge-TUI-Docs/Guide/22-growing-after-v1.md",
+    "Wizarding World/Storyforge-TUI-Docs/Guide/21-release-with-npm-and-npx.md",
+    "Wizarding World/Storyforge-TUI-Docs/Guide/20-testing-observability-and-performance.md",
+    "Wizarding World/Storyforge-TUI-Docs/Guide/19-private-content-and-modding.md",
+    "Wizarding World/Storyforge-TUI-Docs/Guide/18-ascii-art-animation-and-accessibility.md",
+    "Wizarding World/Storyforge-TUI-Docs/Guide/17-three-arc-campaign-foundation.md",
+    "Wizarding World/Storyforge-TUI-Docs/Guide/16-deeper-combat-and-enemy-ai.md",
+    "Wizarding World/Storyforge-TUI-Docs/Guide/15-npcs-factions-and-companions.md",
+    "Wizarding World/Storyforge-TUI-Docs/Guide/14-quests-puzzles-and-school-life.md",
+    "Wizarding World/Storyforge-TUI-Docs/Guide/13-magic-inventory-economy.md",
+    "Wizarding World/Storyforge-TUI-Docs/Guide/12-world-exploration-and-time.md",
+    "Wizarding World/World/W&W Misc. Campaign Notes.md",
+    "Wizarding World/Storyforge-TUI-Docs/Guide",
+    "Wizarding World/Storyforge-TUI-Docs",
+    "Wizarding World/World/Wizarding World/Wizarding Book of Monsters and foes.pdf",
     "Wizarding World/World/Wizarding World/W&W NPCs 0.3.1 _ GM Binder.pdf",
-    "Wizarding World/World/Wizarding World/Traveling Event System TES.md",
     "Wizarding World/World/Wizarding World/One-Shot-Wonders.pdf",
     "Wizarding World/World/Wizarding World/MadMan & Murphen One Shot Adventures #1 _ GM Binder.pdf",
     "Wizarding World/World/Maps/Miscellaneous/Niffler Burrow by Veertje.png",
@@ -376,33 +424,6 @@
     "Wizarding World/World/Maps/Hogwarts/10 - Hogwarts Express/Hogwarts Express (Cars) by Block_nessie.jpg",
     "Wizarding World/World/PlayerSheets/Player's Cheat Sheets - Spanish.pdf",
     "Wizarding World/World/PlayerSheets/Player's Cheat Sheets - English.pdf",
-    "Wizarding World/World/Hogwarts/Hogwarts.md",
-    "Wizarding World/World/PlayerSheets/W&W Gryffindor - Fillable.pdf",
-    "Wizarding World/Characters/CHG Chars/Aldebaran Black.md",
-    "Readme.md",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Costa de la Espada.md",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Bazar Escudo de Leon.md",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Manor Embrujado de Tresendar.md",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Casa de Cambio de Phandalin.md",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/02_Towns/Phandalin/Casa Consistorial.md",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/03_Missiones/Nivel 1-3/Misión de la excavación de los enanos.md",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/00_lore_and_Players/El Dragon de Pico Helado.pdf",
-    "Wizarding World/Characters/CHG Chars/Federic Ollivanders.md",
-    "Wizarding World/Characters/CHG Chars/Sofia Lestrange.md",
-    "Wizarding World/World/W&W Misc. Campaign Notes.md",
-    "Wizarding World/Game Expectations.md",
-    "Wizarding World/World/Hogwarts/Letter.md",
-    "Wizarding World/World/Hogwarts/Untitled.md",
-    "Wizarding World/World/Potions/W&W Potion Spreadsheet.xlsx",
-    "Wizarding World/World/Factions/Dumbledores Army.md",
-    "Wizarding World/Sessions/Arc 1/Session_2-Common-room-classes.md",
-    "Wizarding World/Characters/NPCs/professors/Profesor Grimlock (Jefe de Ravenclaw).md",
-    "Wizarding World/Characters/CHG Chars/Cross Snape.md",
-    "Wizarding World/Characters/CHG Chars/Cedric Scamander.md",
-    "Wizarding World/World/Hogwarts/House Cup/Gryffindor.md",
-    "Wizarding World/World/Hogwarts/House Cup/00_HouseCupDashboard.md.md",
-    "Wizarding World/World/Hogwarts/House Cup/Session Logs/01_FirstDayClasses.md.md",
-    "Wizarding World/World/Hogwarts/House Cup/Slytherin.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/Roadmap.canvas"
   ]
 }
