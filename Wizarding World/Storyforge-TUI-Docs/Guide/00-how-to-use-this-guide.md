@@ -56,6 +56,9 @@ If you prefer committing directly to `main` in a private learning repository, th
 | 16-20 | M4: campaign-scale engine beta |
 | 21 | M5: native npm release |
 | 22 | Post-v1 growth rules |
+| 23 | Documentation review loop |
+| 24-27 | Version 1.2: living school and world |
+| 28 | Version 1.3: deeper tactics |
 
 Tag milestones:
 
@@ -113,15 +116,47 @@ Production paths follow these rules:
 - Comments explain why a surprising choice exists.
 - Work that is not implemented belongs in an issue, not an untracked comment.
 
+## What a complete implementation step contains
+
+This guide must not ask you to “add these methods” and leave you to invent the important parts. Every implementation unit should contain:
+
+1. The exact destination file.
+2. The reason the type or function exists.
+3. Complete code for the new unit, or a clear `Design only` label when code belongs to a later chapter.
+4. A behavior table for commands and events.
+5. The place where the new unit connects to existing code.
+6. Focused automated tests.
+7. The command to run.
+8. The output or behavior you should expect.
+9. A checkpoint that says when to continue.
+
+A command list is not an implementation. For every command, the guide must identify its payload, validation, emitted events, state changes, recoverable errors, and at least one test. Chapter 23 explains how to repeat this review as the project grows.
+
+Use this smaller loop inside every chapter:
+
+```text
+read one subsection
+        |
+create one file or focused edit
+        |
+run its narrow test
+        |
+open the feature in the TUI
+        |
+commit only after both checks pass
+```
+
 ## Content policy
 
 Build and release only original `academy-demo` content. Keep the private campaign in:
 
 ```text
-campaigns-private/wizarding-world-private/
+../wizarding-world-private/
 ```
 
-Add that directory to `.gitignore` before creating it. Never test release archives by assumption; inspect them.
+The private campaign is a sibling Git repository, not a directory that ever lived inside the public repository. An ignored `.storyforge.local.toml` file points the development build to that sibling path. Chapter 19 creates both repositories and the release audit.
+
+Do not rely on deleting files or rewriting Git history before publishing. Once a commit has been pushed, cloned, cached, or packed into a release, history rewriting is not a dependable privacy boundary. Never test release archives by assumption; build them from a clean public checkout and inspect them.
 
 ## When a chapter feels too large
 

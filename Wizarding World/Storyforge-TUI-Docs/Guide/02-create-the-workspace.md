@@ -17,7 +17,6 @@ storyforge-tui/
 │   ├── storyforge-content/
 │   ├── storyforge-core/
 │   └── storyforge-tui/
-└── campaigns-private/
 ```
 
 `storyforge-core` has no terminal or filesystem dependency. `storyforge-content` loads and validates campaigns. `storyforge-tui` is the executable.
@@ -31,7 +30,7 @@ cargo new storyforge-tui --vcs git
 Set-Location storyforge-tui
 Remove-Item -LiteralPath src -Recurse
 Remove-Item -LiteralPath Cargo.toml
-New-Item -ItemType Directory -Path crates,campaigns,campaigns-private | Out-Null
+New-Item -ItemType Directory -Path crates,campaigns | Out-Null
 cargo new crates/storyforge-core --lib
 cargo new crates/storyforge-content --lib
 cargo new crates/storyforge-tui --bin
@@ -41,7 +40,7 @@ The removal targets are the new repository's generated `src` and `Cargo.toml`, n
 
 ## Root `Cargo.toml`
 
-Create:
+Create the workspace-root `Cargo.toml`:
 
 ```toml
 [workspace]
@@ -155,6 +154,8 @@ Create `.gitignore`:
 
 ```gitignore
 /target/
+.storyforge.local.toml
+/wizarding-world-private/
 /campaigns-private/
 *.log
 *.tmp
@@ -170,7 +171,7 @@ Create the public campaign directory:
 New-Item -ItemType Directory -Path campaigns/academy-demo | Out-Null
 ```
 
-Do not put a keep file inside `campaigns-private`; the ignored folder can remain local.
+The last two ignored directory names are defenses against an accidental copy. Do not create either directory. Chapter 19 creates `wizarding-world-private` as a separate sibling Git repository.
 
 ## Crate documentation
 
@@ -228,7 +229,7 @@ Create a short code-repository `README.md` containing:
 - Current milestone.
 - `cargo run -p storyforge-tui`.
 - The three-crate boundary.
-- Public `academy-demo` and ignored private-pack policy.
+- Public `academy-demo` and sibling private-pack policy.
 - The Reconstruction, Fracture, and Convergence arc roadmap.
 - License status.
 
@@ -251,14 +252,14 @@ Expected program output:
 Storyforge content schema 1
 ```
 
-`git status` must not show `campaigns-private`.
+`git status` must contain only the public workspace files created in this chapter.
 
 ## Common mistakes
 
 - A member crate forgot `[lints] workspace = true`.
 - The executable used an underscore crate name in `cargo run`; package names use hyphens.
 - The root still has the generated single-crate `src`.
-- The private campaign directory was committed before `.gitignore`.
+- A private campaign was copied into the public workspace.
 
 ## Acceptance check
 
@@ -266,7 +267,8 @@ Storyforge content schema 1
 - Workspace tests pass.
 - Clippy reports no warnings.
 - The binary prints engine and schema names.
-- `campaigns-private` is ignored.
+- `.storyforge.local.toml` and common accidental private-directory names are ignored.
+- No private campaign directory exists inside the public repository.
 
 ## Suggested commit
 

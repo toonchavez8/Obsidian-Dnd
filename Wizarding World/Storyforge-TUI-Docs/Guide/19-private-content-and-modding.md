@@ -1,4 +1,4 @@
-# Stage 19: Private Campaigns and Community Mods
+# 19: Isolate private campaigns and support community mods
 
 ## Result
 
@@ -27,6 +27,72 @@ wizarding-world-private/
 The public repository contains the engine, development tools, schemas, documentation, and an original academy demo. The private repository contains adapted session notes, player characters, campaign-specific factions, and any material whose license does not allow redistribution.
 
 Do not copy private content into public test fixtures. Write small original fixtures that exercise the same engine behavior.
+
+## Do not use Git history rewriting as the normal release process
+
+Do not commit the private story to the public repository and plan to scrub it later. Deleting the working-tree files does not remove earlier commits. A history rewrite can remove known paths from one repository, but it cannot recall:
+
+- A commit that another person cloned.
+- A GitHub cache, pull-request ref, artifact, or fork.
+- An npm tarball or native archive that was already published.
+- A secret copied into an issue, log, or build service.
+- An overlooked file stored under an unexpected name.
+
+Tools such as `git filter-repo` are useful for incident cleanup, not as a privacy boundary. If private material ever reaches a public remote, remove accessible artifacts, rewrite the affected repository, rotate any exposed credentials, and assume that someone could have retained the content.
+
+The safe rule is simpler: private story files and their Git objects never enter the public repository.
+
+## Initialize the two repositories
+
+From the directory that will contain both projects:
+
+```powershell
+New-Item -ItemType Directory -Path storyforge-tui
+New-Item -ItemType Directory -Path wizarding-world-private
+```
+
+Initialize the public engine repository:
+
+```powershell
+Set-Location storyforge-tui
+git init
+git switch -c main
+```
+
+Initialize the private campaign separately:
+
+```powershell
+Set-Location ..\wizarding-world-private
+git init
+git switch -c main
+```
+
+Create the private remote through the Git hosting provider's private-repository flow. Before the first push, verify its visibility in the provider UI and invite only the people who should read the campaign.
+
+```powershell
+$privateRemote = Read-Host 'Paste the private repository URL'
+git remote add origin $privateRemote
+git remote -v
+git push -u origin main
+```
+
+Use the exact URL created by the provider. Do not paste a token into the URL or commit it to a shell script.
+
+Keep ordinary story history in the private repository:
+
+```powershell
+git add content source-notes provenance campaign.toml
+git commit -m "Add the Lantern Row creation session"
+git push
+```
+
+That history is useful. It shows when an NPC, clue, faction, or ending changed without increasing public-release risk.
+
+## Why the private pack is not a submodule by default
+
+A private Git submodule can work for a closed team, but it still commits `.gitmodules`, the private repository URL, and an exact private commit ID to the public repository. CI may also try to fetch it. That metadata is unnecessary for this project.
+
+Use sibling repositories and an ignored local path. If a future team deliberately chooses a submodule, use a neutral repository name, audit `.gitmodules`, and configure public CI never to fetch private submodules.
 
 ## Add a private pack during development
 
@@ -60,6 +126,22 @@ Add it to the public repository's `.gitignore`:
 private-campaigns/
 *.private.ron
 ```
+
+Add one more defense for common local folder names:
+
+```gitignore
+wizarding-world-private/
+campaigns-private/
+```
+
+Run this before the first public commit:
+
+```powershell
+git check-ignore -v .storyforge.local.toml
+git status --short
+```
+
+Expected result: the local configuration is reported by `git check-ignore` and no private path appears in `git status`.
 
 The application should never silently search a home directory for campaign packs. Explicit paths make builds and bug reports reproducible.
 
@@ -224,6 +306,31 @@ Create `provenance/SOURCES.md` in the private pack:
 
 This is not busywork. It gives you a practical answer when you later ask whether a file can be included in a public release.
 
+## Link saves to a private pack without copying it
+
+The save file stores identity, not source content:
+
+```rust
+#[derive(Debug, Clone, serde::Serialize, serde::Deserialize)]
+pub struct PackFingerprint {
+    pub pack_id: String,
+    pub pack_version: String,
+    pub schema_version: u32,
+    pub content_sha256: String,
+}
+```
+
+On load:
+
+1. Resolve the pack path from the command line or ignored local config.
+2. Load and hash the pack.
+3. Compare the four saved fingerprint fields.
+4. Load normally when all fields match.
+5. Offer a migration when the pack supplies one.
+6. Show a recovery screen when the pack is missing or incompatible.
+
+Never embed source notes, PDF text, unrevealed scenes, or the full content pack in a public save fixture.
+
 ## Validate paths before reading files
 
 Content packs are untrusted input, including your own pack after a bad merge.
@@ -277,6 +384,199 @@ storyforge validate --pack ..\my-campaign --with-mods
 Store the enabled list in the save slot. A save must remember the exact pack and mod versions used to create it.
 
 When a required mod is missing, show a recovery screen with the missing IDs. Do not load the save into a partially compatible world.
+
+## Build the public-release audit
+
+Create a small workspace binary whose only input is the staged public release directory:
+
+```text
+tools/release-audit/
+├── Cargo.toml
+└── src/
+    └── main.rs
+```
+
+Add `"tools/release-audit"` to the root workspace members. Create `tools/release-audit/Cargo.toml`:
+
+```toml
+[package]
+name = "release-audit"
+version.workspace = true
+edition.workspace = true
+publish = false
+
+[dependencies]
+clap = { version = "4.5", features = ["derive"] }
+walkdir = "2.5"
+```
+
+Create `tools/release-audit/src/main.rs`:
+
+```rust
+use std::{
+    error::Error,
+    fs,
+    path::{Component, Path, PathBuf},
+};
+
+use clap::Parser;
+use walkdir::WalkDir;
+
+const FORBIDDEN_FRAGMENTS: &[&str] = &[
+    "wizarding-world-private",
+    ".storyforge.local.toml",
+    "source-notes",
+    ".obsidian",
+    "campaigns-private",
+];
+
+const FORBIDDEN_EXTENSIONS: &[&str] = &["pdf", "xlsx", "xls", "docx"];
+
+#[derive(Debug, Parser)]
+struct Arguments {
+    /// Root of the already-staged public release.
+    #[arg(long)]
+    root: PathBuf,
+}
+
+fn main() -> Result<(), Box<dyn Error>> {
+    let arguments = Arguments::parse();
+    let failures = audit_release(&arguments.root)?;
+
+    if failures.is_empty() {
+        println!("release audit passed: {}", arguments.root.display());
+        return Ok(());
+    }
+
+    for failure in &failures {
+        eprintln!("release audit failed: {failure}");
+    }
+    Err(format!("{} release audit failure(s)", failures.len()).into())
+}
+
+fn audit_release(root: &Path) -> Result<Vec<String>, Box<dyn Error>> {
+    let canonical_root = root.canonicalize()?;
+    if !canonical_root.is_dir() {
+        return Err(format!("release root is not a directory: {}", root.display()).into());
+    }
+
+    let mut failures = Vec::new();
+    let mut saw_demo = false;
+    let mut saw_license = false;
+
+    for entry in WalkDir::new(&canonical_root).follow_links(false) {
+        let entry = entry?;
+        let path = entry.path();
+        let relative = path.strip_prefix(&canonical_root)?;
+        let normalized = relative.to_string_lossy().replace('\\', "/");
+        let lowercase = normalized.to_ascii_lowercase();
+
+        if relative
+            .components()
+            .any(|component| matches!(component, Component::ParentDir | Component::RootDir))
+        {
+            failures.push(format!("unsafe archive path: {normalized}"));
+        }
+
+        for fragment in FORBIDDEN_FRAGMENTS {
+            if lowercase.contains(fragment) {
+                failures.push(format!("forbidden path fragment `{fragment}`: {normalized}"));
+            }
+        }
+
+        if path
+            .extension()
+            .and_then(|extension| extension.to_str())
+            .is_some_and(|extension| {
+                FORBIDDEN_EXTENSIONS.contains(&extension.to_ascii_lowercase().as_str())
+            })
+        {
+            failures.push(format!("forbidden source-document type: {normalized}"));
+        }
+
+        if lowercase.contains("campaigns/academy-demo/") {
+            saw_demo = true;
+        }
+        if matches!(
+            path.file_name().and_then(|name| name.to_str()),
+            Some("LICENSE-MIT" | "LICENSE-APACHE")
+        ) {
+            saw_license = true;
+        }
+
+        if entry.file_type().is_symlink() {
+            match path.canonicalize() {
+                Ok(target) if !target.starts_with(&canonical_root) => {
+                    failures.push(format!(
+                        "symbolic link exits release root: {normalized} -> {}",
+                        target.display()
+                    ));
+                }
+                Err(error) => {
+                    failures.push(format!("unreadable symbolic link `{normalized}`: {error}"));
+                }
+                Ok(_) => {}
+            }
+        }
+
+        if entry.file_type().is_file() && entry.metadata()?.len() <= 2_000_000 {
+            let bytes = fs::read(path)?;
+            if let Ok(text) = std::str::from_utf8(&bytes) {
+                let lowercase_text = text.to_ascii_lowercase();
+                for fragment in FORBIDDEN_FRAGMENTS {
+                    if lowercase_text.contains(fragment) {
+                        failures.push(format!(
+                            "forbidden content marker `{fragment}` inside {normalized}"
+                        ));
+                    }
+                }
+            }
+        }
+    }
+
+    if !saw_demo {
+        failures.push("public academy-demo content is missing".to_owned());
+    }
+    if !saw_license {
+        failures.push("LICENSE-MIT or LICENSE-APACHE is missing".to_owned());
+    }
+
+    failures.sort();
+    failures.dedup();
+    Ok(failures)
+}
+
+#[cfg(test)]
+mod tests {
+    use super::FORBIDDEN_FRAGMENTS;
+
+    #[test]
+    fn private_pack_id_is_part_of_the_guard() {
+        assert!(FORBIDDEN_FRAGMENTS.contains(&"wizarding-world-private"));
+    }
+}
+```
+
+The release job first copies an allowlisted set of public artifacts into `dist/public-staging`. It never copies the repository root:
+
+```text
+dist/public-staging/
+├── bin/
+│   └── storyforge
+├── campaigns/
+│   └── academy-demo/
+├── LICENSE-APACHE
+├── LICENSE-MIT
+└── THIRD_PARTY_LICENSES.md
+```
+
+Run the guard against that exact directory:
+
+```powershell
+cargo run -p release-audit -- --root dist\public-staging
+```
+
+The path scan prevents obvious source files from entering the artifact. The small UTF-8 content scan also catches a private pack ID pasted into a public fixture under an innocent filename. Keep the forbidden markers in the public repository generic; do not add private character names or plot secrets to this list.
 
 ## Test the boundary
 

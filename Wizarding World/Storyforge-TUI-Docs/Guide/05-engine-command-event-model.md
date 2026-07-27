@@ -21,9 +21,11 @@ Create `crates/storyforge-core/src/id.rs`:
 ```rust
 use std::{fmt, str::FromStr};
 
-use serde::{Deserialize, Serialize};
+use serde::{Deserialize, Deserializer, Serialize, de::Error as _};
 
-#[derive(Debug, Clone, PartialEq, Eq, Hash, Serialize, Deserialize)]
+#[derive(
+    Debug, Clone, PartialEq, Eq, PartialOrd, Ord, Hash, Serialize,
+)]
 #[serde(transparent)]
 pub struct ContentId(String);
 
@@ -67,6 +69,16 @@ impl FromStr for ContentId {
 
     fn from_str(value: &str) -> Result<Self, Self::Err> {
         Self::new(value)
+    }
+}
+
+impl<'de> Deserialize<'de> for ContentId {
+    fn deserialize<D>(deserializer: D) -> Result<Self, D::Error>
+    where
+        D: Deserializer<'de>,
+    {
+        let value = String::deserialize(deserializer)?;
+        Self::new(value).map_err(D::Error::custom)
     }
 }
 
@@ -123,7 +135,7 @@ The event log will later become bounded. Keeping the complete vector now makes t
 Create `command.rs`:
 
 ```rust
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, PartialEq, Eq)]
 pub enum GameCommand {
     SelectNextChoice { choice_count: usize },
     SelectPreviousChoice { choice_count: usize },
@@ -131,6 +143,8 @@ pub enum GameCommand {
 ```
 
 A command describes intent. It does not contain keyboard keys or terminal focus.
+Keep this root enum `Clone`, but not `Copy`. Later chapters add owned strings,
+vectors, and boxed subsystem commands that cannot implement `Copy`.
 
 ## Engine
 

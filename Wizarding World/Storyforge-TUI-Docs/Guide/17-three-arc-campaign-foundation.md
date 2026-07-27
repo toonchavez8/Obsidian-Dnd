@@ -4,6 +4,123 @@
 
 The engine will carry state from levels 1 through 20 across Reconstruction, Fracture, and Convergence without hardcoding a plot. Campaign data controls entry gates, world changes, planar packs, and endings.
 
+## Build this chapter in five checkpoints
+
+| Checkpoint | Destination | Proof before continuing |
+| --- | --- | --- |
+| 1 | `storyforge-core/src/campaign_progress.rs` | Initial arc, decision, pressure, and phase tests |
+| 2 | `storyforge-core/src/arc_transition.rs` | Preview, cancel, confirm, and exactly-once tests |
+| 3 | `storyforge-core/src/ending.rs` | Eligibility, priority, tie, and epilogue fallback tests |
+| 4 | `storyforge-content/src/model/` | Arc graph, thresholds, location packs, and endings validate |
+| 5 | `storyforge-content/tests/three_arc_playthrough.rs` | One fixture carries decisions through all three arcs and an ending |
+
+This chapter proves the engine shape with fixtures. It does not require writing the full private story.
+
+## Campaign commands and events
+
+Create `storyforge-core/src/campaign_command.rs`:
+
+```rust
+use crate::ContentId;
+
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub enum CampaignCommand {
+    RecordDecision {
+        decision: ContentId,
+        summary: String,
+        tags: Vec<String>,
+    },
+    ChangePressure {
+        pressure: ContentId,
+        amount: i16,
+        reason: ContentId,
+    },
+    BeginArcTransition {
+        destination: ContentId,
+    },
+    ConfirmArcTransition {
+        destination: ContentId,
+    },
+    CancelArcTransition,
+    EvaluateEndings,
+    ChooseEnding {
+        ending: ContentId,
+    },
+}
+
+#[derive(
+    Debug, Clone, PartialEq, Eq, serde::Serialize, serde::Deserialize,
+)]
+pub enum CampaignEvent {
+    DecisionRecorded {
+        decision: DecisionRecord,
+    },
+    PressureChanged {
+        pressure: ContentId,
+        requested: i16,
+        applied: i16,
+        current: i16,
+        reason: ContentId,
+    },
+    PressureThresholdExited {
+        pressure: ContentId,
+        threshold: String,
+    },
+    PressureThresholdEntered {
+        pressure: ContentId,
+        threshold: String,
+    },
+    ArcTransitionPreviewed {
+        source: ContentId,
+        destination: ContentId,
+        blockers: Vec<String>,
+        companion_conversations: Vec<ContentId>,
+        packs_to_unlock: Vec<ContentId>,
+    },
+    ArcCompleted {
+        arc: ContentId,
+    },
+    ActiveArcChanged {
+        previous: ContentId,
+        current: ContentId,
+    },
+    WorldPhaseChanged {
+        previous: ContentId,
+        current: ContentId,
+    },
+    LocationPackUnlocked {
+        pack: ContentId,
+    },
+    EndingCandidatesFound {
+        endings: Vec<ContentId>,
+    },
+    EndingChosen {
+        ending: ContentId,
+        final_scene: ContentId,
+    },
+    CampaignCommandRejected {
+        reason: String,
+    },
+    ProtectedAutosaveRequested {
+        reason: String,
+    },
+}
+```
+
+Add `Campaign(CampaignCommand),` to the root `GameCommand` and `Campaign(CampaignEvent),` to `GameEvent`.
+
+| Command | Validation | Successful behavior |
+| --- | --- | --- |
+| `RecordDecision` | Definition exists; occurrence policy permits it | Appends a decision with source event and active arc |
+| `ChangePressure` | Meter and reason exist; arithmetic is safe | Clamps requested change and emits exit then enter threshold events |
+| `BeginArcTransition` | Destination is the defined next arc and current scene is safe | Emits preview with every blocker and consequence; changes no state |
+| `ConfirmArcTransition` | Matching preview exists and blockers are empty | Completes old arc, changes phase, unlocks packs, enters new scene, protected autosave |
+| `CancelArcTransition` | Preview exists | Clears preview only |
+| `EvaluateEndings` | Campaign is in an ending-eligible phase | Filters conditions, resolves priority by family, emits stable candidates |
+| `ChooseEnding` | ID is in the latest candidate set | Stores the ending and enters its final scene |
+
+`BeginArcTransition` and `ConfirmArcTransition` are separate commands so the TUI cannot bypass companion warnings, unfinished required quests, pack compatibility, or the protected backup.
+
 ## Arc definitions
 
 ```rust
@@ -48,6 +165,7 @@ pub struct CampaignProgress {
     pub unlocked_location_packs: HashSet<ContentId>,
 }
 
+#[derive(Debug, Clone, PartialEq, Eq, serde::Serialize, serde::Deserialize)]
 pub struct DecisionRecord {
     pub id: ContentId,
     pub source_event: u64,
@@ -262,4 +380,3 @@ Do not wait until Arc II content exists to add `active_arc`, pressures, decision
 git add .
 git commit -m "Add three arc world progression and endings"
 ```
-

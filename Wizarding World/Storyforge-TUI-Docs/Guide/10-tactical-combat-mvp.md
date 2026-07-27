@@ -114,60 +114,257 @@ Record each initiative roll in a combat-start event.
 
 ## Commands
 
-Add:
+Add these runtime and command types to `combat.rs`:
 
-- `StartEncounter`
-- `MoveToward`
-- `MoveAway`
-- `CastSpell`
-- `Defend`
-- `UseItem`
-- `ExamineActor`
-- `AttemptEscape`
-- `EndTurn`
+```rust
+use crate::ContentId;
 
-Every command includes the current encounter ID. Reject commands for a stale encounter instead of applying them to a new fight.
+#[derive(
+    Debug, Clone, Copy, PartialEq, Eq, Hash, serde::Serialize, serde::Deserialize,
+)]
+pub struct EncounterId(pub u64);
+
+#[derive(
+    Debug, Clone, Copy, PartialEq, Eq, serde::Serialize, serde::Deserialize,
+)]
+pub enum MoveDirection {
+    Toward,
+    Away,
+}
+
+#[derive(
+    Debug, Clone, PartialEq, Eq, serde::Serialize, serde::Deserialize,
+)]
+pub enum TargetSelection {
+    SelfOnly,
+    Actor(ActorId),
+    Actors(Vec<ActorId>),
+}
+
+#[derive(
+    Debug, Clone, PartialEq, Eq, serde::Serialize, serde::Deserialize,
+)]
+pub enum CombatCommand {
+    StartEncounter {
+        definition: ContentId,
+    },
+    Move {
+        encounter: EncounterId,
+        actor: ActorId,
+        direction: MoveDirection,
+    },
+    CastSpell {
+        encounter: EncounterId,
+        actor: ActorId,
+        spell: SpellCommand,
+    },
+    Defend {
+        encounter: EncounterId,
+        actor: ActorId,
+    },
+    UseItem {
+        encounter: EncounterId,
+        actor: ActorId,
+        item: ContentId,
+        target: TargetSelection,
+    },
+    ExamineActor {
+        encounter: EncounterId,
+        observer: ActorId,
+        target: ActorId,
+    },
+    AttemptEscape {
+        encounter: EncounterId,
+        actor: ActorId,
+    },
+    EndTurn {
+        encounter: EncounterId,
+        actor: ActorId,
+    },
+}
+```
+
+`StartEncounter` creates the runtime ID. Every command after it carries that ID. Reject a stale ID instead of applying an old keypress to a new fight.
+
+Command behavior:
+
+| Command | Validate before emitting events | Successful state change |
+| --- | --- | --- |
+| `StartEncounter` | Definition exists and no encounter is active | Creates actors, rolls initiative, starts first turn |
+| `Move` | Encounter and active actor match; movement remains | Moves exactly one band and spends movement |
+| `CastSpell` | Full spell legality checklist below | Spends action or bonus action, slots and points, then resolves effects |
+| `Defend` | Actor owns turn and has an action | Spends action and grants defended state |
+| `UseItem` | Item exists, target is legal, action remains | Spends item and action, resolves item effect |
+| `ExamineActor` | Observer and target exist | Reveals authored facts; costs no action in the default profile |
+| `AttemptEscape` | Escape is allowed and action remains | Rolls the authored check; ends encounter only on success |
+| `EndTurn` | Actor owns the turn | Applies end-turn effects and advances initiative |
+
+Every rejection emits one `CombatCommandRejected`. A rejected command emits no slot, point, action, movement, item, HP, or condition event.
 
 ## Events
 
-Add:
+Add the event payloads to `combat.rs`:
 
-- `EncounterStarted`
-- `InitiativeRolled`
-- `TurnStarted`
-- `ActorMoved`
-- `SpellCast`
-- `SpellSlotSpent`
-- `TemporarySpellSlotCreated`
-- `SpellSlotConverted`
-- `SorceryPointsSpent`
-- `SorceryPointsGained`
-- `MetamagicApplied`
-- `AttackRolled`
-- `SavingThrowRolled`
-- `DamageApplied`
-- `HealingApplied`
-- `ConditionApplied`
-- `ConditionExpired`
-- `ConcentrationStarted`
-- `ConcentrationEnded`
-- `ActorDefended`
-- `TurnEnded`
-- `EncounterEnded`
-- `CombatCommandRejected`
+```rust
+#[derive(
+    Debug, Clone, Copy, PartialEq, Eq, serde::Serialize, serde::Deserialize,
+)]
+pub enum SpellSlotSource {
+    Normal,
+    Temporary,
+}
+
+#[derive(
+    Debug, Clone, PartialEq, Eq, serde::Serialize, serde::Deserialize,
+)]
+pub enum CombatEvent {
+    EncounterStarted {
+        encounter: EncounterId,
+        definition: ContentId,
+        actors: Vec<ActorId>,
+    },
+    InitiativeRolled {
+        encounter: EncounterId,
+        actor: ActorId,
+        die: u8,
+        modifier: i8,
+        total: i16,
+    },
+    TurnStarted {
+        encounter: EncounterId,
+        actor: ActorId,
+        round: u32,
+    },
+    ActorMoved {
+        encounter: EncounterId,
+        actor: ActorId,
+        from: DistanceBand,
+        to: DistanceBand,
+    },
+    SpellCast {
+        encounter: EncounterId,
+        caster: ActorId,
+        spell: ContentId,
+        power: SpellPower,
+        targets: Vec<ActorId>,
+    },
+    SpellSlotSpent {
+        actor: ActorId,
+        level: u8,
+        source: SpellSlotSource,
+    },
+    TemporarySpellSlotCreated {
+        actor: ActorId,
+        level: u8,
+        point_cost: u8,
+    },
+    SpellSlotConverted {
+        actor: ActorId,
+        level: u8,
+        points_gained: u8,
+        source: SpellSlotSource,
+    },
+    SorceryPointsSpent {
+        actor: ActorId,
+        amount: u8,
+        reason: ContentId,
+    },
+    SorceryPointsGained {
+        actor: ActorId,
+        amount: u8,
+    },
+    MetamagicApplied {
+        actor: ActorId,
+        option: ContentId,
+        point_cost: u8,
+    },
+    AttackRolled {
+        attacker: ActorId,
+        target: ActorId,
+        die: u8,
+        modifier: i16,
+        total: i16,
+        defense: i16,
+        hit: bool,
+    },
+    SavingThrowRolled {
+        actor: ActorId,
+        ability: crate::Ability,
+        die: u8,
+        modifier: i16,
+        total: i16,
+        difficulty: i16,
+        success: bool,
+    },
+    DamageApplied {
+        source: ActorId,
+        target: ActorId,
+        amount: i32,
+        hp_after: i32,
+    },
+    HealingApplied {
+        source: ActorId,
+        target: ActorId,
+        amount: i32,
+        hp_after: i32,
+    },
+    ConditionApplied {
+        target: ActorId,
+        condition: ContentId,
+        source: ActorId,
+    },
+    ConditionExpired {
+        target: ActorId,
+        condition: ContentId,
+    },
+    ConcentrationStarted {
+        actor: ActorId,
+        spell: ContentId,
+    },
+    ConcentrationEnded {
+        actor: ActorId,
+        spell: ContentId,
+        reason: String,
+    },
+    ActorDefended {
+        actor: ActorId,
+        defense_bonus: i16,
+    },
+    TurnEnded {
+        encounter: EncounterId,
+        actor: ActorId,
+    },
+    EncounterEnded {
+        encounter: EncounterId,
+        outcome: CombatOutcome,
+        transition_scene: ContentId,
+    },
+    CombatCommandRejected {
+        encounter: Option<EncounterId>,
+        actor: Option<ActorId>,
+        reason: String,
+    },
+}
+```
 
 The log renderer converts events into sentences. Core events keep structured values, including slot level, slot source, point cost, and metamagic choice.
 
 ## Spell-resource commands
 
-Add:
+Add these resource command types to `storyforge-core/src/combat.rs`:
 
 ```rust
+#[derive(
+    Debug, Clone, Copy, PartialEq, Eq, serde::Serialize, serde::Deserialize,
+)]
 pub enum SpellPower {
     Cantrip,
     Slot { level: u8 },
 }
 
+#[derive(
+    Debug, Clone, PartialEq, Eq, serde::Serialize, serde::Deserialize,
+)]
 pub enum SpellCommand {
     Cast {
         spell: ContentId,
@@ -266,7 +463,7 @@ The default profile allows one leveled spell per turn. After Quickened Spell cas
 
 ## Dice parser
 
-Support:
+The parser must accept these exact forms:
 
 ```text
 d20
@@ -279,20 +476,114 @@ d20
 Parse into:
 
 ```rust
+use std::{num::ParseIntError, str::FromStr};
+
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub struct DiceExpression {
     pub count: u16,
     pub sides: u16,
     pub modifier: i16,
 }
+
+#[derive(Debug, thiserror::Error)]
+pub enum DiceError {
+    #[error("dice expression must look like `2d6+1`")]
+    InvalidFormat,
+    #[error("dice expression contains an invalid number: {0}")]
+    InvalidNumber(#[from] ParseIntError),
+    #[error("dice count must be between 1 and 100")]
+    CountOutOfRange,
+    #[error("die sides must be between 2 and 1000")]
+    SidesOutOfRange,
+    #[error("dice modifier must be between -10000 and 10000")]
+    ModifierOutOfRange,
+}
+
+impl FromStr for DiceExpression {
+    type Err = DiceError;
+
+    fn from_str(input: &str) -> Result<Self, Self::Err> {
+        let input = input.trim();
+        let (count_text, rest) = input.split_once('d').ok_or(DiceError::InvalidFormat)?;
+        if rest.contains('d') {
+            return Err(DiceError::InvalidFormat);
+        }
+
+        let modifier_index = rest
+            .char_indices()
+            .find_map(|(index, character)| matches!(character, '+' | '-').then_some(index));
+        let (sides_text, modifier_text) = match modifier_index {
+            Some(index) => (&rest[..index], Some(&rest[index..])),
+            None => (rest, None),
+        };
+
+        let count = if count_text.is_empty() {
+            1
+        } else {
+            count_text.parse::<u16>()?
+        };
+        let sides = sides_text.parse::<u16>()?;
+        let modifier = modifier_text.map_or(Ok(0), str::parse::<i16>)?;
+
+        if !(1..=100).contains(&count) {
+            return Err(DiceError::CountOutOfRange);
+        }
+        if !(2..=1000).contains(&sides) {
+            return Err(DiceError::SidesOutOfRange);
+        }
+        if !(-10_000..=10_000).contains(&modifier) {
+            return Err(DiceError::ModifierOutOfRange);
+        }
+
+        Ok(Self {
+            count,
+            sides,
+            modifier,
+        })
+    }
+}
 ```
 
-Validation limits:
+The validation limits are:
 
 - Count 1 through 100.
 - Sides 2 through 1000.
 - Modifier -10,000 through 10,000.
 
-Return `DiceError`; never panic on player or content input.
+Never panic on player or content input.
+
+Add focused parser tests:
+
+```rust
+#[test]
+fn parses_supported_dice_forms() {
+    let cases = [
+        ("d20", (1, 20, 0)),
+        ("1d4", (1, 4, 0)),
+        ("2d6", (2, 6, 0)),
+        ("1d8+2", (1, 8, 2)),
+        ("2d6-1", (2, 6, -1)),
+    ];
+
+    for (input, expected) in cases {
+        let parsed = input
+            .parse::<DiceExpression>()
+            .expect("supported expression should parse");
+        assert_eq!(
+            (parsed.count, parsed.sides, parsed.modifier),
+            expected,
+            "{input}"
+        );
+    }
+}
+
+#[test]
+fn rejects_out_of_range_or_malformed_dice() {
+    for input in ["0d6", "101d6", "2d1", "2d1001", "2d6+10001", "2dd6"] {
+        assert!(input.parse::<DiceExpression>().is_err(), "{input}");
+    }
+}
+```
 
 ## Command legality
 

@@ -4,6 +4,152 @@
 
 NPCs remember specific actions, factions react through named reputation ranks, and up to two companions can join exploration and combat with configurable control.
 
+## Build this chapter in five checkpoints
+
+| Checkpoint | Destination | Proof before continuing |
+| --- | --- | --- |
+| 1 | `storyforge-core/src/relationship.rs` | Clamping, rank, and memory cooldown tests |
+| 2 | `storyforge-core/src/faction.rs` | Reputation ledger and leadership tests |
+| 3 | `storyforge-core/src/companion.rs` | Recruit, party capacity, control, and departure tests |
+| 4 | `storyforge-content/src/model/` | Actor, faction, memory, secret, and companion validation |
+| 5 | `storyforge-tui/src/screens/relationships.rs` | Recruit, conversation, faction dashboard, and suggested-action playthrough |
+
+The first checkpoint uses one NPC. Add the second NPC only after the first memory survives save and load.
+
+## Commands and events
+
+Create `storyforge-core/src/social_command.rs`:
+
+```rust
+use crate::{ContentId, RelationshipAxis};
+
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub enum SocialCommand {
+    ChangeRelationship {
+        actor: ContentId,
+        axis: RelationshipAxis,
+        amount: i8,
+        reason: ContentId,
+    },
+    AddMemory {
+        actor: ContentId,
+        memory: ContentId,
+        source_event: u64,
+    },
+    MarkMemoryDiscussed {
+        actor: ContentId,
+        memory: ContentId,
+        source_event: u64,
+    },
+    ChangeFactionReputation {
+        faction: ContentId,
+        amount: i16,
+        reason: ContentId,
+    },
+    RecruitCompanion {
+        actor: ContentId,
+    },
+    MoveCompanionToReserve {
+        actor: ContentId,
+    },
+    SetCompanionControl {
+        actor: ContentId,
+        control: CompanionControl,
+    },
+    SetCompanionTactic {
+        actor: ContentId,
+        tactic: CompanionTactic,
+    },
+    ConfirmSuggestedAction {
+        actor: ContentId,
+        action: Box<crate::CombatCommand>,
+    },
+    EvaluateCompanionDeparture {
+        actor: ContentId,
+    },
+}
+
+#[derive(
+    Debug, Clone, PartialEq, Eq, serde::Serialize, serde::Deserialize,
+)]
+pub enum SocialEvent {
+    RelationshipChanged {
+        actor: ContentId,
+        axis: RelationshipAxis,
+        requested: i8,
+        applied: i8,
+        current: i8,
+        reason: ContentId,
+    },
+    MemoryAdded {
+        actor: ContentId,
+        memory: Memory,
+    },
+    MemoryMarkedDiscussed {
+        actor: ContentId,
+        memory: ContentId,
+        source_event: u64,
+    },
+    FactionReputationChanged {
+        faction: ContentId,
+        requested: i16,
+        applied: i16,
+        current: i16,
+        reason: ContentId,
+    },
+    FactionRankChanged {
+        faction: ContentId,
+        previous: String,
+        current: String,
+    },
+    CompanionRecruited {
+        actor: ContentId,
+    },
+    CompanionMovedToReserve {
+        actor: ContentId,
+    },
+    CompanionControlChanged {
+        actor: ContentId,
+        control: CompanionControl,
+    },
+    CompanionTacticChanged {
+        actor: ContentId,
+        tactic: CompanionTactic,
+    },
+    SuggestedActionAccepted {
+        actor: ContentId,
+        action: Box<crate::CombatCommand>,
+    },
+    CompanionDeparted {
+        actor: ContentId,
+        scene: ContentId,
+    },
+    SocialCommandRejected {
+        reason: String,
+    },
+    AutosaveRequested {
+        reason: String,
+    },
+}
+```
+
+Add `Social(SocialCommand),` to `GameCommand` and `Social(SocialEvent),` to `GameEvent`.
+
+| Command | Validation | Successful behavior |
+| --- | --- | --- |
+| `ChangeRelationship` | Actor and axis exist; reason is authored | Clamp to axis range and record requested and applied amount |
+| `AddMemory` | Definition exists; repeat policy and cooldown permit it | Append a memory occurrence with source event |
+| `MarkMemoryDiscussed` | Exact occurrence exists and is not discussed | Marks it discussed and preserves the occurrence |
+| `ChangeFactionReputation` | Faction and reason exist | Append ledger entry, derive total, emit rank change if threshold crossed |
+| `RecruitCompanion` | Recruit conditions, availability, capacity, and compatibility pass | Add active companion and request autosave |
+| `MoveCompanionToReserve` | Companion is recruited and departure is not forced | Remove from active party, keep hub state |
+| `SetCompanionControl` | Mode is allowed in current combat phase | Store mode; no combat resource cost outside combat |
+| `SetCompanionTactic` | Companion supports required abilities | Store tactic used by the AI scorer |
+| `ConfirmSuggestedAction` | Proposal is unchanged and still legal | Dispatch the boxed combat command through chapter 10's handler |
+| `EvaluateCompanionDeparture` | Actor is recruited and departure has not resolved | Emit no change, a warning scene, or one departure event |
+
+Never change loyalty, reputation, or memory from the TUI. It dispatches a command and renders the resulting structured event.
+
 ## Actor definitions
 
 An actor contains:
@@ -35,6 +181,17 @@ pub struct ActorState {
 ## Memories
 
 ```rust
+#[derive(Debug, Clone, Copy, PartialEq, Eq, serde::Serialize, serde::Deserialize)]
+pub enum MemoryEmotion {
+    Gratitude,
+    Admiration,
+    Concern,
+    Hurt,
+    Anger,
+    Fear,
+}
+
+#[derive(Debug, Clone, PartialEq, Eq, serde::Serialize, serde::Deserialize)]
 pub struct Memory {
     pub id: ContentId,
     pub source_event: u64,
@@ -114,12 +271,14 @@ pub struct CompanionState {
     pub spellcasting: SpellcastingState,
 }
 
+#[derive(Debug, Clone, Copy, PartialEq, Eq, serde::Serialize, serde::Deserialize)]
 pub enum CompanionControl {
     Direct,
     Suggested,
     Autonomous,
 }
 
+#[derive(Debug, Clone, Copy, PartialEq, Eq, serde::Serialize, serde::Deserialize)]
 pub enum CompanionTactic {
     ProtectPlayer,
     FocusTarget,

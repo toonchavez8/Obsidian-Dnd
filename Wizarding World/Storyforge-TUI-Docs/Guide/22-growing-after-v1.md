@@ -1,4 +1,4 @@
-# Stage 22: Growing the Engine After Version 1
+# 22: Grow the engine after version 1
 
 ## Result
 
@@ -179,6 +179,13 @@ Add simulation in layers:
 
 Each layer should consume and emit explicit events. Keep simulation work bounded when time advances; do not replay every missed minute individually after a long rest.
 
+The implementation is split across:
+
+- [Chapter 24](24-living-world-schedules-and-restocking.md): NPC schedules, school calendar, time-aware dialogue, shops, and resource restocking.
+- [Chapter 25](25-relationships-gifts-and-rumors.md): gifts, quest favors, attitudes, remembered comments, milestones, and rumor propagation.
+- [Chapter 26](26-faction-control-and-regional-consequences.md): faction reactions, regional control, benefits, penalties, income, missions, mounts, danger, and route access.
+- [Chapter 27](27-companion-goals-and-downtime.md): companion goals, autonomous plans, scheduled downtime, recall, and arc continuity.
+
 Use summaries for distant regions:
 
 ```text
@@ -220,6 +227,8 @@ Combat log wording
 
 If a rule cannot be explained in the examine panel and combat log, it is not ready for players.
 
+[Chapter 28](28-version-1-3-deeper-tactics.md) implements these systems in release order and adds deterministic combat simulation reports.
+
 ## Support New Game Plus carefully
 
 Define exactly what carries forward:
@@ -250,6 +259,11 @@ Mark experimental fields and commands. Publish schema changes with migration not
 
 ## Use a staged roadmap
 
+The root [product roadmap](../ROADMAP.md) consolidates the full M0 through
+version 1.4 build order and groups fifty later story-first systems into
+dependency waves. This chapter supplies the rules for deciding when one of
+those candidates deserves engine work.
+
 ### Version 1.1: Author comfort
 
 - Better validation diagnostics.
@@ -260,19 +274,22 @@ Mark experimental fields and commands. Publish schema changes with migration not
 
 ### Version 1.2: Living school
 
-- Schedules.
-- School calendar.
-- Club and class activities.
-- Rumors.
-- Companion downtime.
+- Scheduled NPC locations and a school calendar from chapter 24.
+- Club, class, curfew, and time-aware dialogue from chapter 24.
+- Relationship reactions, remembered gifts, favors, and rumors from chapter 25.
+- Faction-controlled regional services and consequences from chapter 26.
+- Companion goals and downtime from chapter 27.
 
 ### Version 1.3: Deeper tactics
 
-- Reactions.
-- Terrain.
-- Expanded AI goals.
-- Nonlethal encounter objectives.
-- Combat simulation reports.
+- Bounded reactions and counterspells.
+- Named terrain zones, cover, line of sight, and hazards.
+- Summons, companion commands, stealth openings, and boss phases.
+- Expanded AI goals with a strict knowledge boundary.
+- Nonlethal objectives, morale, and surrender.
+- Deterministic combat simulation reports.
+
+Chapter 28 contains the complete version 1.3 implementation sequence.
 
 ### Version 1.4: Creator ecosystem
 
@@ -290,6 +307,19 @@ Mark experimental fields and commands. Publish schema changes with migration not
 - Breaking schema cleanup with automated migration.
 
 A version number is not a deadline. Promote a candidate only when its player value and compatibility cost are understood.
+
+### Versions 1.5-1.9: story-life candidates
+
+The detailed candidates live in the [product roadmap](../ROADMAP.md):
+
+- Investigation, trained familiars, and delayed correspondence.
+- Secrecy, dark-magic consequences, mercy, food, and hospitality.
+- Ingredient sourcing, crafting depth, item provenance, currencies, feats, and a long-form transformation path.
+- Cursor-driven ASCII combat maps, terrain interaction, magical travel networks, flight, school sport, and reusable minigames.
+- Newspapers, propaganda, commitment planning, heists, councils, safehouses, teaching, rituals, and return-to-game briefings.
+
+These labels may be split. Finish a small playable proof and its save migration
+before starting the next candidate.
 
 ## Protect the three-arc campaign
 

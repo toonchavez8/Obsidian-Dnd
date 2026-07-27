@@ -4,11 +4,159 @@
 
 The player can learn and prepare spells, equip items, buy and sell through integer currency, collect loot, and brew one potion recipe.
 
+## Build this chapter in six checkpoints
+
+Do not put every system in one `magic.rs` file:
+
+| Checkpoint | File | Narrow proof |
+| --- | --- | --- |
+| 1 | `storyforge-core/src/inventory.rs` | Add, remove, equip, and capacity tests |
+| 2 | `storyforge-core/src/economy.rs` | Integer price and stale-quote tests |
+| 3 | `storyforge-core/src/magic.rs` | Learn, prepare, slot progression, and upcast tests |
+| 4 | `storyforge-core/src/crafting.rs` | Ingredient reservation and result tests |
+| 5 | `storyforge-content/src/model/` | Item, shop, spell, loot, and recipe validation |
+| 6 | `storyforge-tui/src/screens/` | Inventory, shop, spellbook, and craft panels |
+
+Run `cargo test -p storyforge-core` after each of the first four checkpoints. Run pack validation after checkpoint 5. Play the shop and recipe after checkpoint 6.
+
+## Commands and events
+
+Create `storyforge-core/src/item_command.rs`:
+
+```rust
+use crate::{ContentId, ItemInstanceId, Money};
+
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub enum ItemCommand {
+    EquipItem {
+        instance: ItemInstanceId,
+    },
+    UnequipItem {
+        instance: ItemInstanceId,
+    },
+    BuyItem {
+        shop: ContentId,
+        item: ContentId,
+        quantity: u32,
+        quoted_total: Money,
+    },
+    SellItem {
+        shop: ContentId,
+        instance: ItemInstanceId,
+        quoted_total: Money,
+    },
+    TakeLoot {
+        loot: ContentId,
+        entries: Vec<ContentId>,
+    },
+    PrepareSpells {
+        spells: Vec<ContentId>,
+    },
+    LearnSpell {
+        spell: ContentId,
+        source: ContentId,
+    },
+    BeginCraft {
+        recipe: ContentId,
+    },
+    ConfirmCraft {
+        recipe: ContentId,
+    },
+}
+
+#[derive(
+    Debug, Clone, PartialEq, Eq, serde::Serialize, serde::Deserialize,
+)]
+pub enum ItemEvent {
+    ItemEquipped {
+        instance: ItemInstanceId,
+    },
+    ItemUnequipped {
+        instance: ItemInstanceId,
+    },
+    StackAdded {
+        item: ContentId,
+        quantity: u32,
+    },
+    StackRemoved {
+        item: ContentId,
+        quantity: u32,
+    },
+    UniqueItemAdded {
+        instance: ItemInstanceId,
+        definition: ContentId,
+    },
+    UniqueItemRemoved {
+        instance: ItemInstanceId,
+    },
+    MoneyChanged {
+        previous: Money,
+        current: Money,
+        reason: ContentId,
+    },
+    LootCollected {
+        loot: ContentId,
+        entries: Vec<ContentId>,
+    },
+    PreparedSpellsChanged {
+        previous: Vec<ContentId>,
+        current: Vec<ContentId>,
+    },
+    SpellLearned {
+        spell: ContentId,
+        source: ContentId,
+    },
+    CraftPreviewed {
+        recipe: ContentId,
+        minutes: u32,
+    },
+    CraftCompleted {
+        recipe: ContentId,
+        result: ContentId,
+        created_instances: Vec<ItemInstanceId>,
+    },
+    ItemCommandRejected {
+        reason: String,
+    },
+    DerivedStatisticsRecalculated,
+    AutosaveRequested {
+        reason: String,
+    },
+}
+```
+
+Extend the chapter 05 top-level command and event enums with wrapper variants:
+
+```rust
+Item(ItemCommand),
+```
+
+Add that variant to `GameCommand`, and add `Item(ItemEvent),` to `GameEvent`. The wrapper keeps each root enum readable while all item payloads stay typed.
+
+| Command | Validation before mutation | Successful events |
+| --- | --- | --- |
+| `EquipItem` | Instance is owned; slot, level, tags, and attunement pass | Prior item unequipped, requested item equipped, derived statistics recalculated |
+| `UnequipItem` | Instance is equipped and not cursed or locked | Item unequipped, derived statistics recalculated |
+| `BuyItem` | Shop and stock exist; quote is current; funds and capacity suffice | Money decreases, items enter inventory, stock changes, autosave |
+| `SellItem` | Shop accepts category; instance is owned and sellable; quote is current | Item leaves inventory, money increases, stock changes, autosave |
+| `TakeLoot` | Loot container is active; entries exist; capacity permits them | Exact stacks and instances enter inventory; loot is marked collected |
+| `PrepareSpells` | Safe preparation context; every spell is known and leveled; capacity passes | Prepared list is replaced atomically |
+| `LearnSpell` | Source grants the spell and it is not already known | Spell enters known cantrip or leveled list |
+| `BeginCraft` | Recipe is known; location, tool, ingredients, and time pass | Preview shows requirements and crossed deadlines |
+| `ConfirmCraft` | Preview is still current | Ingredients removed once, check resolved, result created, time advanced, autosave |
+
+Every failure emits only `ItemCommandRejected`. Validate the whole transaction before emitting removal or money events. The event applier must never leave half a purchase or half a recipe in state.
+
 ## Inventory model
 
 Use item stacks for stackable items and unique instances for equipment:
 
 ```rust
+#[derive(
+    Debug, Clone, Copy, PartialEq, Eq, Hash, serde::Serialize, serde::Deserialize,
+)]
+pub struct ItemInstanceId(pub u64);
+
 pub struct Inventory {
     pub stacks: HashMap<ContentId, u32>,
     pub unique_items: HashMap<ItemInstanceId, ItemInstance>,
@@ -69,6 +217,10 @@ Do not store equipment bonuses permanently in the character. Recalculate from de
 Core stores:
 
 ```rust
+#[derive(
+    Debug, Clone, Copy, PartialEq, Eq, PartialOrd, Ord, serde::Serialize,
+    serde::Deserialize,
+)]
 pub struct Money(pub i64);
 ```
 

@@ -4,9 +4,84 @@
 
 Campaign data can present prose and choices, test conditions, apply effects, roll a visible check, and move to another scene.
 
+## Build this chapter in four checkpoints
+
+| Checkpoint | Destination | Proof before continuing |
+| --- | --- | --- |
+| 1 | `storyforge-content/src/model/scene.rs` | Valid and invalid scene fixtures |
+| 2 | `storyforge-core/src/scene.rs` | Visibility, transition, and effect tests |
+| 3 | `storyforge-core/src/check.rs` | Normal, advantage, disadvantage, and modifier tests |
+| 4 | `storyforge-tui/src/screens/story.rs` | Choice, roll reveal, success, and failure playthrough |
+
+## Scene commands and events
+
+Create `storyforge-core/src/scene_command.rs`:
+
+```rust
+use crate::ContentId;
+
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub enum SceneCommand {
+    EnterScene {
+        scene: ContentId,
+    },
+    ChooseSceneOption {
+        scene: ContentId,
+        choice: String,
+    },
+    ContinueAfterCheck {
+        scene: ContentId,
+        choice: String,
+    },
+}
+
+#[derive(
+    Debug, Clone, PartialEq, Eq, serde::Serialize, serde::Deserialize,
+)]
+pub enum SceneEvent {
+    SceneEntered {
+        previous: ContentId,
+        current: ContentId,
+    },
+    ChoiceSelected {
+        scene: ContentId,
+        choice: String,
+    },
+    CheckRolled {
+        skill: ContentId,
+        dice: Vec<u8>,
+        kept_die: u8,
+        modifier: i16,
+        total: i16,
+        target: i16,
+        success: bool,
+    },
+    EffectApplied {
+        effect_index: usize,
+        source_scene: ContentId,
+    },
+    SceneCommandRejected {
+        reason: String,
+    },
+    AutosaveRequested {
+        reason: String,
+    },
+}
+```
+
+Add `Scene(SceneCommand),` to `GameCommand` and `Scene(SceneEvent),` to `GameEvent`.
+
+| Command | Validation | Successful behavior |
+| --- | --- | --- |
+| `EnterScene` | Scene exists and its entry conditions pass | Records scene history, resets choice selection, renders current scene |
+| `ChooseSceneOption` | Scene is still active; choice exists, is visible, and is enabled | Emits selection, effects, optional check, transition, and autosave events |
+| `ContinueAfterCheck` | Matching unresolved check result is active | Applies only the stored success or failure branch; never rerolls |
+
+The engine stores a pending check result before the roll animation begins. The TUI reveals those stored dice over several frames. Skipping the animation changes only presentation and cannot reroll the check.
+
 ## Extend scene content
 
-Add:
+Replace the chapter 06 `ChoiceDefinition` in `storyforge-content/src/model.rs` with:
 
 ```rust
 #[derive(Debug, Clone, serde::Deserialize)]
@@ -34,6 +109,9 @@ pub enum ChoiceOutcome {
 Start with a limited condition set:
 
 ```rust
+#[derive(
+    Debug, Clone, PartialEq, Eq, serde::Serialize, serde::Deserialize,
+)]
 pub enum ConditionDefinition {
     FlagSet(ContentId),
     FlagNotSet(ContentId),
@@ -50,6 +128,9 @@ pub enum ConditionDefinition {
 Initial effects:
 
 ```rust
+#[derive(
+    Debug, Clone, PartialEq, Eq, serde::Serialize, serde::Deserialize,
+)]
 pub enum EffectDefinition {
     SetFlag(ContentId),
     ClearFlag(ContentId),
@@ -70,7 +151,9 @@ Conditions only read state. Effects only describe changes. Core performs validat
 ## Check definition
 
 ```rust
-#[derive(Debug, Clone, serde::Deserialize)]
+#[derive(
+    Debug, Clone, PartialEq, Eq, serde::Serialize, serde::Deserialize,
+)]
 pub struct CheckDefinition {
     pub skill: ContentId,
     pub ability: Ability,
@@ -80,7 +163,9 @@ pub struct CheckDefinition {
     pub critical_failure: Option<i16>,
 }
 
-#[derive(Debug, Clone, Copy, serde::Deserialize)]
+#[derive(
+    Debug, Clone, Copy, PartialEq, Eq, serde::Serialize, serde::Deserialize,
+)]
 pub enum AdvantageRule {
     Normal,
     Advantage,

@@ -33,7 +33,7 @@ cargo run -p storyforge-tui -- play --pack campaigns/academy-demo
 The MVP is intentionally small. It is done when a player can:
 
 1. Open a polished, responsive terminal dashboard.
-2. Create and confirm a character.
+2. Create and confirm a character through the Lantern Row shopping-day prologue.
 3. Read a branching scene and make a meaningful choice.
 4. See a d20 skill check with its modifier and result.
 5. Complete one short tactical duel using a cantrip and a leveled spell.
@@ -109,12 +109,15 @@ The detailed plot remains campaign data. The engine only knows about arcs, condi
 | M3: explorable alpha | Locations, travel, inventory, quests, shops, classes, NPC schedules, flexible casting, and metamagic work. |
 | M4: campaign beta | Factions, companions, deep combat, world phases, arc gates, and endings work. |
 | M5: public release | Original content ships as checksummed native binaries through npm and `npx`. |
+| Version 1.2: living school | Schedules, relationship reactions, rumors, faction-controlled regions, and companion downtime work. |
+| Version 1.3: deeper tactics | Reactions, terrain, nonlethal objectives, expanded AI, and combat reports work. |
+| Versions 1.5-1.9: story-life candidates | Investigation, correspondence, consequence, crafting, spatial travel, school activities, and campaign continuity grow in dependency order. |
 
 Do not skip milestone acceptance checks. A small feature that works from launch through save and reload is worth more than ten disconnected systems.
 
 ## Documentation map
 
-Start with the [expanded game sheet](DND-rpg-ww-tui-game-sheet.md) when you want to understand the whole game. Use the numbered guide when you are coding.
+Start with the [expanded game sheet](DND-rpg-ww-tui-game-sheet.md) when you want to understand the whole game. The [product roadmap](ROADMAP.md) shows the implementation order and fifty future story-first systems. Use the numbered guide when you are coding.
 
 1. [How to use this guide](Guide/00-how-to-use-this-guide.md)
 2. [Development environment](Guide/01-development-environment.md)
@@ -139,6 +142,14 @@ Start with the [expanded game sheet](DND-rpg-ww-tui-game-sheet.md) when you want
 21. [Testing, observability, and performance](Guide/20-testing-observability-and-performance.md)
 22. [Release with npm and npx](Guide/21-release-with-npm-and-npx.md)
 23. [Growing after version 1](Guide/22-growing-after-v1.md)
+24. [Repeat the documentation review loop](Guide/23-documentation-review-loop.md)
+25. [Living-world schedules and restocking](Guide/24-living-world-schedules-and-restocking.md)
+26. [Relationships, gifts, and rumors](Guide/25-relationships-gifts-and-rumors.md)
+27. [Faction control and regional consequences](Guide/26-faction-control-and-regional-consequences.md)
+28. [Companion goals and downtime](Guide/27-companion-goals-and-downtime.md)
+29. [Version 1.3 deeper tactics](Guide/28-version-1-3-deeper-tactics.md)
+
+The [review ledger](REVIEW-LEDGER.md) records which chapters received a structure pass, code-contract pass, and manual verification pass.
 
 ## Working rules
 
@@ -173,13 +184,21 @@ The files already in this vault are useful, but they do not all have the same re
 | Potion and trinket spreadsheets | Convert selected material only for the private pack unless each row's license is known. |
 | New `academy-demo` content | Original and suitable for the public package. |
 
-The private pack should be ignored by Git and selected explicitly:
+The current design pass consulted these private vault references:
+
+- [Traveling Event System TES](../World/Wizarding%20World/Traveling%20Event%20System%20TES.md) for story-distance tiers and combat, roleplay, and exploration combinations.
+- [Wizarding World Spanish guide](../World/Wizarding%20World/Wizarding-World-esp.md) for casting approaches, wand traits, school shopping, pets, and familiars.
+- [One-Shot Wonders](../World/Wizarding%20World/One-Shot-Wonders.pdf) for scenario-card structure and objective categories.
+
+These are design references only. Their prose and named adventures do not enter `academy-demo` or the npm package.
+
+The private pack lives in its own sibling private Git repository and is selected explicitly:
 
 ```powershell
-cargo run -p storyforge-tui -- play --pack campaigns-private/wizarding-world-private
+cargo run -p storyforge-tui -- play --pack ..\wizarding-world-private
 ```
 
-The program should print the pack ID and version on the load screen. That makes it hard to accidentally test one campaign and release another.
+An ignored `.storyforge.local.toml` may store that path for local development. The program should print the pack ID and version on the load screen. That makes it hard to accidentally test one campaign and release another. Chapter 19 explains why deleting files or rewriting Git history before npm publication is not a safe substitute for repository separation.
 
 ## Planned command-line interface
 
@@ -240,3 +259,4 @@ This document set is complete when:
 - The three arcs have technical support in the data model and save format.
 - The npm release path is native, cross-platform, and testable.
 - Private campaign files never enter a public release by accident.
+- The review ledger and chapter 23 make vague guide steps visible and correctable.

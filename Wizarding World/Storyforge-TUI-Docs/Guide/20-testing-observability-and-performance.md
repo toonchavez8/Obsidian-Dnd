@@ -265,7 +265,7 @@ tracing::info!(
 
 ## Provide a doctor command
 
-Add:
+Add these subcommands to the chapter 03 Clap command enum:
 
 ```powershell
 storyforge doctor

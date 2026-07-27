@@ -4,7 +4,7 @@
 
 You will have a verified Rust, Node, npm, and Git toolchain. You will also know which commands diagnose a missing component.
 
-The examples were verified with:
+The documentation baseline is:
 
 ```text
 rustc 1.96.0
@@ -14,11 +14,11 @@ npm 11.17.0
 git 2.54.0.windows.1
 ```
 
-Use the current stable Rust toolchain if these versions have moved forward. The repository will pin its chosen version in chapter 02.
+Rust 1.97.1 was the current stable release when this review was written, but the repository deliberately pins 1.96.0 as its initial minimum supported toolchain. Install current stable first; chapter 02 makes the project use its pinned version.
 
 ## Install Rust
 
-Install Rust through `rustup` from <https://rustup.rs/>.
+Install Rust through [`rustup`](https://www.rust-lang.org/tools/install). The official Rust installation guide recommends `rustup` and includes the Windows MSVC prerequisites.
 
 On Windows, use the MSVC toolchain and install the Visual Studio Build Tools if `rustup` requests them. Select the Desktop development with C++ workload.
 
@@ -153,4 +153,3 @@ Every command must exit successfully.
 ## Suggested commit
 
 There is no project repository yet. Continue to chapter 02.
-

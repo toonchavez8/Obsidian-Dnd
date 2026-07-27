@@ -199,23 +199,131 @@ Arc changes are explicit events. Loading a save must never guess the arc from pl
 
 ## Character creation
 
-Character creation is a playable conversation, not a configuration form. The player can go backward before confirmation and can inspect the mechanical effect of every choice.
+Character creation is a playable prologue, not a configuration form. The player chooses identity and rules options, then visits a magical shopping street to obtain school supplies, meet a pet, and be chosen by a wand. The player can go backward before final confirmation and inspect the mechanical effect of every choice.
+
+The private campaign can call the shopping street Diagon Alley. The public `academy-demo` uses the original location `Lantern Row` and original shops so no private or licensed setting content enters the npm package.
 
 ### Required choices
 
 1. Name and pronouns.
 2. Portrait glyph or small ASCII silhouette.
-3. Origin.
+3. Origin and family circumstances.
 4. Background.
-5. two personality traits.
+5. Two personality traits.
 6. One ideal and one fear.
-7. Affiliation preference.
-8. Wand focus.
-9. Familiar.
+7. Casting style: Will, Technique, or Intellect.
+8. Starting magical-study interest.
+9. Affiliation preference.
 10. Starting skill proficiencies.
-11. Accessibility defaults.
+11. School equipment package.
+12. Pet or familiar.
+13. Wand.
+14. Accessibility defaults.
 
 The campaign may assign affiliation through a scene instead of a menu. In that case, the player's preference becomes one input rather than a guarantee.
+
+### Playable creation sequence
+
+Creation uses normal scenes, choices, commands, and autosaves:
+
+```text
+Identity and accessibility
+  |
+  v
+Origin, background, traits, ideal, and fear
+  |
+  v
+Casting style and magical-study interest
+  |
+  v
+Arrival at the shopping street
+  |
+  +--> equipment and robes
+  |
+  +--> pet shop
+  |
+  +--> wand shop
+  |
+  v
+Review purchases and character sheet
+  |
+  v
+Confirm character and travel to school
+```
+
+The shopping street is a small explorable location graph. The player may choose the pet shop or wand shop first. Shopkeepers react to origin, budget, personality, and prior dialogue. The sequence teaches movement, dialogue, inventory, relationships, and inspection before the main story asks the player to use them under pressure.
+
+Character creation can be suspended and resumed. The save stores a `CharacterCreationState` until final confirmation. It does not create a partly valid `PlayerCharacter`.
+
+### Casting styles
+
+The Spanish campaign guide uses three related caster approaches. Storyforge models them as data-driven magic paths:
+
+| Style | Default casting ability | Play style |
+| --- | --- | --- |
+| Will | Charisma | Instinct, force of personality, emotional magic, and sorcery features. |
+| Technique | Wisdom | Control, timing, reactions, practiced forms, and efficient recovery features. |
+| Intellect | Intelligence | Study, ritual casting, broad preparation, and magical theory. |
+
+All three use cantrips and spell slots. A campaign may give them different known-spell progressions, prepared-spell rules, or features, but they share the same spell definitions and command path.
+
+The starting magical-study choice is an interest, not permanent specialization. It grants one dialogue tag, one introductory spell option, and a teacher hook. Formal specialization happens later through classes and story choices.
+
+### Shopping budget
+
+Origin or family circumstances choose a budget policy rather than judging the character:
+
+- Assisted: the school or a sponsor covers required supplies.
+- Second-hand: lower cost, worn equipment, and useful social hooks.
+- Standard: ordinary school supplies and a small discretionary amount.
+- Comfortable: better cosmetic choices but no exclusive combat advantage.
+
+Required equipment can never become impossible to obtain. Money left after the shopping sequence enters the normal inventory.
+
+### Pet shop scene
+
+The source campaign distinguishes a school pet from a supernatural familiar. The engine supports both:
+
+- A pet is an intelligent animal companion with exploration and social abilities.
+- A familiar is a campaign-granted magical bond that may gain explicit spell or combat support.
+
+The shopping scene presents three to five authored candidates. Each candidate has a species, temperament, need, exploration ability, complication, and first-impression scene. The player may:
+
+- Observe the animal.
+- Ask the keeper about its care.
+- Offer a hand or item.
+- Use an applicable skill.
+- Leave and return.
+- Adopt one candidate.
+
+The chosen animal remembers how the meeting happened. That first memory seeds its bond and later behavior. Species is useful, but temperament and relationship should matter more.
+
+### Wand shop scene
+
+The wand is selected through trials rather than a statistical menu:
+
+1. The shopkeeper asks two or three questions based on earlier character choices.
+2. The engine selects a deterministic candidate pool from wood, core, length, flexibility, and affinity tags.
+3. The player tests a candidate through a short input or choice.
+4. The trial produces a harmless magical reaction, shopkeeper interpretation, and compatibility score.
+5. The player may test another candidate.
+6. A strong match can choose the player, but the player always confirms the final wand.
+
+The candidate seed is stored so save and reload produce the same wands. There is no hidden best wand. A strong affinity opens situational options; a complication creates story and growth hooks.
+
+### Creation completion
+
+Final confirmation checks identity, rules choices, required supplies, one adopted companion, and one selected wand. It then emits:
+
+- `CharacterCreated`
+- `StartingInventoryGranted`
+- `CompanionBondStarted`
+- `WandBondStarted`
+- `CreationHistoryRecorded`
+- `SceneChanged` to the departure scene
+- `AutosaveRequested`
+
+Each event contains stable IDs and the choice that caused it. The history page can therefore explain where the character got their wand and how they met their companion.
 
 ### Core statistics
 
@@ -559,6 +667,22 @@ An NPC memory records:
 
 Memories let dialogue refer to specific events instead of only checking a number.
 
+### Gifts, favors, and attitude
+
+Gifts and quest outcomes use authored relationship impacts. An NPC may love, like, ignore, dislike, or hate an item based on its tags. The first meaningful gift can create a strong memory; repeated gifts have cooldowns and smaller effects so affection cannot be farmed.
+
+An NPC's visible attitude is derived from the relationship axes they care about. One NPC may value Trust and Affection, while a rival weighs Respect and Rivalry more heavily. Attitude bands change greetings, available choices, willingness to help, and later comments.
+
+Strong positive relationships unlock one-time character moments such as lessons, items, shortcuts, introductions, companion routes, faction recommendations, or help during a later quest.
+
+Strong negative relationships create authored complications. These may include higher prices, withheld favors, rivalry, competing quest objectives, rumors, sabotage, a nonlethal duel, or story-appropriate combat. A hostile NPC cannot silently remove the only main-story route.
+
+### Rumors
+
+Rumors move between scheduled NPCs who meet at the same social location. A rumor stores its source, variant, confidence, and listeners. Repetition does not make it true. Evidence may confirm or disprove it later.
+
+The engine propagates authored rumor variants through bounded calendar events. It does not generate or rewrite prose.
+
 ### Romance
 
 Romance is opt-in at the campaign and player-settings levels. The school-era default uses age-appropriate crushes and dates. A rejected approach never lowers unrelated combat or quest competence.
@@ -610,6 +734,27 @@ Reputation ranges from -100 to +100 but content checks named ranks:
 - Champion
 
 Large reputation changes require a named event. Buying ten cheap items cannot make the player a faction champion.
+
+### Regional control and faction services
+
+Faction influence and player reputation are separate:
+
+- Influence determines which faction can act or govern in a region.
+- Reputation determines how that faction treats the player.
+
+A region may be uncontrolled, contested, or controlled. Control can change:
+
+- Skill-check modifiers with a visible source.
+- Shop prices and restock rates.
+- Passive game-time income with a cap.
+- Secret missions.
+- Mounts, carriages, guides, or portal permits.
+- Route access and travel time.
+- Regional danger and travel-event pressure.
+
+Friendly control provides services only when the player meets the required rank or agreement. Hostile control may impose tolls, scarcity, danger, surveillance, or access requirements. Contested regions use their own effects instead of combining every faction's full bonuses and penalties.
+
+Every required story region has an authored fallback route under each tested controller.
 
 ## Quest system
 
@@ -717,21 +862,116 @@ The world clock tracks:
 
 Commands declare their time cost. The engine advances time after their effects resolve, processes crossed schedule boundaries, then emits new events.
 
+### Living-world boundaries
+
+The simulation processes meaningful boundaries rather than individual minutes:
+
+- NPC schedule starts and ends.
+- Classes, clubs, exams, ceremonies, and curfew.
+- Quest deadlines.
+- World-phase changes.
+- Shop deliveries and resource-node restocks.
+- Companion downtime completion.
+- Rumor contacts.
+
+NPC locations are resolved from weekday, time, conditions, and explicit overrides. Dialogue can test time of day, active activities, lateness, and completed events. Large time jumps remain bounded because the engine sorts crossed boundaries and resolves each once.
+
 ### Travel events
 
-Routes can be close, far, or very far. A route specifies an event budget, not a simulated distance.
+Travel follows the event-based structure in the private `Traveling Event System TES.md` note. Routes are Close, Far, or Very Far. Distance determines dramatic event slots instead of simulating every mile:
 
-Event types include:
+| Distance | Default event slots |
+| --- | ---: |
+| Close | 1 |
+| Far | 2 |
+| Very Far | 3 |
 
-- Combat.
-- Social.
-- Exploration.
-- Puzzle.
-- Discovery.
-- Resource.
-- Mixed.
+A route may override the count for story pacing. Travel time still advances the world clock, but distance math never becomes the main activity.
 
-The event selector respects arc, region, time, weather, recent events, quest state, and cooldowns.
+#### Event pillars
+
+The source note uses color categories. The TUI always adds words and symbols so color is optional:
+
+| Pillar | Source color | Purpose |
+| --- | --- | --- |
+| Combat | Red | A hostile or dangerous confrontation. |
+| Roleplay | Blue | Negotiation, culture, relationships, and social pressure. |
+| Exploration | Yellow | Terrain, navigation, discovery, hazards, and problem-solving. |
+
+Combo events contain two or three pillars:
+
+- Purple: roleplay and combat.
+- Green: exploration and roleplay.
+- Orange: combat and exploration.
+- White: all three.
+
+Public content stores the pillar list, not only the color name.
+
+#### Event objectives
+
+The `One-Shot-Wonders.pdf` review suggests a useful second axis: what the player is trying to accomplish. Original Storyforge events use these objective tags:
+
+- Acquisition.
+- Competition.
+- Confrontation.
+- Defence.
+- Delivery.
+- Escape.
+- Investigation.
+- Rescue.
+
+Pillar and objective are separate. A rescue may be social, exploratory, combat-focused, or a mixture.
+
+#### Travel event card
+
+Each event definition contains:
+
+- ID, title, theme tags, pillars, objective, and setting tags.
+- Eligible regions, routes, arcs, levels, time, weather, and world conditions.
+- Weight, cooldown, repeat policy, and once-per-save flag.
+- Opening hook.
+- Important actors.
+- Two to five story beats.
+- Key locations or travel-stage variants.
+- Secrets and clues that can be discovered in any valid order.
+- Resolution paths.
+- Rewards and consequences.
+- Easier and harder tuning profiles.
+- A main-story hook exported on completion.
+
+This card structure is inspired by the PDF's compact one-shot layout, but published events must use original characters, places, prose, art, and encounters. The PDF is a private design reference, not distributable game content.
+
+#### Travel selection
+
+When travel begins:
+
+1. Create the journey state and store the RNG position.
+2. Reserve any mandatory route or quest event.
+3. Filter random cards by route, arc, level, time, weather, conditions, cooldown, and repeat policy.
+4. Prefer pillar and objective variety across the journey.
+5. Select remaining cards through deterministic weighted draws without replacement.
+6. Store the hidden event queue in the save.
+7. Reveal only the current event.
+
+If no event is eligible, use an authored quiet-travel beat. Quiet travel can still include companion conversation, scenery, or a rumor.
+
+#### Connection to the main story
+
+Random does not mean irrelevant. Every event may export one `StoryHook`:
+
+```text
+Rumor
+FactionLead
+NpcContact
+LocationClue
+ThreatEvidence
+ResourceOpportunity
+CompanionMemory
+```
+
+The hook records its event, outcome, time, region, and involved actors. Main-story scenes may test for the hook later. Repeated related hooks can promote into a side quest, change a faction's knowledge, or alter a future route.
+
+An event cannot overwrite main-story state directly unless its content definition names the exact effect. This prevents a random draw from breaking the campaign.
 
 ### Map
 
@@ -789,6 +1029,14 @@ Clubs provide:
 - Club quest lines.
 
 The player cannot fully advance every club in one playthrough.
+
+### Companion goals and downtime
+
+Companions have multi-stage personal goals that progress from explicit event tags, downtime, quests, and player-help scenes. A goal pauses when it needs the player's decision; it cannot finish a major personal arc invisibly in the background.
+
+When outside the active party, a companion may study, train, work, gather, investigate, socialize, rest, care for a familiar, or pursue a goal. Activities occupy real calendar blocks and respect classes, travel, injuries, faction access, and prior commitments.
+
+Companions may return with progress, resources, stress, a rumor, or a request for help. Recall takes travel time and may interrupt an activity. Arc transitions preserve or deliberately resolve every active companion goal.
 
 ## Puzzles
 
@@ -1182,6 +1430,23 @@ Combat can end through:
 - Convince the enemy.
 - Retrieve an item.
 - Force surrender.
+
+### Version 1.3 tactical expansion
+
+The deeper-tactics release adds one dimension at a time:
+
+1. Bounded reaction windows and counterspells.
+2. Named terrain zones with explicit cover and line-of-sight links.
+3. Environmental hazards and interactable terrain.
+4. Nonlethal objectives, morale, and surrender.
+5. Companion commands and capped summons.
+6. Stealth openings with undetected, partial, and detected outcomes.
+7. Multi-phase bosses with explicit transition events.
+8. AI goals for damage, survival, protection, zones, objectives, escape, and resource conservation.
+
+Only one reaction window can be open in version 1.3. Reactions cannot recursively open more reaction prompts.
+
+A development-only combat simulator runs the real command and event engine across deterministic seed ranges. Reports include win and defeat counts, stalled combats, rounds, remaining HP, spell slots, sorcery points, reactions, objectives, and terminal reasons. Simulation measures balance; manual play still decides whether an encounter is clear and fun.
 
 ## Enemy AI
 
@@ -1597,8 +1862,12 @@ Override rules:
 The private pack lives outside the public release tree:
 
 ```text
-campaigns-private/wizarding-world-private/
+projects/
+├── storyforge-tui/             public engine and original demo
+└── wizarding-world-private/    separate private Git repository
 ```
+
+The public repository uses an ignored `.storyforge.local.toml` to point at the sibling pack during development. Private story files and their Git history never enter the public repository. A clean public checkout and release audit build the npm artifact. Deleting files or rewriting Git history immediately before publication is an emergency-cleanup technique, not the normal privacy model.
 
 The guide will convert material deliberately:
 
@@ -1869,6 +2138,21 @@ These risks are known and have planned controls:
 | Private material leaks | Separate ignored directory and release archive inspection. |
 | Beginner architecture becomes too abstract | Three crates only, plain types, no ECS, no general scripting. |
 | Later arcs require a rewrite | Arc, world-phase, faction, planar-pack, and ending concepts exist before MVP saves ship. |
+
+## Product roadmap
+
+The [Storyforge product roadmap](ROADMAP.md) turns this design into a dependency
+order from terminal boot through the public npm release, living-world updates,
+and deeper tactics. It also records fifty later story-first systems, including
+trained familiars, delayed mail, evidence boards, secrecy and corruption,
+meaningful food, deeper crafting and loot, feats, long-form transformation,
+cursor-driven ASCII combat maps, travel networks, aerial school sport, public
+news, social commitments, heist planning, rituals, and return-to-game
+briefings.
+
+Those systems are candidates, not version-one requirements. Each must first
+prove one small story use through the existing command, event, save, content,
+and TUI path.
 
 ## Final design test
 

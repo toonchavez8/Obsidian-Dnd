@@ -14,7 +14,7 @@ cargo add -p storyforge-tui clap --features derive
 
 ## Campaign layout
 
-Create:
+Create this tree at `campaigns/academy-demo`:
 
 ```text
 campaigns/academy-demo/

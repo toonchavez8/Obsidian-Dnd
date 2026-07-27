@@ -4,6 +4,167 @@
 
 The player can track multi-objective quests, attend or skip scheduled classes, earn cohort points, solve a stateful puzzle, and complete a small exam.
 
+## Build this chapter in five checkpoints
+
+| Checkpoint | Destination | Proof before continuing |
+| --- | --- | --- |
+| 1 | `storyforge-core/src/quest.rs` | Quest activation, objective, failure, and reward-once tests |
+| 2 | `storyforge-core/src/school.rs` | Attendance, grace period, training, and point-ledger tests |
+| 3 | `storyforge-core/src/puzzle.rs` | Submit, hint, bypass, reset, and save round-trip tests |
+| 4 | `storyforge-content/src/model/` | Quest, class, puzzle, and exam validators pass |
+| 5 | `storyforge-tui/src/screens/journal.rs` and `puzzle.rs` | Manual class, journal, puzzle, and exam playthrough passes |
+
+Do not build the exam before a class and a puzzle work independently.
+
+## Commands and events
+
+Create `storyforge-core/src/quest_command.rs`:
+
+```rust
+use crate::ContentId;
+
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub enum QuestSchoolCommand {
+    StartQuest {
+        quest: ContentId,
+    },
+    AbandonQuest {
+        quest: ContentId,
+    },
+    ReevaluateQuests,
+    RespondToClassInvitation {
+        session: ContentId,
+        response: AttendanceResponse,
+    },
+    SubmitPuzzle {
+        puzzle: ContentId,
+        answer: Vec<String>,
+    },
+    RequestPuzzleHint {
+        puzzle: ContentId,
+        method: HintMethod,
+    },
+    ResetPuzzle {
+        puzzle: ContentId,
+    },
+    BypassPuzzleStep {
+        puzzle: ContentId,
+        step: usize,
+        item: ContentId,
+    },
+    SubmitExamPreparation {
+        exam: ContentId,
+        choice: ContentId,
+    },
+}
+
+#[derive(
+    Debug, Clone, Copy, PartialEq, Eq, serde::Serialize, serde::Deserialize,
+)]
+pub enum AttendanceResponse {
+    Attend,
+    ArriveLate,
+    Skip,
+    UseExcuse,
+}
+
+#[derive(
+    Debug, Clone, Copy, PartialEq, Eq, serde::Serialize, serde::Deserialize,
+)]
+pub enum HintMethod {
+    Normal,
+    Investigation,
+    Arcana,
+    Companion,
+}
+
+#[derive(
+    Debug, Clone, PartialEq, Eq, serde::Serialize, serde::Deserialize,
+)]
+pub enum QuestSchoolEvent {
+    QuestStarted {
+        quest: ContentId,
+    },
+    ObjectiveStateChanged {
+        quest: ContentId,
+        objective: String,
+        previous: ObjectiveState,
+        current: ObjectiveState,
+    },
+    QuestStateChanged {
+        quest: ContentId,
+        previous: QuestState,
+        current: QuestState,
+    },
+    QuestRewardApplied {
+        quest: ContentId,
+        reward_index: usize,
+    },
+    ClassAttendanceRecorded {
+        session: ContentId,
+        response: AttendanceResponse,
+        minutes_late: u16,
+    },
+    TrainingProgressChanged {
+        subject: ContentId,
+        previous: u16,
+        current: u16,
+    },
+    CohortPointsRecorded {
+        cohort: ContentId,
+        amount: i16,
+        reason: ContentId,
+    },
+    PuzzleAttempted {
+        puzzle: ContentId,
+        correct: bool,
+    },
+    PuzzleHintRevealed {
+        puzzle: ContentId,
+        fact: ContentId,
+        method: HintMethod,
+    },
+    PuzzleReset {
+        puzzle: ContentId,
+    },
+    PuzzleStepBypassed {
+        puzzle: ContentId,
+        step: usize,
+        item: ContentId,
+    },
+    ExamScored {
+        exam: ContentId,
+        attendance_points: i16,
+        preparation_points: i16,
+        check_points: i16,
+        consequence_points: i16,
+        total: i16,
+    },
+    QuestSchoolCommandRejected {
+        reason: String,
+    },
+    AutosaveRequested {
+        reason: String,
+    },
+}
+```
+
+Add `QuestSchool(QuestSchoolCommand),` to `GameCommand` and `QuestSchool(QuestSchoolEvent),` to `GameEvent`.
+
+| Command | Validation | Successful behavior |
+| --- | --- | --- |
+| `StartQuest` | Definition exists, start conditions pass, state is hidden | Starts quest, evaluates initial objectives, journal event |
+| `AbandonQuest` | Quest is active and abandonment is allowed | Fails or abandons active objectives, applies cleanup once |
+| `ReevaluateQuests` | Always legal after direct command effects | Reaches a stable quest state or reports a content cycle |
+| `RespondToClassInvitation` | Invitation is active; response and excuse are legal | Records attendance, advances time, applies attendance or absence effects |
+| `SubmitPuzzle` | Puzzle is active; answer shape and symbols are legal | Records attempt, success effects or authored failure pressure |
+| `RequestPuzzleHint` | Hint exists; skill or companion requirement passes; cost is available | Reveals one stable fact without changing seed |
+| `ResetPuzzle` | Reset is allowed and its cost can be paid | Clears entered answer, preserves puzzle instance and seed |
+| `BypassPuzzleStep` | Step is unresolved; item is owned and supports bypass | Consumes the item once and marks that step resolved |
+| `SubmitExamPreparation` | Exam is active and choice is offered | Stores preparation, makes one final check, emits a complete score breakdown |
+
+The handlers build all events before applying any effect. A rejected hint does not consume time; a rejected bypass does not consume the item; a repeated quest evaluation does not apply rewards twice.
+
 ## Quest definitions
 
 ```rust
@@ -32,6 +193,7 @@ pub struct ObjectiveDefinition {
 Runtime state:
 
 ```rust
+#[derive(Debug, Clone, Copy, PartialEq, Eq, serde::Serialize, serde::Deserialize)]
 pub enum ObjectiveState {
     Locked,
     Active,
@@ -40,6 +202,7 @@ pub enum ObjectiveState {
     Abandoned,
 }
 
+#[derive(Debug, Clone, Copy, PartialEq, Eq, serde::Serialize, serde::Deserialize)]
 pub enum QuestState {
     Hidden,
     Active,
@@ -228,4 +391,3 @@ Use explicit weighted integer points. Show the breakdown after the result.
 git add .
 git commit -m "Add quests puzzles and school life"
 ```
-

@@ -4,9 +4,170 @@
 
 Combat will support companions, reactions, cover, hazards, objectives, surrender, boss phases, and reusable AI personalities without giving enemies hidden player knowledge.
 
+## Build this chapter in six checkpoints
+
+| Checkpoint | Destination | Proof before continuing |
+| --- | --- | --- |
+| 1 | `storyforge-core/src/combat/battlefield.rs` | Pairwise range, cover, and movement tests |
+| 2 | `storyforge-core/src/combat/reaction.rs` | Trigger, decline, counter, and resource tests |
+| 3 | `storyforge-core/src/combat/objective.rs` | Hazard and objective transition tests |
+| 4 | `storyforge-core/src/combat/ai.rs` | Knowledge boundary, scoring, and deterministic tie tests |
+| 5 | `storyforge-core/src/combat/boss.rs` | Phase transition exactly-once tests |
+| 6 | `storyforge-tui/src/screens/combat.rs` | Multi-actor, reaction prompt, objective, and surrender playthrough |
+
+Keep the chapter 10 one-versus-one duel passing after every checkpoint.
+
+## Advanced commands and events
+
+Create `storyforge-core/src/combat/advanced_command.rs`:
+
+```rust
+use crate::{ActorId, CombatCommand, ContentId, EncounterId};
+
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub enum AdvancedCombatCommand {
+    UseInteractable {
+        encounter: EncounterId,
+        actor: ActorId,
+        interactable: ContentId,
+    },
+    ChooseReaction {
+        encounter: EncounterId,
+        actor: ActorId,
+        prompt: u64,
+        choice: ReactionChoice,
+    },
+    PrepareCounter {
+        encounter: EncounterId,
+        actor: ActorId,
+        counter_tag: ContentId,
+    },
+    Surrender {
+        encounter: EncounterId,
+        actor: ActorId,
+    },
+    RespondToSurrender {
+        encounter: EncounterId,
+        actor: ActorId,
+        response: SurrenderResponse,
+    },
+    DirectCompanion {
+        encounter: EncounterId,
+        companion: ActorId,
+        command: Box<CombatCommand>,
+    },
+}
+
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub enum ReactionChoice {
+    Decline,
+    UseReaction {
+        ability: ContentId,
+        target: Option<ActorId>,
+    },
+}
+
+#[derive(
+    Debug, Clone, Copy, PartialEq, Eq, serde::Serialize, serde::Deserialize,
+)]
+pub enum SurrenderResponse {
+    Accept,
+    Refuse,
+    DemandTerms,
+}
+
+#[derive(
+    Debug, Clone, Copy, PartialEq, Eq, serde::Serialize, serde::Deserialize,
+)]
+pub enum CombatObjectiveStatus {
+    Hidden,
+    Active,
+    Completed,
+    Failed,
+}
+
+#[derive(
+    Debug, Clone, PartialEq, Eq, serde::Serialize, serde::Deserialize,
+)]
+pub enum AdvancedCombatEvent {
+    InteractableUsed {
+        actor: ActorId,
+        interactable: ContentId,
+    },
+    CoverChanged {
+        actor: ActorId,
+        previous: Cover,
+        current: Cover,
+    },
+    ReactionPrompted {
+        prompt: u64,
+        actor: ActorId,
+        trigger: ContentId,
+        legal_abilities: Vec<ContentId>,
+    },
+    ReactionDeclined {
+        prompt: u64,
+        actor: ActorId,
+    },
+    ReactionUsed {
+        prompt: u64,
+        actor: ActorId,
+        ability: ContentId,
+    },
+    CounterPrepared {
+        actor: ActorId,
+        counter_tag: ContentId,
+    },
+    CounterResolved {
+        actor: ActorId,
+        triggering_spell: ContentId,
+        roll_total: i16,
+        difficulty: i16,
+        success: bool,
+    },
+    HazardActivated {
+        hazard: ContentId,
+        affected: Vec<ActorId>,
+    },
+    ObjectiveStateChanged {
+        objective: ContentId,
+        previous: CombatObjectiveStatus,
+        current: CombatObjectiveStatus,
+    },
+    SurrenderOffered {
+        actor: ActorId,
+    },
+    SurrenderResolved {
+        actor: ActorId,
+        response: SurrenderResponse,
+    },
+    BossPhaseChanged {
+        boss: ActorId,
+        previous: ContentId,
+        current: ContentId,
+    },
+    AdvancedCombatCommandRejected {
+        reason: String,
+    },
+}
+```
+
+Add `AdvancedCombat(AdvancedCombatCommand),` to the top-level `GameCommand` and `AdvancedCombat(AdvancedCombatEvent),` to `GameEvent`.
+
+| Command | Validation | Successful behavior |
+| --- | --- | --- |
+| `UseInteractable` | Encounter, turn, range, usage count, and action cost pass | Applies authored battlefield change and spends the declared resource |
+| `ChooseReaction` | Prompt ID is active; actor has reaction; ability is in prompt list | Declines for free or spends reaction and resolves ability |
+| `PrepareCounter` | Actor owns turn, has action and reaction, and knows counter tag | Spends action and stores prepared counter |
+| `Surrender` | Actor may communicate and encounter permits surrender | Opens response scene or AI response |
+| `RespondToSurrender` | Offer is active and responder has authority | Accepts, refuses, or opens authored terms |
+| `DirectCompanion` | Companion is active, directly controlled, and owns turn | Sends the nested command through the normal combat legality path |
+
+A prompt ID prevents a delayed keypress from accepting a newer reaction. Rejection changes no action, reaction, HP, condition, hazard, or objective state.
+
 ## Battlefield
 
-Add:
+Create `storyforge-core/src/combat/battlefield.rs`:
 
 ```rust
 pub struct BattlefieldState {
@@ -18,6 +179,9 @@ pub struct BattlefieldState {
     pub exits: Vec<ExitState>,
 }
 
+#[derive(
+    Debug, Clone, Copy, PartialEq, Eq, serde::Serialize, serde::Deserialize,
+)]
 pub enum Cover {
     None,
     Partial,
@@ -136,7 +300,7 @@ Each legal action receives components:
 
 ```rust
 pub struct ActionScore {
-    pub action: GameCommand,
+    pub action: CombatCommand,
     pub objective: i32,
     pub survival: i32,
     pub damage: i32,
@@ -146,7 +310,27 @@ pub struct ActionScore {
 }
 ```
 
-Sum with saturating arithmetic. Log components at debug level.
+Implement its total rather than repeating the sum in every personality:
+
+```rust
+impl ActionScore {
+    #[must_use]
+    pub fn total(&self) -> i32 {
+        [
+            self.objective,
+            self.survival,
+            self.damage,
+            self.support,
+            self.personality,
+        ]
+        .into_iter()
+        .fold(0_i32, i32::saturating_add)
+        .saturating_sub(self.resource_cost.max(0))
+    }
+}
+```
+
+Log the components and total at debug level. Generate only legal `CombatCommand` candidates, score them, select the highest total, and break equal scores with the encounter RNG. Record the candidate list and winning index so a replay can explain the choice.
 
 AI receives:
 

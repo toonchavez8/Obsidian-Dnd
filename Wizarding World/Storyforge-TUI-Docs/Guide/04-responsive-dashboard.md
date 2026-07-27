@@ -12,7 +12,7 @@ Input will map to semantic `UiAction` values instead of mutating state directly 
 
 ## Add modules
 
-Create:
+Create this module tree inside `crates/storyforge-tui/src`:
 
 ```text
 crates/storyforge-tui/src/
