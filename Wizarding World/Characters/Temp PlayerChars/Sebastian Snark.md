@@ -128,16 +128,22 @@ Ruby: 0
 
 ## Atributos
 
-- **Aumento de Puntuaciones de Característica**. Tu puntuación de Constitución, Sabiduría y una puntuación de característica adicional a tu elección aumentan en 1.
+**Información Comprometedora**: Cuando realices una prueba de Carisma relacionada con los secretos de una persona, eres considerado experto en la habilidad correspondiente y sumas el doble de tu bono de competencia en la prueba.
 
-- **Lealtad Inquebrantable**. Tienes ventaja en las tiradas de salvación contra cualquier efecto que te haga atacar o actuar en contra de una criatura que normalmente considerarías un aliado.
+- **Calidad Noble**: Puedes adoptar una personalidad de importancia para mezclarte con oficiales de alto rango y brujas y magos prestigiosos.
 
+<<<<<<< HEAD:Characters/Temp PlayerChars/Sebastian Snark.md
+- **Puntería Remarkable**: Tienes una precisión infalible con los hechizos de proyectiles. Tus ataques a distancia con hechizos ignoran la media cobertura y tratan la cobertura de tres cuartas partes como si fuera media cobertura..
+## Feats -class
+**Legilimens**: La Legilimancia es una habilidad mucho más tangible, que navega a través de las múltiples capas de la mente de una persona e interpreta los hallazgos. Los muggles lo llaman "lectura de mentes", pero los practicantes desprecian el término como ingenuo. A menudo practican la oclumancia, protegiendo su mente de la invasión de otro legilimens. Aunque existen legilimens naturales raros, es un campo de estudio que requiere gran dedicación y cuidado.
+=======
 - **Viajes a la Cocina**. Tu experiencia con los elfos domésticos de [[Hogwarts]] te ha enseñado cómo tratar y relacionarte educadamente con los seres mágicos. Ah, y puedes conseguir montones de postres.
 
 ## Feats
 
 - **Cuidador**. Tu estudio de las criaturas mágicas te ha enseñado sobre sus lesiones y fisiología. Puedes lanzar cualquier hechizo de Curación conocido sobre bestias.
 - **Folio Bruti**. Tienes tu propio cuaderno personal de bestias donde registras tus hallazgos. Cada vez que añadas la competencia de Criaturas Mágicas a una prueba de Habilidad, añade tu modificador de Inteligencia como bonificación también.
+>>>>>>> origin/main:Wizarding World/Characters/Temp PlayerChars/Sebastian Snark.md
 
 ## Equipo
 
