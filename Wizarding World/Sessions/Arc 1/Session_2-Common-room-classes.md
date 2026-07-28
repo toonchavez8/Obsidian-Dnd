@@ -106,7 +106,7 @@ engregando el agenda [[Primer_Año]]
 >[!hint] 
 >los estudiantes si pueden y tiuenen espacio agrearlo a su lista de hoja de personaje
 
-
++5 points for slitherin por defender a sus amigos
 
 ##  Clase de Encantamientos (Charms) — _“Wingardium Leviosa”_
 
@@ -147,6 +147,9 @@ Cada jugador puede intentar usar su varita para:
 |**6–11 (Fallo)**|La pluma se eleva, pero pierde control y cae en una pila de libros. El profesor anota observaciones, pero con una sonrisa.|
 |**12–17 (Éxito)**|La pluma flota suavemente, siguiendo las palabras y movimientos del personaje. El grupo logra estabilizar la magia ambiental.|
 |**18–20 (Éxito Crítico)**|El personaje controla no solo su pluma, sino que ayuda a guiar a las demás. Flitwick los aplaude emocionado: “¡Maravilloso control! ¡Cinco puntos para su casa!”|
+
++5 slitertin
++5 ravenclaw
 
 ---
 
@@ -202,6 +205,9 @@ Acciones posibles:
 |**6–12 (Fallo)**|La aguja toma forma, pero tiene bordes deformes o tiembla. Aún así, se considera progreso. “Aceptable”, dice McGonagall con voz severa.|
 |**13–17 (Éxito)**|La cerilla se convierte en una aguja perfecta y brillante. El estudiante demuestra control y enfoque. McGonagall asiente con respeto.|
 |**18–20 (Éxito Crítico)**|El jugador no solo logra una aguja impecable, sino que ayuda a revertir los objetos rebeldes. McGonagall, con una rara sonrisa, comenta: “Cinco puntos para su casa. Y recuerde: el orden es poder.”|
+
++5 slithing 
++5 ravenclaw
 
 ---
 
@@ -261,6 +267,9 @@ Acciones posibles:
 |**6–11 (Fallo)**|El jugador logra sostener la planta, pero deja escapar algunos gritos. Mareos leves y penalización momentánea (-1 a tiradas de concentración por una hora).|
 |**12–17 (Éxito)**|La Mandrágora se calma y es trasplantada con éxito. La profesora sonríe: “Muy bien, con un poco más de práctica serán auténticos jardineros mágicos.”|
 |**18–20 (Éxito Crítico)**|El jugador logra calmar no solo a su Mandrágora, sino a las del grupo. Sprout, encantada, exclama: “¡Cinco puntos para su casa! ¡Y recuerden regarlas con mimo, no con miedo!”|
++5 ravenclaw
++5 slytherin
+
 
 ---
 
@@ -321,6 +330,9 @@ Acciones posibles:
 |**6–12 (Fallo)**|El vuelo se logra, pero de manera torpe: zigzaguea, choca con otra escoba o aterriza de golpe. “Eso fue… aceptable,” murmura Madam Hooch.|
 |**13–17 (Éxito)**|El jugador logra un vuelo firme, mantiene el equilibrio y ayuda a controlar la escoba rebelde. “Buen reflejo, señorita/señor. Prometedor.”|
 |**18–20 (Éxito Crítico)**|El jugador realiza un movimiento elegante, rescata al compañero y aterriza con precisión impecable. Madam Hooch sonríe —lo cual es casi un milagro—: “¡Cinco puntos para su casa! Tal vez tengamos futuro en el equipo de Quidditch.”|
++5 ravenclaw
+
+![[Recording 20251017211345.m4a]]
 
 ---
 
