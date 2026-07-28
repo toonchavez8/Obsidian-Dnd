@@ -88,7 +88,7 @@
   "version": [
     13,
     0,
-    17
+    18
   ],
   "canUseDiceRoll": false,
   "preferStatblockLink": false,
@@ -100,7 +100,11 @@
   "state": {
     "creatures": [],
     "state": false,
+<<<<<<< HEAD
     "name": null,
+=======
+    "name": "thief",
+>>>>>>> origin/main
     "round": 1,
     "logFile": "",
     "rollHP": false

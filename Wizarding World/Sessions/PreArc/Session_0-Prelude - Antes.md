@@ -87,13 +87,7 @@ creatures:
   - enjambre de Flobberworms
   - enjambre de Flobberworms
 
-players:
-  - Ignacio ignam
-  - Penolope Pevreal
-  - Rebecca Weasly
-  - Sebastian Snark
-  - Valentina Voraz
-  - Oscar Ortiz
+party:  Base WW party
   
 
 ```
@@ -120,13 +114,7 @@ creatures:
 - **Lobos Perdidos y Confundidos:** Una manada de lobos (amenaza de nivel medio) sale del bosque, desorientada y agitada por el extraño olor. Pueden atacar o huir según las acciones de los jugadores. (Posible combate o chequeo de intimidación)
 
 ```encounter
-players:
-  - Oscar Ortiz
-  - Ignacio ignam
-  - Penolope Pevreal
-  - Rebecca Weasly
-  - Sebastian Snark
-  - Valentina Voraz
+party: 
 creatures:
   - Wolf
   - Wolf
