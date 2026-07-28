@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Wizarding World/Storyforge-TUI-Docs/ROADMAP.md",
+                "file": "Wizarding World/Storyforge-TUI-Docs/Guide/03-first-terminal-application.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ROADMAP"
+              "title": "03-first-terminal-application"
             }
           }
         ]
@@ -372,16 +372,18 @@
       "obsidian-leaflet-plugin:Open Leaflet Map": false,
       "obisidian-note-linker:Note Linker": false,
       "univer:Univer": false,
-      "templater-obsidian:Templater": false,
-      "calendarium:Open Calendarium": false
+      "templater-obsidian:Templater": false
     }
   },
   "active": "3b81ce250c1fdeff",
   "lastOpenFiles": [
-    "Wizarding World/Storyforge-TUI-Docs/DND-rpg-ww-tui-game-sheet.md",
+    "Wizarding World/Storyforge-TUI-Docs/Guide/02-create-the-workspace.md",
+    "Wizarding World/Storyforge-TUI-Docs/Guide/01-development-environment.md",
     "Wizarding World/Storyforge-TUI-Docs/ROADMAP.md",
-    "Wizarding World/Storyforge-TUI-Docs/REVIEW-LEDGER.md",
     "Wizarding World/Storyforge-TUI-Docs/README.md",
+    "Wizarding World/Storyforge-TUI-Docs/Guide/00-how-to-use-this-guide.md",
+    "Wizarding World/Storyforge-TUI-Docs/DND-rpg-ww-tui-game-sheet.md",
+    "Wizarding World/Storyforge-TUI-Docs/REVIEW-LEDGER.md",
     "Wizarding World/World/Wizarding World/One-Shot-Wonders.pdf",
     "Wizarding World/World/Wizarding World/Traveling Event System TES.md",
     "Wizarding World/World/Wizarding World/W&W NPCs 0.3.1 _ GM Binder.pdf",
@@ -406,9 +408,6 @@
     "Wizarding World/World/Factions/Dumbledores Army.md",
     "Wizarding World/Storyforge-TUI-Docs/Guide/23-documentation-review-loop.md",
     "Wizarding World/Storyforge-TUI-Docs/Guide/22-growing-after-v1.md",
-    "Wizarding World/Storyforge-TUI-Docs/Guide/01-development-environment.md",
-    "Wizarding World/Storyforge-TUI-Docs/Guide/11-first-playable-mvp.md",
-    "Wizarding World/Storyforge-TUI-Docs/Guide/21-release-with-npm-and-npx.md",
     "Wizarding World/tmp/pdfs/one-shot-page-194.png",
     "Wizarding World/tmp/pdfs/one-shot-page-193.png",
     "Wizarding World/tmp/pdfs/one-shot-page-153.png",
