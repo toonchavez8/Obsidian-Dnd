@@ -8,7 +8,7 @@
   "outgoing-link": true,
   "tag-pane": true,
   "footnotes": false,
-  "properties": false,
+  "properties": true,
   "page-preview": true,
   "daily-notes": true,
   "templates": true,
@@ -23,18 +23,11 @@
   "outline": true,
   "word-count": true,
   "slides": false,
-  "audio-recorder": true,
+  "audio-recorder": false,
   "workspaces": false,
   "file-recovery": true,
   "publish": false,
-<<<<<<< HEAD
   "sync": true,
   "bases": true,
   "webviewer": false
-=======
-  "sync": false,
-  "webviewer": false,
-  "footnotes": false,
-  "bases": true
->>>>>>> origin/main
 }
