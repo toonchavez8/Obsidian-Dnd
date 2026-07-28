@@ -15,7 +15,7 @@ WIS: 13
 CHA: 12
 House: Slytherin
 SchoolOfMagic: Healing
-Gender: Male
+Gender: Female
 Age: "14"
 Location: [[Hogwarts]], England
 CastingStyle: Technique
@@ -126,19 +126,22 @@ Ruby: 0
 | Survival (WIS)        | <input type="checkbox" unchecked> | +`=floor((this.WIS - 10)/2)`  |
 | Potion Making (INT)          | <input type="checkbox" unchecked> | +`=floor((this.INT - 10)/2)`  |
 
-## Atributos
+## Atributos - House
 
-- **Aumento de Puntuaciones de Característica**. Tu puntuación de Constitución, Sabiduría y una puntuación de característica adicional a tu elección aumentan en 1.
+- **Información Comprometedora**: Cuando realices una prueba de Carisma relacionada con los secretos de una persona, eres considerado experto en la habilidad correspondiente y sumas el doble de tu bono de competencia en la prueba.
 
-- **Lealtad Inquebrantable**. Tienes ventaja en las tiradas de salvación contra cualquier efecto que te haga atacar o actuar en contra de una criatura que normalmente considerarías un aliado.
+- **Calidad Noble**: Puedes adoptar una personalidad de importancia para mezclarte con oficiales de alto rango y brujas y magos prestigiosos.
 
+<<<<<<< HEAD:Characters/Temp PlayerChars/Rebecca Weasly.md
+- **Artista Marcial**: Estás entrenado en golpes y agarres. Tu ataque desarmado usa un dado de daño d6. Cuando golpeas a una criatura desarmada, puedes intentar un agarre como acción adicional. Tienes ventaja en los ataques contra criaturas que estás sujetando. Puedes intentar maniobras como inmovilizar, derribar o desarmar a la criatura mientras la tengas agarrada.
+=======
 - **Viajes a la Cocina**. Tu experiencia con los elfos domésticos de [[Hogwarts]] te ha enseñado cómo tratar y relacionarte educadamente con los seres mágicos. Ah, y puedes conseguir montones de postres.
+>>>>>>> origin/main:Wizarding World/Characters/Temp PlayerChars/Rebecca Weasly.md
 
-## Feats
+## Feats - Class
+**Nervios Inquebrantables**: Tu estudio de las lesiones y enfermedades mágicas te ha otorgado un estómago fuerte y una voluntad de hierro. Tienes ventaja en las tiradas de salvación contra el miedo.
 
-- **Cuidador**. Tu estudio de las criaturas mágicas te ha enseñado sobre sus lesiones y fisiología. Puedes lanzar cualquier hechizo de Curación conocido sobre bestias.
-- **Folio Bruti**. Tienes tu propio cuaderno personal de bestias donde registras tus hallazgos. Cada vez que añadas la competencia de Criaturas Mágicas a una prueba de Habilidad, añade tu modificador de Inteligencia como bonificación también.
-
+School of Magic Spells Spell Level Spell Cantrip anapneo 3rd intus sunt 6th protego totalum, vulnera sanentu
 ## Equipo
 
 - [ ] Varita magica

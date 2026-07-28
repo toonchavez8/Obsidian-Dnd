@@ -10,18 +10,18 @@ Speed: 30
 STR: 8
 DEX: 16
 CONST: 8
-INT: 14
-WIS: 11
+INT: 17
+WIS: 16
 CHA: 13
 House: Ravenclaw
 SchoolOfMagic: Charms
-Gender: Male
+Gender: Female
 Age: "14"
 Location: [[[[[[[[[[[[[[Hogwarts]]]]]]]]]]]]]], England
 CastingStyle: Intellect
 Background: Groundskeeper
 Heritage: HalfBlood
-Wand: Poplar, Unicorn Hair - 10.5"
+Wand: Vine, Dragon HeartString - 10" Unyealding
 Likes: NONE
 Dislikes: NONE
 Pronouns: NONE
@@ -128,17 +128,20 @@ Ruby: 0
 
 ## Atributos
 
-- **Aumento de Puntuaciones de Característica**. Tu puntuación de Constitución, Sabiduría y una puntuación de característica adicional a tu elección aumentan en 1.
+- **Conocimiento Profundo**: Siempre que realices una prueba de habilidad de Inteligencia o Sabiduría en la que añadas tu bono de competencia, puedes tratar un lanzamiento de d20 de 5 o menos como un 6.
 
-- **Lealtad Inquebrantable**. Tienes ventaja en las tiradas de salvación contra cualquier efecto que te haga atacar o actuar en contra de una criatura que normalmente considerarías un aliado.
+- **Biblioteca de Rowena**: Puedes investigar fácilmente un tema deseado al pedir ayuda a tus compañeros de casa y consultar libros exclusivos de la sala común de Ravenclaw.
 
+<<<<<<< HEAD:Characters/Temp PlayerChars/Valentina Voraz.md
+- **Detectar Rastros**: Has aprendido a sentir la magia y reconocer los estilos de hechizos y maldiciones. Usando concentración, puedes detectar la presencia de magia en un radio de 30 pies de ti. Si detectas magia de esta manera, puedes usar tu acción para ver una tenue aura alrededor de cualquier criatura u objeto visible en el área que posea magia, y aprender la escuela de magia asociada al hechizo, si la hay. Esta habilidad puede penetrar la mayoría de barreras, pero se ve bloqueada por 1 pie de piedra, 1 pulgada de metal común, o 3 pies de madera o tierra.
+## Feats - class
+=======
 - **Viajes a la Cocina**. Tu experiencia con los elfos domésticos de [[Hogwarts]] te ha enseñado cómo tratar y relacionarte educadamente con los seres mágicos. Ah, y puedes conseguir montones de postres.
+>>>>>>> origin/main:Wizarding World/Characters/Temp PlayerChars/Valentina Voraz.md
 
-## Feats
+- **Disparo Preciso**: Has perfeccionado tu puntería para golpear específicamente con tus Hechizos de Duelo. Puedes apuntar a objetos o partes del cuerpo y restringir el efecto del hechizo a esa área.
 
-- **Cuidador**. Tu estudio de las criaturas mágicas te ha enseñado sobre sus lesiones y fisiología. Puedes lanzar cualquier hechizo de Curación conocido sobre bestias.
-- **Folio Bruti**. Tienes tu propio cuaderno personal de bestias donde registras tus hallazgos. Cada vez que añadas la competencia de Criaturas Mágicas a una prueba de Habilidad, añade tu modificador de Inteligencia como bonificación también.
-
+School of Magic Spells Spell Level Spell 2nd muffliato 4th capacious extremis 5th obliviate, piertotum locomotor
 ## Equipo
 
 - [ ] Varita magica
@@ -169,8 +172,9 @@ Creyente en la redención, esta bruja o mago posee una varita de álamo con un n
 
 Aquí hay algunos detalles adicionales sobre el personaje:
 
-Ideales: El personaje cree en el poder de la redención y en la bondad inherente de las personas. Son idealistas y optimistas, y creen que incluso los peores villanos pueden cambiar de opinión.
-Lazos: El personaje tiene un fuerte vínculo con la naturaleza. Se sienten personalmente heridos por cualquier daño al medio ambiente y están comprometidos a protegerlo. También tienen un fuerte vínculo con su varita, que ven como una extensión de sí mismos.
+Ideales: **Conocimiento**. El camino hacia el poder y la superación personal es a través del conocimiento..
+Lazos: Quiero que mi obra de vida sean libros de texto mágicos relacionados con un campo específico. 
+Desventaja: Descubrir conocimiento vale cualquier precio, incluso una parte de mi propia humanidad.
 
 ## Magia
 
