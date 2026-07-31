@@ -358,15 +358,17 @@
       "obsidian-leaflet-plugin:Open Leaflet Map": false,
       "obisidian-note-linker:Note Linker": false,
       "templater-obsidian:Templater": false,
-      "univer:Univer": false
+      "univer:Univer": false,
+      "calendarium:Open Calendarium": false
     }
   },
   "active": "eb52504fa0850a42",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
+    "Wizarding World/Storyforge-TUI-Docs/Guide/01-development-environment.md",
     "Wizarding World/Storyforge-TUI-Docs/Guide/02-create-the-workspace.md",
     "Wizarding World/Storyforge-TUI-Docs/Guide/03-first-terminal-application.md",
     "Wizarding World/World/Hogwarts/Hogwarts.md",
-    "conflict-files-obsidian-git.md",
     "Wizarding World/Sessions/Arc 1/Session_2-Common-room-classes.md",
     "World/Potions/W&W Potion Spreadsheet.xlsx",
     "World/Potions",
@@ -392,7 +394,6 @@
     "Wizarding World/Storyforge-TUI-Docs/Guide/12-world-exploration-and-time.md",
     "Wizarding World/Storyforge-TUI-Docs/Guide/11-first-playable-mvp.md",
     "Wizarding World/Storyforge-TUI-Docs/Guide/09-scenes-dialogue-and-skill-checks.md",
-    "Wizarding World/Storyforge-TUI-Docs/Guide/10-tactical-combat-mvp.md",
     "Wizarding World/Storyforge-TUI-Docs/Guide",
     "Wizarding World/Storyforge-TUI-Docs",
     "Wizarding World/Sessions/Arc 1/imgs/Recording 20251017211345.m4a",
