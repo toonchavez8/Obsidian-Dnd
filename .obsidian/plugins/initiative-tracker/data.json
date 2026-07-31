@@ -100,11 +100,7 @@
   "state": {
     "creatures": [],
     "state": false,
-<<<<<<< HEAD
     "name": null,
-=======
-    "name": "thief",
->>>>>>> origin/main
     "round": 1,
     "logFile": "",
     "rollHP": false
