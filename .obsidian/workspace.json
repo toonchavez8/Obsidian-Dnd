@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Wizarding World/Storyforge-TUI-Docs/Guide/01-development-environment.md",
+                "file": "Wizarding World/Storyforge-TUI-Docs/Guide/06-content-pack-format.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01-development-environment"
+              "title": "06-content-pack-format"
             }
           }
         ],
@@ -84,7 +84,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -339,7 +341,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 417.5
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -364,10 +366,15 @@
   },
   "active": "eb52504fa0850a42",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
-    "Wizarding World/Storyforge-TUI-Docs/Guide/01-development-environment.md",
-    "Wizarding World/Storyforge-TUI-Docs/Guide/02-create-the-workspace.md",
+    "Wizarding World/Storyforge-TUI-Docs/Guide/07-character-creation.md",
+    "Wizarding World/Storyforge-TUI-Docs/Guide/06-content-pack-format.md",
+    "Wizarding World/Storyforge-TUI-Docs/Guide/05-engine-command-event-model.md",
+    "Wizarding World/Storyforge-TUI-Docs/Guide/04-responsive-dashboard.md",
+    "Wizarding World/Storyforge-TUI-Docs/Prompt.md",
     "Wizarding World/Storyforge-TUI-Docs/Guide/03-first-terminal-application.md",
+    "Wizarding World/Storyforge-TUI-Docs/Guide/01-development-environment.md",
+    "conflict-files-obsidian-git.md",
+    "Wizarding World/Storyforge-TUI-Docs/Guide/02-create-the-workspace.md",
     "Wizarding World/World/Hogwarts/Hogwarts.md",
     "Wizarding World/Sessions/Arc 1/Session_2-Common-room-classes.md",
     "World/Potions/W&W Potion Spreadsheet.xlsx",
@@ -389,11 +396,6 @@
     "Wizarding World/Storyforge-TUI-Docs/Guide/17-three-arc-campaign-foundation.md",
     "Wizarding World/Storyforge-TUI-Docs/Guide/16-deeper-combat-and-enemy-ai.md",
     "Wizarding World/Storyforge-TUI-Docs/Guide/15-npcs-factions-and-companions.md",
-    "Wizarding World/Storyforge-TUI-Docs/Guide/14-quests-puzzles-and-school-life.md",
-    "Wizarding World/Storyforge-TUI-Docs/Guide/13-magic-inventory-economy.md",
-    "Wizarding World/Storyforge-TUI-Docs/Guide/12-world-exploration-and-time.md",
-    "Wizarding World/Storyforge-TUI-Docs/Guide/11-first-playable-mvp.md",
-    "Wizarding World/Storyforge-TUI-Docs/Guide/09-scenes-dialogue-and-skill-checks.md",
     "Wizarding World/Storyforge-TUI-Docs/Guide",
     "Wizarding World/Storyforge-TUI-Docs",
     "Wizarding World/Sessions/Arc 1/imgs/Recording 20251017211345.m4a",

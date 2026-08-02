@@ -2,15 +2,67 @@
 
 ## Result
 
-The player creates a character through a short prologue instead of filling out one long form. They establish an identity, choose how they approach magic, visit a market street, meet possible animal companions, try several wands, review the result, and enter the academy.
+Character creation becomes a playable prologue instead of one large form. The player starts with identity, chooses early character direction, enters Lantern Row, collects required supplies, meets a companion, tries wands, reviews the draft, and then creates a finished `PlayerCharacter`.
 
-The public demo calls the market `Lantern Row`. A private content pack may give the location another name. The engine only knows that this is a character-creation scene sequence.
+This guide does not implement the full end-goal creator. It builds the smallest useful state machine:
 
-This chapter has six checkpoints. Do not implement all six before running the first test.
+```text
+CharacterCreationState draft
+    -> CreationCommand
+    -> CreationEvent
+    -> apply_creation_events
+    -> optional PlayerCharacter at confirmation
+```
 
-## Checkpoint 1: Create the permanent character types
+The important rule is this: an unfinished character is not a `PlayerCharacter`. It is a draft. Only confirmation can produce the permanent character.
 
-Create `crates/storyforge-core/src/character.rs`. These types describe a finished character. Optional creation choices do not belong here.
+## Flow To Prove
+
+The flow uses these functions and types:
+
+```text
+CreationCommand
+    -> handle_creation_command
+    -> CreationEvent list
+    -> apply_creation_events
+    -> CharacterCreationState
+    -> complete_character
+    -> CreationOutcome
+```
+
+First prove data reaches `handle_creation_command`. Then log or inspect the event it returns. Then apply the event to the draft. Then validate the draft. Only after that should confirmation build a finished character.
+
+---
+
+File: `crates/storyforge-core/src/character.rs`
+
+## Step 1: Add permanent character types
+
+### Current state
+
+`storyforge-core` has engine state from Guide 05, but no character model. The TUI still displays temporary spell-slot values from `App`.
+
+### Why this step matters
+
+A finished character needs stable saved fields: name, abilities, background, casting style, equipment, wand, companion, HP, and spellcasting state. These belong in core because they are gameplay facts, not UI widgets.
+
+### Before
+
+Create:
+
+```text
+crates/storyforge-core/src/character.rs
+```
+
+### What to change
+
+Add permanent character types only. Do not put optional draft choices here.
+
+### Temporary MVP / debug behavior
+
+Start with enough to render a future character sheet and prove spell-slot style casting. Do not implement leveling, inventory, combat, or full derived stats yet.
+
+### After
 
 ```rust
 use serde::{Deserialize, Serialize};
@@ -87,21 +139,12 @@ pub struct SpellSlotState {
 }
 
 #[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize)]
-pub struct SorceryState {
-    pub current_points: u8,
-    pub maximum_points: u8,
-    pub metamagic_options: Vec<ContentId>,
-}
-
-#[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize)]
 pub struct SpellcastingState {
     pub casting_ability: Ability,
     pub known_cantrips: Vec<ContentId>,
     pub known_spells: Vec<ContentId>,
     pub prepared_spells: Vec<ContentId>,
     pub slots: [SpellSlotState; 9],
-    pub temporary_slots: [u8; 5],
-    pub sorcery: Option<SorceryState>,
 }
 
 #[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize)]
@@ -132,8 +175,8 @@ pub enum CharacterError {
     AbilityOutOfRange,
     #[error("exactly two personality traits are required")]
     TraitCount,
-    #[error("prepared spells must be known leveled spells")]
-    UnknownPreparedSpell,
+    #[error("draft is missing required field `{0}`")]
+    MissingField(&'static str),
 }
 
 #[must_use]
@@ -153,21 +196,49 @@ pub const fn proficiency_bonus(level: u8) -> i8 {
 }
 ```
 
-Use `i32` for HP because damage and healing use signed arithmetic before clamping. Spell slots and sorcery points are small nonnegative counts, so `u8` is sufficient. Chapter 13 implements slot spending, upcasting, Flexible Casting, and Metamagic.
+### Learning checkpoint
 
-In `crates/storyforge-core/src/lib.rs`, add:
+You should understand that spell slots are counts, not mana. The array has nine entries, one for each leveled-spell tier. Index `0` is first-level slots.
 
-```rust
-mod character;
+### How to verify
 
-pub use character::{
-    Ability, AbilityScores, CastingStyle, CharacterError, PlayerCharacter,
-    SorceryState, SpellSlotState, SpellcastingState, ability_modifier,
-    proficiency_bonus,
-};
+Compilation waits until `lib.rs` exports this module.
+
+### Next connection
+
+Add tests for the math before building the creation draft.
+
+---
+
+File: `crates/storyforge-core/tests/character_math.rs`
+
+## Step 2: Test ability and proficiency math
+
+### Current state
+
+No character tests exist yet.
+
+### Why this step matters
+
+Small math rules should be tested directly. If the character sheet later displays a wrong modifier, you want a core test to catch it.
+
+### Before
+
+Create:
+
+```text
+crates/storyforge-core/tests/character_math.rs
 ```
 
-Create `crates/storyforge-core/tests/character_math.rs`:
+### What to change
+
+Add tests for ability modifiers and proficiency boundaries.
+
+### Temporary MVP / debug behavior
+
+Test only pure math first. Do not build a whole character just to test `ability_modifier`.
+
+### After
 
 ```rust
 use storyforge_core::{ability_modifier, proficiency_bonus};
@@ -184,16 +255,8 @@ fn ability_modifiers_round_down_for_odd_scores() {
 #[test]
 fn proficiency_changes_at_level_boundaries() {
     let cases = [
-        (1, 2),
-        (4, 2),
-        (5, 3),
-        (8, 3),
-        (9, 4),
-        (12, 4),
-        (13, 5),
-        (16, 5),
-        (17, 6),
-        (20, 6),
+        (1, 2), (4, 2), (5, 3), (8, 3), (9, 4),
+        (12, 4), (13, 5), (16, 5), (17, 6), (20, 6),
     ];
 
     for (level, expected) in cases {
@@ -202,17 +265,53 @@ fn proficiency_changes_at_level_boundaries() {
 }
 ```
 
-Run:
+### Learning checkpoint
+
+You should understand that these functions are pure: same input, same output, no state, no RNG, no content files.
+
+### How to verify
+
+After exporting from `lib.rs`, run:
 
 ```powershell
 cargo test -p storyforge-core --test character_math
 ```
 
-Continue when both tests pass.
+### Next connection
 
-## Checkpoint 2: Keep unfinished choices in a draft
+Now add the draft state that holds unfinished choices.
 
-A half-created character is not a valid `PlayerCharacter`. Create `crates/storyforge-core/src/creation.rs`:
+---
+
+File: `crates/storyforge-core/src/creation.rs`
+
+## Step 3: Keep unfinished choices in a draft
+
+### Current state
+
+There is no creation state. A half-created character would be impossible to represent without misusing `PlayerCharacter`.
+
+### Why this step matters
+
+The game sheet says character creation can be suspended and resumed. That requires a serializable draft with missing fields allowed.
+
+### Before
+
+Create:
+
+```text
+crates/storyforge-core/src/creation.rs
+```
+
+### What to change
+
+Add `CreationStage`, `CharacterDraft`, `CharacterCreationState`, `CharacterProblem`, and `CreationOutcome`.
+
+### Temporary MVP / debug behavior
+
+Use `CharacterCreationState::problems()` to print or inspect what is missing before confirmation. That gives you a debug checklist before implementing the full UI.
+
+### After
 
 ```rust
 use std::collections::BTreeSet;
@@ -264,7 +363,11 @@ pub struct CharacterCreationState {
     pub wand_candidates: Vec<ContentId>,
     pub candidate_seed: u64,
 }
+```
 
+Continue `creation.rs` with the constructor and problem checker:
+
+```rust
 impl CharacterCreationState {
     #[must_use]
     pub fn new(candidate_seed: u64) -> Self {
@@ -296,10 +399,7 @@ impl CharacterCreationState {
             ));
         }
         if self.draft.background.is_none() {
-            problems.push(CharacterProblem::new(
-                "background",
-                "Choose a background.",
-            ));
+            problems.push(CharacterProblem::new("background", "Choose a background."));
         }
         if self.draft.traits.len() != 2 {
             problems.push(CharacterProblem::new(
@@ -314,26 +414,10 @@ impl CharacterCreationState {
             ));
         }
         for (field, value, message) in [
-            (
-                "study_interest",
-                &self.draft.study_interest,
-                "Choose a field of study.",
-            ),
-            (
-                "affiliation",
-                &self.draft.affiliation,
-                "Choose an affiliation preference.",
-            ),
-            (
-                "equipment_package",
-                &self.draft.equipment_package,
-                "Collect an equipment package.",
-            ),
-            (
-                "companion",
-                &self.draft.companion,
-                "Choose a pet or familiar.",
-            ),
+            ("study_interest", &self.draft.study_interest, "Choose a field of study."),
+            ("affiliation", &self.draft.affiliation, "Choose an affiliation preference."),
+            ("equipment_package", &self.draft.equipment_package, "Collect an equipment package."),
+            ("companion", &self.draft.companion, "Choose a pet or familiar."),
             ("wand", &self.draft.wand, "Complete a wand trial."),
         ] {
             if value.is_none() {
@@ -361,25 +445,174 @@ impl CharacterProblem {
     }
 }
 
-#[derive(Debug, Clone, PartialEq, Eq)]
+#[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize)]
 pub struct CreationOutcome {
     pub character: PlayerCharacter,
     pub opening_scene: ContentId,
 }
 ```
 
-`candidate_seed` makes the same new-game seed produce the same wand candidates. `BTreeSet` keeps saved output and debug views stable. The TUI owns text focus and cursor position, but core owns every gameplay choice.
+### Learning checkpoint
 
-Export the module from `lib.rs`:
+You should understand why `BTreeSet` is used instead of `HashSet`: stable ordering makes debug output, saves, and tests easier to compare.
+
+### How to verify
+
+Compilation waits until `lib.rs` exports the module.
+
+### Next connection
+
+Expose the character and creation modules.
+
+---
+
+File: `crates/storyforge-core/src/lib.rs`
+
+## Step 4: Export character and creation types
+
+### Current state
+
+`lib.rs` exports the engine API from Guide 05. It does not know about `character.rs` or `creation.rs`.
+
+### Why this step matters
+
+Tests, the TUI, and future content validation need access to the public character and creation types.
+
+### Before
+
+You should already have module declarations similar to:
 
 ```rust
-mod creation;
-
-pub use creation::{
-    CharacterCreationState, CharacterDraft, CharacterProblem, CreationOutcome,
-    CreationStage,
-};
+mod command;
+mod engine;
+mod id;
+mod state;
 ```
+
+### What to change
+
+Add `mod character;` and `mod creation;`, then export the public types and functions.
+
+### Temporary MVP / debug behavior
+
+Export the complete public surface for this guide. Keep helper functions private until a test or another crate needs them.
+
+### After
+
+```rust
+mod character;
+mod creation;
+mod command;
+mod engine;
+mod id;
+mod state;
+
+pub use character::{
+    Ability, AbilityScores, CastingStyle, CharacterError, PlayerCharacter, SpellSlotState,
+    SpellcastingState, ability_modifier, proficiency_bonus,
+};
+pub use creation::{
+    CharacterCreationState, CharacterDraft, CharacterProblem, CreationOutcome, CreationStage,
+};
+pub use command::GameCommand;
+pub use engine::{GameEngine, apply_events, handle_command};
+pub use id::{ContentId, IdError};
+pub use state::{GameEvent, GameState};
+```
+
+Keep `engine_name()` if it still exists.
+
+### Learning checkpoint
+
+You should understand that adding a source file is not enough in Rust. The crate root decides which modules exist and which items are public.
+
+### How to verify
+
+Run:
+
+```powershell
+cargo test -p storyforge-core --test character_math
+cargo check -p storyforge-core
+```
+
+### Next connection
+
+Now define creation commands and events.
+
+---
+
+File: `crates/storyforge-core/src/creation.rs`
+
+## Step 5: Define creation commands and events
+
+### Current state
+
+`CharacterCreationState` can store a draft, but nothing can change it yet.
+
+### Why this step matters
+
+Commands say what the player is trying to do. Events say what actually happened. This mirrors the engine pattern from Guide 05.
+
+### Before
+
+Add these types below `CreationOutcome`.
+
+### What to change
+
+Add `CreationCommand` and `CreationEvent`.
+
+### Temporary MVP / debug behavior
+
+Do not connect keyboard input yet. In tests, manually construct commands and inspect returned events.
+
+### After
+
+```rust
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub enum CreationCommand {
+    SetIdentity { name: String, pronouns: String },
+    ChooseBackground { background: ContentId },
+    ToggleTrait { trait_id: ContentId },
+    ChooseCastingStyle { style: CastingStyle },
+    ChooseStudyInterest { interest: ContentId },
+    ChooseAffiliationPreference { affiliation: ContentId },
+    EnterShop { shop: ContentId },
+    ChooseEquipmentPackage { package: ContentId },
+    InspectCompanion { companion: ContentId },
+    AdoptCompanion { companion: ContentId },
+    BeginWandTrial,
+    SelectWand { wand: ContentId },
+    ReturnTo { stage: CreationStage },
+    ConfirmCharacter,
+}
+
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub enum CreationEvent {
+    IdentitySet { name: String, pronouns: String },
+    BackgroundChosen { background: ContentId },
+    TraitAdded { trait_id: ContentId },
+    TraitRemoved { trait_id: ContentId },
+    CastingStyleChosen { style: CastingStyle },
+    StudyInterestChosen { interest: ContentId },
+    AffiliationPreferenceChosen { affiliation: ContentId },
+    ShopEntered { shop: ContentId, next_stage: CreationStage },
+    EquipmentPackageChosen { package: ContentId },
+    CompanionInspected { companion: ContentId },
+    CompanionAdopted { companion: ContentId },
+    WandCandidatesGenerated { candidates: Vec<ContentId> },
+    WandChosen { wand: ContentId },
+    CreationStageChanged { stage: CreationStage },
+    CreationRejected { problems: Vec<CharacterProblem> },
+    CharacterCreated { outcome: Box<CreationOutcome> },
+    AutosaveRequested { reason: String },
+}
+```
+
+### Learning checkpoint
+
+You should understand that no keyboard keys appear in `CreationCommand`. The TUI can map Enter, buttons, or mouse clicks to these same commands later.
+
+### How to verify
 
 Run:
 
@@ -387,140 +620,39 @@ Run:
 cargo check -p storyforge-core
 ```
 
-Continue when the crate compiles.
+This may fail until you export the new types in Step 10. If so, continue and export them after the handler exists.
 
-## Checkpoint 3: Define every creation command and event
+### Next connection
 
-In `creation.rs`, add:
+Add a narrow catalog so the handler can validate content IDs.
 
-```rust
-#[derive(Debug, Clone, PartialEq, Eq)]
-pub enum CreationCommand {
-    SetIdentity {
-        name: String,
-        pronouns: String,
-    },
-    ChooseBackground {
-        background: ContentId,
-    },
-    ToggleTrait {
-        trait_id: ContentId,
-    },
-    ChooseCastingStyle {
-        style: CastingStyle,
-    },
-    ChooseStudyInterest {
-        interest: ContentId,
-    },
-    ChooseAffiliationPreference {
-        affiliation: ContentId,
-    },
-    EnterShop {
-        shop: ContentId,
-    },
-    ChooseEquipmentPackage {
-        package: ContentId,
-    },
-    InspectCompanion {
-        companion: ContentId,
-    },
-    AdoptCompanion {
-        companion: ContentId,
-    },
-    BeginWandTrial,
-    SelectWand {
-        wand: ContentId,
-    },
-    ReturnTo {
-        stage: CreationStage,
-    },
-    ConfirmCharacter,
-}
+---
 
-#[derive(Debug, Clone, PartialEq, Eq)]
-pub enum CreationEvent {
-    IdentitySet {
-        name: String,
-        pronouns: String,
-    },
-    BackgroundChosen {
-        background: ContentId,
-    },
-    TraitAdded {
-        trait_id: ContentId,
-    },
-    TraitRemoved {
-        trait_id: ContentId,
-    },
-    CastingStyleChosen {
-        style: CastingStyle,
-    },
-    StudyInterestChosen {
-        interest: ContentId,
-    },
-    AffiliationPreferenceChosen {
-        affiliation: ContentId,
-    },
-    ShopEntered {
-        shop: ContentId,
-        next_stage: CreationStage,
-    },
-    EquipmentPackageChosen {
-        package: ContentId,
-    },
-    CompanionInspected {
-        companion: ContentId,
-    },
-    CompanionAdopted {
-        companion: ContentId,
-    },
-    WandCandidatesGenerated {
-        candidates: Vec<ContentId>,
-    },
-    WandChosen {
-        wand: ContentId,
-    },
-    CreationStageChanged {
-        stage: CreationStage,
-    },
-    CreationRejected {
-        problems: Vec<CharacterProblem>,
-    },
-    CharacterCreated {
-        outcome: Box<CreationOutcome>,
-    },
-    AutosaveRequested {
-        reason: String,
-    },
-}
-```
+File: `crates/storyforge-core/src/creation.rs`
 
-`CharacterCreated` boxes the larger payload so a vector of events is not forced to reserve that size for every small variant.
+## Step 6: Add creation catalogs and helpers
 
-The commands have these contracts:
+### Current state
 
-| Command | Validation | Events and state change |
-| --- | --- | --- |
-| `SetIdentity` | Trimmed name is 1 to 32 characters; pronouns are not blank | Stores both values and moves to `Background` |
-| `ChooseBackground` | ID exists in the loaded background catalog | Replaces the background |
-| `ToggleTrait` | ID exists; no more than two selected | Adds or removes one trait |
-| `ChooseCastingStyle` | Enum is already valid | Stores the style |
-| `ChooseStudyInterest` | ID exists in the study catalog | Stores the interest |
-| `ChooseAffiliationPreference` | ID exists and is available at creation | Stores a preference, not a guaranteed placement |
-| `EnterShop` | Shop exists and is open in this sequence | Records the visit and changes stage |
-| `ChooseEquipmentPackage` | Package exists and matches the campaign budget policy | Replaces the package |
-| `InspectCompanion` | Companion is offered by the active shop | Records that the player met it; no adoption yet |
-| `AdoptCompanion` | Companion was inspected and is adoptable | Replaces the selected companion |
-| `BeginWandTrial` | Player is in the wand shop | Generates three stable candidates once |
-| `SelectWand` | Wand is in the generated candidate list | Stores the wand |
-| `ReturnTo` | Target is not `Complete` | Changes the stage without deleting choices |
-| `ConfirmCharacter` | Entire draft has no problems | Emits the finished character, opening scene, and autosave request |
+Commands may contain IDs, but the handler needs to know which IDs are valid for this campaign.
 
-Do not put keyboard keys in these enums. The TUI maps `Enter` to a command; tests and future mouse support dispatch the same command directly.
+### Why this step matters
 
-## Checkpoint 4: Handle and apply commands
+Core can validate choices without knowing how files were loaded. The TUI or content layer passes a narrow catalog view into the command handler.
 
-The engine needs read-only catalogs when it validates content IDs. Add this narrow view to `creation.rs`:
+### Before
+
+Add these helpers below the event enum.
+
+### What to change
+
+Add `CreationCatalog`, `contains_id`, `rejected`, and `wand_candidates`.
+
+### Temporary MVP / debug behavior
+
+Use simple slices of `ContentId`. Do not build a full registry yet.
+
+### After
 
 ```rust
 #[derive(Debug)]
@@ -545,11 +677,7 @@ fn rejected(field: &'static str, message: impl Into<String>) -> Vec<CreationEven
         problems: vec![CharacterProblem::new(field, message)],
     }]
 }
-```
 
-Add a candidate generator. It is deterministic and does not imply that one wand is secretly the best:
-
-```rust
 #[must_use]
 pub fn wand_candidates(seed: u64, wands: &[ContentId]) -> Vec<ContentId> {
     if wands.is_empty() {
@@ -563,9 +691,52 @@ pub fn wand_candidates(seed: u64, wands: &[ContentId]) -> Vec<ContentId> {
 }
 ```
 
-Now add the command handler. It decides what happened but does not mutate state:
+### Learning checkpoint
+
+You should understand that `CreationCatalog<'a>` borrows slices. It does not own or clone the whole content registry just to validate one command.
+
+### How to verify
+
+Run:
+
+```powershell
+cargo check -p storyforge-core
+```
+
+### Next connection
+
+Now handle commands by returning events.
+
+---
+
+File: `crates/storyforge-core/src/creation.rs`
+
+## Step 7: Handle creation commands without mutating state
+
+### Current state
+
+Commands and catalogs exist, but no function turns commands into events.
+
+### Why this step matters
+
+This is the creation version of Guide 05's reducer. It lets you test rules before the TUI exists.
+
+### Before
+
+Add the handler below the helpers.
+
+### What to change
+
+Implement `handle_creation_command` for the MVP commands.
+
+### Temporary MVP / debug behavior
+
+For each command, first inspect the returned events in a test. Only after the event looks right should you apply it to state.
+
+### After
 
 ```rust
+#[must_use]
 pub fn handle_creation_command(
     state: &CharacterCreationState,
     command: CreationCommand,
@@ -583,9 +754,7 @@ pub fn handle_creation_command(
             }
             vec![
                 CreationEvent::IdentitySet { name, pronouns },
-                CreationEvent::CreationStageChanged {
-                    stage: CreationStage::Background,
-                },
+                CreationEvent::CreationStageChanged { stage: CreationStage::Background },
             ]
         }
         CreationCommand::ChooseBackground { background } => {
@@ -606,6 +775,7 @@ pub fn handle_creation_command(
                 vec![CreationEvent::TraitAdded { trait_id }]
             }
         }
+```
         CreationCommand::ChooseCastingStyle { style } => {
             vec![CreationEvent::CastingStyleChosen { style }]
         }
@@ -640,39 +810,48 @@ pub fn handle_creation_command(
             if !contains_id(catalog.equipment_packages, &package) {
                 return rejected("equipment_package", "That package is unavailable.");
             }
-            vec![CreationEvent::EquipmentPackageChosen { package }]
+            vec![
+                CreationEvent::EquipmentPackageChosen { package },
+                CreationEvent::AutosaveRequested { reason: "equipment chosen".to_owned() },
+            ]
         }
         CreationCommand::InspectCompanion { companion } => {
             if !contains_id(catalog.companions, &companion) {
-                return rejected("companion", "That companion is not in this shop.");
+                return rejected("companion", "That companion is unavailable.");
             }
             vec![CreationEvent::CompanionInspected { companion }]
         }
         CreationCommand::AdoptCompanion { companion } => {
             if !state.inspected_companions.contains(&companion) {
-                return rejected("companion", "Meet this companion before adopting it.");
+                return rejected("companion", "Meet the companion before adopting it.");
             }
-            vec![CreationEvent::CompanionAdopted { companion }]
+            vec![
+                CreationEvent::CompanionAdopted { companion },
+                CreationEvent::AutosaveRequested { reason: "companion adopted".to_owned() },
+            ]
         }
         CreationCommand::BeginWandTrial => {
             if state.stage != CreationStage::WandShop {
-                return rejected("wand", "Enter the wand shop before starting a trial.");
+                return rejected("wand", "Begin the wand trial from the wand shop.");
             }
             let candidates = wand_candidates(state.candidate_seed, catalog.wands);
             if candidates.is_empty() {
-                return rejected("wand", "The campaign does not define any wands.");
+                return rejected("wand", "No wands are available.");
             }
             vec![CreationEvent::WandCandidatesGenerated { candidates }]
         }
         CreationCommand::SelectWand { wand } => {
             if !state.wand_candidates.contains(&wand) {
-                return rejected("wand", "Try this wand before choosing it.");
+                return rejected("wand", "Choose one of the trial wands.");
             }
-            vec![CreationEvent::WandChosen { wand }]
+            vec![
+                CreationEvent::WandChosen { wand },
+                CreationEvent::AutosaveRequested { reason: "wand chosen".to_owned() },
+            ]
         }
         CreationCommand::ReturnTo { stage } => {
             if stage == CreationStage::Complete {
-                return rejected("stage", "Only confirmation can complete creation.");
+                return rejected("stage", "Cannot return directly to Complete.");
             }
             vec![CreationEvent::CreationStageChanged { stage }]
         }
@@ -681,100 +860,106 @@ pub fn handle_creation_command(
             if !problems.is_empty() {
                 return vec![CreationEvent::CreationRejected { problems }];
             }
-
-            match build_character(&state.draft, catalog.opening_scene) {
+            match complete_character(&state.draft, catalog.opening_scene) {
                 Ok(outcome) => vec![
-                    CreationEvent::CharacterCreated {
-                        outcome: Box::new(outcome),
-                    },
-                    CreationEvent::AutosaveRequested {
-                        reason: "character creation completed".to_owned(),
-                    },
+                    CreationEvent::CharacterCreated { outcome: Box::new(outcome) },
+                    CreationEvent::AutosaveRequested { reason: "character created".to_owned() },
                 ],
-                Err(problems) => vec![CreationEvent::CreationRejected { problems }],
+                Err(error) => rejected("character", error.to_string()),
             }
         }
     }
 }
 ```
 
-`build_character` is the only remaining constructor. Add it below the handler:
+### Learning checkpoint
+
+You should understand that this function does not change `state`. It reads the current draft and returns events. That makes it easy to test rejected commands without side effects.
+
+### How to verify
+
+This references `complete_character`, which you add in Step 8.
+
+### Next connection
+
+Add the function that turns a valid draft into a permanent character.
+
+---
+
+File: `crates/storyforge-core/src/creation.rs`
+
+## Step 8: Complete a valid draft into a character
+
+### Current state
+
+`ConfirmCharacter` needs `complete_character`, but it does not exist yet.
+
+### Why this step matters
+
+This is the boundary between draft data and permanent character data. All required fields must be present before this function succeeds.
+
+### Before
+
+Add this below `handle_creation_command`.
+
+### What to change
+
+Add helper functions to unwrap required draft fields safely and construct a level-1 character.
+
+### Temporary MVP / debug behavior
+
+Use simple starting abilities and spell slots. Print or inspect the resulting `PlayerCharacter` in a test before connecting the TUI.
+
+### After
 
 ```rust
-fn build_character(
+fn require(value: Option<ContentId>, field: &'static str) -> Result<ContentId, crate::CharacterError> {
+    value.ok_or(crate::CharacterError::MissingField(field))
+}
+
+fn complete_character(
     draft: &CharacterDraft,
     opening_scene: &ContentId,
-) -> Result<CreationOutcome, Vec<CharacterProblem>> {
-    let required = (
-        draft.background.clone(),
-        draft.casting_style,
-        draft.study_interest.clone(),
-        draft.affiliation.clone(),
-        draft.equipment_package.clone(),
-        draft.wand.clone(),
-        draft.companion.clone(),
-    );
-    let (
-        Some(background),
-        Some(casting_style),
-        Some(study_interest),
-        Some(affiliation),
-        Some(equipment_package),
-        Some(wand),
-        Some(companion),
-    ) = required
-    else {
-        return Err(vec![CharacterProblem::new(
-            "character",
-            "The character draft is incomplete.",
-        )]);
-    };
+) -> Result<CreationOutcome, crate::CharacterError> {
+    let name = draft.name.trim().to_owned();
+    if !(1..=32).contains(&name.chars().count()) {
+        return Err(crate::CharacterError::InvalidName);
+    }
+    if draft.traits.len() != 2 {
+        return Err(crate::CharacterError::TraitCount);
+    }
 
+    let casting_style = draft
+        .casting_style
+        .ok_or(crate::CharacterError::MissingField("casting_style"))?;
     let abilities = starting_abilities(casting_style);
-    let constitution_modifier = i32::from(crate::ability_modifier(abilities.constitution));
-    let hp = (8 + constitution_modifier).max(1);
-    let cantrip = ContentId::new("academy.spell.spark")
-        .map_err(|error| vec![CharacterProblem::new("content", error.to_string())])?;
-    let first_spell = ContentId::new("academy.spell.guard")
-        .map_err(|error| vec![CharacterProblem::new("content", error.to_string())])?;
+    abilities.validate()?;
 
-    let character = PlayerCharacter {
-        name: draft.name.trim().to_owned(),
+    let mut slots = [crate::SpellSlotState { remaining: 0, maximum: 0 }; 9];
+    slots[0] = crate::SpellSlotState { remaining: 2, maximum: 2 };
+
+    let character = crate::PlayerCharacter {
+        name,
         pronouns: draft.pronouns.trim().to_owned(),
         level: 1,
         experience: 0,
         abilities,
-        background,
+        background: require(draft.background.clone(), "background")?,
         casting_style,
-        study_interest,
-        affiliation,
-        equipment_package,
-        wand,
-        companion,
+        study_interest: require(draft.study_interest.clone(), "study_interest")?,
+        affiliation: require(draft.affiliation.clone(), "affiliation")?,
+        equipment_package: require(draft.equipment_package.clone(), "equipment_package")?,
+        wand: require(draft.wand.clone(), "wand")?,
+        companion: require(draft.companion.clone(), "companion")?,
         traits: draft.traits.clone(),
         skill_proficiencies: draft.skill_proficiencies.clone(),
-        hp,
+        hp: 8,
         spellcasting: crate::SpellcastingState {
             casting_ability: casting_style.casting_ability(),
-            known_cantrips: vec![cantrip],
-            known_spells: vec![first_spell.clone()],
-            prepared_spells: vec![first_spell],
-            slots: {
-                let mut slots = [
-                    crate::SpellSlotState {
-                        remaining: 0,
-                        maximum: 0,
-                    };
-                    9
-                ];
-                slots[0] = crate::SpellSlotState {
-                    remaining: 2,
-                    maximum: 2,
-                };
-                slots
-            },
-            temporary_slots: [0; 5],
-            sorcery: None,
+            known_cantrips: Vec::new(),
+            known_spells: Vec::new(),
+            prepared_spells: Vec::new(),
+            slots,
         },
     };
 
@@ -803,15 +988,53 @@ fn starting_abilities(style: CastingStyle) -> crate::AbilityScores {
 }
 ```
 
-The slot array has nine entries, one for each leveled-spell tier. Index zero is the 1st-level slot pool. Cantrips do not use this array.
+### Learning checkpoint
 
-Add the event applier:
+You should understand why `require` consumes an `Option<ContentId>` and returns a `Result<ContentId, CharacterError>`. A complete character cannot store `None` for required fields.
+
+### How to verify
+
+Compilation waits until the event applier and exports are complete.
+
+### Next connection
+
+Apply creation events to mutate the draft state.
+
+---
+
+File: `crates/storyforge-core/src/creation.rs`
+
+## Step 9: Apply creation events to the draft
+
+### Current state
+
+The handler returns events, but no function applies them to `CharacterCreationState`.
+
+### Why this step matters
+
+This mirrors `apply_events` from Guide 05. It keeps mutation centralized and makes command handling easier to test.
+
+### Before
+
+Add this below the completion helpers.
+
+### What to change
+
+Implement `apply_creation_events`.
+
+### Temporary MVP / debug behavior
+
+For every command test, follow the same learning rhythm:
+
+1. Call `handle_creation_command`.
+2. Inspect the events.
+3. Call `apply_creation_events`.
+4. Inspect the changed draft.
+
+### After
 
 ```rust
-pub fn apply_creation_events(
-    state: &mut CharacterCreationState,
-    events: &[CreationEvent],
-) {
+pub fn apply_creation_events(state: &mut CharacterCreationState, events: &[CreationEvent]) {
     for event in events {
         match event {
             CreationEvent::IdentitySet { name, pronouns } => {
@@ -861,37 +1084,281 @@ pub fn apply_creation_events(
             CreationEvent::CharacterCreated { .. } => {
                 state.stage = CreationStage::Complete;
             }
-            CreationEvent::CreationRejected { .. }
-            | CreationEvent::AutosaveRequested { .. } => {}
+            CreationEvent::CreationRejected { .. } | CreationEvent::AutosaveRequested { .. } => {}
         }
     }
 }
 ```
 
-Export the new types and functions from `lib.rs`, alongside the Checkpoint 2 exports:
+### Learning checkpoint
+
+You should understand that rejected commands do not mutate the draft. Autosave requests are notifications, not state changes.
+
+### How to verify
+
+Export the new API in Step 10, then run core tests.
+
+### Next connection
+
+Update `lib.rs` exports again.
+
+---
+
+File: `crates/storyforge-core/src/lib.rs`
+
+## Step 10: Export creation commands, events, and helpers
+
+### Current state
+
+Step 4 exported only the draft and permanent character types.
+
+### Why this step matters
+
+Tests and the TUI need to dispatch creation commands and apply creation events.
+
+### Before
+
+Find the existing `pub use creation::{ ... };` block.
+
+### What to change
+
+Add the command/event API to that export list.
+
+### Temporary MVP / debug behavior
+
+Do not export `complete_character` yet. Keep confirmation going through `ConfirmCharacter` so the event path stays consistent.
+
+### After
 
 ```rust
 pub use creation::{
-    CreationCatalog, CreationCommand, CreationEvent, apply_creation_events,
+    CharacterCreationState, CharacterDraft, CharacterProblem, CreationCatalog, CreationCommand,
+    CreationEvent, CreationOutcome, CreationStage, apply_creation_events,
     handle_creation_command, wand_candidates,
 };
 ```
 
+### Learning checkpoint
+
+You should understand that keeping `complete_character` private prevents other code from bypassing `ConfirmCharacter` and its event output.
+
+### How to verify
+
 Run:
 
 ```powershell
-cargo fmt --all
 cargo check -p storyforge-core
 ```
 
-Continue when the core crate compiles without warnings.
+### Next connection
 
-## Checkpoint 5: Make Lantern Row data-driven
+Now add focused tests for creation behavior.
 
-Add these content records to `storyforge-content`. They are deliberately small for the first vertical slice:
+---
+
+File: `crates/storyforge-core/tests/creation_flow.rs`
+
+## Step 11: Test the creation flow in small pieces
+
+### Current state
+
+Creation commands exist, but no tests prove the flow.
+
+### Why this step matters
+
+Character creation has many small rules. Focused tests prevent the TUI from hiding state-machine bugs.
+
+### Before
+
+Create:
+
+```text
+crates/storyforge-core/tests/creation_flow.rs
+```
+
+### What to change
+
+Add tests for identity validation, companion inspection before adoption, stable wand candidates, back navigation, and casting ability.
+
+### Temporary MVP / debug behavior
+
+Each test should use explicit IDs. Do not rely on campaign files yet.
+
+### After
 
 ```rust
-#[derive(Debug, Clone, serde::Deserialize)]
+use storyforge_core::{
+    CastingStyle, CharacterCreationState, ContentId, CreationCatalog, CreationCommand,
+    CreationEvent, CreationStage, apply_creation_events, handle_creation_command,
+    wand_candidates,
+};
+
+fn id(value: &str) -> ContentId {
+    ContentId::new(value).expect("test IDs are valid")
+}
+
+fn empty_catalog(opening_scene: &ContentId) -> CreationCatalog<'_> {
+    CreationCatalog {
+        backgrounds: &[],
+        traits: &[],
+        studies: &[],
+        affiliations: &[],
+        shops: &[],
+        equipment_packages: &[],
+        companions: &[],
+        wands: &[],
+        opening_scene,
+    }
+}
+
+#[test]
+fn identity_validation_keeps_the_player_on_the_same_stage() {
+    let state = CharacterCreationState::new(7);
+    let opening_scene = id("academy.scene.arrival");
+    let catalog = empty_catalog(&opening_scene);
+
+    let events = handle_creation_command(
+        &state,
+        CreationCommand::SetIdentity {
+            name: " ".to_owned(),
+            pronouns: "they/them".to_owned(),
+        },
+        &catalog,
+    );
+
+    assert!(matches!(events.as_slice(), [CreationEvent::CreationRejected { .. }]));
+    assert_eq!(state.stage, CreationStage::Identity);
+}
+
+#[test]
+fn companion_must_be_inspected_before_adoption() {
+    let state = CharacterCreationState::new(7);
+    let owl = id("academy.companion.ash-owl");
+    let opening_scene = id("academy.scene.arrival");
+    let companions = [owl.clone()];
+    let catalog = CreationCatalog {
+        companions: &companions,
+        ..empty_catalog(&opening_scene)
+    };
+
+    let rejected = handle_creation_command(
+        &state,
+        CreationCommand::AdoptCompanion { companion: owl.clone() },
+        &catalog,
+    );
+    assert!(matches!(rejected.as_slice(), [CreationEvent::CreationRejected { .. }]));
+
+    let mut inspected_state = state;
+    let inspected = handle_creation_command(
+        &inspected_state,
+        CreationCommand::InspectCompanion { companion: owl.clone() },
+        &catalog,
+    );
+    apply_creation_events(&mut inspected_state, &inspected);
+
+    let adopted = handle_creation_command(
+        &inspected_state,
+        CreationCommand::AdoptCompanion { companion: owl },
+        &catalog,
+    );
+    assert!(matches!(adopted.as_slice(), [CreationEvent::CompanionAdopted { .. }, ..]));
+}
+
+#[test]
+fn wand_candidates_are_stable_for_the_same_seed() {
+    let wands = [
+        id("academy.wand.a"),
+        id("academy.wand.b"),
+        id("academy.wand.c"),
+        id("academy.wand.d"),
+    ];
+
+    assert_eq!(wand_candidates(19, &wands), wand_candidates(19, &wands));
+    assert_eq!(wand_candidates(19, &wands).len(), 3);
+}
+
+#[test]
+fn back_navigation_does_not_clear_the_draft() {
+    let mut state = CharacterCreationState::new(7);
+    let opening_scene = id("academy.scene.arrival");
+    let catalog = empty_catalog(&opening_scene);
+
+    let identity = handle_creation_command(
+        &state,
+        CreationCommand::SetIdentity {
+            name: "Mara Vale".to_owned(),
+            pronouns: "she/her".to_owned(),
+        },
+        &catalog,
+    );
+    apply_creation_events(&mut state, &identity);
+
+    let back = handle_creation_command(
+        &state,
+        CreationCommand::ReturnTo { stage: CreationStage::Identity },
+        &catalog,
+    );
+    apply_creation_events(&mut state, &back);
+
+    assert_eq!(state.draft.name, "Mara Vale");
+    assert_eq!(state.stage, CreationStage::Identity);
+}
+
+#[test]
+fn casting_styles_choose_different_spellcasting_abilities() {
+    assert_ne!(
+        CastingStyle::Willpower.casting_ability(),
+        CastingStyle::Intellect.casting_ability()
+    );
+}
+```
+
+### Learning checkpoint
+
+You should understand why these tests call the handler directly. The creation rules should work without keyboard input, terminal rendering, or content files.
+
+### How to verify
+
+Run:
+
+```powershell
+cargo test -p storyforge-core --test creation_flow
+```
+
+### Next connection
+
+Now add the first data-driven Lantern Row record to Guide 06's content pack.
+
+---
+
+File: `crates/storyforge-content/src/model.rs`
+
+## Step 12: Add a small creation market model
+
+### Current state
+
+Guide 06 added manifest and scene models only. Character creation needs a market record for Lantern Row.
+
+### Why this step matters
+
+The end-goal creator is a playable shopping day. Content should define which shops and candidates exist, while core defines what commands do with those IDs.
+
+### Before
+
+Open `model.rs`, below the scene structs.
+
+### What to change
+
+Add market, shop, and shop-kind definitions.
+
+### Temporary MVP / debug behavior
+
+Model only the market shape first. Do not validate every item type yet.
+
+### After
+
+```rust
+#[derive(Debug, Clone, Deserialize)]
 pub struct CreationMarketDefinition {
     pub id: ContentId,
     pub title: String,
@@ -899,7 +1366,7 @@ pub struct CreationMarketDefinition {
     pub shops: Vec<CreationShopDefinition>,
 }
 
-#[derive(Debug, Clone, serde::Deserialize)]
+#[derive(Debug, Clone, Deserialize)]
 pub struct CreationShopDefinition {
     pub id: ContentId,
     pub title: String,
@@ -908,7 +1375,7 @@ pub struct CreationShopDefinition {
     pub inventory: Vec<ContentId>,
 }
 
-#[derive(Debug, Clone, Copy, serde::Deserialize)]
+#[derive(Debug, Clone, Copy, Deserialize, PartialEq, Eq)]
 pub enum CreationShopKind {
     Equipment,
     Companion,
@@ -916,7 +1383,62 @@ pub enum CreationShopKind {
 }
 ```
 
-Create `campaigns/academy-demo/locations/lantern-row.ron`:
+Export these from `storyforge-content/src/lib.rs`:
+
+```rust
+pub use model::{
+    CampaignManifest, ChoiceDefinition, CreationMarketDefinition, CreationShopDefinition,
+    CreationShopKind, SceneDefinition,
+};
+```
+
+### Learning checkpoint
+
+You should understand that a shop inventory stores IDs. The actual item, companion, and wand records can be added later without changing the creation command path.
+
+### How to verify
+
+Run:
+
+```powershell
+cargo check -p storyforge-content
+```
+
+### Next connection
+
+Create the Lantern Row content file.
+
+---
+
+File: `campaigns/academy-demo/locations/lantern-row.ron`
+
+## Step 13: Add Lantern Row as public demo content
+
+### Current state
+
+Guide 06 created scenes, but no creation market data.
+
+### Why this step matters
+
+This moves the shopping-day structure into content. The public demo uses original names, not private or licensed setting terms.
+
+### Before
+
+Create this directory if needed:
+
+```text
+campaigns/academy-demo/locations/
+```
+
+### What to change
+
+Create `lantern-row.ron`.
+
+### Temporary MVP / debug behavior
+
+The inventory IDs do not all need full records yet. Use them to build the creation catalog slices for command tests and early UI.
+
+### After
 
 ```ron
 (
@@ -937,7 +1459,7 @@ Create `campaigns/academy-demo/locations/lantern-row.ron`:
         (
             id: "academy.shop.companions",
             title: "Moth & Feather",
-            description: "Cages stand open while several watchful animals choose whom to approach.",
+            description: "Open perches and quiet cages line the warm back room.",
             kind: Companion,
             inventory: [
                 "academy.companion.ash-owl",
@@ -961,137 +1483,220 @@ Create `campaigns/academy-demo/locations/lantern-row.ron`:
 )
 ```
 
-The public pack uses original names and descriptions. Private campaign terminology belongs in the private sibling repository created in chapter 19.
+### Learning checkpoint
 
-Equipment packages represent different circumstances without creating a stronger paid option:
+You should understand the privacy boundary: this public pack uses original content. Private campaign names and references belong in the separate private pack.
 
-| Policy | Narrative effect | Mechanical rule |
-| --- | --- | --- |
-| Assisted | School or sponsor supplied the list | Complete required kit, one visible relationship hook |
-| Second-hand | Used equipment with history | Complete required kit, one cosmetic quirk |
-| Standard | Ordinary new supplies | Complete required kit |
-| Comfortable | Extra spending money | Complete required kit, cosmetic choice only |
+### How to verify
 
-A companion may be an ordinary pet or a rules-bearing familiar:
-
-- A pet provides relationship scenes, observations, and story reactions.
-- A familiar also has explicit exploration or combat abilities.
-- Both have a content ID, bond state, and memory.
-- The campaign definition decides which kind each candidate is.
-- The player may keep only one active companion at first.
-
-Validate the market:
-
-1. Every shop ID is unique.
-2. Exactly one equipment, companion, and wand shop exists.
-3. Every inventory ID resolves.
-4. At least three companions and three wands are available.
-5. Every equipment policy grants the required school items.
-6. No creation-only item grants an unexplained combat advantage.
-
-Run:
+After loader support is expanded for locations, run:
 
 ```powershell
 cargo run -p storyforge-tui -- validate --pack campaigns/academy-demo
 ```
 
-Expected result:
+### Next connection
 
-```text
-academy-demo is valid
-```
+Finally, connect the state machine to a TUI screen in a minimal way.
 
-## Checkpoint 6: Connect the state machine to the TUI
+---
 
-Create `crates/storyforge-tui/src/screens/creation.rs`. Do not calculate character rules in this file. Its responsibilities are:
+File: `crates/storyforge-tui/src/app.rs`
 
-1. Render `CharacterCreationState`.
-2. Convert input into `CreationCommand`.
-3. Send commands to the engine.
-4. Show `CreationRejected` problems without closing the screen.
-5. Begin the opening scene after `CharacterCreated`.
+## Step 14: Add creation state to the app
 
-Use one screen layout for every stage:
+### Current state
 
-```text
-┌──────────────────────────────────────────────────────────────────────┐
-│ LANTERN ROW                                      Shopping Day  2 / 3 │
-├─────────────────────────────────────────────┬────────────────────────┤
-│ MOTH & FEATHER                              │ YOUR CHARACTER         │
-│                                             │ Mara Vale             │
-│ The ash owl watches from an open perch.     │ Intellect             │
-│ The ink cat pretends not to notice you.     │ Archive studies       │
-│                                             │                        │
-│ > Meet the ash owl                          │ REQUIRED               │
-│   Offer the ink cat a ribbon                │ [x] Equipment          │
-│   Listen beside the rain toad               │ [ ] Companion          │
-│                                             │ [ ] Wand               │
-├─────────────────────────────────────────────┴────────────────────────┤
-│ ↑↓ choose   Enter interact   B back   C sheet preview                │
-└──────────────────────────────────────────────────────────────────────┘
-```
+`App` owns a `GameEngine` and optional loaded campaign after Guide 06, but it has no character-creation draft.
 
-Input behavior:
+### Why this step matters
 
-| Context | Key | Result |
-| --- | --- | --- |
-| Text field focused | Printable key | Edits the field; global shortcuts do not run |
-| Text field focused | `Enter` | Dispatches `SetIdentity` |
-| Choice list | Up or `k` | Moves visual selection only |
-| Choice list | Down or `j` | Moves visual selection only |
-| Choice list | `Enter` | Dispatches the command attached to the selected choice |
-| Any incomplete stage | `b` | Dispatches `ReturnTo` for the prior narrative stage |
-| Review | `Enter` | Dispatches `ConfirmCharacter` |
-| Any stage | `Esc` | Opens a discard confirmation; it does not silently erase the draft |
+The TUI needs to display the draft and send creation commands, but it should not construct `PlayerCharacter` directly.
 
-After each shop choice, request a lightweight creation autosave. Chapter 08 supplies the save writer. Until then, log the request:
+### Before
+
+`Screen` currently has:
 
 ```rust
-match event {
-    CreationEvent::AutosaveRequested { reason } => {
-        tracing::info!(%reason, "autosave requested");
-    }
-    CreationEvent::CharacterCreated { outcome } => {
-        app.begin_scene(outcome.opening_scene.clone());
-    }
-    CreationEvent::CreationRejected { problems } => {
-        app.creation_problems.clone_from(problems);
-    }
-    _ => {}
+pub enum Screen {
+    Story,
+    Character,
+    Journal,
+    Map,
+    Help,
 }
 ```
 
-The final review shows:
+### What to change
 
-- Identity and background.
-- Two traits.
-- Casting style and its linked ability.
-- Study interest and affiliation preference.
-- Equipment package.
-- Companion name and whether it is a pet or familiar.
-- Wand wood, core, length, flexibility, and authored temperament.
-- Starting HP, defense, skills, known cantrips, prepared spell, and two 1st-level slots.
+Add a `Creation` screen and a `CharacterCreationState` field.
 
-## Focused command tests
+### Temporary MVP / debug behavior
 
-Create `crates/storyforge-core/tests/creation_flow.rs`. Use a helper for valid IDs:
+Start creation automatically on app startup or behind a temporary key. The full New Game menu can come later.
+
+### After
+
+Add import:
 
 ```rust
-use storyforge_core::{
-    CastingStyle, CharacterCreationState, ContentId, CreationCatalog,
-    CreationCommand, CreationEvent, CreationStage, apply_creation_events,
-    handle_creation_command, wand_candidates,
-};
+use storyforge_core::CharacterCreationState;
+```
 
-fn id(value: &str) -> ContentId {
-    ContentId::new(value).expect("test IDs are valid")
+Add screen variant:
+
+```rust
+Creation,
+```
+
+Add field:
+
+```rust
+pub(crate) creation: CharacterCreationState,
+```
+
+Initialize it:
+
+```rust
+creation: CharacterCreationState::new(19),
+```
+
+For the temporary MVP, you can start on creation:
+
+```rust
+screen: Screen::Creation,
+```
+
+Or keep Story as default and add a temporary shortcut later.
+
+### Learning checkpoint
+
+You should understand that `App` can own draft UI flow state, but core still owns the rules for changing that draft.
+
+### How to verify
+
+Run:
+
+```powershell
+cargo check -p storyforge-tui
+```
+
+### Next connection
+
+Add a small creation renderer that shows the current stage and problems.
+
+---
+
+File: `crates/storyforge-tui/src/ui.rs`
+
+## Step 15: Render the creation draft before making it interactive
+
+### Current state
+
+No creation screen exists in the renderer.
+
+### Why this step matters
+
+Before adding input, prove the draft reaches the screen. This follows the MVP flow: display data first, then mutate it.
+
+### Before
+
+`render_story_panel` matches the existing screens but not `Screen::Creation`.
+
+### What to change
+
+Add a basic creation branch that shows current stage and missing problems.
+
+### Temporary MVP / debug behavior
+
+Do not build the full shopping layout yet. Show debug lines such as stage, name, pronouns, and missing fields.
+
+### After
+
+Inside the match for main text, add:
+
+```rust
+Screen::Creation => {
+    let problems = app.creation.problems();
+    let mut lines = vec![format!("Stage: {:?}", app.creation.stage)];
+    lines.push(format!("Name: {}", app.creation.draft.name));
+    lines.push(format!("Pronouns: {}", app.creation.draft.pronouns));
+    lines.push(String::new());
+    lines.push("Missing:".to_owned());
+    for problem in problems {
+        lines.push(format!("- {}: {}", problem.field, problem.message));
+    }
+    lines.join("\n")
 }
+```
 
-#[test]
-fn identity_validation_keeps_the_player_on_the_same_stage() {
-    let state = CharacterCreationState::new(7);
-    let opening_scene = id("academy.scene.arrival");
-    let catalog = CreationCatalog {
+### Learning checkpoint
+
+You should understand that this is not the final UI. It is a debug screen that proves `CharacterCreationState` reaches rendering.
+
+### How to verify
+
+Run:
+
+```powershell
+cargo run -p storyforge-tui
+```
+
+Open or start the Creation screen. You should see `Stage: Identity` and missing-field messages.
+
+### Next connection
+
+Now connect one command: identity submission.
+
+---
+
+File: `crates/storyforge-tui/src/app.rs`
+
+## Step 16: Dispatch one creation command from the TUI
+
+### Current state
+
+The creation draft displays but cannot change from input.
+
+### Why this step matters
+
+This is the smallest interactive proof of character creation:
+
+```text
+temporary input -> CreationCommand::SetIdentity -> CreationEvent -> draft update -> render
+```
+
+### Before
+
+`App::update` handles `UiAction` but has no creation-specific branch.
+
+### What to change
+
+For a temporary MVP, make `Confirm` on the Creation screen dispatch a hard-coded identity. This avoids building text fields before the state machine is proven.
+
+### Temporary MVP / debug behavior
+
+Use a debug identity first:
+
+- Name: `Mara Vale`
+- Pronouns: `she/her`
+
+After this works, replace the hard-coded values with real text fields.
+
+### After
+
+Add imports:
+
+```rust
+use storyforge_core::{CreationCommand, apply_creation_events, handle_creation_command};
+```
+
+In `App::update`, add this arm before the general `Confirm` arm:
+
+```rust
+UiAction::Confirm if self.screen == Screen::Creation => {
+    let opening_scene = self.engine.state().active_scene.clone();
+    let catalog = storyforge_core::CreationCatalog {
         backgrounds: &[],
         traits: &[],
         studies: &[],
@@ -1102,189 +1707,93 @@ fn identity_validation_keeps_the_player_on_the_same_stage() {
         wands: &[],
         opening_scene: &opening_scene,
     };
-
     let events = handle_creation_command(
-        &state,
-        CreationCommand::SetIdentity {
-            name: " ".to_owned(),
-            pronouns: "they/them".to_owned(),
-        },
-        &catalog,
-    );
-
-    assert!(matches!(
-        events.as_slice(),
-        [CreationEvent::CreationRejected { .. }]
-    ));
-    assert_eq!(state.stage, CreationStage::Identity);
-}
-
-#[test]
-fn companion_must_be_inspected_before_adoption() {
-    let state = CharacterCreationState::new(7);
-    let owl = id("academy.companion.ash-owl");
-    let opening_scene = id("academy.scene.arrival");
-    let catalog = CreationCatalog {
-        backgrounds: &[],
-        traits: &[],
-        studies: &[],
-        affiliations: &[],
-        shops: &[],
-        equipment_packages: &[],
-        companions: std::slice::from_ref(&owl),
-        wands: &[],
-        opening_scene: &opening_scene,
-    };
-
-    let rejected = handle_creation_command(
-        &state,
-        CreationCommand::AdoptCompanion {
-            companion: owl.clone(),
-        },
-        &catalog,
-    );
-    assert!(matches!(
-        rejected.as_slice(),
-        [CreationEvent::CreationRejected { .. }]
-    ));
-
-    let mut inspected_state = state;
-    let inspected = handle_creation_command(
-        &inspected_state,
-        CreationCommand::InspectCompanion {
-            companion: owl.clone(),
-        },
-        &catalog,
-    );
-    apply_creation_events(&mut inspected_state, &inspected);
-
-    let adopted = handle_creation_command(
-        &inspected_state,
-        CreationCommand::AdoptCompanion { companion: owl },
-        &catalog,
-    );
-    assert!(matches!(
-        adopted.as_slice(),
-        [CreationEvent::CompanionAdopted { .. }]
-    ));
-}
-
-#[test]
-fn wand_candidates_are_stable_for_the_same_seed() {
-    let wands = [
-        id("academy.wand.a"),
-        id("academy.wand.b"),
-        id("academy.wand.c"),
-        id("academy.wand.d"),
-    ];
-
-    assert_eq!(wand_candidates(19, &wands), wand_candidates(19, &wands));
-    assert_eq!(wand_candidates(19, &wands).len(), 3);
-}
-
-#[test]
-fn back_navigation_does_not_clear_the_draft() {
-    let mut state = CharacterCreationState::new(7);
-    let opening_scene = id("academy.scene.arrival");
-    let catalog = CreationCatalog {
-        backgrounds: &[],
-        traits: &[],
-        studies: &[],
-        affiliations: &[],
-        shops: &[],
-        equipment_packages: &[],
-        companions: &[],
-        wands: &[],
-        opening_scene: &opening_scene,
-    };
-    let identity = handle_creation_command(
-        &state,
+        &self.creation,
         CreationCommand::SetIdentity {
             name: "Mara Vale".to_owned(),
             pronouns: "she/her".to_owned(),
         },
         &catalog,
     );
-    apply_creation_events(&mut state, &identity);
-    let back = handle_creation_command(
-        &state,
-        CreationCommand::ReturnTo {
-            stage: CreationStage::Identity,
-        },
-        &catalog,
-    );
-    apply_creation_events(&mut state, &back);
-
-    assert_eq!(state.draft.name, "Mara Vale");
-    assert_eq!(state.stage, CreationStage::Identity);
-}
-
-#[test]
-fn casting_styles_choose_different_spellcasting_abilities() {
-    assert_ne!(
-        CastingStyle::Willpower.casting_ability(),
-        CastingStyle::Intellect.casting_ability()
-    );
+    apply_creation_events(&mut self.creation, &events);
 }
 ```
+
+The `opening_scene` local variable is important. `CreationCatalog` borrows it, so the value must live until `handle_creation_command` finishes.
+
+### Learning checkpoint
+
+You should understand the Rust borrowing issue here. `CreationCatalog` borrows `opening_scene`, so the borrowed value must live long enough for the handler call. Building it inline keeps that lifetime obvious.
+
+### How to verify
 
 Run:
 
 ```powershell
-cargo test -p storyforge-core --test creation_flow
+cargo run -p storyforge-tui
 ```
 
-## Manual playthrough
+On the Creation screen, press `Enter`. The screen should show name `Mara Vale`, pronouns `she/her`, and stage `Background`.
 
-1. Start a new game with seed `19`.
-2. Enter a name containing a space.
-3. Choose a background, two traits, a casting style, and a study interest.
-4. Enter Lantern Row.
-5. Choose an equipment policy and confirm every policy grants the required kit.
-6. Try to adopt a companion before meeting it; confirm the TUI explains why it failed.
-7. Meet two companions, adopt one, go back, and confirm the meetings are remembered.
-8. Begin the wand trial and record the three candidates.
-9. Quit, resume the creation autosave, and confirm the same candidates appear.
-10. Choose a wand and open the review screen.
-11. Go back, change the background, and confirm derived values update.
-12. Confirm the character.
-13. Verify the opening academy scene begins and the character sheet opens with `c`.
+### Next connection
 
-## Full verification
+Replace hard-coded identity with real text input later, then repeat this same command/event/apply pattern for background, traits, shops, companion, wand, and confirmation.
+
+## Manual Implementation Order After This Guide
+
+1. Replace the hard-coded identity with text fields.
+2. Build a small selectable list for backgrounds.
+3. Dispatch `ChooseBackground` and verify the draft changes.
+4. Add trait toggling and prove a third trait is rejected.
+5. Add casting style and study interest selections.
+6. Add Lantern Row shop navigation.
+7. Inspect a companion before adopting it.
+8. Generate wand candidates once and display the same candidates after reload once saves exist.
+9. Add a review screen that calls `ConfirmCharacter`.
+10. On `CharacterCreated`, leave creation and begin the opening scene.
+
+## Full Verification
+
+Run:
 
 ```powershell
 cargo fmt --all -- --check
 cargo clippy --workspace --all-targets --all-features --locked -- -D warnings
 cargo test --workspace --all-features --locked
 cargo run -p storyforge-tui -- validate --pack campaigns/academy-demo
-cargo run -p storyforge-tui -- play --pack campaigns/academy-demo --seed 19
+cargo run -p storyforge-tui
 ```
 
-## Common mistakes
+Manual checks:
 
-- The TUI constructs `PlayerCharacter` directly.
-- Going back replaces the draft with `CharacterDraft::default()`.
-- The familiar is just an inventory item and cannot remember interactions.
-- The wand screen reveals a mathematically best option.
-- Equipment wealth creates a permanent combat advantage.
-- A failed command advances the stage.
-- Keyboard shortcuts consume letters while the name field has focus.
-- Random candidates are regenerated after load instead of saved.
+1. Creation state starts at `Identity`.
+2. The debug screen lists missing required fields.
+3. Pressing `Enter` dispatches `SetIdentity`.
+4. The draft stores the name and pronouns.
+5. The stage advances to `Background`.
+6. Core tests prove companion adoption requires inspection.
+7. Core tests prove wand candidates are stable for the same seed.
 
-## Acceptance check
+## Common Mistakes
 
-- Character creation feels like a short story sequence.
-- Identity, casting style, study interest, equipment, companion, and wand are all explicit choices.
-- A player meets a companion before adopting it.
-- Wand candidates are deterministic and survive save and load.
-- Back navigation preserves every earlier choice.
-- Invalid commands explain the affected field.
-- A completed character starts with cantrips and spell slots, not mana.
-- `CharacterCreated` begins the opening scene and requests an autosave.
+- Building `PlayerCharacter` before confirmation.
+- Letting the TUI mutate draft fields directly instead of dispatching commands.
+- Clearing the draft when the player goes back.
+- Treating a companion as a plain inventory item with no remembered meeting.
+- Regenerating wand candidates every render.
+- Using random time in the TUI instead of stored deterministic seed data.
+- Letting failed commands advance the creation stage.
 
-## Suggested commit
+## Acceptance Check
 
-```powershell
-git add .
-git commit -m "Build the shopping-day character creator"
-```
+- Permanent character types exist in core.
+- Draft creation state can represent incomplete choices.
+- `problems()` explains missing fields.
+- Creation commands and events follow the Guide 05 reducer pattern.
+- Rejected commands do not mutate the draft.
+- Companion adoption requires prior inspection.
+- Wand candidates are deterministic.
+- The TUI can display creation state and dispatch one MVP creation command.
+
+
+
