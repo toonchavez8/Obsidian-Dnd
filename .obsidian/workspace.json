@@ -123,7 +123,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 382.5
+    "width": 382.5,
+    "collapsed": true
   },
   "right": {
     "id": "1fb55a346c0ef23e",
@@ -341,7 +342,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -366,12 +368,12 @@
   },
   "active": "eb52504fa0850a42",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
-    "Wizarding World/Storyforge-TUI-Docs/Guide/06-content-pack-format.md",
-    "Wizarding World/Storyforge-TUI-Docs/Guide/Untitled.md",
-    "Wizarding World/Storyforge-TUI-Docs/Guide/07-character-creation.md",
     "Wizarding World/Storyforge-TUI-Docs/Guide/05-engine-command-event-model.md",
     "Wizarding World/Storyforge-TUI-Docs/Guide/04-responsive-dashboard.md",
+    "Wizarding World/Storyforge-TUI-Docs/Guide/06-content-pack-format.md",
+    "conflict-files-obsidian-git.md",
+    "Wizarding World/Storyforge-TUI-Docs/Guide/Untitled.md",
+    "Wizarding World/Storyforge-TUI-Docs/Guide/07-character-creation.md",
     "Wizarding World/Storyforge-TUI-Docs/Prompt.md",
     "Wizarding World/Storyforge-TUI-Docs/Guide/03-first-terminal-application.md",
     "Wizarding World/Storyforge-TUI-Docs/Guide/01-development-environment.md",

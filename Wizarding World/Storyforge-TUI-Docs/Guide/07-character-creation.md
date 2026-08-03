@@ -1,4 +1,4 @@
-# 07: Build character creation as a playable shopping day
+﻿# 07: Build character creation as a playable shopping day
 
 ## Result
 
@@ -16,7 +16,7 @@ CharacterCreationState draft
 
 The important rule is this: an unfinished character is not a `PlayerCharacter`. It is a draft. Only confirmation can produce the permanent character.
 
-## Flow To Prove
+## Flow to prove
 
 The flow uses these functions and types:
 
@@ -1660,7 +1660,7 @@ The creation draft displays but cannot change from input.
 
 ### Why this step matters
 
-This is the smallest interactive proof of character creation:
+This is the smallest useful proof of character creation:
 
 ```text
 temporary input -> CreationCommand::SetIdentity -> CreationEvent -> draft update -> render
@@ -1752,7 +1752,7 @@ Replace hard-coded identity with real text input later, then repeat this same co
 9. Add a review screen that calls `ConfirmCharacter`.
 10. On `CharacterCreated`, leave creation and begin the opening scene.
 
-## Full Verification
+## Full verification
 
 Run:
 
@@ -1774,7 +1774,7 @@ Manual checks:
 6. Core tests prove companion adoption requires inspection.
 7. Core tests prove wand candidates are stable for the same seed.
 
-## Common Mistakes
+## Common mistakes
 
 - Building `PlayerCharacter` before confirmation.
 - Letting the TUI mutate draft fields directly instead of dispatching commands.
@@ -1784,7 +1784,7 @@ Manual checks:
 - Using random time in the TUI instead of stored deterministic seed data.
 - Letting failed commands advance the creation stage.
 
-## Acceptance Check
+## Acceptance check
 
 - Permanent character types exist in core.
 - Draft creation state can represent incomplete choices.
@@ -1794,6 +1794,7 @@ Manual checks:
 - Companion adoption requires prior inspection.
 - Wand candidates are deterministic.
 - The TUI can display creation state and dispatch one MVP creation command.
+
 
 
 

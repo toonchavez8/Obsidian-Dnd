@@ -1,6 +1,6 @@
 # 04: Finish the responsive dashboard
 
-## Guide Order
+## Guide order
 
 These four guides build one learning path from the current repo state:
 
@@ -11,18 +11,18 @@ These four guides build one learning path from the current repo state:
 
 The end-goal game sheet describes a much larger RPG. These guides do not try to reach the full game. They build the next stable slice: responsive dashboard, command/event engine, content pack loading, and the first character-creation state machine.
 
-## What Already Exists
+## What already exists
 
 The repo already has this TUI skeleton:
 
 ```text
 crates/storyforge-tui/src/
-├── action.rs
-├── app.rs
-├── layout.rs
-├── main.rs
-├── theme.rs
-└── ui.rs
+â”œâ”€â”€ action.rs
+â”œâ”€â”€ app.rs
+â”œâ”€â”€ layout.rs
+â”œâ”€â”€ main.rs
+â”œâ”€â”€ theme.rs
+â””â”€â”€ ui.rs
 ```
 
 The current TUI already:
@@ -327,7 +327,7 @@ UiAction::Up | UiAction::Down | UiAction::Confirm | UiAction::None => {}
 
 ### Why this step matters
 
-This gives you a tiny end-to-end test of the app loop before game rules exist:
+:This gives you a tiny end-to-end test of the app loop before game rules exist:
 
 ```text
 key -> UiAction -> App::update -> selected_tab -> render_selected_tab
@@ -487,7 +487,7 @@ Confirm the header and Actions pane show `l` for Journal. Press `l` and confirm 
 
 Guide 05 adds an engine field to `App`. The renderer will read engine state, but it should still not mutate engine state.
 
-## Full Verification
+## Full verification
 
 Run:
 
@@ -508,7 +508,7 @@ Manual checks:
 6. Press `j` and `k` at compact size; the selected bottom panel should change.
 7. Press `q` from Story; it should quit.
 
-## Acceptance Check
+## Acceptance check
 
 - The three layout thresholds match the design.
 - The size warning text matches the code.
@@ -516,3 +516,4 @@ Manual checks:
 - `l` opens the journal/log screen for now.
 - Compact tab movement proves input changes visible UI state.
 - Render functions do not read files, roll dice, dispatch commands, or mutate game state.
+

@@ -1,10 +1,10 @@
-# 05: Build the command and event engine
+			# 05: Build the command and event engine
 
 ## Result
 
 The TUI will stop owning gameplay selection rules. It will translate player input into a `GameCommand`, send that command to `storyforge-core`, receive `GameEvent` values, and render the updated `GameState`.
 
-This guide keeps the first engine slice small on purpose. The first supported gameplay commands only move the selected story choice up and down. That same command/event path later supports travel, dialogue, checks, combat, inventory, and character creation.
+This guide keeps the first engine slice small. That is deliberate. The first supported gameplay commands only move the selected story choice up and down. That same command/event path later supports travel, dialogue, checks, combat, inventory, and character creation.
 
 The current repo state matters:
 
@@ -14,7 +14,7 @@ The current repo state matters:
 
 This guide builds the first real core reducer without touching content loading yet.
 
-## Flow To Prove
+## Flow to prove
 
 The flow uses these functions and types:
 
@@ -360,7 +360,7 @@ There is no engine module. `storyforge-core` does not yet own state transitions.
 
 ### Why this step matters
 
-This is the most important architecture step in the guide. It separates:
+This is the step to slow down on. It separates:
 
 - `handle_command`: read state and command, then decide which events should happen.
 - `apply_events`: mutate state by applying those events.
@@ -944,7 +944,7 @@ On the Story screen, press `j` and `k`. The `>` marker should move between the t
 
 Guide 06 replaces temporary hard-coded choices with loaded content records.
 
-## Full Verification
+## Full verification
 
 Run:
 
@@ -963,7 +963,7 @@ Manual checks:
 4. `l`, `c`, `m`, and `?` still open their screens.
 5. Movement on non-story compact tabs still changes UI tabs if you kept that behavior.
 
-## Common Mistakes
+## Common mistakes
 
 - Putting `KeyCode` inside `GameCommand`.
 - Letting `ui.rs` call `dispatch`.
@@ -972,7 +972,7 @@ Manual checks:
 - Using display names as stable IDs.
 - Rolling random values from render functions.
 
-## Acceptance Check
+## Acceptance check
 
 - `ContentId` rejects invalid ID strings.
 - `GameCommand` contains gameplay intent, not keyboard input.
@@ -981,3 +981,4 @@ Manual checks:
 - Empty choice lists emit `CommandRejected`.
 - TUI movement dispatches commands to the engine on the Story screen.
 - `ui.rs` renders selection from `engine.state()`.
+

@@ -12,7 +12,7 @@ campaign.toml -> scene .ron files -> LoadedCampaign -> validation diagnostics ->
 
 Guide 05 created the engine command/event path. Guide 06 makes the available scene choices come from content instead of a temporary number in `App::visible_choice_count`.
 
-## Flow To Prove
+## Flow to prove
 
 The flow uses these functions and types:
 
@@ -1102,7 +1102,7 @@ File: `crates/storyforge-tui/src/ui.rs`
 
 ### Why this step matters
 
-This is the end-to-end proof that content data reaches the player:
+This proves content data reaches the player:
 
 ```text
 RON file -> SceneDefinition -> App::active_scene -> ui.rs
@@ -1194,7 +1194,7 @@ You should see the `arrival.ron` body and choices.
 
 Guide 07 uses the same content and command/event pattern to start character creation.
 
-## Full Verification
+## Full verification
 
 Run:
 
@@ -1215,7 +1215,7 @@ Manual checks:
 5. `j` and `k` move through the loaded choices.
 6. Rendering still does not parse files or mutate state.
 
-## Common Mistakes
+## Common mistakes
 
 - Parsing RON directly from `ui.rs`.
 - Letting content use display names as references.
@@ -1224,7 +1224,7 @@ Manual checks:
 - Letting a nonterminal scene have no choices.
 - Creating private campaign names or licensed setting text inside the public demo pack.
 
-## Acceptance Check
+## Acceptance check
 
 - `storyforge-content` owns manifest and scene parsing.
 - Parse errors include file paths.
@@ -1232,3 +1232,4 @@ Manual checks:
 - The demo pack validates before play.
 - The TUI reads the active scene by matching `GameState.active_scene` to loaded content.
 - Hard-coded story body and choice labels are removed from the Story screen.
+
