@@ -1,11 +1,11 @@
-I need you to help me update four implementation guides, not write code into the code repo.
+I need you to help me create 1 implementation guides, not write code into the code repo.
 
 I will provide:
 1. The end-goal game sheet - this will only be for refernce.
 2. Access to read the current game/code status from another repo.
-3. The four existing guides that need to be updated - you will only update the guide to cover only what the guide intially covers even if the end-goal game sheet expects more this is a work in progess you are hellping me make that progress.
+3. The existing guides that need help you understand previous context- you will only creat a a new  guide to cover only what the is requested intially covers even if the end-goal game sheet expects more this is a work in progess you are hellping me make that progress.
 
-Your job is to read all of that context, then update the four guides so they form a literal step-by-step learning path from the current state in a progressive walk to the end goal, i do not expect we will reach it in the four guides, .
+Your job is to read all of that context, then create a new guide inbwtween the guide 5 and 6 guides so they form a literal step-by-step learning path from the current state in a progressive walk to the end goal, i do not expect we will reach it in the four guides, .
 
 Important constraints:
 - Do not edit the game/code repo.
@@ -80,7 +80,7 @@ Use the `$human-writing` and `$rust-patterns` skills while preparing the guide:
 If either skill is unavailable in the current environment, say so briefly, then continue using the closest fallback approach.
 
 Output requirements:
-- Update all four guides in the correct logical order.
+- create 1 guide.
 - The guides should continue to cover the overall logic of progression towards the end goal
 - Make the order explicit at the top of the first guide.
 - At the beginning of every step, name the exact file path that needs to be changed.
@@ -90,14 +90,25 @@ Output requirements:
 - Do not skip reasoning steps.
 - Do not assume I already know why the code is being changed.
 
-1. Overall End-goal Game sheet: C:\Users\toonc\Documents\Obsidian-Dnd\Wizarding World\Storyforge-TUI-Docs\DND-rpg-ww-tui-game-sheet.md 
+1. Overall End-goal Game sheet: C:\Users\Dev\repos\toonchavez8\Obsidian-Dnd\Wizarding World\Storyforge-TUI-Docs\DND-rpg-ww-tui-game-sheet.md
 
-2. The repo: C:\Users\toonc\Dev\82-Storyforge-TUI
+2. The repo: [C:\Users\toonc\Dev\82-Storyforge-TUI](C:\Users\Dev\repos\toonchavez8\82-storyforge-tui)
 
 That is the current state of our code, that is where i will write the code, not you
 
-The game guides:
-- C:\Users\toonc\Documents\Obsidian-Dnd\Wizarding World\Storyforge-TUI-Docs\Guide\04-responsive-dashboard.md
-- C:\Users\toonc\Documents\Obsidian-Dnd\Wizarding World\Storyforge-TUI-Docs\Guide\05-engine-command-event-model.md
-- C:\Users\toonc\Documents\Obsidian-Dnd\Wizarding World\Storyforge-TUI-Docs\Guide\06-content-pack-format.md
-- C:\Users\toonc\Documents\Obsidian-Dnd\Wizarding World\Storyforge-TUI-Docs\Guide\07-character-creation.md
+The game guides of wheere i am currently:
+- C:\Users\Dev\repos\toonchavez8\Obsidian-Dnd\Wizarding World\Storyforge-TUI-Docs\Guide\05-engine-command-event-model.md
+the next guide after the one you create where i will move into  is 
+
+[[06-content-pack-format]]
+
+The new guide needs to cover the following:
+
+- Change how functaioanly works to move bewtween layout componts, J and k should switch focus to the next or previous layout item
+- wasd and Arrow  movement should be added not all layouts will support it if left or right movement is not supportde it should default to next for right or previous for left 
+- full wasd movement will be used in an new inventory panale that will look like a sidebar that will cover most of thee panels the inventory should be on the right side of the scren and take up on large sizes 1/3 on medium half and on ssmall screen 7/8ths of the screen i that makes sense
+
+use the following skills 
+all code should have comments as you will see in the repo
+--*-
+/rust-best-practices  /ratatui-tui  /human-writing 

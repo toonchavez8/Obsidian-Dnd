@@ -4,53 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "b29b63e052f392c3",
+        "id": "131cf0753a2fa832",
         "type": "tabs",
         "children": [
           {
-            "id": "8ff8c59adc6feca5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Wizarding World/World/Hogwarts/TimeTables/Primer_Año.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Primer_Año"
-            }
-          },
-          {
-            "id": "3c022c1582cb2104",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Wizarding World/World/Hogwarts/Students/Students list.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Students list"
-            }
-          },
-          {
-            "id": "b8ea5606d447fba3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Wizarding World/Sessions/Arc 1/Session_2-Common-room-classes.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Session_2-Common-room-classes"
-            }
-          },
-          {
-            "id": "eb52504fa0850a42",
+            "id": "3b81ce250c1fdeff",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -63,8 +21,7 @@
               "title": "06-content-pack-format"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -123,8 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 382.5,
-    "collapsed": true
+    "width": 272.5
   },
   "right": {
     "id": "1fb55a346c0ef23e",
@@ -133,7 +89,7 @@
       {
         "id": "ba0d59233e31b44f",
         "type": "tabs",
-        "dimension": 56.777996070726914,
+        "dimension": 19.841269841269842,
         "children": [
           {
             "id": "79215bbccd956432",
@@ -160,12 +116,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Wizarding World/Sessions/Session 0 - Prelude/Session_0-Prelude - Antes.md",
+                "file": "Wizarding World/World/PlayerSheets/Player's Cheat Sheets - Spanish.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Session_0-Prelude - Antes"
+              "title": "Outgoing links from Player's Cheat Sheets - Spanish"
             }
           },
           {
@@ -189,13 +145,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.xlsx",
+                "file": "Wizarding World/World/PlayerSheets/Player's Cheat Sheets - Spanish.pdf",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Untitled"
+              "title": "Outline of Player's Cheat Sheets - Spanish"
             }
           },
           {
@@ -217,8 +173,8 @@
                 },
                 "id": "ID_690b4bd90aba"
               },
-              "icon": "CALENDARIUM",
-              "title": "Calendarium"
+              "icon": "lucide-ghost",
+              "title": "CALENDARIUM"
             }
           },
           {
@@ -252,8 +208,8 @@
                 },
                 "id": "ID_6918ba399beb"
               },
-              "icon": "CALENDARIUM",
-              "title": "Calendarium"
+              "icon": "lucide-ghost",
+              "title": "CALENDARIUM"
             }
           },
           {
@@ -267,17 +223,17 @@
             }
           },
           {
-            "id": "331be4c27c0a2c9c",
+            "id": "4934ac73988514c5",
             "type": "leaf",
             "state": {
               "type": "DICE_ROLLER_VIEW",
               "state": {},
-              "icon": "dices",
-              "title": "Dice Tray"
+              "icon": "lucide-ghost",
+              "title": "DICE_ROLLER_VIEW"
             }
           },
           {
-            "id": "7a354a683b327ccb",
+            "id": "378ecc382d06d64f",
             "type": "leaf",
             "state": {
               "type": "initiative-tracker-view",
@@ -287,7 +243,59 @@
             }
           },
           {
-            "id": "db6aac41c4f4b6d3",
+            "id": "eee9f376ad0a268e",
+            "type": "leaf",
+            "state": {
+              "type": "CALENDARIUM",
+              "state": {
+                "calendar": "ID_7a2baab8b98b",
+                "ephemeral": {
+                  "viewState": 1,
+                  "displaying": {
+                    "day": 27,
+                    "month": 5,
+                    "year": 2024
+                  },
+                  "displayDayNumber": false,
+                  "displaySeasonColors": true,
+                  "interpolateColors": true,
+                  "displayMoons": true,
+                  "displayWeather": true
+                },
+                "id": "ID_4bcb0aa8c93a"
+              },
+              "icon": "lucide-ghost",
+              "title": "CALENDARIUM"
+            }
+          },
+          {
+            "id": "3c042458c5d69d35",
+            "type": "leaf",
+            "state": {
+              "type": "CALENDARIUM",
+              "state": {
+                "calendar": "ID_7a2baab8b98b",
+                "ephemeral": {
+                  "viewState": 1,
+                  "displaying": {
+                    "day": 27,
+                    "month": 5,
+                    "year": 2024
+                  },
+                  "displayDayNumber": false,
+                  "displaySeasonColors": true,
+                  "interpolateColors": true,
+                  "displayMoons": true,
+                  "displayWeather": true
+                },
+                "id": "ID_ba2808f9a9d8"
+              },
+              "icon": "CALENDARIUM",
+              "title": "Calendarium"
+            }
+          },
+          {
+            "id": "090c920d06fbc20e",
             "type": "leaf",
             "state": {
               "type": "DICE_ROLLER_VIEW",
@@ -297,7 +305,7 @@
             }
           },
           {
-            "id": "0e92bb88b70f79a7",
+            "id": "9ffc46dd5981cbde",
             "type": "leaf",
             "state": {
               "type": "initiative-tracker-view",
@@ -307,7 +315,7 @@
             }
           },
           {
-            "id": "7bd9d067a17e7569",
+            "id": "a89cfe01e0906e4b",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -326,7 +334,7 @@
       {
         "id": "9c7543e6c2820b5d",
         "type": "tabs",
-        "dimension": 43.222003929273086,
+        "dimension": 19.841269841269842,
         "children": [
           {
             "id": "b04c31368900315c",
@@ -335,6 +343,23 @@
               "type": "initiative-tracker-creature-view",
               "state": {},
               "icon": "initiative-tracker-creature-view",
+              "title": "Combatant"
+            }
+          }
+        ]
+      },
+      {
+        "id": "2674de3c1cc3a989",
+        "type": "tabs",
+        "dimension": 60.317460317460316,
+        "children": [
+          {
+            "id": "d50566ceaeb020c7",
+            "type": "leaf",
+            "state": {
+              "type": "fantasy-statblocks-creature-pane",
+              "state": {},
+              "icon": "skull",
               "title": "Combatant"
             }
           }
@@ -356,64 +381,64 @@
       "command-palette:Open command palette": false,
       "excel:Create Excel File": false,
       "fantasy-content-generator:Fantasy Generators": false,
-      "obsidian-git:Open Git source control": false,
       "obsidian-5e-statblocks:Open Creature pane": false,
+      "obsidian-git:Open Git source control": false,
       "initiative-tracker:Initiative Tracker Encounter Builder": false,
       "obsidian-leaflet-plugin:Open Leaflet Map": false,
       "obisidian-note-linker:Note Linker": false,
-      "templater-obsidian:Templater": false,
       "univer:Univer": false,
+      "templater-obsidian:Templater": false,
       "calendarium:Open Calendarium": false
     }
   },
-  "active": "eb52504fa0850a42",
+  "active": "3b81ce250c1fdeff",
   "lastOpenFiles": [
+    "Wizarding World/Storyforge-TUI-Docs/Guide/05c-house-themes-and-focus-dimming.md",
+    "Wizarding World/Storyforge-TUI-Docs/Guide/05b-layout-focus-navigation-and-inventory.md",
     "Wizarding World/Storyforge-TUI-Docs/Guide/05-engine-command-event-model.md",
-    "Wizarding World/Storyforge-TUI-Docs/Guide/04-responsive-dashboard.md",
-    "Wizarding World/Storyforge-TUI-Docs/Guide/06-content-pack-format.md",
-    "conflict-files-obsidian-git.md",
-    "Wizarding World/Storyforge-TUI-Docs/Guide/Untitled.md",
-    "Wizarding World/Storyforge-TUI-Docs/Guide/07-character-creation.md",
     "Wizarding World/Storyforge-TUI-Docs/Prompt.md",
+    "Wizarding World/Storyforge-TUI-Docs/DND-rpg-ww-tui-game-sheet 1.md",
+    "Wizarding World/Storyforge-TUI-Docs/Guide/04-responsive-dashboard.md",
+    "Wizarding World/Storyforge-TUI-Docs/Guide/Untitled.md",
     "Wizarding World/Storyforge-TUI-Docs/Guide/03-first-terminal-application.md",
-    "Wizarding World/Storyforge-TUI-Docs/Guide/01-development-environment.md",
-    "Wizarding World/Storyforge-TUI-Docs/Guide/02-create-the-workspace.md",
-    "Wizarding World/World/Hogwarts/Hogwarts.md",
-    "Wizarding World/Sessions/Arc 1/Session_2-Common-room-classes.md",
+    "Wizarding World/Storyforge-TUI-Docs/ROADMAP.md",
+    "conflict-files-obsidian-git.md",
+    "Wizarding World/Storyforge-TUI-Docs/DND-rpg-ww-tui-game-sheet.md",
     "World/Potions/W&W Potion Spreadsheet.xlsx",
     "World/Potions",
     "World",
+    "Wizarding World/Storyforge-TUI-Docs/Guide/02-create-the-workspace.md",
+    "Wizarding World/Storyforge-TUI-Docs/Guide/01-development-environment.md",
+    "Wizarding World/Storyforge-TUI-Docs/README.md",
+    "Wizarding World/Storyforge-TUI-Docs/Guide/00-how-to-use-this-guide.md",
+    "Wizarding World/Storyforge-TUI-Docs/REVIEW-LEDGER.md",
+    "Wizarding World/World/Wizarding World/One-Shot-Wonders.pdf",
+    "Wizarding World/World/Wizarding World/Traveling Event System TES.md",
+    "Wizarding World/World/Wizarding World/W&W NPCs 0.3.1 _ GM Binder.pdf",
+    "Wizarding World/World/Wizarding World/Wands & Wizards - Harry Potter 5e.pdf",
+    "Wizarding World/World/Wizarding World/Wands & Wizards - Headmaster's Guide v0.2.pdf",
+    "Wizarding World/World/Wizarding World/Wizarding Book of Monsters and foes.pdf",
     "Wizarding World/World/Wizarding World/Wizarding-World-esp.md",
-    "Wizarding World/World/Hogwarts/CommonRooms/Hechizos _ GM Binder.pdf",
-    "Wizarding World/Storyforge-TUI-Docs/Guide/27-companion-goals-and-downtime.md",
+    "Wizarding World/Game Expectations.md",
+    "Wizarding World/World/Shops/Candy.md",
     "Wizarding World/Storyforge-TUI-Docs/Guide/28-version-1-3-deeper-tactics.md",
+    "Wizarding World/Storyforge-TUI-Docs/Guide/06-content-pack-format.md",
+    "Wizarding World/Storyforge-TUI-Docs/Guide/27-companion-goals-and-downtime.md",
     "Wizarding World/Storyforge-TUI-Docs/Guide/26-faction-control-and-regional-consequences.md",
     "Wizarding World/Storyforge-TUI-Docs/Guide/25-relationships-gifts-and-rumors.md",
     "Wizarding World/Storyforge-TUI-Docs/Guide/24-living-world-schedules-and-restocking.md",
-    "Wizarding World/Storyforge-TUI-Docs/Guide/23-documentation-review-loop.md",
-    "Wizarding World/Storyforge-TUI-Docs/Guide/22-growing-after-v1.md",
-    "Wizarding World/Storyforge-TUI-Docs/Guide/21-release-with-npm-and-npx.md",
-    "Wizarding World/Storyforge-TUI-Docs/Guide/20-testing-observability-and-performance.md",
-    "Wizarding World/Storyforge-TUI-Docs/Guide/19-private-content-and-modding.md",
-    "Wizarding World/Storyforge-TUI-Docs/Guide/18-ascii-art-animation-and-accessibility.md",
-    "Wizarding World/Storyforge-TUI-Docs/Guide/17-three-arc-campaign-foundation.md",
-    "Wizarding World/Storyforge-TUI-Docs/Guide/16-deeper-combat-and-enemy-ai.md",
-    "Wizarding World/Storyforge-TUI-Docs/Guide",
-    "Wizarding World/Storyforge-TUI-Docs",
-    "Wizarding World/Sessions/Arc 1/imgs/Recording 20251017211345.m4a",
-    "Wizarding World/Sessions/Arc 1/imgs",
-    "Wizarding World/World/Maps/Hogwarts/2 - Grand Staircase Tower/Headmaster_s Office by U.B.O.S..jpg",
-    "Wizarding World/World/Maps/Hogwarts/3 - The Quad/Chamber of Secrets by dillbag_.png",
-    "Wizarding World/World/Maps/London/Diagon Alley/Magical Menagerie by Block_nessie.jpg",
-    "Wizarding World/World/Wizarding World/Wands & Wizards - Headmaster's Guide v0.2.pdf",
-    "Wizarding World/World/Wizarding World/Wizarding Book of Monsters and foes.pdf",
-    "Wizarding World/World/Hogwarts/CommonRooms/slythering.jpeg",
-    "Wizarding World/World/Hogwarts/CommonRooms/ravenclaw.jpg",
-    "Wizarding World/World/Hogwarts/CommonRooms/Huffflepuff.jpeg",
-    "Wizarding World/World/Hogwarts/CommonRooms/Gryfindor.jpeg",
-    "Wizarding World/World/Maps/London/Diagon Alley/The Leaky Cauldron by Badwolf.jpg",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Woodland Manse 41x42 140pps/Woodland Manse v1.0 41x42 @140pps.jpg",
-    "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/01_Maps/Woodland Manse 41x42 140pps/Woodland Manse v1.0 (upper) 41x42 @140pps.jpg",
+    "Wizarding World/tmp/pdfs/one-shot-page-194.png",
+    "Wizarding World/tmp/pdfs/one-shot-page-193.png",
+    "Wizarding World/tmp/pdfs/one-shot-page-153.png",
+    "Wizarding World/tmp/pdfs/one-shot-page-132.png",
+    "Wizarding World/tmp/pdfs/one-shot-page-131.png",
+    "Wizarding World/tmp/pdfs/one-shot-page-113.png",
+    "Wizarding World/tmp/pdfs/one-shot-page-006.png",
+    "Wizarding World/tmp/pdfs/one-shot-page-002.png",
+    "Wizarding World/tmp/pdfs/one-shot-wonders.txt",
+    "Wizarding World/tmp/pdfs",
+    "Wizarding World/World/Maps/Miscellaneous/Niffler Burrow by Veertje.png",
+    "Wizarding World/World/Maps/Miscellaneous/Cave (Spider Boss) by Block_nessie.jpg",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/Roadmap.canvas"
   ]
 }
