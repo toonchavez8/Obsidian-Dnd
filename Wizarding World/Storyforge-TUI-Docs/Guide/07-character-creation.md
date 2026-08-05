@@ -1,4 +1,4 @@
-﻿# 07: Build character creation as a playable shopping day
+# 07: Build character creation as a playable shopping day
 
 ## Result
 

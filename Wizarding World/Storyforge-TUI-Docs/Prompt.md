@@ -1,11 +1,11 @@
-I need you to help me create 1 implementation guides, not write code into the code repo.
+I need you to help me update 4 implementation guides, not write code into the code repo.
 
 I will provide:
 1. The end-goal game sheet - this will only be for refernce.
 2. Access to read the current game/code status from another repo.
 3. The existing guides that need help you understand previous context- you will only creat a a new  guide to cover only what the is requested intially covers even if the end-goal game sheet expects more this is a work in progess you are hellping me make that progress.
 
-Your job is to read all of that context, then create a new guide inbwtween the guide 5 and 6 guides so they form a literal step-by-step learning path from the current state in a progressive walk to the end goal, i do not expect we will reach it in the four guides, .
+Your job is to read all of that context, then the provided guides so they form a literal step-by-step learning path from the current state in a progressive walk to the end goal, i do not expect we will reach it in the four guides, .
 
 Important constraints:
 - Do not edit the game/code repo.
@@ -14,7 +14,8 @@ Important constraints:
 - Expand the guides with what has already been done, why it was done, and what should happen next.
 - The guides must be written so I can manually implement the code myself and learn from the process.
 - Do not give vague instructions like “create four helper functions.”
-- Instead, explain the logic incrementally and concretely.
+- Instead, explain the logic incrementally and concretely
+- make sure all codeblocks have comments in teh style we have been using in the repo.
 
 For every step, use this structure:
 
@@ -80,7 +81,7 @@ Use the `$human-writing` and `$rust-patterns` skills while preparing the guide:
 If either skill is unavailable in the current environment, say so briefly, then continue using the closest fallback approach.
 
 Output requirements:
-- create 1 guide.
+- create 4 guide.
 - The guides should continue to cover the overall logic of progression towards the end goal
 - Make the order explicit at the top of the first guide.
 - At the beginning of every step, name the exact file path that needs to be changed.
