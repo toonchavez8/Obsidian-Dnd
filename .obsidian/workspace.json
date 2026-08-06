@@ -415,8 +415,7 @@
       "obsidian-leaflet-plugin:Open Leaflet Map": false,
       "obisidian-note-linker:Note Linker": false,
       "univer:Univer": false,
-      "templater-obsidian:Templater": false,
-      "calendarium:Open Calendarium": false
+      "templater-obsidian:Templater": false
     }
   },
   "active": "3b81ce250c1fdeff",
