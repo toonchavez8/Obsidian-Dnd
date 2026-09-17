@@ -1695,17 +1695,26 @@ Global keys:
 | `j` | Journal |
 | `m` | Map |
 | `l` | Full log |
-| `s` | Save menu |
 | `Esc` | Back or close overlay |
 | `Ctrl+C` | Confirm quit, then restore terminal |
 
-Menu keys:
+Dashboard keys:
 
-- Arrow keys or `j` and `k` move selection.
+- Arrow keys and `w`/`a`/`s`/`d` move inside the focused panel.
+- `j` and `k` move focus forward and backward around the dashboard.
 - Enter confirms.
-- Number keys choose visible numbered actions.
 - Page Up and Page Down scroll.
-- Tab and Shift+Tab move focus.
+- `i` opens or closes the inventory sidebar.
+- `t` cycles the active theme.
+
+Creation and menu screens use the same dashboard movement model. The focused
+panel owns arrow and WASD movement; `j` and `k` change panels. Text fields may
+temporarily consume printable keys, but they must not make ordinary characters
+such as `q` impossible to enter.
+
+The footer and help overlay must show the bindings for the current screen. This
+section is the authoritative keyboard contract for the game sheet and the
+implementation guides.
 
 Mouse input may be added later. Nothing requires it.
 

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Wizarding World/Storyforge-TUI-Docs/Guide/06-content-pack-format.md",
+                "file": "Wizarding World/Storyforge-TUI-Docs/ROADMAP.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "06-content-pack-format"
+              "title": "ROADMAP"
             }
           },
           {
@@ -415,17 +415,21 @@
       "obsidian-leaflet-plugin:Open Leaflet Map": false,
       "obisidian-note-linker:Note Linker": false,
       "univer:Univer": false,
-      "templater-obsidian:Templater": false
+      "templater-obsidian:Templater": false,
+      "calendarium:Open Calendarium": false
     }
   },
   "active": "3b81ce250c1fdeff",
   "lastOpenFiles": [
-    "Wizarding World/Storyforge-TUI-Docs/Prompt.md",
+    "Wizarding World/Storyforge-TUI-Docs/REVIEW-LEDGER.md",
+    "Wizarding World/Storyforge-TUI-Docs/DND-rpg-ww-tui-game-sheet.md",
+    "Wizarding World/Storyforge-TUI-Docs/README.md",
+    "Wizarding World/Storyforge-TUI-Docs/Guide/07-character-creation.md",
     "Wizarding World/Storyforge-TUI-Docs/Guide/08-save-load-and-migrations.md",
+    "Wizarding World/Storyforge-TUI-Docs/Guide/06-content-pack-format.md",
+    "Wizarding World/Storyforge-TUI-Docs/Prompt.md",
     "Wizarding World/Storyforge-TUI-Docs/Guide/09-scenes-dialogue-and-skill-checks.md",
     "Wizarding World/Storyforge-TUI-Docs/Guide/10-tactical-combat-mvp.md",
-    "Wizarding World/Storyforge-TUI-Docs/Guide/07-character-creation.md",
-    "Wizarding World/Storyforge-TUI-Docs/Guide/06-content-pack-format.md",
     "Wizarding World/Storyforge-TUI-Docs/Guide/04-responsive-dashboard.md",
     "Wizarding World/Storyforge-TUI-Docs/Guide/05c-house-themes-and-focus-dimming.md",
     "Wizarding World/Storyforge-TUI-Docs/Guide/05b-layout-focus-navigation-and-inventory.md",
@@ -435,15 +439,12 @@
     "Wizarding World/Storyforge-TUI-Docs/Guide/03-first-terminal-application.md",
     "Wizarding World/Storyforge-TUI-Docs/ROADMAP.md",
     "conflict-files-obsidian-git.md",
-    "Wizarding World/Storyforge-TUI-Docs/DND-rpg-ww-tui-game-sheet.md",
     "World/Potions/W&W Potion Spreadsheet.xlsx",
     "World/Potions",
     "World",
     "Wizarding World/Storyforge-TUI-Docs/Guide/02-create-the-workspace.md",
     "Wizarding World/Storyforge-TUI-Docs/Guide/01-development-environment.md",
-    "Wizarding World/Storyforge-TUI-Docs/README.md",
     "Wizarding World/Storyforge-TUI-Docs/Guide/00-how-to-use-this-guide.md",
-    "Wizarding World/Storyforge-TUI-Docs/REVIEW-LEDGER.md",
     "Wizarding World/World/Wizarding World/One-Shot-Wonders.pdf",
     "Wizarding World/World/Wizarding World/Traveling Event System TES.md",
     "Wizarding World/World/Wizarding World/W&W NPCs 0.3.1 _ GM Binder.pdf",
