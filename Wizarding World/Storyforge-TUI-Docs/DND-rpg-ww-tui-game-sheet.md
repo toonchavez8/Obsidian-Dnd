@@ -219,6 +219,7 @@ The private campaign can call the shopping street Diagon Alley. The public `acad
 12. Pet or familiar.
 13. Wand.
 14. Accessibility defaults.
+15. Ability scores: deterministic digital roll with assignment, or 27-point buy.
 
 The campaign may assign affiliation through a scene instead of a menu. In that case, the player's preference becomes one input rather than a guarantee.
 
@@ -245,6 +246,9 @@ Arrival at the shopping street
   +--> wand shop
   |
   v
+Choose ability scores
+  |  digital roll and assign, or point buy
+  v
 Review purchases and character sheet
   |
   v
@@ -253,7 +257,11 @@ Confirm character and travel to school
 
 The shopping street is a small explorable location graph. The player may choose the pet shop or wand shop first. Shopkeepers react to origin, budget, personality, and prior dialogue. The sequence teaches movement, dialogue, inventory, relationships, and inspection before the main story asks the player to use them under pressure.
 
-Character creation can be suspended and resumed. The save stores a `CharacterCreationState` until final confirmation. It does not create a partly valid `PlayerCharacter`.
+The versioned save stores the `CharacterCreationState` while the prologue is in
+progress and stores the completed `PlayerCharacter` after confirmation. It also
+keeps the active game state and gameplay RNG cursor. Loading never creates a
+partly valid `PlayerCharacter`; an unfinished save remains a draft until final
+confirmation.
 
 ### Casting styles
 
@@ -268,6 +276,28 @@ The Spanish campaign guide uses three related caster approaches. Storyforge mode
 All three use cantrips and spell slots. A campaign may give them different known-spell progressions, prepared-spell rules, or features, but they share the same spell definitions and command path.
 
 The starting magical-study choice is an interest, not permanent specialization. It grants one dialogue tag, one introductory spell option, and a teacher hook. Formal specialization happens later through classes and story choices.
+
+### Ability score creation
+
+Ability scores are a deliberate final creation step rather than hidden defaults.
+The player chooses one of two methods:
+
+- Digital Roll: generate six runtime-random 4d6-drop-lowest results, then assign
+  each result to Strength, Dexterity, Constitution, Intelligence, Wisdom, or
+  Charisma. The seed and results remain recorded for replay. A result below 8
+  may be rerolled while it remains below 8; once a result reaches 8 or higher it
+  is locked.
+- Point Buy: begin at 8 in every ability and spend up to 27 points, with each
+  score capped at 15 before later progression.
+
+The chosen method, generated pool, assignments, and final scores are part of the
+creation state and survive a save/load round trip. The finished character sheet
+shows every score, modifier, hit point total, and spell-slot total.
+
+To prevent fishing for perfect scores, the method route alternates at most four
+times: digital roll, point buy, digital roll, point buy. Each method can be used
+twice. After the second digital attempt is left, digital roll cannot return; the
+final point-buy attempt has no further method switch.
 
 ### Shopping budget
 

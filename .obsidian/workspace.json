@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Wizarding World/Storyforge-TUI-Docs/ROADMAP.md",
+                "file": "Wizarding World/Storyforge-TUI-Docs/Guide/Untitled.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ROADMAP"
+              "title": "Untitled"
             }
           },
           {
@@ -421,6 +421,7 @@
   },
   "active": "3b81ce250c1fdeff",
   "lastOpenFiles": [
+    "Wizarding World/Storyforge-TUI-Docs/ROADMAP.md",
     "Wizarding World/Storyforge-TUI-Docs/REVIEW-LEDGER.md",
     "Wizarding World/Storyforge-TUI-Docs/DND-rpg-ww-tui-game-sheet.md",
     "Wizarding World/Storyforge-TUI-Docs/README.md",
@@ -437,7 +438,6 @@
     "Wizarding World/Storyforge-TUI-Docs/DND-rpg-ww-tui-game-sheet 1.md",
     "Wizarding World/Storyforge-TUI-Docs/Guide/Untitled.md",
     "Wizarding World/Storyforge-TUI-Docs/Guide/03-first-terminal-application.md",
-    "Wizarding World/Storyforge-TUI-Docs/ROADMAP.md",
     "conflict-files-obsidian-git.md",
     "World/Potions/W&W Potion Spreadsheet.xlsx",
     "World/Potions",
