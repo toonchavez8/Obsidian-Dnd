@@ -13,12 +13,24 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Wizarding World/Storyforge-TUI-Docs/Guide/Untitled.md",
+                "file": "Wizarding World/World/Wizarding World/Wands & Wizards - Harry Potter 5e.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "Wands & Wizards - Harry Potter 5e"
+            }
+          },
+          {
+            "id": "7922331a9c468fce",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Wizarding World/World/Wizarding World/Wands & Wizards - Harry Potter 5e.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "Wands & Wizards - Harry Potter 5e"
             }
           },
           {
@@ -49,7 +61,8 @@
               "title": "08-save-load-and-migrations"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -419,54 +432,53 @@
       "calendarium:Open Calendarium": false
     }
   },
-  "active": "3b81ce250c1fdeff",
+  "active": "7922331a9c468fce",
   "lastOpenFiles": [
+    "Wizarding World/World/Wizarding World/Wands & Wizards - Headmaster's Guide v0.2.pdf",
+    "Wizarding World/World/Wizarding World/Wands & Wizards - Harry Potter 5e.pdf",
+    "Wizarding World/World/Wizarding World/Wands & Wizards - Harry Potter 5e.md",
+    "Wizarding World/World/Wizarding World/Untitled.md",
+    "Wizarding World/World/Wizarding World/imgs/Pasted image 20260918153855.png",
+    "Wizarding World/World/Wizarding World/imgs",
+    "Wizarding World/Storyforge-TUI-Docs/Guide/08-save-load-and-migrations.md",
+    "Wizarding World/World/Wizarding World/MadMan & Murphen One Shot Adventures #1 _ GM Binder.pdf",
+    "Wizarding World/World/Wizarding World/One-Shot-Wonders.pdf",
+    "Wizarding World/Storyforge-TUI-Docs/Guide/10-tactical-combat-mvp.md",
+    "Wizarding World/World/PlayerSheets/W&W Gryffindor - Fillable.pdf",
+    "Wizarding World/World/PlayerSheets/W&W Classic Character Sheet by Blaze.pdf",
+    "Wizarding World/World/PlayerSheets/Player's Cheat Sheets - English.pdf",
+    "Wizarding World/World/PlayerSheets/Player's Cheat Sheets - Spanish.pdf",
+    "Wizarding World/World/Wizarding World/Wizarding Book of Monsters and foes.pdf",
+    "Wizarding World/World/Wizarding World/Wizarding-World-esp.md",
+    "Wizarding World/Storyforge-TUI-Docs/Guide/Untitled.md",
+    "Wizarding World/World/Wizarding World/Wands & Wizards - Harry Potter 5e_assets/Wands & Wizards - Harry Potter 5e_p118_img2.png",
+    "Wizarding World/World/Wizarding World/Wands & Wizards - Harry Potter 5e_assets/Wands & Wizards - Harry Potter 5e_p118_img1.png",
+    "Wizarding World/World/Wizarding World/Wands & Wizards - Harry Potter 5e_assets/Wands & Wizards - Harry Potter 5e_p117_img2.png",
+    "Wizarding World/World/Wizarding World/Wands & Wizards - Harry Potter 5e_assets/Wands & Wizards - Harry Potter 5e_p117_img1.png",
+    "Wizarding World/World/Wizarding World/Wands & Wizards - Harry Potter 5e_assets/Wands & Wizards - Harry Potter 5e_p116_img2.png",
+    "Wizarding World/World/Wizarding World/Wands & Wizards - Harry Potter 5e_assets/Wands & Wizards - Harry Potter 5e_p116_img1.png",
+    "Wizarding World/World/Wizarding World/Wands & Wizards - Harry Potter 5e_assets/Wands & Wizards - Harry Potter 5e_p115_img7.png",
+    "Wizarding World/World/Wizarding World/Wands & Wizards - Harry Potter 5e_assets/Wands & Wizards - Harry Potter 5e_p115_img6.png",
+    "Wizarding World/World/Wizarding World/Wands & Wizards - Harry Potter 5e_assets/Wands & Wizards - Harry Potter 5e_p115_img5.png",
     "Wizarding World/Storyforge-TUI-Docs/ROADMAP.md",
     "Wizarding World/Storyforge-TUI-Docs/REVIEW-LEDGER.md",
     "Wizarding World/Storyforge-TUI-Docs/DND-rpg-ww-tui-game-sheet.md",
     "Wizarding World/Storyforge-TUI-Docs/README.md",
     "Wizarding World/Storyforge-TUI-Docs/Guide/07-character-creation.md",
-    "Wizarding World/Storyforge-TUI-Docs/Guide/08-save-load-and-migrations.md",
     "Wizarding World/Storyforge-TUI-Docs/Guide/06-content-pack-format.md",
     "Wizarding World/Storyforge-TUI-Docs/Prompt.md",
     "Wizarding World/Storyforge-TUI-Docs/Guide/09-scenes-dialogue-and-skill-checks.md",
-    "Wizarding World/Storyforge-TUI-Docs/Guide/10-tactical-combat-mvp.md",
     "Wizarding World/Storyforge-TUI-Docs/Guide/04-responsive-dashboard.md",
     "Wizarding World/Storyforge-TUI-Docs/Guide/05c-house-themes-and-focus-dimming.md",
     "Wizarding World/Storyforge-TUI-Docs/Guide/05b-layout-focus-navigation-and-inventory.md",
     "Wizarding World/Storyforge-TUI-Docs/Guide/05-engine-command-event-model.md",
     "Wizarding World/Storyforge-TUI-Docs/DND-rpg-ww-tui-game-sheet 1.md",
-    "Wizarding World/Storyforge-TUI-Docs/Guide/Untitled.md",
     "Wizarding World/Storyforge-TUI-Docs/Guide/03-first-terminal-application.md",
     "conflict-files-obsidian-git.md",
-    "World/Potions/W&W Potion Spreadsheet.xlsx",
-    "World/Potions",
-    "World",
     "Wizarding World/Storyforge-TUI-Docs/Guide/02-create-the-workspace.md",
     "Wizarding World/Storyforge-TUI-Docs/Guide/01-development-environment.md",
     "Wizarding World/Storyforge-TUI-Docs/Guide/00-how-to-use-this-guide.md",
-    "Wizarding World/World/Wizarding World/One-Shot-Wonders.pdf",
     "Wizarding World/World/Wizarding World/Traveling Event System TES.md",
-    "Wizarding World/World/Wizarding World/W&W NPCs 0.3.1 _ GM Binder.pdf",
-    "Wizarding World/World/Wizarding World/Wands & Wizards - Harry Potter 5e.pdf",
-    "Wizarding World/World/Wizarding World/Wands & Wizards - Headmaster's Guide v0.2.pdf",
-    "Wizarding World/World/Wizarding World/Wizarding Book of Monsters and foes.pdf",
-    "Wizarding World/World/Wizarding World/Wizarding-World-esp.md",
-    "Wizarding World/Game Expectations.md",
-    "Wizarding World/World/Shops/Candy.md",
-    "Wizarding World/Storyforge-TUI-Docs/Guide/28-version-1-3-deeper-tactics.md",
-    "Wizarding World/tmp/pdfs/one-shot-page-194.png",
-    "Wizarding World/tmp/pdfs/one-shot-page-193.png",
-    "Wizarding World/tmp/pdfs/one-shot-page-153.png",
-    "Wizarding World/tmp/pdfs/one-shot-page-132.png",
-    "Wizarding World/tmp/pdfs/one-shot-page-131.png",
-    "Wizarding World/tmp/pdfs/one-shot-page-113.png",
-    "Wizarding World/tmp/pdfs/one-shot-page-006.png",
-    "Wizarding World/tmp/pdfs/one-shot-page-002.png",
-    "Wizarding World/tmp/pdfs/one-shot-wonders.txt",
-    "Wizarding World/tmp/pdfs",
-    "Wizarding World/World/Maps/Miscellaneous/Niffler Burrow by Veertje.png",
-    "Wizarding World/World/Maps/Miscellaneous/Cave (Spider Boss) by Block_nessie.jpg",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/Roadmap.canvas"
   ]
 }
