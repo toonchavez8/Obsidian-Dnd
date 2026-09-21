@@ -11,20 +11,6 @@
             "id": "3b81ce250c1fdeff",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Wizarding World/World/Wizarding World/Wands & Wizards - Harry Potter 5e.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Wands & Wizards - Harry Potter 5e"
-            }
-          },
-          {
-            "id": "7922331a9c468fce",
-            "type": "leaf",
-            "state": {
               "type": "pdf",
               "state": {
                 "file": "Wizarding World/World/Wizarding World/Wands & Wizards - Harry Potter 5e.pdf"
@@ -34,17 +20,17 @@
             }
           },
           {
-            "id": "8473a9fd306a39f5",
+            "id": "7ce38b9674ecb05b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Wizarding World/Storyforge-TUI-Docs/Guide/10-tactical-combat-mvp.md",
+                "file": "Wizarding World/Storyforge-TUI-Docs/Changes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "10-tactical-combat-mvp"
+              "title": "Changes"
             }
           },
           {
@@ -53,12 +39,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Wizarding World/Storyforge-TUI-Docs/Guide/08-save-load-and-migrations.md",
+                "file": "Wizarding World/World/Wizarding World/Wands & Wizards - Harry Potter 5e.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "08-save-load-and-migrations"
+              "title": "Wands & Wizards - Harry Potter 5e"
             }
           }
         ],
@@ -432,23 +418,26 @@
       "calendarium:Open Calendarium": false
     }
   },
-  "active": "7922331a9c468fce",
+  "active": "7ce38b9674ecb05b",
   "lastOpenFiles": [
-    "Wizarding World/World/Wizarding World/Wands & Wizards - Headmaster's Guide v0.2.pdf",
+    "Wizarding World/Storyforge-TUI-Docs/imgs/Pasted image 20260921095928.png",
+    "Wizarding World/Storyforge-TUI-Docs/imgs",
     "Wizarding World/World/Wizarding World/Wands & Wizards - Harry Potter 5e.pdf",
+    "Wizarding World/Storyforge-TUI-Docs/Changes.md",
     "Wizarding World/World/Wizarding World/Wands & Wizards - Harry Potter 5e.md",
+    "Wizarding World/Storyforge-TUI-Docs/Guide/08-save-load-and-migrations.md",
+    "Wizarding World/Storyforge-TUI-Docs/Guide/10-tactical-combat-mvp.md",
+    "Wizarding World/Storyforge-TUI-Docs/README.md",
+    "Wizarding World/World/Wizarding World/Wands & Wizards - Headmaster's Guide v0.2.pdf",
     "Wizarding World/World/Wizarding World/Untitled.md",
     "Wizarding World/World/Wizarding World/imgs/Pasted image 20260918153855.png",
     "Wizarding World/World/Wizarding World/imgs",
-    "Wizarding World/Storyforge-TUI-Docs/Guide/08-save-load-and-migrations.md",
     "Wizarding World/World/Wizarding World/MadMan & Murphen One Shot Adventures #1 _ GM Binder.pdf",
     "Wizarding World/World/Wizarding World/One-Shot-Wonders.pdf",
-    "Wizarding World/Storyforge-TUI-Docs/Guide/10-tactical-combat-mvp.md",
     "Wizarding World/World/PlayerSheets/W&W Gryffindor - Fillable.pdf",
     "Wizarding World/World/PlayerSheets/W&W Classic Character Sheet by Blaze.pdf",
     "Wizarding World/World/PlayerSheets/Player's Cheat Sheets - English.pdf",
     "Wizarding World/World/PlayerSheets/Player's Cheat Sheets - Spanish.pdf",
-    "Wizarding World/World/Wizarding World/Wizarding Book of Monsters and foes.pdf",
     "Wizarding World/World/Wizarding World/Wizarding-World-esp.md",
     "Wizarding World/Storyforge-TUI-Docs/Guide/Untitled.md",
     "Wizarding World/World/Wizarding World/Wands & Wizards - Harry Potter 5e_assets/Wands & Wizards - Harry Potter 5e_p118_img2.png",
@@ -463,7 +452,6 @@
     "Wizarding World/Storyforge-TUI-Docs/ROADMAP.md",
     "Wizarding World/Storyforge-TUI-Docs/REVIEW-LEDGER.md",
     "Wizarding World/Storyforge-TUI-Docs/DND-rpg-ww-tui-game-sheet.md",
-    "Wizarding World/Storyforge-TUI-Docs/README.md",
     "Wizarding World/Storyforge-TUI-Docs/Guide/07-character-creation.md",
     "Wizarding World/Storyforge-TUI-Docs/Guide/06-content-pack-format.md",
     "Wizarding World/Storyforge-TUI-Docs/Prompt.md",
@@ -478,7 +466,6 @@
     "Wizarding World/Storyforge-TUI-Docs/Guide/02-create-the-workspace.md",
     "Wizarding World/Storyforge-TUI-Docs/Guide/01-development-environment.md",
     "Wizarding World/Storyforge-TUI-Docs/Guide/00-how-to-use-this-guide.md",
-    "Wizarding World/World/Wizarding World/Traveling Event System TES.md",
     "Wizards of the Coast/CHG_DND/El_Dragon_del_Pico_AgujaHelada/Roadmap.canvas"
   ]
 }
