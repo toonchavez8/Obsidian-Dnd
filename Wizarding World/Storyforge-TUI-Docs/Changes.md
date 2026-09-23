@@ -10,3 +10,4 @@ its called Wand and Wizards Caracter sheet.
 		- School life
 		
 - in Identity lets make it a two column, with the name and and all but on the left side we should have the level and AC, AC should be Big and in a shield icon and the level in a level icon i guess.
+
